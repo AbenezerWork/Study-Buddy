@@ -1,0 +1,1229 @@
+
+[
+  {
+    "id": "ml-c4-sm-main-topic",
+    "title": "Chapter 4: Machine Learning - Supervised and Unsupervised Learning",
+    "introduction": [
+      { "text": "This chapter focuses on Supervised Learning, a major category of Machine Learning, covering basic steps, common terminologies, dataset preparation, an overview of supervised learning types (Regression and Classification), and exploring several supervised algorithms like Linear Regression, Logistic Regression, K-Nearest Neighbors (KNN), Decision Trees, Naïve Bayes, and Support Vector Machines (SVM). It also introduces Unsupervised Learning concepts, including Clustering and Association, with a focus on the K-Means algorithm. Practical aspects like data splitting and model evaluation techniques are also discussed for supervised learning." }
+    ],
+    "contentBlocks": [
+      {
+        "id": "ml-c4-sm-s2-h2-basicsteps",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Basic Steps In ML" }]
+      },
+      {
+        "id": "ml-c4-sm-s2-list-steps",
+        "type": "list",
+        "ordered": true,
+        "items": [
+          { "id": "ml-c4-sm-li-s2-1", "content": [{ "text": "Data collection:", "bold": true }, { "text": " Gathering 'training data', mostly with 'labels' provided by a 'teacher'." }] },
+          { "id": "ml-c4-sm-li-s2-2", "content": [{ "text": "Data preprocessing:", "bold": true }, { "text": " Clean data to have homogeneity." }] },
+          { "id": "ml-c4-sm-li-s2-3", "content": [{ "text": "Feature engineering:", "bold": true }, { "text": " Select representative features to improve performance." }] },
+          { "id": "ml-c4-sm-li-s2-4", "content": [{ "text": "Modeling:", "bold": true }, { "text": " Choose the class of models that can describe the data." }] },
+          { "id": "ml-c4-sm-li-s2-5", "content": [{ "text": "Estimation/Selection:", "bold": true }, { "text": " Find the model that best explains the data: simple and fits well." }] },
+          { "id": "ml-c4-sm-li-s2-6", "content": [{ "text": "Validation:", "bold": true }, { "text": " Evaluate the learned model and compare to solution found using other model classes." }] },
+          { "id": "ml-c4-sm-li-s2-7", "content": [{ "text": "Operation:", "bold": true }, { "text": " Apply learned model to new 'test' data or real-world instances." }] }
+        ]
+      },
+      {
+        "id": "ml-c4-sm-s3-img-stepsflow",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap4-supervised/images/slide3_ml_steps_flowchart.png",
+        "alt": "Flowchart of ML Steps: Step 1 (Collection of Data from Various source) -> Step 2 (Data cleaning and Feature Engineering) -> Step 3 (Model building for selecting correct ML Algorithm) -> Step 4 (Evaluate Model) -> Step 5 (Model Deployment).",
+        "caption": [{ "text": "Visual Overview of Basic Steps in ML." }]
+      },
+      {
+        "id": "ml-c4-sm-s4-h2-commonterms",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Common Terms" }]
+      },
+      {
+        "id": "ml-c4-sm-s4-h3-featureslabels",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Features and Labels:" }]
+      },
+      {
+        "id": "ml-c4-sm-s4-p-features",
+        "type": "paragraph",
+        "content": [
+          { "text": "Features:", "bold": true },
+          { "text": " These are the input variables or characteristics that the machine learning algorithm uses to make predictions. Features provide the information on which the model's predictions are based. The quality and relevance of features significantly impact the performance of the machine learning model." }
+        ]
+      },
+      {
+        "id": "ml-c4-sm-s4-list-features-ex",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c4-sm-li-s4-f1", "content": [{ "text": "House Price Prediction:", "bold": true }, { "text": " Square footage, number of bedrooms, location, number of bathrooms, presence of a garage." }] },
+          { "id": "ml-c4-sm-li-s4-f2", "content": [{ "text": "Email Spam Classification:", "bold": true }, { "text": " Email content, sender's address, presence of certain keywords." }] },
+          { "id": "ml-c4-sm-li-s4-f3", "content": [{ "text": "Image Classification:", "bold": true }, { "text": " Pixel values of an image, color distribution, texture features." }] }
+        ]
+      },
+      {
+        "id": "ml-c4-sm-s5-p-labels",
+        "type": "paragraph",
+        "content": [
+          { "text": "Labels, also known as the target variable or output variable,", "bold": true },
+          { "text": " represent the desired outcome or prediction that the model aims to achieve. Labels are the values that the model is trying to predict. The model's performance is assessed based on how well it predicts or approximates these labels." }
+        ]
+      },
+      {
+        "id": "ml-c4-sm-s5-list-labels-ex",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c4-sm-li-s5-l1", "content": [{ "text": "House Price Prediction:", "bold": true }, { "text": " Label: The actual price of the house." }] },
+          { "id": "ml-c4-sm-li-s5-l2", "content": [{ "text": "Email Spam Classification:", "bold": true }, { "text": " Label: Spam or not spam." }] },
+          { "id": "ml-c4-sm-li-s5-l3", "content": [{ "text": "Image Classification:", "bold": true }, { "text": " Label: Object categories (e.g., cat, dog, car)." }] }
+        ]
+      },
+      {
+        "id": "ml-c4-sm-s6-h3-trainingdata",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Training Data:" }]
+      },
+      {
+        "id": "ml-c4-sm-s6-p-trainingdata",
+        "type": "paragraph",
+        "content": [{ "text": "The training data is a subset of the available dataset that is used to train the machine learning model. During training, the model adjusts its parameters based on this data to make accurate predictions." }]
+      },
+      {
+        "id": "ml-c4-sm-s7-h3-testingdata",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Testing Data:" }]
+      },
+      {
+        "id": "ml-c4-sm-s7-p-testingdata",
+        "type": "paragraph",
+        "content": [{ "text": "Once the model is trained on the training data, it is evaluated on a separate subset of data that was not used during the training process. This testing data allows assessing how well the model generalizes to new, unseen data. Provides an unbiased evaluation of the model's ability to generalize. Helps identify if the model has overfitting or underfitting to the training data and whether it can make accurate predictions on real-world examples." }]
+      },
+      {
+        "id": "ml-c4-sm-s8-h3-overfitting",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Overfitting" }]
+      },
+      {
+        "id": "ml-c4-sm-s8-p-overfitting",
+        "type": "paragraph",
+        "content": [{ "text": "This phenomenon occurs when a model performs really well on the data that we used to train it but it fails to generalise well to new, unseen data. Due to noise, the model learned to predict specific inputs rather than the predictive parameters helps to make correct predictions." }]
+      },
+      {
+        "id": "ml-c4-sm-s8-h3-underfitting",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Underfitting" }]
+      },
+      {
+        "id": "ml-c4-sm-s8-p-underfitting",
+        "type": "paragraph",
+        "content": [{ "text": "The model has poor performance even on the data that was used to train it. In most cases, underfitting occurs because the model is not suitable for the problem you are trying to solve (e.g., it's too simple)." }]
+      },
+      {
+        "id": "ml-c4-sm-s9-h2-datasetprep",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Data Set Preparation" }]
+      },
+      {
+        "id": "ml-c4-sm-s9-img-datasplit",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap4-supervised/images/slide9_dataset_preparation_split.png",
+        "alt": "Diagram showing dataset preparation: Universal dataset -> Selected data from the universal dataset -> Split into Testing Data and Training Data.",
+        "caption": [{ "text": "Dataset Preparation and Splitting." }]
+      },
+      {
+        "id": "ml-c4-sm-s9-p-overcome",
+        "type": "paragraph",
+        "content": [{ "text": "To overcome over and under fitting, try different approaches of splitting. The simplest way to split the modelling dataset into training and testing sets is to assign two-thirds of the data for training and rest for testing." }]
+      },
+      {
+        "id": "ml-c4-sm-s10-h2-supervisedml",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Supervised ML (Overview)" }]
+      },
+      {
+        "id": "ml-c4-sm-s10-p-supervisedml",
+        "type": "paragraph",
+        "content": [{ "text": "Supervised learning involves training an algorithm on a labeled dataset, where input data is paired with corresponding output labels. The goal is to learn a mapping from input to output based on provided labelled examples." }]
+      },
+      {
+        "id": "ml-c4-sm-s11-img-supervisedlearning",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap4-supervised/images/slide11_supervised_learning_process.png",
+        "alt": "Diagram illustrating supervised learning: Labeled Data and Labels feed into Model Training, which makes Predictions on Test Data.",
+        "caption": [{ "text": "Supervised Learning Process." }]
+      },
+      {
+        "id": "ml-c4-sm-s12-h3-supervisedalgos",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Supervised ML Algorithms Categories" }]
+      },
+      {
+        "id": "ml-c4-sm-s12-img-regclass",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap4-supervised/images/slide12_supervised_learning_types.png",
+        "alt": "Diagram showing Supervised Learning branching into Regression and Classification.",
+        "caption": [{ "text": "Main Categories of Supervised Learning Algorithms." }]
+      },
+      {
+        "id": "ml-c4-sm-s13-h2-regression",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Regression" }]
+      },
+      {
+        "id": "ml-c4-sm-s13-p-regressiondef",
+        "type": "paragraph",
+        "content": [{ "text": "Regression algorithms are used if there is a relationship between the input variable and the output variable. It is used for the prediction of continuous variables, such as Weather forecasting, Market Trends, etc." }]
+      },
+      {
+        "id": "ml-c4-sm-s13-p-regexamples",
+        "type": "paragraph",
+        "content": [{ "text": "Popular Regression algorithms which come under supervised learning include:" }]
+      },
+      {
+        "id": "ml-c4-sm-s13-list-regalgos",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c4-sm-li-s13-lr", "content": [{ "text": "Linear Regression" }] },
+          { "id": "ml-c4-sm-li-s13-rt", "content": [{ "text": "Regression Trees" }] },
+          { "id": "ml-c4-sm-li-s13-nlr", "content": [{ "text": "Non-Linear Regression" }] },
+          { "id": "ml-c4-sm-li-s13-pr", "content": [{ "text": "Polynomial Regression" }] }
+        ]
+      },
+      {
+        "id": "ml-c4-sm-s14-h3-linearreg",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Linear Regression" }]
+      },
+      {
+        "id": "ml-c4-sm-s14-p-linearregdef",
+        "type": "paragraph",
+        "content": [
+          { "text": "It is one of the very simple and easy algorithms which works on regression and shows the relationship between the continuous variables. We should know that regression is a statistical method used in finding relationships between variables. Linear regression is one of the regression-based algorithms in ML. It shows a linear relationship between its variables." }
+        ]
+      },
+      {
+        "id": "ml-c4-sm-s14-p-linearregex",
+        "type": "paragraph",
+        "content": [
+          { "text": "Example: Assume some company x spent the following cost for advertisement and get sale values as indicated. The company wants to do the advertisement of $200 in the year 2019 and wants to know the prediction about the sales for this year." }
+        ]
+      },
+      {
+        "id": "ml-c4-sm-s14-img-adsales",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap4-supervised/images/slide14_linear_regression_ads_sales.png",
+        "alt": "Table showing advertisement cost and corresponding sales data.",
+        "caption": [{ "text": "Linear Regression Example: Advertisement Cost vs. Sales." }]
+      },
+      {
+        "id": "ml-c4-sm-s15-p-salaryex",
+        "type": "paragraph",
+        "content": [
+          { "text": "Example 2: Here we are predicting the salary of an employee on the basis of the year of experience." }
+        ]
+      },
+      {
+        "id": "ml-c4-sm-s15-img-salaryexp",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap4-supervised/images/slide15_linear_regression_salary_experience.png",
+        "alt": "Graph showing salary vs. experience with a linear regression line.",
+        "caption": [{ "text": "Linear Regression: Salary vs. Experience." }]
+      },
+      {
+        "id": "ml-c4-sm-s16-p-weeksalesex",
+        "type": "paragraph",
+        "content": [
+          { "text": "Example 3: Let us consider an example where the five weeks' sales data (in Thousands) is given as shown in Table. Apply linear regression technique to predict the 7th and 12th week sales." }
+        ]
+      },
+      {
+        "id": "ml-c4-sm-s16-img-weeksalestable",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap4-supervised/images/slide16_linear_regression_week_sales_table.png",
+        "alt": "Table showing sales data (in thousands) per week.",
+        "caption": [{ "text": "Weekly Sales Data for Linear Regression Problem." }]
+      },
+      {
+        "id": "ml-c4-sm-s17-h4-bestfitline",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Just finding the best fitting line" }]
+      },
+      {
+        "id": "ml-c4-sm-s17-img-bestfit",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap4-supervised/images/slide17_linear_regression_best_fit_line.png",
+        "alt": "Graph of Y-Dependent vs X-Independent data points with a best fitting line, sales table, and regression formulas.",
+        "caption": [{ "text": "Finding the Best Fitting Line for Linear Regression." }]
+      },
+      {
+        "id": "ml-c4-sm-s17-p-lineq",
+        "type": "paragraph",
+        "content": [
+          { "text": "Linear regression equation is given by: y = a₀ + a₁ * x + e (where e is the error term). The formula for the line is y = α + βx, where β = slope, α = y-intercept." }
+        ]
+      },
+      {
+        "id": "ml-c4-sm-s18-h4-calculation",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Calculation Steps" }]
+      },
+      {
+        "id": "ml-c4-sm-s18-img-calctable",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap4-supervised/images/slide18_linear_regression_calculation_table.png",
+        "alt": "Table showing calculations for x (Week), y (Sales in Thousands), x², and x*y, along with Sum and Average values.",
+        "caption": [{ "text": "Linear Regression Calculation Table." }]
+      },
+      {
+        "id": "ml-c4-sm-s18-p-formulae",
+        "type": "paragraph",
+        "content": [
+          { "text": "Where a₁ = (Σ(xy) - n * x̄ * ȳ) / (Σ(x²) - n * x̄²), and a₀ = ȳ - a₁ * x̄. (Note: Slide image uses slightly different notation for slope (a1) and intercept (a0) calculation compared to the standard statistical formulas, but aims to find the best fit line)." }
+        ]
+      },
+      {
+        "id": "ml-c4-sm-s19-h4-correctline",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Get correct regression line" }]
+      },
+      {
+        "id": "ml-c4-sm-s19-img-regressioneq",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap4-supervised/images/slide19_linear_regression_final_equation.png",
+        "alt": "Calculated values for x̄, ȳ, x̄ȳ, x̄², a₁, a₀, and the final regression equation y = 0.54 + 0.66x.",
+        "caption": [{ "text": "Deriving the Correct Regression Line." }]
+      },
+      {
+        "id": "ml-c4-sm-s20-h4-prediction",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Prediction using the Regression Line" }]
+      },
+      {
+        "id": "ml-c4-sm-s20-img-finalprediction",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap4-supervised/images/slide20_linear_regression_prediction_values.png",
+        "alt": "Using the regression equation y = 0.54 + 0.66x to predict sales for 7th week (y = 5.16) and 12th week.",
+        "caption": [{ "text": "Making Predictions with the Linear Regression Model." }]
+      },
+      {
+        "id": "ml-c4-sm-s21-h2-practicalml",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Practical ML - Prediction Problem Steps" }]
+      },
+      {
+        "id": "ml-c4-sm-s21-list-pracsteps",
+        "type": "list",
+        "ordered": true,
+        "items": [
+          { "id": "ml-c4-sm-li-s21-1", "content": [{ "text": "Data Loading" }] },
+          { "id": "ml-c4-sm-li-s21-2", "content": [{ "text": "Identify Independent/Dependent variables/predictions" }] },
+          { "id": "ml-c4-sm-li-s21-3", "content": [{ "text": "Split the data to train/test the ML algorithms" }] },
+          { "id": "ml-c4-sm-li-s21-4", "content": [{ "text": "Train the model and test it" }] }
+        ]
+      },
+      {
+        "id": "ml-c4-sm-s21-img-traintestsplit",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap4-supervised/images/slide21_train_test_split_procedure.png",
+        "alt": "Diagram illustrating train-test split procedure: Full Dataset -> Arrange data -> Features & Target -> Train Test Split (X_train, y_train, X_test, y_test) -> Use for training/testing ML Model.",
+        "caption": [{ "text": "Train-Test Split Procedure." }]
+      },
+      {
+        "id": "ml-c4-sm-s22-h3-randomstate",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "The `random_state` Parameter" }]
+      },
+      {
+        "id": "ml-c4-sm-s22-code-traintest",
+        "type": "code",
+        "language": "python",
+        "code": "X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=0, train_size=.75)"
+      },
+      {
+        "id": "ml-c4-sm-s22-p-randomstate",
+        "type": "paragraph",
+        "content": [{ "text": "The `random_state` is a pseudo-random number parameter that allows you to reproduce the same train-test split each time you run the code. Select data set randomly before splitting just put /shuffling +ve integer commonly 42, 2, 0 default None. Unless you put `random_state` you will get different values each time." }]
+      },
+      {
+        "id": "ml-c4-sm-s22-alert-exercise",
+        "type": "alert",
+        "style": "info",
+        "title": [{ "text": "Exercise:" }],
+        "content": [
+          { "text": "Please split the following data with random state:" },
+          { "text": "\nX=[10,20,30,40,50,60,80,90,100]", "code": true },
+          { "text": "\nY=[1,0,1,4,5,6,7,8,9,10]", "code": true }
+        ]
+      },
+      {
+        "id": "ml-c4-sm-s23-h3-splittingtask",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Sample Splitting Task (Python Code)" }]
+      },
+      {
+        "id": "ml-c4-sm-s23-code-split",
+        "type": "code",
+        "language": "python",
+        "code": "from sklearn.model_selection import train_test_split\n\nx = [10,20,30,40,50,60,80,90,100,200] # As per OCR\ny = [1,0,1,4,5,6,7,8,9,10]\n\nx_train, x_test, y_train, y_test = train_test_split(x, y, test_size=0.2, random_state=2)\n\nprint(\"x_train\", x_train)\nprint(\"x_test\", x_test)\nprint(\"y_train\", y_train)\nprint(\"y_test\", y_test)"
+      },
+      {
+        "id": "ml-c4-sm-s24-h2-classalgos",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Classification Algorithms" }]
+      },
+      {
+        "id": "ml-c4-sm-s24-p-classdef",
+        "type": "paragraph",
+        "content": [{ "text": "Classification algorithms are used when the output variable is categorical, which means there are two classes such as Yes-No, Male-Female, True-false." }]
+      },
+      {
+        "id": "ml-c4-sm-s24-h3-appclass",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Application of classification algorithms" }]
+      },
+      {
+        "id": "ml-c4-sm-s24-list-appclass",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c4-sm-li-s24-1", "content": [{ "text": "Email Spam Detection" }] },
+          { "id": "ml-c4-sm-li-s24-2", "content": [{ "text": "Speech Recognition" }] },
+          { "id": "ml-c4-sm-li-s24-3", "content": [{ "text": "Identifications of Cancer cases" }] },
+          { "id": "ml-c4-sm-li-s24-4", "content": [{ "text": "Drugs Classification" }] },
+          { "id": "ml-c4-sm-li-s24-5", "content": [{ "text": "Biometric Identification, etc." }] }
+        ]
+      },
+      {
+        "id": "ml-c4-sm-s25-h3-popclassalgos",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Popular classification algorithms" }]
+      },
+      {
+        "id": "ml-c4-sm-s25-list-popclass",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c4-sm-li-s25-1", "content": [{ "text": "Logistic Regression" }] },
+          { "id": "ml-c4-sm-li-s25-2", "content": [{ "text": "Support vector Machines" }] },
+          { "id": "ml-c4-sm-li-s25-3", "content": [{ "text": "KNN (K-Nearest Neighbors)" }] },
+          { "id": "ml-c4-sm-li-s25-4", "content": [{ "text": "Random Forest" }] },
+          { "id": "ml-c4-sm-li-s25-5", "content": [{ "text": "Decision Trees" }] }
+        ]
+      },
+      {
+        "id": "ml-c4-sm-s26-p-classdetails",
+        "type": "paragraph",
+        "content": [{ "text": "Classification algorithms are used when the output variable is categorical. A program learns from the given dataset or observations and then classifies new observation into a number of classes or groups (Examples yes/no, 0/1 True/False). In classification algorithm, a discrete output function(y) is mapped to input variable(x), so y=f(x), where y = categorical output." }]
+      },
+      {
+        "id": "ml-c4-sm-s26-img-classplot",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap4-supervised/images/slide26_classification_plot.png",
+        "alt": "Plot showing data points for Class A (blue dots) and Class B (green triangles) separated by a decision boundary line.",
+        "caption": [{ "text": "Visual Representation of Classification." }]
+      },
+      {
+        "id": "ml-c4-sm-s27-p-classifier",
+        "type": "paragraph",
+        "content": [{ "text": "The algorithm which implements the classification on a dataset is known as a classifier." }]
+      },
+      {
+        "id": "ml-c4-sm-s27-h3-typesclass",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "There are two types of Classifications:" }]
+      },
+      {
+        "id": "ml-c4-sm-s27-list-typesclass",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c4-sm-li-s27-1", "content": [{ "text": "Binary Classifier:", "bold": true }, { "text": " Classification problem has only two possible outcomes (e.g., YES or NO, MALE or FEMALE, SPAM or NOT SPAM, CAT or DOG, etc.)." }] },
+          { "id": "ml-c4-sm-li-s27-2", "content": [{ "text": "Multi-class Classifier:", "bold": true }, { "text": " If a classification problem has more than two outcomes (e.g., Classifications of types of crops, Classification of types of music)." }] }
+        ]
+      },
+      {
+        "id": "ml-c4-sm-s28-h3-mlclassalgos",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Types of ML Classification Algorithms" }]
+      },
+      {
+        "id": "ml-c4-sm-s28-p-categories",
+        "type": "paragraph",
+        "content": [{ "text": "Classification Algorithms can be further divided into the Mainly two category:" }]
+      },
+      {
+        "id": "ml-c4-sm-s28-h4-linear",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Linear Models" }]
+      },
+      {
+        "id": "ml-c4-sm-s28-list-linear",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c4-sm-li-s28-1", "content": [{ "text": "Logistic Regression" }] },
+          { "id": "ml-c4-sm-li-s28-2", "content": [{ "text": "Support Vector Machines" }] }
+        ]
+      },
+      {
+        "id": "ml-c4-sm-s28-h4-nonlinear",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Non-linear Models" }]
+      },
+      {
+        "id": "ml-c4-sm-s28-list-nonlinear",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c4-sm-li-s28-3", "content": [{ "text": "K-Nearest Neighbours" }] },
+          { "id": "ml-c4-sm-li-s28-4", "content": [{ "text": "Decision Tree" }] },
+          { "id": "ml-c4-sm-li-s28-5", "content": [{ "text": "Naïve Bayes" }] },
+          { "id": "ml-c4-sm-li-s28-6", "content": [{ "text": "Random Forest" }] }
+        ]
+      },
+      {
+        "id": "ml-c4-sm-s29-h2-evalclass",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Evaluating a Classification model:" }]
+      },
+      {
+        "id": "ml-c4-sm-s29-p-evalperf",
+        "type": "paragraph",
+        "content": [{ "text": "Evaluate the performance of Classification or Regression model." }]
+      },
+      {
+        "id": "ml-c4-sm-s29-h3-logloss",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "1. Log Loss or Cross-Entropy Loss" }]
+      },
+      {
+        "id": "ml-c4-sm-s29-list-logloss",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c4-sm-li-s29-1", "content": [{ "text": "It is used for evaluating the performance of a classifier, whose output is a probability value between 0 and 1." }] },
+          { "id": "ml-c4-sm-li-s29-2", "content": [{ "text": "For a good binary Classification model, the value of log loss should be near to 0." }] },
+          { "id": "ml-c4-sm-li-s29-3", "content": [{ "text": "The lower log loss represents the higher accuracy of the model." }] }
+        ]
+      },
+      {
+        "id": "ml-c4-sm-s29-h3-confmatrix",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "2. Confusion Matrix" }]
+      },
+      {
+        "id": "ml-c4-sm-s29-p-confmatrix",
+        "type": "paragraph",
+        "content": [{ "text": "The confusion matrix provides us a matrix/table as output and describes the performance of the model. It is also known as the error matrix." }]
+      },
+      {
+        "id": "ml-c4-sm-s30-p-matrixconsists",
+        "type": "paragraph",
+        "content": [{ "text": "The matrix consists of predictions result in a summarized form, which has a total number of correct predictions and incorrect predictions." }]
+      },
+      {
+        "id": "ml-c4-sm-s30-img-confmatrix",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap4-supervised/images/slide30_confusion_matrix.png",
+        "alt": "Table of a Confusion Matrix showing Predicted Positive/Negative vs Actual Positive/Negative, with cells for True Positive, False Positive, False Negative, True Negative, and accuracy formula.",
+        "caption": [{ "text": "Confusion Matrix Structure." }]
+      },
+      {
+        "id": "ml-c4-sm-s30-list-matrixterms",
+        "type": "list",
+        "ordered": true,
+        "items": [
+          { "id": "ml-c4-sm-li-s30-1", "content": [{ "text": "True negatives:", "bold": true }, { "text": " correctly predicted negatives (zeros)" }] },
+          { "id": "ml-c4-sm-li-s30-2", "content": [{ "text": "True positives:", "bold": true }, { "text": " correctly predicted positives (ones)" }] },
+          { "id": "ml-c4-sm-li-s30-3", "content": [{ "text": "False negatives:", "bold": true }, { "text": " incorrectly predicted negatives (zeros)" }] },
+          { "id": "ml-c4-sm-li-s30-4", "content": [{ "text": "False positives:", "bold": true }, { "text": " incorrectly predicted positives (ones)" }] }
+        ]
+      },
+      {
+        "id": "ml-c4-sm-s31-h3-aucroc",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "3. AUC-ROC curve:" }]
+      },
+      {
+        "id": "ml-c4-sm-s31-list-aucroc",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c4-sm-li-s31-1", "content": [{ "text": "ROC curve stands for Receiver Operating Characteristics Curve and AUC stands for Area Under the Curve." }] },
+          { "id": "ml-c4-sm-li-s31-2", "content": [{ "text": "It is a graph that shows the performance of the classification model at different thresholds." }] },
+          { "id": "ml-c4-sm-li-s31-3", "content": [{ "text": "To visualize the performance of the multi-class classification model, we use the AUC-ROC Curve." }] },
+          { "id": "ml-c4-sm-li-s31-4", "content": [{ "text": "The ROC curve is plotted with TPR (True Positive Rate) on Y-axis and FPR (False Positive Rate) on X-axis." }] }
+        ]
+      },
+      {
+        "id": "ml-c4-sm-s32-h3-aucrocperf",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Evaluating a Classification model Performance - AUC-ROC curve:" }]
+      },
+      {
+        "id": "ml-c4-sm-s32-img-aucroc",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap4-supervised/images/slide32_auc_roc_curve.png",
+        "alt": "AUC-ROC curve examples with different AUC values and corresponding test quality (Excellent, Very good, Good, Satisfactory, Unsatisfactory).",
+        "caption": [{ "text": "AUC-ROC Curve and Test Quality." }]
+      },
+      {
+        "id": "ml-c4-sm-s33-h3-precmetrics",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "4. Precision, Recall, and F1-Score" }]
+      },
+      {
+        "id": "ml-c4-sm-s33-p-useful",
+        "type": "paragraph",
+        "content": [{ "text": "These metrics are particularly useful in binary or multiclass classification." }]
+      },
+      {
+        "id": "ml-c4-sm-s33-list-metrics",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c4-sm-li-s33-1", "content": [{ "text": "Precision:", "bold": true }, { "text": " The ratio of correctly predicted positive observations to the total predicted positives." }] },
+          { "id": "ml-c4-sm-li-s33-2", "content": [{ "text": "Recall:", "bold": true }, { "text": " The ratio of correctly predicted positive observations to all actual positives." }] },
+          { "id": "ml-c4-sm-li-s33-3", "content": [{ "text": "F1-Score:", "bold": true }, { "text": " The harmonic mean of precision and recall." }] }
+        ]
+      },
+      {
+        "id": "ml-c4-sm-s33-img-formulas",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap4-supervised/images/slide33_precision_recall_f1_formulas.png",
+        "alt": "Formulas for Precision (TP / (TP + FP)), Recall (TP / (TP + FN)), F1-Score (2 * Precision * Recall / (Precision + Recall)), and Accuracy ((TP + TN) / (TP + FN + TN + FP)).",
+        "caption": [{ "text": "Formulas for Classification Metrics." }]
+      },
+      {
+        "id": "ml-c4-sm-s34-h3-regmetrics",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Performance Evaluation for Regression Model - Regression Metrics:" }]
+      },
+      {
+        "id": "ml-c4-sm-s34-list-regmetrics",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c4-sm-li-s34-1", "content": [{ "text": "Mean Absolute Error (MAE):", "bold": true }, { "text": " The average absolute differences between predicted and actual values." }] },
+          { "id": "ml-c4-sm-li-s34-2", "content": [{ "text": "Mean Squared Error (MSE):", "bold": true }, { "text": " The average of the squared differences between predicted and actual values." }] },
+          { "id": "ml-c4-sm-li-s34-3", "content": [{ "text": "Root Mean Squared Error (RMSE):", "bold": true }, { "text": " The square root of the MSE, providing an interpretable scale." }] }
+        ]
+      },
+      {
+        "id": "ml-c4-sm-s35-h3-logregdetail",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Detailed Look: Logistic Regression" }]
+      },
+      {
+        "id": "ml-c4-sm-s35-list-logregdetail",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c4-sm-li-s35-1", "content": [{ "text": "One of the most popular Machine Learning algorithms." }] },
+          { "id": "ml-c4-sm-li-s35-2", "content": [{ "text": "Therefore the outcome must be a categorical or discrete value (e.g., Yes or No, 0 or 1, true or False)." }] },
+          { "id": "ml-c4-sm-li-s35-3", "content": [{ "text": "It gives probabilistic values which lie between 0 and 1." }] }
+        ]
+      },
+      {
+        "id": "ml-c4-sm-s35-p-sigmoiddetail",
+        "type": "paragraph",
+        "content": [
+          { "text": "In Logistic regression, instead of fitting a regression line, we fit an \"S\" shaped logistic function (Sigmoid function), which predicts two maximum values (0 or 1)." }
+        ]
+      },
+      {
+        "id": "ml-c4-sm-s35-img-sigmoiddetail",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap4-supervised/images/slide35_logistic_regression_sigmoid.png",
+        "alt": "Graph of a Sigmoid function (S-shaped curve) used in Logistic Regression, showing threshold value.",
+        "caption": [{ "text": "The Sigmoid (Logistic) Function in Logistic Regression." }]
+      },
+      {
+        "id": "ml-c4-sm-s36-h3-typeslogregdetail",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Types of Logistic Regression" }]
+      },
+      {
+        "id": "ml-c4-sm-s36-p1detail",
+        "type": "paragraph",
+        "content": [
+          { "text": "On the basis of the categories, Logistic Regression can be classified into three types:" }
+        ]
+      },
+      {
+        "id": "ml-c4-sm-s36-list-typesdetail",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c4-sm-li-s36-1", "content": [{ "text": "Binomial:", "bold": true }, { "text": " Only two possible types of dependent variables (e.g., 0 or 1, Pass or Fail)." }] },
+          { "id": "ml-c4-sm-li-s36-2", "content": [{ "text": "Multinomial:", "bold": true }, { "text": " 3 or more possible unordered types of dependent variable (e.g., \"cat\", \"dogs\", or \"sheep\")." }] },
+          { "id": "ml-c4-sm-li-s36-3", "content": [{ "text": "Ordinal:", "bold": true }, { "text": " 3 or more possible ordered types of dependent variables (e.g., \"low\", \"Medium\", or \"High\")." }] }
+        ]
+      },
+      {
+        "id": "ml-c4-sm-s37-h3-pythonlogreg",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Python Implementation of Logistic Regression (Binomial)" }]
+      },
+      {
+        "id": "ml-c4-sm-s37-list-pythonsteps",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c4-sm-li-s37-1", "content": [{ "text": "Data Pre-processing step" }] },
+          { "id": "ml-c4-sm-li-s37-2", "content": [{ "text": "Fitting Logistic Regression to the Training set" }] },
+          { "id": "ml-c4-sm-li-s37-3", "content": [{ "text": "Predicting the test result" }] },
+          { "id": "ml-c4-sm-li-s37-4", "content": [{ "text": "Test accuracy of the result (Creation of Confusion matrix)" }] }
+        ]
+      },
+      {
+        "id": "ml-c4-sm-s38-h3-codesamples",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Code samples (Logistic Regression)" }]
+      },
+      {
+        "id": "ml-c4-sm-s38-code-logreg",
+        "type": "code",
+        "language": "python",
+        "code": "# Importing required libraries\nimport pandas as pd\nfrom sklearn.linear_model import LogisticRegression\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.metrics import accuracy_score, confusion_matrix\n\n# Loading and preparing the data\n# data = pd.read_csv('data.csv') # Example data loading\n# X = data[['feature1', 'feature2']] # Selecting predictor variables\n# y = data['outcome'] # Selecting outcome variable\n\n# Example data (replace with actual data loading)\n# X = [[1,2],[2,3],[3,4],[4,5],[5,6]] \n# y = [0,0,1,1,1]\n\n# Splitting the data into train and test sets\n# X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\n\n# Creating and fitting the Logistic Regression model\n# model = LogisticRegression()\n# model.fit(X_train, y_train)\n\n# Making predictions on test set\n# y_pred = model.predict(X_test)\n\n# Evaluating the model\n# accuracy = accuracy_score(y_test, y_pred)\n# confusion = confusion_matrix(y_test, y_pred)\n\n# Printing the results\n# print(f'Accuracy: {accuracy}')\n# print(f'Confusion Matrix: {confusion}')\nprint('Code example structure provided. Fill with actual data loading and execution.')"
+      },
+      {
+        "id": "ml-c4-sm-s39-h3-logregexample",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Example - Logistic Regression for Purchase Prediction" }]
+      },
+      {
+        "id": "ml-c4-sm-s39-p-scenario",
+        "type": "paragraph",
+        "content": [{ "text": "A car making company has recently launched a new car and has data as shown. The company wants to predict whether a user will purchase the product or not, based on the relationship between Age and Estimated Salary." }]
+      },
+      {
+        "id": "ml-c4-sm-s39-img-userdata",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap4-supervised/images/slide39_logistic_regression_user_data.png",
+        "alt": "Table showing user data: User ID, Gender, Age, EstimatedSalary, Purchased (0 or 1).",
+        "caption": [{ "text": "User Data for Purchase Prediction." }]
+      },
+      {
+        "id": "ml-c4-sm-s39-p-datasource",
+        "type": "paragraph",
+        "content": [{ "text": "Source of data: ", "link": "https://www.kaggle.com/code/sandragracenelson/logistic-regression-on-user-data-csv/input" }]
+      },
+      {
+        "id": "ml-c4-sm-s40-h3-dataproc",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Data Processing -Related to our data set" }]
+      },
+      {
+        "id": "ml-c4-sm-s40-p-techniques",
+        "type": "paragraph",
+        "content": [{ "text": "Data Preprocessing Techniques you should apply:" }]
+      },
+      {
+        "id": "ml-c4-sm-s40-list-procsteps",
+        "type": "list",
+        "ordered": true,
+        "items": [
+          { "id": "ml-c4-sm-li-s40-1", "content": [{ "text": "How about if we want to include the age as independent variable? Replace male and female with discrete values b/n 0 and 1." }] },
+          { "id": "ml-c4-sm-li-s40-2", "content": [{ "text": "As we see there is a variation b/n age and salary value which may create bias. So, need to apply Feature scaling." }] }
+        ]
+      },
+      {
+        "id": "ml-c4-sm-s40-list-featurescale",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c4-sm-li-s40-3", "content": [{ "text": "Feature scaling is a method used to normalize the range of independent variables or features of data." }] },
+          { "id": "ml-c4-sm-li-s40-4", "content": [{ "text": "It is also known as data normalization and is generally performed during the data preprocessing step." }] },
+          { "id": "ml-c4-sm-li-s40-5", "content": [{ "text": "It helps improve model performance, reduce the impact of outliers, and ensure that the data is on the same scale." }] }
+        ]
+      },
+      {
+        "id": "ml-c4-sm-s41-h3-knn",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "K-Nearest Neighbors (KNN)" }]
+      },
+      {
+        "id": "ml-c4-sm-s41-p-knndef",
+        "type": "paragraph",
+        "content": [{ "text": "K-Nearest Neighbors (KNN) is a simple and versatile machine learning algorithm used for both classification and regression tasks. The fundamental idea behind KNN is to predict the label of a data point by looking at its k nearest neighbors in the feature space." }]
+      },
+      {
+        "id": "ml-c4-sm-s41-h4-knnclassify",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Technique to classify" }]
+      },
+      {
+        "id": "ml-c4-sm-s41-p-knnclassify",
+        "type": "paragraph",
+        "content": [{ "text": "Given a new, unseen data point, find the k-nearest neighbors in the training set based on some distance metric (e.g., Euclidean distance). For classification: Assign the majority class label among the k-nearest neighbors to the new data point." }]
+      },
+      {
+        "id": "ml-c4-sm-s42-img-knnvis",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap4-supervised/images/slide42_knn_classification.png",
+        "alt": "Diagrams illustrating K-Nearest Neighbors classification concept and Euclidean distance formula.",
+        "caption": [{ "text": "K-Nearest Neighbors Classification and Euclidean Distance." }]
+      },
+      {
+        "id": "ml-c4-sm-s43-h4-knnadvdis",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "KNN Advantages and Disadvantages" }]
+      },
+      {
+        "id": "ml-c4-sm-s43-h5-knnadv",
+        "type": "heading",
+        "level": 5,
+        "content": [{ "text": "Advantages" }]
+      },
+      {
+        "id": "ml-c4-sm-s43-list-knnadv",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c4-sm-li-s43-1", "content": [{ "text": "Conceptually simple, easy to understand and explain" }] },
+          { "id": "ml-c4-sm-li-s43-2", "content": [{ "text": "Very flexible decision boundaries" }] },
+          { "id": "ml-c4-sm-li-s43-3", "content": [{ "text": "Not much learning at all (lazy learner)" }] }
+        ]
+      },
+      {
+        "id": "ml-c4-sm-s43-h5-knndis",
+        "type": "heading",
+        "level": 5,
+        "content": [{ "text": "Disadvantages" }]
+      },
+      {
+        "id": "ml-c4-sm-s43-list-knndis",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c4-sm-li-s43-4", "content": [{ "text": "It can be hard to find a good distance measure" }] },
+          { "id": "ml-c4-sm-li-s43-5", "content": [{ "text": "Irrelevant features and noise can be very detrimental" }] },
+          { "id": "ml-c4-sm-li-s43-6", "content": [{ "text": "Typically cannot handle more than a few dozen attributes" }] },
+          { "id": "ml-c4-sm-li-s43-7", "content": [{ "text": "Computational cost: requires a lot of computation and memory" }] }
+        ]
+      },
+      {
+        "id": "ml-c4-sm-s44-h3-dectreeoverview",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Decision Tree Overview" }]
+      },
+      {
+        "id": "ml-c4-sm-s44-img-dectree",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap4-supervised/images/slide44_decision_tree_example.png",
+        "alt": "Example of a decision tree structure for classifying based on features like Age, Student, Income, Credit Rating.",
+        "caption": [{ "text": "Decision Tree Example." }]
+      },
+      {
+        "id": "ml-c4-sm-s45-p-dectreestructure",
+        "type": "paragraph",
+        "content": [
+          { "text": "Decision tree structure: Root node (beginning of a tree, represents entire population), Internal node (denotes a test on an attribute), Branch (represents an outcome of the test), Leaf nodes (represent class labels or class distribution). Tree is constructed in a top-down recursive divide-and-conquer manner." }
+        ]
+      },
+      {
+        "id": "ml-c4-sm-s45-img-dectreestructure",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap4-supervised/images/slide45_decision_tree_structure.png",
+        "alt": "Diagram explaining decision tree structure: Root node, Internal node, Branch, Leaf node.",
+        "caption": [{ "text": "Structure of a Decision Tree." }]
+      },
+      {
+        "id": "ml-c4-sm-s46-p-dectreeinduction",
+        "type": "paragraph",
+        "content": [
+          { "text": "Solving the classification problem using DT is a two-step process: Decision Tree Induction - Construct a DT using training data/Induction." }
+        ]
+      },
+      {
+        "id": "ml-c4-sm-s46-img-dectreebuyscomp",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap4-supervised/images/slide46_decision_tree_buys_computer.png",
+        "alt": "Example of Decision Tree for 'buys_computer' based on Training Dataset with features like age, income, student, credit rating.",
+        "caption": [{ "text": "Decision Tree for 'buys_computer' Prediction." }]
+      },
+      {
+        "id": "ml-c4-sm-s47-h4-dectreealgo",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Decision Tree - Algorithm (Classification Rule Extraction)" }]
+      },
+      {
+        "id": "ml-c4-sm-s47-list-rules",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c4-sm-li-s47-1", "content": [{ "text": "Represent the knowledge in the form of IF-THEN rules." }] },
+          { "id": "ml-c4-sm-li-s47-2", "content": [{ "text": "One rule is created for each path from the root to a leaf." }] },
+          { "id": "ml-c4-sm-li-s47-3", "content": [{ "text": "Each attribute-value pair along a path forms a conjunction." }] },
+          { "id": "ml-c4-sm-li-s47-4", "content": [{ "text": "The leaf node holds the class prediction." }] },
+          { "id": "ml-c4-sm-li-s47-5", "content": [{ "text": "Rules are easier for humans to understand." }] }
+        ]
+      },
+      {
+        "id": "ml-c4-sm-s47-code-rules",
+        "type": "code",
+        "language": "plaintext",
+        "code": "Example:\nIF age = \"<=30\" AND student = \"no\" THEN buys_computer = \"no\"\nIF age = \"<=30\" AND student = \"yes\" THEN buys_computer = \"yes\"\nIF age = \"31...40\" THEN buys_computer = \"yes\"\nIF age = \">40\" AND credit_rating = \"excellent\" THEN buys_computer = \"yes\"\nIF age = \">40\" AND credit_rating = \"fair\" THEN buys_computer = \"no\""
+      },
+      {
+        "id": "ml-c4-sm-s48-h4-dectreepython",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Decision Tree - Python Implementation" }]
+      },
+      {
+        "id": "ml-c4-sm-s48-code-pythonimport",
+        "type": "code",
+        "language": "python",
+        "code": "from sklearn.tree import DecisionTreeClassifier\nclassifier = DecisionTreeClassifier()"
+      },
+      {
+        "id": "ml-c4-sm-s48-h5-keyterms",
+        "type": "heading",
+        "level": 5,
+        "content": [{ "text": "Key Terms:" }]
+      },
+      {
+        "id": "ml-c4-sm-s48-p-entropy",
+        "type": "paragraph",
+        "content": [{ "text": "Entropy:", "bold": true }, { "text": " A measure of impurity or disorder in a set. In decision trees, entropy is used to calculate the information gain at each node." }]
+      },
+      {
+        "id": "ml-c4-sm-s48-p-gini",
+        "type": "paragraph",
+        "content": [{ "text": "Gini impurity:", "bold": true }, { "text": " Another measure of impurity used in decision trees. It measures the likelihood of an incorrect classification of a randomly chosen element if it were randomly labelled." }]
+      },
+      {
+        "id": "ml-c4-sm-s49-h3-naivebayes",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Naïve Bayes ML Algorithm" }]
+      },
+      {
+        "id": "ml-c4-sm-s49-list-nbdef",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c4-sm-li-s49-1", "content": [{ "text": "Naïve Bayes Classifier is one of the simplest and most effective Classification algorithms which helps in building fast machine learning models that can make quick predictions." }] },
+          { "id": "ml-c4-sm-li-s49-2", "content": [{ "text": "It is mainly used in text classification that includes a high-dimensional training dataset." }] },
+          { "id": "ml-c4-sm-li-s49-3", "content": [{ "text": "Some popular examples of Naïve Bayes Algorithm are spam filtration, Sentimental analysis, and classifying articles." }] }
+        ]
+      },
+      {
+        "id": "ml-c4-sm-s50-list-nbchar",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c4-sm-li-s50-1", "content": [{ "text": "Bayesian classifiers are statistical classifiers." }] },
+          { "id": "ml-c4-sm-li-s50-2", "content": [{ "text": "They can predict class membership probabilities, such as the probability that a given tuple belongs to a particular class." }] },
+          { "id": "ml-c4-sm-li-s50-3", "content": [{ "text": "Bayesian classification is based on Bayes' theorem." }] }
+        ]
+      },
+      {
+        "id": "ml-c4-sm-s50-img-bayes",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap4-supervised/images/slide50_bayes_theorem.png",
+        "alt": "Bayes' Theorem formula: P(h|X) = (P(X|h) * P(h)) / P(X), where h is hypothesis, X is training data.",
+        "caption": [{ "text": "Bayes' Theorem." }]
+      },
+      {
+        "id": "ml-c4-sm-s50-p-nbadv",
+        "type": "paragraph",
+        "content": [{ "text": "Compared to Decision tree, Bayesian classifiers have also exhibited high accuracy and speed when applied to large databases." }]
+      },
+      {
+        "id": "ml-c4-sm-s53-h4-nbexample",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Example : Naïve Bayes ML - Play Tennis Prediction" }]
+      },
+      {
+        "id": "ml-c4-sm-s53-p-problem",
+        "type": "paragraph",
+        "content": [{ "text": "Problem: Using the given data set, classify or predict whether a person with the given condition will play tennis or not?" }]
+      },
+      {
+        "id": "ml-c4-sm-s53-img-nbdata",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap4-supervised/images/slide53_naive_bayes_play_tennis_data.png",
+        "alt": "Dataset for Play Tennis prediction with features Day, Outlook, Temperature, Humidity, Wind and target PlayTennis.",
+        "caption": [{ "text": "Play Tennis Dataset." }]
+      },
+      {
+        "id": "ml-c4-sm-s54-img-nbstep1",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap4-supervised/images/slide54_naive_bayes_step1_prior_prob.png",
+        "alt": "Step 1: Calculate prior/class label probability for Yes/No conditions. Yes appeared 9, No appeared 5 out of 14. P(PlayTennis=yes) = 9/14 = 0.64, P(PlayTennis=no) = 5/14 = 0.36.",
+        "caption": [{ "text": "Naïve Bayes Step 1: Prior Probabilities." }]
+      },
+      {
+        "id": "ml-c4-sm-s55-img-nbstep2",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap4-supervised/images/slide55_naive_bayes_step2_conditional_prob.png",
+        "alt": "Step 2: Calculate conditional probability of individual attributes (outlook, temperature, Humidity, Windy) given PlayTennis=yes and PlayTennis=no.",
+        "caption": [{ "text": "Naïve Bayes Step 2: Conditional Probabilities." }]
+      },
+      {
+        "id": "ml-c4-sm-s56-img-nbstep3",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap4-supervised/images/slide56_naive_bayes_step3_prediction.png",
+        "alt": "Step 3: Apply Naive Bayes formula for new instance (Outlook=sunny, Temperature=cool, Humidity=high, Wind=strong). Calculate P(yes|X) and P(no|X), then normalize. Result: Person will not play tennis.",
+        "caption": [{ "text": "Naïve Bayes Step 3: Prediction for New Instance." }]
+      },
+      {
+        "id": "ml-c4-sm-s59-h4-nbadvdis",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Naïve Bayes: Advantages and Disadvantages" }]
+      },
+      {
+        "id": "ml-c4-sm-s59-h5-nbadv",
+        "type": "heading",
+        "level": 5,
+        "content": [{ "text": "Advantages" }]
+      },
+      {
+        "id": "ml-c4-sm-s59-list-adv",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c4-sm-li-s59-1", "content": [{ "text": "Simple" }] },
+          { "id": "ml-c4-sm-li-s59-2", "content": [{ "text": "Incremental learning" }] },
+          { "id": "ml-c4-sm-li-s59-3", "content": [{ "text": "Naturally a probability estimator" }] },
+          { "id": "ml-c4-sm-li-s59-4", "content": [{ "text": "Easily handles missing values" }] }
+        ]
+      },
+      {
+        "id": "ml-c4-sm-s59-h5-nbdis",
+        "type": "heading",
+        "level": 5,
+        "content": [{ "text": "Disadvantage / Weakness" }]
+      },
+      {
+        "id": "ml-c4-sm-s59-list-dis",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c4-sm-li-s59-5", "content": [{ "text": "Independence assumption (features are assumed independent)" }] },
+          { "id": "ml-c4-sm-li-s59-6", "content": [{ "text": "Categorical/discrete attributes (often requires discretization for continuous ones)" }] },
+          { "id": "ml-c4-sm-li-s59-7", "content": [{ "text": "Sensitive to missing values (though can handle them, performance might degrade)" }] }
+        ]
+      },
+      {
+        "id": "ml-c4-sm-s60-h4-nbpython",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Naïve Bayes ML Python Implementation Example" }]
+      },
+      {
+        "id": "ml-c4-sm-s60-code-nb",
+        "type": "code",
+        "language": "python",
+        "code": "from sklearn.naive_bayes import BernoulliNB\n\n# Initialize the Bernoulli Naive Bayes classifier\nnb_classifier = BernoulliNB()\n\n# Train the classifier (assuming X_train, y_train are defined)\n# nb_classifier.fit(X_train, y_train)\n\n# Make predictions on the test set (assuming X_test is defined)\n# y_pred = nb_classifier.predict(X_test)\n\nprint(\"BernoulliNB imported and classifier initialized. Ready for training and prediction.\")"
+      }
+    ]
+  },
+  {
+    "id": "ml-c4-unsupervised-topic",
+    "title": "Unsupervised Learning",
+    "introduction": [
+      { "text": "This section introduces Unsupervised Learning, where models learn from unlabeled data to discover hidden patterns and intrinsic structures." }
+    ],
+    "contentBlocks": [
+      {
+        "id": "ml-c4-unsup-s70-h2-aims",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Aims and Characteristics of Unsupervised Learning" }]
+      },
+      {
+        "id": "ml-c4-unsup-s70-list-aims",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c4-unsup-li-s70-1", "content": [{ "text": "Aims to find the ", "bold": true }, { "text": "underlying structure", "bold": true }, { "text": " or the ", "bold": true }, { "text": "distribution", "bold": true }, { "text": " of data. We want to explore the data to find some intrinsic structures in them." }] },
+          { "id": "ml-c4-unsup-li-s70-2", "content": [{ "text": "It's a machine learning technique in which models are ", "bold": true }, { "text": "not supervised using training dataset", "bold": true }, { "text": " (i.e., no labels)." }] },
+          { "id": "ml-c4-unsup-li-s70-3", "content": [{ "text": "Models itself find the ", "bold": true }, { "text": "hidden patterns and insights", "bold": true }, { "text": " from the given data." }] },
+          { "id": "ml-c4-unsup-li-s70-4", "content": [{ "text": "Cannot be ", "bold": true }, { "text": "directly applied", "bold": true }, { "text": " to a regression or classification problem because it lacks labeled output data for training such tasks." }] },
+          { "id": "ml-c4-unsup-li-s70-5", "content": [{ "text": "Much similar to how a human learns to think by their own experiences, which makes it closer to the real AI." }] },
+          { "id": "ml-c4-unsup-li-s70-6", "content": [{ "text": "Works on ", "bold": true }, { "text": "unlabeled and uncategorized data,", "bold": true }, { "text": " which makes unsupervised learning more important for exploratory data analysis." }] }
+        ]
+      },
+      {
+        "id": "ml-c4-unsup-s71-h2-types",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Types of Unsupervised Learning Problems" }]
+      },
+      {
+        "id": "ml-c4-unsup-s71-img-types",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap4-supervised/images/slide71_unsupervised_types.png",
+        "alt": "Diagram showing Unsupervised Learning branching into Clustering and Association.",
+        "caption": [{ "text": "Main types of Unsupervised Learning." }]
+      },
+      {
+        "id": "ml-c4-unsup-s71-h3-clustering",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Clustering" }]
+      },
+      {
+        "id": "ml-c4-unsup-s71-p-clustering",
+        "type": "paragraph",
+        "content": [{ "text": "Clustering is a method of grouping the objects into clusters such that objects with most similarities remains into a group." }]
+      },
+      {
+        "id": "ml-c4-unsup-s71-h3-association",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Association" }]
+      },
+      {
+        "id": "ml-c4-unsup-s71-p-association",
+        "type": "paragraph",
+        "content": [{ "text": "An association rule is an unsupervised learning method which is used for finding the relationships between variables in the large database. It determines the set of items that occurs together in the dataset." }]
+      },
+      {
+        "id": "ml-c4-unsup-s72-h2-algos",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Popular Unsupervised Learning Algorithms" }]
+      },
+      {
+        "id": "ml-c4-unsup-s72-list-algos",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c4-unsup-li-s72-1", "content": [{ "text": "K-means clustering" }] },
+          { "id": "ml-c4-unsup-li-s72-2", "content": [{ "text": "KNN (k-nearest Neighbors) - Can be adapted for clustering or density estimation." }] },
+          { "id": "ml-c4-unsup-li-s72-3", "content": [{ "text": "Principal component analysis (PCA) - Used for dimensionality reduction." }] }
+        ]
+      },
+      {
+        "id": "ml-c4-unsup-s73-h2-kmeans",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "K-Means Clustering" }]
+      },
+      {
+        "id": "ml-c4-unsup-s73-img-kmeans",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap4-supervised/images/slide73_kmeans_overview.png",
+        "alt": "Diagrams showing K-Means clustering: Input Data (apples) -> Model -> Output (grouped apples), and data points before and after K-Means clustering.",
+        "caption": [{ "text": "Overview of K-Means Clustering." }]
+      },
+      {
+        "id": "ml-c4-unsup-s74-h3-kmeansalgo",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "K-Means Algorithm" }]
+      },
+      {
+        "id": "ml-c4-unsup-s74-p-definition",
+        "type": "paragraph",
+        "content": [{ "text": "Definition: ", "bold": true }, { "text": "K-Means is a partitioning clustering algorithm that separates a dataset into K distinct, non-overlapping subsets (clusters)." }]
+      },
+      {
+        "id": "ml-c4-unsup-s74-h4-principle",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Working Principle:" }]
+      },
+      {
+        "id": "ml-c4-unsup-s74-list-principle",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c4-unsup-li-s74-1", "content": [{ "text": "Initialization: ", "bold": true }, { "text": "Randomly select K data points as initial cluster centers." }] },
+          { "id": "ml-c4-unsup-li-s74-2", "content": [{ "text": "Assignment: ", "bold": true }, { "text": "Assign each data point to the cluster whose center is nearest." }] },
+          { "id": "ml-c4-unsup-li-s74-3", "content": [{ "text": "Update Centers: ", "bold": true }, { "text": "Recalculate the cluster centers as the mean (or based on variance, Euclidean distance) of the data points in each cluster." }] },
+          { "id": "ml-c4-unsup-li-s74-4", "content": [{ "text": "Repeat: ", "bold": true }, { "text": "Iterate steps 2 (Assignment) and 3 (Update Centers) until convergence (when cluster assignments stabilize)." }] }
+        ]
+      },
+      {
+        "id": "ml-c4-unsup-s75-h3-kmeanssteps",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "K-Means Algorithm: 5 Steps Implementation" }]
+      },
+      {
+        "id": "ml-c4-unsup-s75-p-givenk",
+        "type": "paragraph",
+        "content": [{ "text": "Given k, the k-means algorithm is implemented in 5 steps:" }]
+      },
+      {
+        "id": "ml-c4-unsup-s75-img-steps",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap4-supervised/images/slide75_kmeans_5_steps.png",
+        "alt": "Diagram showing 5 steps of K-Means: 01 Specify number of clusters 'K', 02 Randomly initialize cluster centers (centroids), 03 Assign each data point to closest cluster center, 04 Recompute cluster centers as mean, 05 Repeat steps 3 and 4 until convergence.",
+        "caption": [{ "text": "5 Steps of K-Means Algorithm Implementation. Source: domino.ai" }]
+      },
+      {
+        "id": "ml-c4-unsup-s76-h2-pythonimpl",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Python Implementation: Problem Statement Example for K-Means" }]
+      },
+      {
+        "id": "ml-c4-unsup-s76-p-problem",
+        "type": "paragraph",
+        "content": [{ "text": "Problem Statement: ", "bold": true }, { "text": "A retail store wants to get insights about its customers. And then build a system that can cluster customers into different groups." }]
+      },
+      {
+        "id": "ml-c4-unsup-s76-p-link",
+        "type": "paragraph",
+        "content": [
+          { "text": "Example Python Implementation Notebook: ", "link": "https://github.com/NelakurthiSudheer/Mall-Customers-Segmentation/blob/main/Python%20Code/Implemenation%20in%20Python.ipynb" }
+        ]
+      }
+    ]
+  }
+]

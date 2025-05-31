@@ -1,0 +1,924 @@
+
+[
+  {
+    "id": "rmse-chap4-topic-main",
+    "title": "Chapter 4: Research Methodology",
+    "introduction": [
+      { "text": "This chapter explores the core components of research methodology including research models, theories, methods, research design, data collection methods, and data analysis. Authored by AASTU, March 2025." }
+    ],
+    "contentBlocks": [
+      {
+        "id": "rmse-c4-sm-block-slide1-topics",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c4-sm-li-s1-1", "content": [{ "text": "Research Model/Theory/Methods", "bold": true }] },
+          { "id": "rmse-c4-sm-li-s1-2", "content": [{ "text": "Research Design", "bold": true }] },
+          { "id": "rmse-c4-sm-li-s1-3", "content": [{ "text": "Data Collection methods and", "bold": true }] },
+          { "id": "rmse-c4-sm-li-s1-4", "content": [{ "text": "Data Analysis", "bold": true }] }
+        ]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide2-h2-outline",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Outline" }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide2-list-outline",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c4-sm-li-s2-1", "content": [{ "text": "Part-I Research Methodology, Research Process “Onion”, Philosophy, Approaches, Strategies, Research Possibilities Grid, theoretical/Conceptual framework, Empirical Research (Chapter 4)", "bold": true }] },
+          { "id": "rmse-c4-sm-li-s2-2", "content": [{ "text": "Part-II Research Design, Sampling, Data collection methods, Data Analysis, Data Interpretation and Findings (Chapter 5)", "bold": true }] }
+        ]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide3-h2-recap",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Research Process: Recap" }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide3-img-recap",
+        "type": "image",
+        "src": "/data/research-methods-se/rmse-chap4-research-methodology/images/slide3_research_process_recap.png",
+        "alt": "Diagram recapping the research process: Starting points (what, why, matter), Literature review (empirical work, theories), feeding into Research question (What? Why? How?), then Research design, Data collection, Analytic approach. Sidebar shows Justification ('So what') linked to Problem Gap/Hook.",
+        "caption": [{ "text": "Recap of the Research Process by Lauren Maggio & Sebastian Uijtdehaage." }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide4-h2-overview",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Research Methodology: Overview" }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide4-p-philosophy",
+        "type": "paragraph",
+        "content": [{ "text": "Ontology + Epistemology = Research philosophy. Philosophy: Researcher's worldview." }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide4-img-tree",
+        "type": "image",
+        "src": "/data/research-methods-se/rmse-chap4-research-methodology/images/slide4_methodology_tree.png",
+        "alt": "Research Methodology Tree: Roots (Ontology - how we view the world), Trunk (Epistemology - how we should investigate the world), Branches (Methodology - how we should best collect data), Leaves (Methods - details of exactly how we collect data).",
+        "caption": [{ "text": "The Research Methodology Tree." }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide4-img-knowledge",
+        "type": "image",
+        "src": "/data/research-methods-se/rmse-chap4-research-methodology/images/slide4_justified_true_belief.png",
+        "alt": "Venn diagram showing Knowledge as the intersection of Justification (reasons/evidence for believing), Belief (we think it's true), and Truth (it's true). Notes on Mistaken belief and Denial.",
+        "caption": [{ "text": "Knowledge as a justified true belief. (Thinking Is Power icon)" }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide5-h2-onion",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Research ‘Onion’" }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide5-img-oniondiagram",
+        "type": "image",
+        "src": "/data/research-methods-se/rmse-chap4-research-methodology/images/slide5_research_onion_layers.png",
+        "alt": "Concentric circles representing the Research Onion: Outer layer 'Paradigms', middle 'Methodology', inner 'Methods'.",
+        "caption": [{ "text": "The Research Onion layers." }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide5-p-equations",
+        "type": "paragraph",
+        "content": [
+          { "text": "Ontology + Epistemology = Research philosophy" },
+          { "text": "\nResearch Philosophy + Research Methodology = Research Paradigm" }
+        ]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide5-flow",
+        "type": "paragraph",
+        "content": [{ "text": "Flow: Ontology (What is reality?) -> Epistemology (How can I know reality?) -> Theoretical perspective (What approach?) -> Methodology (What procedure?) -> Methods (What tools?) -> Sources (What data?). Adapted from Hay (2002) & Crotty (1998)." }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide5-q",
+        "type": "alert",
+        "style": "info",
+        "content": [{ "text": "If Ontology is about what reality is, what's Epistemology about?", "bold": true }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide6-h2-processonion",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "The research process “onion”" }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide6-img-detailedonion",
+        "type": "image",
+        "src": "/data/research-methods-se/rmse-chap4-research-methodology/images/slide6_detailed_research_onion.png",
+        "alt": "Detailed Research Onion diagram showing layers: Outer (Positivism, Interpretivism), Inductive/Deductive approaches, Research Strategies (Experiment, Survey, Case study, Grounded Theory, Ethnography, Action Research), Time Horizons (Cross Sectional, Longitudinal), Data Collection Methods (Sampling, Secondary Data, Observation, Interviews).",
+        "caption": [{ "text": "Detailed layers of the research process onion." }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide6-activity",
+        "type": "alert",
+        "style": "info",
+        "title": [{"text": "Activity:"}],
+        "content": [{ "text": "Imagine you're peeling this research onion. What's at the very core?" }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide7-h2-onionmodel",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "The Onion Model: Research as an Onion" }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide7-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c4-sm-li-s7-1", "content": [{ "text": "Layers of the onion represent different aspects of the research process." }] },
+          { "id": "rmse-c4-sm-li-s7-2", "content": [{ "text": "Each layer must be considered to develop a comprehensive research approach." }] }
+        ]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide8-h3-onionlayers",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Layers of the Research Onion include:" }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide8-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c4-sm-li-s8-1", "content": [{ "text": "Philosophy: ", "bold": true }, { "text": "Researcher's worldview (e.g., positivism, interpretivism)." }] },
+          { "id": "rmse-c4-sm-li-s8-2", "content": [{ "text": "Approach: ", "bold": true }, { "text": "Deductive vs. inductive reasoning." }] },
+          { "id": "rmse-c4-sm-li-s8-3", "content": [{ "text": "Strategy: ", "bold": true }, { "text": "How the research will be conducted (e.g., case study, experiment)." }] },
+          { "id": "rmse-c4-sm-li-s8-4", "content": [{ "text": "Choices: ", "bold": true }, { "text": "Qualitative, quantitative, or mixed methods." }] },
+          { "id": "rmse-c4-sm-li-s8-5", "content": [{ "text": "Time Horizon: ", "bold": true }, { "text": "Cross-sectional vs. longitudinal." }] },
+          { "id": "rmse-c4-sm-li-s8-6", "content": [{ "text": "Techniques and Procedures: ", "bold": true }, { "text": "Tools and processes for data collection and analysis." }] }
+        ]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide9-h2-philosophy",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Onion Model: Research Philosophy" }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide9-p1",
+        "type": "paragraph",
+        "content": [{ "text": "Research philosophy refers to the fundamental beliefs and assumptions about the nature of knowledge and how it can be acquired. It influences how researchers approach their studies, interpret data, and understand the world." }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide9-h3-perspectives",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Major philosophical perspectives include:" }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide9-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c4-sm-li-s9-1", "content": [{ "text": "Positivism: ", "bold": true }, { "text": "Emphasizes observable phenomena and often uses "}, {"text": "quantitative", "bold": true}, {"text": " methods."}] },
+          { "id": "rmse-c4-sm-li-s9-2", "content": [{ "text": "Interpretivism: ", "bold": true }, { "text": "Focuses on understanding the subjective meaning of social phenomena, typically using "}, {"text": "qualitative", "bold": true}, {"text": " methods."}] },
+          { "id": "rmse-c4-sm-li-s9-3", "content": [{ "text": "Critical Realism: ", "bold": true }, { "text": "Acknowledges the existence of a reality independent of human perceptions while recognizing our understanding is "}, {"text": "mediated", "bold": true}, {"text": " by social constructs."}] }
+        ]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide9-q",
+        "type": "alert",
+        "style": "info",
+        "content": [{ "text": "If a researcher believes there's one objective truth out there waiting to be discovered, what's their likely philosophical stance?", "bold": true }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide10-h2-paradigm",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Onion Model: Research Paradigm" }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide10-p1",
+        "type": "paragraph",
+        "content": [{ "text": "Research Paradigm: A research paradigm is a ", "bold": true }, { "text": "framework", "bold": true }, { "text": " that guides researchers in conducting their studies. It encompasses the underlying ", "bold": true }, { "text": "beliefs", "bold": true }, { "text": " about how research should be conducted, including ", "bold": true }, { "text": "assumptions", "bold": true }, { "text": " about reality/nature of being/existence (ontology), knowledge (epistemology), and values(ethics/morals) (axiology)." }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide10-p2",
+        "type": "paragraph",
+        "content": [{ "text": "Why Research Paradigm? Research paradigms provide a coherent ", "bold": true }, { "text": "framework", "bold": true }, { "text": " for researchers, ", "bold": true }, { "text": "allowing", "bold": true }, { "text": " them to:" }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide10-list-why",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c4-sm-li-s10-1", "content": [{ "text": "Define research questions clearly." }] },
+          { "id": "rmse-c4-sm-li-s10-2", "content": [{ "text": "Choose appropriate methodologies." }] },
+          { "id": "rmse-c4-sm-li-s10-3", "content": [{ "text": "Interpret findings consistently." }] },
+          { "id": "rmse-c4-sm-li-s10-4", "content": [{ "text": "Ensure the research is grounded in a philosophical context." }] }
+        ]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide10-p-ont-ep-ax",
+        "type": "paragraph",
+        "content": [
+            {"text": "?(Realist/Relativist/Pragmatic) Ontology"},
+            {"text": "\n?(Empiricist/Constructivist/Positivist ) Epistemology"},
+            {"text": "\n?(Objectivism /Subjectivism /Relativism ) Axiology"}
+        ]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide10-activity",
+        "type": "alert",
+        "style": "info",
+        "title": [{"text": "Activity:"}],
+        "content": [{ "text": "If your research focuses on the lived experiences of software developers, which paradigm might be most relevant?" }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide11-h2-paradigmex",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Onion Model: Research Paradigm Example" }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide11-h3-commonex",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Common Examples of Research Paradigms" }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide11-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c4-sm-li-s11-1", "content": [{ "text": "Positivism: ", "bold": true }, { "text": "Often used in the "}, {"text": "natural sciences", "bold": true}, { "text": "; emphasizes measurement and statistical analysis." }] },
+          { "id": "rmse-c4-sm-li-s11-2", "content": [{ "text": "Interpretivism: ", "bold": true }, { "text": "Common in "}, {"text": "social sciences", "bold": true}, { "text": "; focuses on understanding the context and meaning of social phenomena." }] },
+          { "id": "rmse-c4-sm-li-s11-3", "content": [{ "text": "Constructivism: ", "bold": true }, { "text": "Suggests that knowledge is "}, {"text": "constructed through social", "bold": true}, {"text": " processes and interactions."}] },
+          { "id": "rmse-c4-sm-li-s11-4", "content": [{ "text": "Pragmatism: ", "bold": true }, { "text": "Blends different methodologies and focuses on "}, {"text": "practical", "bold": true}, {"text": " outcomes."}] }
+        ]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide11-activity",
+        "type": "alert",
+        "style": "info",
+        "title": [{"text": "Activity:"}],
+        "content": [{ "text": "Are these the only research philosophy? Compare and contrast them" }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide12-h2-methodology",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Onion Model: Research Methodology" }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide12-p1",
+        "type": "paragraph",
+        "content": [{ "text": "Research methodology refers to the ", "bold": true }, { "text": "overall strategy", "bold": true }, { "text": " and rationale of the research process. It includes the methods used to collect and analyze data, and is ", "bold": true }, { "text": "closely linked", "bold": true }, { "text": " to the research paradigm." }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide12-h3-commonmeth",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Common methodologies include:" }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide12-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c4-sm-li-s12-1", "content": [{ "text": "Quantitative Methods: ", "bold": true }, { "text": "Surveys, experiments, and statistical analysis." }] },
+          { "id": "rmse-c4-sm-li-s12-2", "content": [{ "text": "Qualitative Methods: ", "bold": true }, { "text": "Interviews, focus groups, and content analysis." }] },
+          { "id": "rmse-c4-sm-li-s12-3", "content": [{ "text": "Mixed Methods: ", "bold": true }, { "text": "Combines quantitative and qualitative approaches." }] }
+        ]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide13-h2-approaches",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Research Approaches" }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide13-list-deductive",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c4-sm-li-s13-ded", "content": [{ "text": "Deductive - testing theory (positivism)", "bold": true }] },
+          { "id": "rmse-c4-sm-li-s13-ded-detail", "content": [{ "text": "first develop a theory and hypothesis and then design a research strategy to test the hypothesis" }] }
+        ]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide13-list-inductive",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c4-sm-li-s13-ind", "content": [{ "text": "Inductive - building theory (interpretivism)", "bold": true }] },
+          { "id": "rmse-c4-sm-li-s13-ind-detail", "content": [{ "text": "first collect data and then develop theory as a result of the data analysis" }] }
+        ]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide14-h3-reasoning",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Research Approach: Types of reasoning" }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide14-p-integration",
+        "type": "paragraph",
+        "content": [{ "text": "Integration of Deduction and Induction forms the scientific method", "bold": true }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide14-p-deductive",
+        "type": "paragraph",
+        "content": [{ "text": "Deductive reasoning", "underline": true, "bold": true}, {"text": " begins with general statements (premises) and, through logical argument, comes to a specific conclusion."}]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide14-list-deductive",
+        "type": "list",
+        "ordered": false,
+        "items": [
+            { "id": "rmse-c4-sm-li-s14-ded1", "content": [{"text": "often used for generating our hypotheses in research"}] },
+            { "id": "rmse-c4-sm-li-s14-ded2", "content": [{"text": "When we are using deductive reasoning, your conclusion will be correct if all the statements you say is correct."}] }
+        ]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide14-h4-example",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Example:" }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide14-list-example",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c4-sm-li-s14-ex1", "content": [{ "text": "All students in this class play guitar" }] },
+          { "id": "rmse-c4-sm-li-s14-ex2", "content": [{ "text": "Selam is the student of this class" }] },
+          { "id": "rmse-c4-sm-li-s14-ex3", "content": [{ "text": "Therefore, selam plays gitar" }] }
+        ]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide15-h3-reasoningcont",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Research Approach: Types of reasoning..." }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide15-p-inductive",
+        "type": "paragraph",
+        "content": [{ "text": "Inductive reasoning", "underline": true, "bold": true}, {"text": " starts from specific observations then develops a general conclusion from them."}]
+      },
+       {
+        "id": "rmse-c4-sm-block-slide15-list-inductive",
+        "type": "list",
+        "ordered": false,
+        "items": [
+            { "id": "rmse-c4-sm-li-s15-ind1", "content": [{"text": "general conclusions based on many specific observations"}] },
+            { "id": "rmse-c4-sm-li-s15-ind2", "content": [{"text": "When using inductive reasoning, correct observations "}, {"text": "won't necessarily lead you to a correct general conclusion", "bold": true}]}
+        ]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide15-h4-example",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Example:" }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide15-list-example",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c4-sm-li-s15-ex1", "content": [{ "text": "Every quiz has been easy, therefore the test will be easy" }] },
+          { "id": "rmse-c4-sm-li-s15-ex2", "content": [{ "text": "The teacher used PPT in the last few classes, therefore the teacher will use PPT tomorrow" }] }
+        ]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide16-h3-deductiontest",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Deduction: testing theory" }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide16-img-deduction",
+        "type": "image",
+        "src": "/data/research-methods-se/rmse-chap4-research-methodology/images/slide16_deduction_testing_theory.png",
+        "alt": "Flowchart for deduction: If theory is true -> X will occur. Test X. If X does occur -> theory supported. If X does not occur -> theory challenged.",
+        "caption": [{ "text": "Deductive process of testing a theory." }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide16-activity",
+        "type": "alert",
+        "style": "info",
+        "title": [{"text": "Activity:"}],
+        "content": [{ "text": "If X does not occur, is the theory supported or challenged?" }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide17-h3-hypothesis",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Hypothesis, Concepts, and Relationships" }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide17-p1",
+        "type": "paragraph",
+        "content": [{ "text": "A hypothesis states that there is a relationship between two concepts and specifies the direction of that relationship." }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide17-img-concept",
+        "type": "image",
+        "src": "/data/research-methods-se/rmse-chap4-research-methodology/images/slide17_concept_relationship.png",
+        "alt": "Diagram showing 'Age' box pointing to 'Gross annual income' box.",
+        "caption": [{ "text": "Example of concepts and relationships." }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide17-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c4-sm-li-s17-1", "content": [{ "text": "The elements in the boxes are called ", "bold": true }, { "text": "concepts." , "bold": true }] },
+          { "id": "rmse-c4-sm-li-s17-2", "content": [{ "text": "The lines between the boxes are called ", "bold": true }, { "text": "relationships.", "bold": true }] },
+          { "id": "rmse-c4-sm-li-s17-3", "content": [{ "text": "Theories", "bold": true }, { "text": " are composed of concepts linked by relationships.", "bold": true }] }
+        ]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide18-h3-variables",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Variables and Relationships" }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide18-p1",
+        "type": "paragraph",
+        "content": [{ "text": "A positive sign shows a positive relationship, e.g. (hours of study rises, exam grades rise)" }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide18-p2",
+        "type": "paragraph",
+        "content": [{ "text": "A negative sign shows a negative relationship, e.g. (Price of houses rises, demand falls)" }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide19-h4-variablesdef",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Defining Variables" }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide19-p1",
+        "type": "paragraph",
+        "content": [{ "text": "A variable is a characteristic which has more than one category or value. e.g. ‘Age’" }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide19-p2",
+        "type": "paragraph",
+        "content": [{ "text": "The effect is called a ", "bold": true }, { "text": "dependent variable (Y);", "bold": true }, { "text": " The assumed cause is called an ", "bold": true }, { "text": "independent variable (X)", "bold": true }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide19-p3",
+        "type": "paragraph",
+        "content": [{ "text": "An ", "bold": true }, { "text": "intervening variable (Z)", "bold": true }, { "text": " is the means by which X affects Y…….." }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide20-h4-variablesex",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Variables Example: Education, Job, Income" }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide20-img-variables",
+        "type": "image",
+        "src": "/data/research-methods-se/rmse-chap4-research-methodology/images/slide20_variables_example.png",
+        "alt": "Diagram: Education (X) -> Job (Z) -> Income (Y).",
+        "caption": [{ "text": "Job is a means by which education affect income level. Job is an intervening variable. Education is independent variable and income is dependent variable." }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide21-h2-selectapproach",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Which approach to select? (Deductive vs. Inductive)" }]
+      },
+      { "id": "rmse-c4-sm-s21-crit1-h3", "type": "heading", "level": 3, "content": [{"text": "Criteria: Wealth of Literature"}] },
+      { "id": "rmse-c4-sm-s21-crit1-p", "type": "paragraph", "content": [{"text": "Deductive: More sources; uses existing theories for framework.\nInductive: Less sources; generates new data and theories."}] },
+      { "id": "rmse-c4-sm-s21-crit2-h3", "type": "heading", "level": 3, "content": [{"text": "Criteria: Time Constraints"}] },
+      { "id": "rmse-c4-sm-s21-crit2-p", "type": "paragraph", "content": [{"text": "Deductive: Quicker to complete.\nInductive: Requires more time for data collection and analysis."}] },
+      { "id": "rmse-c4-sm-s21-crit3-h3", "type": "heading", "level": 3, "content": [{"text": "Criteria: Risk Factors"}] },
+      { "id": "rmse-c4-sm-s21-crit3-p", "type": "paragraph", "content": [{"text": "Deductive: Lower-risk strategy; builds on established theories.\nInductive: Higher risk; uncertainty in theory emergence."}] },
+      { "id": "rmse-c4-sm-s21-crit4-h3", "type": "heading", "level": 3, "content": [{"text": "Criteria: Audience Considerations"}] },
+      { "id": "rmse-c4-sm-s21-crit4-p", "type": "paragraph", "content": [{"text": "Deductive: Preferred by those valuing established frameworks.\nInductive: Appeals to those interested in exploratory research."}] },
+      { "id": "rmse-c4-sm-s21-crit5-h3", "type": "heading", "level": 3, "content": [{"text": "Criteria: Funding and Oversight"}] },
+      { "id": "rmse-c4-sm-s21-crit5-p", "type": "paragraph", "content": [{"text": "Deductive: Favored by funders requiring structured outcomes.\nInductive: Attracts support for innovative or exploratory research."}] },
+      {
+        "id": "rmse-c4-sm-block-slide21-activity",
+        "type": "alert",
+        "style": "info",
+        "title": [{"text": "Activity:"}],
+        "content": [{ "text": "If you have very limited time for your research, which approach, deductive or inductive, might be more practical?" }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide22-h2-strategies",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Research Strategies" }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide22-p-need",
+        "type": "paragraph",
+        "content": [{ "text": "Need for a clear research strategy:" }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide22-list-why",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c4-sm-li-s22-1", "content": [{ "text": "Why is the approach important?" }] },
+          { "id": "rmse-c4-sm-li-s22-2", "content": [{ "text": "Is it possible to combine approaches?" }] },
+          { "id": "rmse-c4-sm-li-s22-3", "content": [{ "text": "Which approach I should adopt?" }] }
+        ]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide23-h3-liststrategies",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Common Research Strategies:" }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide23-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c4-sm-li-s23-1", "content": [{ "text": "Experiment" }] },
+          { "id": "rmse-c4-sm-li-s23-2", "content": [{ "text": "Survey", "bold": true }] },
+          { "id": "rmse-c4-sm-li-s23-3", "content": [{ "text": "Case study", "bold": true }] },
+          { "id": "rmse-c4-sm-li-s23-4", "content": [{ "text": "Grounded theory" }] },
+          { "id": "rmse-c4-sm-li-s23-5", "content": [{ "text": "Ethnography" }] },
+          { "id": "rmse-c4-sm-li-s23-6", "content": [{ "text": "Action research" }] },
+          { "id": "rmse-c4-sm-li-s23-7", "content": [{ "text": "Cross-sectional and longitudinal studies" }] },
+          { "id": "rmse-c4-sm-li-s23-8", "content": [{ "text": "Exploratory, descriptive and explanatory studies" }] }
+        ]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide23-activity",
+        "type": "alert",
+        "style": "info",
+        "title": [{"text": "Activity 1:"}],
+        "content": [{ "text": "Describe each of the above research strategies. When we use them? Pros and Cons? What type of research approaches, data collection methods, and research philosophies relying on?" }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide24-h2-cssurvey",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Research Strategies: Case study vs Survey" }]
+      },
+      { "id": "rmse-c4-sm-s24-meaning-h3", "type": "heading", "level": 3, "content": [{"text": "Difference: Meaning"}] },
+      { "id": "rmse-c4-sm-s24-meaning-p", "type": "paragraph", "content": [{"text": "Case Study: A case study refers to an in-depth study in which an individual, group, or a particular situation is studied.\nSurvey Method: A survey refers to research where data is gathered from an entire population or a very large sample in order to comprehend the opinions on a particular matter."}] },
+      { "id": "rmse-c4-sm-s24-type-h3", "type": "heading", "level": 3, "content": [{"text": "Difference: Research Type"}] },
+      { "id": "rmse-c4-sm-s24-type-p", "type": "paragraph", "content": [{"text": "Case Study: Case studies are used in qualitative research.\nSurvey Method: Surveys are mostly used in quantitative research."}] },
+      { "id": "rmse-c4-sm-s24-data-h3", "type": "heading", "level": 3, "content": [{"text": "Difference: Data"}] },
+      { "id": "rmse-c4-sm-s24-data-p", "type": "paragraph", "content": [{"text": "Case Study: Case studies produce rich in depth data.\nSurvey Method: Surveys produce numerical data."}] },
+      { "id": "rmse-c4-sm-s24-sample-h3", "type": "heading", "level": 3, "content": [{"text": "Difference: Sample"}] },
+      { "id": "rmse-c4-sm-s24-sample-p", "type": "paragraph", "content": [{"text": "Case Study: For a case study, a relatively small population is chosen. This can vary from a few individuals to\nSurvey Method: For a survey, a large population can be used as the sample."}] },
+      {
+        "id": "rmse-c4-sm-block-slide25-h2-multimethods",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Research Strategies: Using multi-methods" }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide25-list-advantages",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c4-sm-li-s25-1", "content": [{ "text": "There are two major advantages to employing multi-methods in the same study." }] },
+          { "id": "rmse-c4-sm-li-s25-2", "content": [{ "text": "Different methods can be used for different purposes in a study." }] },
+          { "id": "rmse-c4-sm-li-s25-3", "content": [{ "text": "It enables "}, {"text": "triangulation", "bold": true}, {"text": " to take place."}] }
+        ]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide25-h3-adv",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Advantages:" }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide25-list-advdetail",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c4-sm-li-s25-4", "content": [{ "text": "To enable triangulation" }] }
+        ]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide26-h2-timezones",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Time Zone: Cross-Sectional vs Longitudinal" }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide26-h3-cross",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Cross-Sectional Study : Data collected at one point in time." }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide26-list-cross",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c4-sm-li-s26-1", "content": [{ "text": "Example : Survey of developer tool usage today." }] },
+          { "id": "rmse-c4-sm-li-s26-2", "content": [{ "text": "Pros/ Quick, inexpensive, Good for broad overview" }] },
+          { "id": "rmse-c4-sm-li-s26-3", "content": [{ "text": "Cons:Can't establish cause-effect, Doesn't show change over time" }] }
+        ]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide26-h3-long",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Longitudinal Study : Data collected at multiple points in time from the same subjects." }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide26-list-long",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c4-sm-li-s26-4", "content": [{ "text": "Example : Tracking project defect density monthly for a year." }] },
+          { "id": "rmse-c4-sm-li-s26-5", "content": [{ "text": "Pros/ Tracks change over time, Stronger causal inferences" }] },
+          { "id": "rmse-c4-sm-li-s26-6", "content": [{ "text": "Cons: - More expensive, time-consuming, - Potential for attrition" }] }
+        ]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide26-p-keydiff",
+        "type": "paragraph",
+        "content": [{ "text": "Key Difference: Cross-sectional = \"Snapshot\"; Longitudinal = \"Movie\". Choice depends on whether you need to understand change over time.", "bold": true }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide27-h2-datacollection",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Data Collection Methods: Variants" }]
+      },
+      { "id": "rmse-c4-sm-s27-m1-h3", "type": "heading", "level": 3, "content": [{"text": "Surveys/Questionnaires"}] },
+      { "id": "rmse-c4-sm-s27-m1-p", "type": "paragraph", "content": [{"text": "Type & Use: Quant/Qual: Broad opinions, large groups.\nPros: Efficient, standardized, anonymous.\nCons: Superficial, bias, low response."}] },
+      { "id": "rmse-c4-sm-s27-m2-h3", "type": "heading", "level": 3, "content": [{"text": "Interviews (Structured, Semi-structured, Unstructured)"}] },
+      { "id": "rmse-c4-sm-s27-m2-p", "type": "paragraph", "content": [{"text": "Type & Use: Qual: In-depth understanding, individual perspectives.\nPros: Deep insights, flexible, rapport.\nCons: Time-consuming, interviewer bias, generalization issues."}] },
+      { "id": "rmse-c4-sm-s27-m3-h3", "type": "heading", "level": 3, "content": [{"text": "Observations (Participant, Non-participant)"}] },
+      { "id": "rmse-c4-sm-s27-m3-p", "type": "paragraph", "content": [{"text": "Type & Use: Qual/Quant: Real-world behavior, usability.\nPros: Direct, contextual, unexpected events.\nCons: Hawthorne effect, subjective, limited scope."}] },
+      { "id": "rmse-c4-sm-s27-m4-h3", "type": "heading", "level": 3, "content": [{"text": "Automated Collection (Logging, Code Analysis, Performance Monitoring)"}] },
+      { "id": "rmse-c4-sm-s27-m4-p", "type": "paragraph", "content": [{"text": "Type & Use: Quant: Performance, user behavior, code characteristics.\nPros: Objective, high volume, minimal effort.\nCons: Setup, overhead, privacy concerns."}] },
+      { "id": "rmse-c4-sm-s27-m5-h3", "type": "heading", "level": 3, "content": [{"text": "Repository Mining (Version Control, Issue Trackers)"}] },
+      { "id": "rmse-c4-sm-s27-m5-p", "type": "paragraph", "content": [{"text": "Type & Use: Quant/Qual: Historical data, trends, code evolution.\nPros: Available data, historical, large scale.\nCons: Incomplete data, context may be missing."}] },
+      { "id": "rmse-c4-sm-s27-m6-h3", "type": "heading", "level": 3, "content": [{"text": "Experiments (True, Quasi)"}] },
+      { "id": "rmse-c4-sm-s27-m6-p", "type": "paragraph", "content": [{"text": "Type & Use: Quant: Cause-effect, intervention impact.\nPros: Strong causality, high internal validity (true exp).\nCons: Artificiality, ethical concerns, cost, external validity."}] },
+      { "id": "rmse-c4-sm-s27-m7-h3", "type": "heading", "level": 3, "content": [{"text": "Document/Artifact Analysis"}] },
+      { "id": "rmse-c4-sm-s27-m7-p", "type": "paragraph", "content": [{"text": "Type & Use: Quant/Qual: System requirements, design, testing.\nPros: Non-intrusive, readily available information.\nCons: Incompleteness, plans vs. reality."}] },
+      {
+        "id": "rmse-c4-sm-block-slide28-h2-theoretical",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Theoretical Framework: Overview" }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide28-p1",
+        "type": "paragraph",
+        "content": [{ "text": "A theoretical framework is a structure that ", "bold": true }, { "text": "supports and informs", "bold": true }, { "text": " the research. It provides a ", "bold": true }, { "text": "lens", "bold": true }, { "text": " through which to interpret findings and ", "bold": true }, { "text": "connects", "bold": true }, { "text": " the research to ", "bold": true }, { "text": "existing", "bold": true }, { "text": " theories and literature." }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide28-h3-example",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Example:" }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide28-p2",
+        "type": "paragraph",
+        "content": [{ "text": "If the research is about the impact of social media on youth mental health, the theoretical framework might include theories such as:" }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide28-list-theories",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c4-sm-li-s28-1", "content": [{ "text": "Social Learning Theory: ", "bold": true }, { "text": "How behaviors are learned through observing others on social media." }] },
+          { "id": "rmse-c4-sm-li-s28-2", "content": [{ "text": "Cognitive Dissonance Theory: ", "bold": true }, { "text": "How exposure to differing views on social media can affect mental health." }] }
+        ]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide28-q",
+        "type": "alert",
+        "style": "info",
+        "content": [{ "text": "? The theoretical framework provides a ______ for interpreting your findings."}]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide28-activity",
+        "type": "alert",
+        "style": "info",
+        "title": [{"text": "Activity:"}],
+        "content": [{ "text": "What theories available in software engineering? SDLC models, Object-Oriented Theory, SQA theory,.." }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide29-h2-conceptual",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Conceptual Framework : Overview" }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide29-p1",
+        "type": "paragraph",
+        "content": [{ "text": "A conceptual framework is closely related to a theoretical framework but focuses ", "bold": true }, { "text": "more on the specific aspects", "bold": true }, { "text": " of the research ", "bold": true }, { "text": "context.", "bold": true }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide29-p2",
+        "type": "paragraph",
+        "content": [{ "text": "It visually represents the relationships among various concepts and variables and serves as a guide for the research process." }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide29-h3-example",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Example:" }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide29-p3",
+        "type": "paragraph",
+        "content": [{ "text": "A conceptual framework for the research in previous slide might visually represent:" }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide29-list-variables",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c4-sm-li-s29-1", "content": [{ "text": "Independent Variable: ", "bold": true }, { "text": "Social media usage (time spent, type of content)." }] },
+          { "id": "rmse-c4-sm-li-s29-2", "content": [{ "text": "Dependent Variable: ", "bold": true }, { "text": "Indicators of mental health (anxiety levels, self-esteem)." }] },
+          { "id": "rmse-c4-sm-li-s29-3", "content": [{ "text": "Mediating Variables: ", "bold": true }, { "text": "Peer influence, online interactions." }] }
+        ]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide29-q",
+        "type": "alert",
+        "style": "info",
+        "content": [{ "text": "? A conceptual framework shows the relationships between what?"}]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide30-h2-concemp",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Conceptual Research vs Empirical Research" }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide30-img-comp",
+        "type": "image",
+        "src": "/data/research-methods-se/rmse-chap4-research-methodology/images/slide30_conceptual_empirical.png",
+        "alt": "Comparison: Conceptual Research (related to abstract ideas/concepts, no practical experiments, philosophical) vs Empirical Research (conclusions from verifiable evidence/observation/experience, observable/measurable phenomena, quantitative/qualitative studies).",
+        "caption": [{ "text": "Conceptual vs. Empirical Research. (Visit www.PEDIAA.com)" }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide30-p-empirical",
+        "type": "paragraph",
+        "content": [{ "text": "Empirical research is a systematic investigation that seeks to obtain knowledge through ", "bold": true }, { "text": "direct or indirect observation and experimentation.", "bold": true }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide30-p-grounded",
+        "type": "paragraph",
+        "content": [{ "text": "It is grounded in ", "bold": true }, { "text": "real-world evidence", "bold": true }, { "text": " and focuses on collecting data to answer specific research questions or hypotheses." }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide30-q",
+        "type": "alert",
+        "style": "info",
+        "content": [{ "text": "? Is gathering data from GitHub repositories conceptual or empirical research?"}]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide31-h2-empse",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Empirical Research in SE: Comparison" }]
+      },
+      { "id": "rmse-c4-sm-s31-quant-h3", "type": "heading", "level": 3, "content": [{"text": "Quantitative"}] },
+      { "id": "rmse-c4-sm-s31-quant-list", "type": "list", "ordered": true, "items": [
+          { "id": "rmse-c4-sm-li-s31-qnt1", "content": [{"text": "Objective"}]},
+          { "id": "rmse-c4-sm-li-s31-qnt2", "content": [{"text": "Research questions: How many?"}]},
+          { "id": "rmse-c4-sm-li-s31-qnt3", "content": [{"text": "\"Hard\" science"}]},
+          { "id": "rmse-c4-sm-li-s31-qnt4", "content": [{"text": "Test theory"}]},
+          { "id": "rmse-c4-sm-li-s31-qnt5", "content": [{"text": "Measurable (in numeric terms)"}]},
+          { "id": "rmse-c4-sm-li-s31-qnt6", "content": [{"text": "Report statistical analysis."}]},
+          { "id": "rmse-c4-sm-li-s31-qnt7", "content": [{"text": "Subjects"}]},
+          { "id": "rmse-c4-sm-li-s31-qnt8", "content": [{"text": "Establishes relationships, causation"}]},
+          { "id": "rmse-c4-sm-li-s31-qnt9", "content": [{"text": "Generalizations leading to prediction"}]},
+          { "id": "rmse-c4-sm-li-s31-qnt10", "content": [{"text": "Highly controlled experimental setting"}]},
+          { "id": "rmse-c4-sm-li-s31-qnt11", "content": [{"text": "Sample size: n"}]},
+          { "id": "rmse-c4-sm-li-s31-qnt12", "content": [{"text": "Counts the bugs"}]}
+      ]},
+      { "id": "rmse-c4-sm-s31-qual-h3", "type": "heading", "level": 3, "content": [{"text": "Qualitative"}] },
+      { "id": "rmse-c4-sm-s31-qual-list", "type": "list", "ordered": true, "items": [
+          { "id": "rmse-c4-sm-li-s31-ql1", "content": [{"text": "Subjective"}]},
+          { "id": "rmse-c4-sm-li-s31-ql2", "content": [{"text": "Research questions: What? Why?"}]},
+          { "id": "rmse-c4-sm-li-s31-ql3", "content": [{"text": "\"Soft\" science"}]},
+          { "id": "rmse-c4-sm-li-s31-ql4", "content": [{"text": "Develops theory"}]},
+          { "id": "rmse-c4-sm-li-s31-ql5", "content": [{"text": "Interpretive"}]},
+          { "id": "rmse-c4-sm-li-s31-ql6", "content": [{"text": "Report rich narrative, individual; interpretation."}]},
+          { "id": "rmse-c4-sm-li-s31-ql7", "content": [{"text": "Participants"}]},
+          { "id": "rmse-c4-sm-li-s31-ql8", "content": [{"text": "Describes meaning, discovery"}]},
+          { "id": "rmse-c4-sm-li-s31-ql9", "content": [{"text": "Patterns and theories developed for understanding"}]},
+          { "id": "rmse-c4-sm-li-s31-ql10", "content": [{"text": "Flexible approach: natural setting (process oriented)"}]},
+          { "id": "rmse-c4-sm-li-s31-ql11", "content": [{"text": "Sample size is not a concern; \"informal rich” sample"}]},
+          { "id": "rmse-c4-sm-li-s31-ql12", "content": [{"text": "Searches which bugs are worth counting"}]}
+      ]},
+      { "id": "rmse-c4-sm-s31-link", "type": "paragraph", "content": [{"text": "Source: ", "link": "https://sites.google.com/site/atulkg/courses/quantitive-methods-in-software-engineering"}]} ,
+      {
+        "id": "rmse-c4-sm-block-slide32-h2-tfcf",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Theoretical Framework vs Conceptual Framework" }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide32-img-frameworks",
+        "type": "image",
+        "src": "/data/research-methods-se/rmse-chap4-research-methodology/images/slide32_theoretical_conceptual_framework.png",
+        "alt": "Venn diagram illustrating relationship between Objectivist/Subjectivist Deductive/Inductive theory from specifics of context/from data, Theory, Conceptual Framework, Theoretical Framework, Data. Citation: Varpio, L. et al. (2019).",
+        "caption": [{ "text": "Theoretical vs. Conceptual Framework by Lauren Maggio & Sebastian Uijtdehaage. Link to YouTube video: (1) How To Form a Theoretical Framework | Proofed - YouTube" , "link": "https://www.youtube.com/watch?v=..."}]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide33-h2-grid",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Research Possibilities Grid" }]
+      },
+      { "id": "rmse-c4-sm-s33-phil1-h3", "type": "heading", "level": 3, "content": [{"text": "Philosophy: Positivism"}] },
+      { "id": "rmse-c4-sm-s33-phil1-list", "type": "list", "ordered": false, "items": [
+          { "id": "rmse-c4-sm-li-s33-p1d", "content": [{"text": "Nature of the data: Quantitative"}]},
+          { "id": "rmse-c4-sm-li-s33-p1a", "content": [{"text": "Research Approaches: Deductive"}]},
+          { "id": "rmse-c4-sm-li-s33-p1s", "content": [{"text": "Research Strategies: Experiment"}]},
+          { "id": "rmse-c4-sm-li-s33-p1p", "content": [{"text": "Research Purposes: Explanatory + Predictive"}]},
+          { "id": "rmse-c4-sm-li-s33-p1t", "content": [{"text": "Time Horizon: Cross Section"}]},
+          { "id": "rmse-c4-sm-li-s33-p1c", "content": [{"text": "Data Collection Methods: Secondary Data"}]},
+          { "id": "rmse-c4-sm-li-s33-p1r", "content": [{"text": "Some Research Traditions: Grounded Theory"}]}
+      ]},
+      { "id": "rmse-c4-sm-s33-phil2-h3", "type": "heading", "level": 3, "content": [{"text": "Philosophy: Interpretivism"}] },
+      { "id": "rmse-c4-sm-s33-phil2-list", "type": "list", "ordered": false, "items": [
+          { "id": "rmse-c4-sm-li-s33-p2d", "content": [{"text": "Nature of the data: Qualitative"}]},
+          { "id": "rmse-c4-sm-li-s33-p2a", "content": [{"text": "Research Approaches: Inductive"}]},
+          { "id": "rmse-c4-sm-li-s33-p2s", "content": [{"text": "Research Strategies: Survey (highlighted in red on slide)"}]},
+          { "id": "rmse-c4-sm-li-s33-p2p", "content": [{"text": "Research Purposes: Descriptive"}]},
+          { "id": "rmse-c4-sm-li-s33-p2t", "content": [{"text": "Time Horizon: Longitudinal"}]},
+          { "id": "rmse-c4-sm-li-s33-p2c", "content": [{"text": "Data Collection Methods: Interviews"}]},
+          { "id": "rmse-c4-sm-li-s33-p2r", "content": [{"text": "Some Research Traditions: Action Research"}]}
+      ]},
+      { "id": "rmse-c4-sm-s33-phil3-h3", "type": "heading", "level": 3, "content": [{"text": "Philosophy: Critical Theory"}] },
+      { "id": "rmse-c4-sm-s33-phil3-list", "type": "list", "ordered": false, "items": [
+          { "id": "rmse-c4-sm-li-s33-p3d", "content": [{"text": "Nature of the data: Mixed Qual/Quants"}]},
+          { "id": "rmse-c4-sm-li-s33-p3a", "content": [{"text": "Research Approaches: (Not specified for Inductive/Deductive in this column)"}]},
+          { "id": "rmse-c4-sm-li-s33-p3s", "content": [{"text": "Research Strategies: Case Study (highlighted in red on slide)"}]},
+          { "id": "rmse-c4-sm-li-s33-p3p", "content": [{"text": "Research Purposes: Exploratory"}]},
+          { "id": "rmse-c4-sm-li-s33-p3t", "content": [{"text": "Time Horizon: (Not specified for Cross Section/Longitudinal in this column)"}]},
+          { "id": "rmse-c4-sm-li-s33-p3c", "content": [{"text": "Data Collection Methods: Questionnaires/Observations"}]},
+          { "id": "rmse-c4-sm-li-s33-p3r", "content": [{"text": "Some Research Traditions: Ethnography"}]}
+      ]},
+      {
+        "id": "rmse-c4-sm-block-slide34-h2-cs",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Research Approaches - Case study: Impact of Code Reviews on Software Quality" }]
+      },
+      { "id": "rmse-c4-sm-s34-focus-h3", "type": "heading", "level": 3, "content": [{"text": "Research Focus"}] },
+      { "id": "rmse-c4-sm-s34-focus-p", "type": "paragraph", "content": [{"text": "Effect of code reviews on reducing defects in software development"}] },
+      { "id": "rmse-c4-sm-s34-vars-h3", "type": "heading", "level": 3, "content": [{"text": "Key Variables"}] },
+      { "id": "rmse-c4-sm-s34-vars-p", "type": "paragraph", "content": [{"text": "Independent: Frequency of code reviews, Experience level of developers\nDependent: Number of defects in released software"}] },
+      { "id": "rmse-c4-sm-s34-method-h3", "type": "heading", "level": 3, "content": [{"text": "Methodology"}] },
+      { "id": "rmse-c4-sm-s34-method-list", "type": "list", "ordered": false, "items": [
+          { "id": "rmse-c4-sm-li-s34-m1", "content": [{"text": "Highly Structured: Clear implementation stages and standardized metrics for evaluating quality"}]},
+          { "id": "rmse-c4-sm-li-s34-m2", "content": [{"text": "Researcher Independence: Researcher is separate from the development team to avoid bias"}]},
+          { "id": "rmse-c4-sm-li-s34-m3", "content": [{"text": "Operationalization: Define \"defects\" and \"code reviews\" in measurable terms"}]}
+      ]},
+      { "id": "rmse-c4-sm-s34-reduct-h3", "type": "heading", "level": 3, "content": [{"text": "Reductionism"}] },
+      { "id": "rmse-c4-sm-s34-reduct-p", "type": "paragraph", "content": [{"text": "Break down software quality into specific metrics (e.g., defect density, customer feedback)"}] },
+      { "id": "rmse-c4-sm-s34-general-h3", "type": "heading", "level": 3, "content": [{"text": "Generalization"}] },
+      { "id": "rmse-c4-sm-s34-general-p", "type": "paragraph", "content": [{"text": "Select multiple projects from different teams to ensure robust sample size"}] },
+      { "id": "rmse-c4-sm-s34-concl-h3", "type": "heading", "level": 3, "content": [{"text": "Conclusion"}] },
+      { "id": "rmse-c4-sm-s34-concl-p", "type": "paragraph", "content": [{"text": "Systematic approach enables objective assessment of the relationship between code reviews and software quality, allowing for broader generalization."}] },
+      {
+        "id": "rmse-c4-sm-block-slide35-h2-quiz",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Class Quiz" }]
+      },
+      {
+        "id": "rmse-c4-sm-block-slide35-list-quiz",
+        "type": "list",
+        "ordered": true,
+        "items": [
+          { "id": "rmse-c4-sm-li-s35-q1", "content": [{ "text": "Quick question: If Ontology is about what reality is, what's Epistemology about?" }] },
+          { "id": "rmse-c4-sm-li-s35-q2", "content": [{ "text": "Imagine you're peeling this research onion. What's at the very core?" }] },
+          { "id": "rmse-c4-sm-li-s35-q3", "content": [{ "text": "If a researcher believes there's one objective truth out there waiting to be discovered, what's their likely philosophical stance?" }] },
+          { "id": "rmse-c4-sm-li-s35-q4", "content": [{ "text": "If your research focuses on the ", "italic": true}, {"text":"lived experiences", "italic":true, "bold":true}, {"text":" of software developers, which paradigm might be most relevant?"}] },
+          { "id": "rmse-c4-sm-li-s35-q5", "content": [{ "text": "Quick! Name one quantitative research method." }] },
+          { "id": "rmse-c4-sm-li-s35-q6", "content": [{ "text": "If X does not occur, is the theory supported or challenged?" }] },
+          { "id": "rmse-c4-sm-li-s35-q7", "content": [{ "text": "In a study of code quality and testing, which is likely the ", "italic": true}, {"text":"dependent", "italic":true, "bold":true}, {"text":" variable?"}] },
+          { "id": "rmse-c4-sm-li-s35-q8", "content": [{ "text": "If you have very limited time for your research, which approach, deductive or inductive, might be more practical?" }] },
+          { "id": "rmse-c4-sm-li-s35-q9", "content": [{ "text": "If you want to get a broad overview of opinions from a large number of developers, which strategy is better: case study or survey?" }] },
+          { "id": "rmse-c4-sm-li-s35-q10", "content": [{ "text": "Interviews are always a qualitative method. (True/False)?" }] },
+          { "id": "rmse-c4-sm-li-s35-q11", "content": [{ "text": "The theoretical framework provides a ______ for interpreting your findings." }] },
+          { "id": "rmse-c4-sm-li-s35-q12", "content": [{ "text": "Is gathering data from GitHub repositories conceptual or empirical research?" }] }
+        ]
+      }
+    ],
+    "summary": [
+      { "text": "This chapter provided an in-depth look at research methodology, covering philosophical underpinnings (ontology, epistemology), the research onion model, paradigms (positivism, interpretivism), approaches (deductive, inductive), various strategies, data collection methods, and the distinction between theoretical, conceptual, and empirical research." }
+    ]
+  }
+]

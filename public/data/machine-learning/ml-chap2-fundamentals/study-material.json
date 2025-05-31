@@ -1,0 +1,1035 @@
+
+[
+  {
+    "id": "ml-c2-sm-topic-fundamentals",
+    "title": "Fundamentals of Machine Learning",
+    "introduction": [
+      { "text": "This chapter delves into the fundamental types of Machine Learning algorithms, including Supervised, Unsupervised, and Reinforcement Learning. It also covers popular algorithms, regularization techniques, and key concepts like bias-variance tradeoff and cost functions." }
+    ],
+    "contentBlocks": [
+      {
+        "id": "ml-c2-sm-s2-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Types of ML Algorithms" }]
+      },
+      {
+        "id": "ml-c2-sm-s2-p1",
+        "type": "paragraph",
+        "content": [{ "text": "In general, machine learning algorithms can be classified into three types:" }]
+      },
+      {
+        "id": "ml-c2-sm-s2-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c2-sm-li-s2-1", "content": [{ "text": "Supervised learning" }] },
+          { "id": "ml-c2-sm-li-s2-2", "content": [{ "text": "Unsupervised learning" }] },
+          { "id": "ml-c2-sm-li-s2-3", "content": [{ "text": "Reinforcement learning" }] }
+        ]
+      },
+      {
+        "id": "ml-c2-sm-s2-img-types",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap2-fundamentals/images/slide1_ml_algorithm_types_overview.png",
+        "alt": "Diagram illustrating different ML algorithms categorized under Supervised (Regression, Classification), Unsupervised (Clustering, Association), and Reinforcement Learning.",
+        "caption": [{"text": "Overview of Machine Learning Algorithm Types."}]
+      },
+      {
+        "id": "ml-c2-sm-s3-h2-supervised",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Supervised Learning" }]
+      },
+      {
+        "id": "ml-c2-sm-s3-p1",
+        "type": "paragraph",
+        "content": [
+          { "text": "Supervised learning involves training an algorithm on a labelled, classified or categorized dataset, where input data is paired with corresponding output labels." }
+        ]
+      },
+      {
+        "id": "ml-c2-sm-s3-p2",
+        "type": "paragraph",
+        "content": [
+          { "text": "The goal is to learn a mapping from input to output based on provided labelled examples. The aim is to map input variable x to output variable y, represented as y=f(x)." }
+        ]
+      },
+      {
+        "id": "ml-c2-sm-s4-h3-howworks",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "How Supervised Learning works" }]
+      },
+      {
+        "id": "ml-c2-sm-s4-p1",
+        "type": "paragraph",
+        "content": [
+          { "text": "Models are trained using labelled dataset, where the model learns about each type of data. Once the training process is completed, the model is tested on the basis of test data (a subset of the dataset), and then it predicts the output." }
+        ]
+      },
+      {
+        "id": "ml-c2-sm-s4-img-superviseddiag",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap2-fundamentals/images/slide4_supervised_learning_diagram.png",
+        "alt": "Diagram illustrating supervised learning: Labeled Data and Labels feed into Model Training, which leads to Prediction on Test Data.",
+        "caption": [{ "text": "Supervised Learning Process." }]
+      },
+      {
+        "id": "ml-c2-sm-s5-h3-steps",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Steps Involved In Supervised Learning" }]
+      },
+      {
+        "id": "ml-c2-sm-s5-list",
+        "type": "list",
+        "ordered": true,
+        "items": [
+          { "id": "ml-c2-sm-li-s5-1", "content": [{ "text": "First determine the type of training dataset." }] },
+          { "id": "ml-c2-sm-li-s5-2", "content": [{ "text": "Collect/Gather the labeled training data." }] },
+          { "id": "ml-c2-sm-li-s5-3", "content": [{ "text": "Split the dataset into training dataset, test dataset, and validation dataset." }] },
+          { "id": "ml-c2-sm-li-s5-4", "content": [{ "text": "Determine the input features of the training dataset." }] },
+          { "id": "ml-c2-sm-li-s5-5", "content": [{ "text": "Determine the suitable algorithm for the model, such as SVM, decision tree, etc." }] },
+          { "id": "ml-c2-sm-li-s5-6", "content": [{ "text": "Execute the algorithm on the training dataset." }] },
+          { "id": "ml-c2-sm-li-s5-7", "content": [{ "text": "Evaluate the accuracy of the model by providing the test set." }] }
+        ]
+      },
+      {
+        "id": "ml-c2-sm-s6-h3-types",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Types of Supervised Learning" }]
+      },
+      {
+        "id": "ml-c2-sm-s6-img-typesdiag",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap2-fundamentals/images/slide6_supervised_types_diagram.png",
+        "alt": "Diagram showing Supervised Learning branching into Regression and Classification.",
+        "caption": [{ "text": "Types of Supervised Learning." }]
+      },
+      {
+        "id": "ml-c2-sm-s7-h4-regression",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Regression Algorithms" }]
+      },
+      {
+        "id": "ml-c2-sm-s7-p1",
+        "type": "paragraph",
+        "content": [
+          { "text": "Regression algorithms are used if there is a relationship between the input variable and the output variable. It is used for the prediction of continuous variables, such as weather forecasting, Market Trends, etc." }
+        ]
+      },
+      {
+        "id": "ml-c2-sm-s7-list-regr",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c2-sm-li-s7-1", "content": [{ "text": "Linear Regression" }] },
+          { "id": "ml-c2-sm-li-s7-2", "content": [{ "text": "Non-Linear Regression" }] },
+          { "id": "ml-c2-sm-li-s7-3", "content": [{ "text": "Regression Trees" }] },
+          { "id": "ml-c2-sm-li-s7-4", "content": [{ "text": "Bayesian Linear Regression" }] },
+          { "id": "ml-c2-sm-li-s7-5", "content": [{ "text": "Polynomial Regression" }] }
+        ]
+      },
+      {
+        "id": "ml-c2-sm-s8-h4-classification",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Supervised Learning Classification Algorithms" }]
+      },
+      {
+        "id": "ml-c2-sm-s8-p1",
+        "type": "paragraph",
+        "content": [
+          { "text": "Classification algorithms are used when the output variable is categorical. There are classes such as Yes-No, Male-Female, True-false, Low-Middle-High etc. e.g.Spam Filtering." }
+        ]
+      },
+      {
+        "id": "ml-c2-sm-s8-p2-examples",
+        "type": "paragraph",
+        "content": [{ "text": "Examples of Classification algorithms:" }]
+      },
+      {
+        "id": "ml-c2-sm-s8-list-class",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c2-sm-li-s8-1", "content": [{ "text": "Decision Trees" }] },
+          { "id": "ml-c2-sm-li-s8-2", "content": [{ "text": "Random Forest" }] },
+          { "id": "ml-c2-sm-li-s8-3", "content": [{ "text": "Logistic Regression" }] },
+          { "id": "ml-c2-sm-li-s8-4", "content": [{ "text": "Support Vector Machines" }] }
+        ]
+      },
+      {
+        "id": "ml-c2-sm-s9-h3-adv",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Advantages of Supervised Learning" }]
+      },
+      {
+        "id": "ml-c2-sm-s9-list-adv",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c2-sm-li-s9-1", "content": [{ "text": "With the help of supervised learning, the model can predict the output on the basis of prior experiences." }] },
+          { "id": "ml-c2-sm-li-s9-2", "content": [{ "text": "In supervised learning, we can have an exact idea about the classes of objects." }] },
+          { "id": "ml-c2-sm-li-s9-3", "content": [{ "text": "Supervised learning model helps us to solve various real-world problems such as fraud detection, spam filtering, etc." }] }
+        ]
+      },
+      {
+        "id": "ml-c2-sm-s10-h2-unsupervised",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Unsupervised Learning" }]
+      },
+      {
+        "id": "ml-c2-sm-s10-p1",
+        "type": "paragraph",
+        "content": [
+          { "text": "Unsupervised learning involves training a model on data that is ", "bold": true },
+          { "text": "not labelled, classified, or categorized,", "bold": true },
+          { "text": " and the algorithm needs to act on that data without any supervision." }
+        ]
+      },
+      {
+        "id": "ml-c2-sm-s10-p2",
+        "type": "paragraph",
+        "content": [{ "text": "The algorithm aims to explore the inherent structure in the data." }]
+      },
+      {
+        "id": "ml-c2-sm-s10-p3",
+        "type": "paragraph",
+        "content": [{ "text": "Models itself find the hidden patterns and insights from the given data." }]
+      },
+      {
+        "id": "ml-c2-sm-s11-p1-example",
+        "type": "paragraph",
+        "content": [
+          { "text": "Suppose the unsupervised learning algorithm is given an input dataset containing images of different types of cats and dogs. The Algorithm does not have any idea about the features of the dataset. It identifies image features by its own and groups them." }
+        ]
+      },
+      {
+        "id": "ml-c2-sm-s11-img-catsdogs",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap2-fundamentals/images/slide11_unsupervised_cats_dogs.png",
+        "alt": "Diagram showing unsupervised learning: Input Raw Data (unlabeled cats and dogs) -> Algorithm (Interpretation, Processing) -> Output (grouped Dogs, grouped Cats).",
+        "caption": [{ "text": "Unsupervised Learning Example: Grouping Cats and Dogs." }]
+      },
+      {
+        "id": "ml-c2-sm-s12-img-vegetables",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap2-fundamentals/images/slide12_unsupervised_vegetables.png",
+        "alt": "Diagram of unsupervised learning: Input Raw Data (unlabeled vegetables) -> Interpretation -> Algorithms -> Processing -> Outputs (grouped vegetables like peppers, eggplants, onions).",
+        "caption": [{ "text": "Unsupervised Learning: Vegetable Grouping Example." }]
+      },
+      {
+        "id": "ml-c2-sm-s13-img-types",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap2-fundamentals/images/slide13_unsupervised_types_diagram.png",
+        "alt": "Diagram showing Unsupervised Learning branching into Clustering and Association.",
+        "caption": [{ "text": "Types of Unsupervised Learning." }]
+      },
+      {
+        "id": "ml-c2-sm-s14-h3-probtypes",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Unsupervised ML Problem Types" }]
+      },
+      {
+        "id": "ml-c2-sm-s14-h4-clustering",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "A. Clustering:" }]
+      },
+      {
+        "id": "ml-c2-sm-s14-p1-clustering",
+        "type": "paragraph",
+        "content": [
+          { "text": "Clustering is a method of grouping objects into clusters such that objects with most similarities remain in a group. Ex: Market segmentation and anomaly detection (find unusual network traffic)." }
+        ]
+      },
+      {
+        "id": "ml-c2-sm-s14-h4-association",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "B. Association:" }]
+      },
+      {
+        "id": "ml-c2-sm-s14-p1-association",
+        "type": "paragraph",
+        "content": [
+          { "text": "An association rule is an unsupervised learning method used for finding relationships between variables in a large database. It finds associations and patterns (e.g., customer who buys X will also buy Y). Ex: dimensionality reduction." }
+        ]
+      },
+      {
+        "id": "ml-c2-sm-s15-h3-algos",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Unsupervised ML Algorithms" }]
+      },
+      {
+        "id": "ml-c2-sm-s15-list-algos",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c2-sm-li-s15-1", "content": [{ "text": "K-Means Clustering" }] },
+          { "id": "ml-c2-sm-li-s15-2", "content": [{ "text": "Hierarchical Clustering" }] },
+          { "id": "ml-c2-sm-li-s15-3", "content": [{ "text": "Anomaly Detection" }] },
+          { "id": "ml-c2-sm-li-s15-4", "content": [{ "text": "Neural Networks" }] },
+          { "id": "ml-c2-sm-li-s15-5", "content": [{ "text": "Principal Component Analysis (PCA)" }] },
+          { "id": "ml-c2-sm-li-s15-6", "content": [{ "text": "Apriori Algorithm" }] },
+          { "id": "ml-c2-sm-li-s15-7", "content": [{ "text": "Singular Value Decomposition (SVD)" }] }
+        ]
+      },
+      {
+        "id": "ml-c2-sm-s16-h3-adv",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Advantages and Disadvantages of Unsupervised Learning" }]
+      },
+      {
+        "id": "ml-c2-sm-s16-h4-adv",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Advantages:" }]
+      },
+      {
+        "id": "ml-c2-sm-s16-list-adv",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c2-sm-li-s16-1", "content": [{ "text": "Used for more complex tasks compared to supervised learning." }] },
+          { "id": "ml-c2-sm-li-s16-2", "content": [{ "text": "Preferable as it is easy to get unlabeled data in comparison to labeled data." }] }
+        ]
+      },
+      {
+        "id": "ml-c2-sm-s16-h4-disadv",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Disadvantages:" }]
+      },
+      {
+        "id": "ml-c2-sm-s16-list-disadv",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c2-sm-li-s16-3", "content": [{ "text": "Intrinsically more difficult than supervised learning as it does not have corresponding output." }] },
+          { "id": "ml-c2-sm-li-s16-4", "content": [{ "text": "The result of the unsupervised learning algorithm might be less accurate as input data is not labeled." }] }
+        ]
+      },
+      {
+        "id": "ml-c2-sm-s17-h2-reinforcement",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Reinforcement Learning (RL)" }]
+      },
+      {
+        "id": "ml-c2-sm-s17-p1",
+        "type": "paragraph",
+        "content": [
+          { "text": "Reinforcement learning involves an agent learning to make decisions by interacting with an environment. The agent learns automatically using feedbacks without any labeled data, unlike supervised learning. The agent receives feedback in the form of rewards or penalties based on the actions it takes. RL is applicable when an agent needs to learn a sequence of actions to achieve a goal in a dynamic environment, receiving feedback to guide its learning process." }
+        ]
+      },
+      {
+        "id": "ml-c2-sm-s18-p1",
+        "type": "paragraph",
+        "content": [
+          { "text": "The agent interacts with the environment and explores it by itself. The primary goal of an agent in reinforcement learning is to improve the performance by getting the maximum positive rewards." }
+        ]
+      },
+      {
+        "id": "ml-c2-sm-s18-img-rldiag",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap2-fundamentals/images/slide18_rl_diagram.png",
+        "alt": "Diagram showing RL: Agent (gets Reward, State) interacts with Environment by taking Actions.",
+        "caption": [{ "text": "Reinforcement Learning Cycle." }]
+      },
+      {
+        "id": "ml-c2-sm-s19-h3-terms",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Reinforcement Learning Common Terms" }]
+      },
+      {
+        "id": "ml-c2-sm-s19-list-terms",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c2-sm-li-s19-1", "content": [{ "text": "Agent(): ", "bold": true }, { "text": "An entity that can perceive/explore the environment and act upon it." }] },
+          { "id": "ml-c2-sm-li-s19-2", "content": [{ "text": "Environment(): ", "bold": true }, { "text": "A situation in which an agent is present or surrounded by." }] },
+          { "id": "ml-c2-sm-li-s19-3", "content": [{ "text": "Action(): ", "bold": true }, { "text": "Actions are the moves taken by an agent within the environment." }] },
+          { "id": "ml-c2-sm-li-s19-4", "content": [{ "text": "State(): ", "bold": true }, { "text": "State is a situation returned by the environment after each action taken by the agent." }] },
+          { "id": "ml-c2-sm-li-s19-5", "content": [{ "text": "Reward(): ", "bold": true }, { "text": "A feedback returned to the agent from the environment to evaluate the action of the agent." }] },
+          { "id": "ml-c2-sm-li-s19-6", "content": [{ "text": "Policy(): ", "bold": true }, { "text": "Is a strategy applied by the agent for the next action based on the current state." }] },
+          { "id": "ml-c2-sm-li-s19-7", "content": [{ "text": "Value(): ", "bold": true }, { "text": "It is expected long-term returned with the discount factor and opposite to the short-term reward." }] }
+        ]
+      },
+      {
+        "id": "ml-c2-sm-s20-h3-features",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Key Features of Reinforcement Learning" }]
+      },
+      {
+        "id": "ml-c2-sm-s20-list-features",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c2-sm-li-s20-1", "content": [{ "text": "In RL, the agent is not instructed about the environment and what actions need to be taken." }] },
+          { "id": "ml-c2-sm-li-s20-2", "content": [{ "text": "It is based on the hit and trial process." }] },
+          { "id": "ml-c2-sm-li-s20-3", "content": [{ "text": "The agent takes the next action and changes states according to the feedback of the previous action." }] },
+          { "id": "ml-c2-sm-li-s20-4", "content": [{ "text": "The agent may get a delayed reward." }] }
+        ]
+      },
+      {
+        "id": "ml-c2-sm-s21-p1",
+        "type": "paragraph",
+        "content": [{ "text": "There are mainly two types of reinforcement learning, which are:" }]
+      },
+      {
+        "id": "ml-c2-sm-s21-list-types",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c2-sm-li-s21-1", "content": [{ "text": "Positive Reinforcement: The positive reinforcement learning means adding something to increase the tendency that expected behaviour would occur again." }] },
+          { "id": "ml-c2-sm-li-s21-2", "content": [{ "text": "Negative Reinforcement: The negative reinforcement learning is opposite to the positive reinforcement as it increases the tendency that the specific behavior will occur again by avoiding the negative condition." }] }
+        ]
+      },
+      {
+        "id": "ml-c2-sm-s22-h3-apps",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Application areas of RL" }]
+      },
+      {
+        "id": "ml-c2-sm-s22-img-apps",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap2-fundamentals/images/slide22_rl_applications.png",
+        "alt": "Diagram showing applications of RL: Robotics, Control, Game Playing, Chemistry, Business, Manufacturing, Finance Sector.",
+        "caption": [{ "text": "Application Areas of Reinforcement Learning." }]
+      },
+      {
+        "id": "ml-c2-sm-s23-h2-popularalgos",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Supervised ML - Popular Machine Learning Algorithms" }]
+      },
+      {
+        "id": "ml-c2-sm-s24-h3-linreg",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Linear Regression" }]
+      },
+      {
+        "id": "ml-c2-sm-s24-list-linreg",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c2-sm-li-s24-1", "content": [{ "text": "One of the most popular and simple machine learning algorithms." }] },
+          { "id": "ml-c2-sm-li-s24-2", "content": [{ "text": "Used for predictive analysis, predictions for continuous numbers such as salary, age." }] },
+          { "id": "ml-c2-sm-li-s24-3", "content": [{ "text": "Shows linear relationship between the dependent and independent variables." }] }
+        ]
+      },
+      {
+        "id": "ml-c2-sm-s24-p-equation",
+        "type": "paragraph",
+        "content": [
+            { "text": "The equation for the regression line is: y = a₀ + a*X. Here, y= dependent variable, X= independent variable, a₀ = Intercept of line. Linear regression is further divided into two types:\n", "bold":true },
+            { "text": "Simple Linear Regression:", "bold": true }, { "text": " In simple linear regression, a single independent variable is used to predict the value of the dependent variable.\n" },
+            { "text": "Multiple Linear Regression:", "bold": true }, { "text": " In multiple linear regression, more than one independent variables are used to predict the value of the dependent variable." }
+        ]
+      },
+      {
+        "id": "ml-c2-sm-s25-h4-example1",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Linear Regression example 1 (Advertisement Cost vs Sales)" }]
+      },
+      {
+        "id": "ml-c2-sm-s25-p-scenario1",
+        "type": "paragraph",
+        "content": [
+          { "text": "Scenario -1: Assume some company x spent the following cost for advertisement and get sale values as indicated. And then, the company wants to do the advertisement of $200 in the year 2019 and wants to know the prediction about the sales for this year." }
+        ]
+      },
+      {
+        "id": "ml-c2-sm-s25-img-adcost",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap2-fundamentals/images/slide25_linreg_ad_sales_table.png",
+        "alt": "Table showing Advertisement cost and corresponding Sales values.",
+        "caption": [{ "text": "Linear Regression Example: Advertisement Cost vs. Sales." }]
+      },
+      {
+        "id": "ml-c2-sm-s26-h4-example2",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Linear Regression example 2 (Salary vs Experience)" }]
+      },
+      {
+        "id": "ml-c2-sm-s26-p-scenario2",
+        "type": "paragraph",
+        "content": [
+          { "text": "Scenario 2: Company wants prediction of the salary employees based on Experience. Here we are predicting the salary of an employee on the basis of the year of experience." }
+        ]
+      },
+      {
+        "id": "ml-c2-sm-s26-img-salaryexp",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap2-fundamentals/images/slide26_linreg_salary_experience_graph.png",
+        "alt": "Scatter plot with a regression line showing Salary vs. Experience.",
+        "caption": [{ "text": "Linear Regression Example: Salary vs. Experience." }]
+      },
+      {
+        "id": "ml-c2-sm-s27-s31-h4-example3",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Linear Regression example 3 (Sales vs Weeks - Detailed Calculation)" }]
+      },
+      {
+        "id": "ml-c2-sm-s27-p-scenario3",
+        "type": "paragraph",
+        "content": [
+          { "text": "Scenario 3: Company x wants prediction of the sales based on different weeks, wants to know what will be at week 7th or 12th." }
+        ]
+      },
+      { "id": "ml-c2-sm-s27-img-weeksalesdata", "type": "image", "src": "/data/machine-learning/ml-chap2-fundamentals/images/slide27_linreg_week_sales_table.png", "alt": "Table showing Sales Data for 5 weeks.", "caption": [{"text": "Sales data per week for Scenario 3."}] },
+      { "id": "ml-c2-sm-s28-h5-fittingline", "type": "heading", "level": 5, "content": [{"text": "Finding the best fitting line"}] },
+      { "id": "ml-c2-sm-s28-img-fittingline", "type": "image", "src": "/data/machine-learning/ml-chap2-fundamentals/images/slide28_linreg_best_fit_line.png", "alt": "Graph showing best fitting line through data points and formulas for slope and intercept.", "caption": [{"text": "Best fitting line and formulas."}] },
+      { "id": "ml-c2-sm-s29-img-calculationtable", "type": "image", "src": "/data/machine-learning/ml-chap2-fundamentals/images/slide29_linreg_calculation_table.png", "alt": "Table with calculations for linear regression: x, y, x^2, xy, sums, and averages.", "caption": [{"text": "Linear Regression Calculation Table."}] },
+      { "id": "ml-c2-sm-s30-img-regressionlineeq", "type": "image", "src": "/data/machine-learning/ml-chap2-fundamentals/images/slide30_linreg_equation_values.png", "alt": "Calculations for a1 (slope) and a0 (intercept) and the resulting regression equation.", "caption": [{"text": "Calculating the regression line equation."}] },
+      { "id": "ml-c2-sm-s31-img-predictions", "type": "image", "src": "/data/machine-learning/ml-chap2-fundamentals/images/slide31_linreg_predictions.png", "alt": "Using the regression equation y = 0.54 + 0.66x to predict sales for week 7 and week 12.", "caption": [{"text": "Predictions using the regression line."}] },
+      {
+        "id": "ml-c2-sm-s32-h3-applinreg",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Application of Linear Regression" }]
+      },
+      {
+        "id": "ml-c2-sm-s32-p1",
+        "type": "paragraph",
+        "content": [{ "text": "Some popular applications of linear regression are:" }]
+      },
+      {
+        "id": "ml-c2-sm-s32-list-apps",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c2-sm-li-s32-1", "content": [{ "text": "Analyzing trends and sales estimates" }] },
+          { "id": "ml-c2-sm-li-s32-2", "content": [{ "text": "Salary forecasting" }] },
+          { "id": "ml-c2-sm-li-s32-3", "content": [{ "text": "Real estate prediction" }] }
+        ]
+      },
+      {
+        "id": "ml-c2-sm-s33-h3-terminologies",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Terminologies Related to Regression Analysis" }]
+      },
+      {
+        "id": "ml-c2-sm-s33-list-terms",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c2-sm-li-s33-1", "content": [{ "text": "Dependent Variable: ", "bold": true }, { "text": "The main factor to predict or understand, also called target variable." }] },
+          { "id": "ml-c2-sm-li-s33-2", "content": [{ "text": "Independent Variable: ", "bold": true }, { "text": "Factors affecting the dependent variable or used for prediction, also called predictor." }] },
+          { "id": "ml-c2-sm-li-s33-3", "content": [{ "text": "Outliers: ", "bold": true }, { "text": "Observations with very low or high values compared to others; should be avoided or handled." }] },
+          { "id": "ml-c2-sm-li-s33-4", "content": [{ "text": "Multicollinearity: ", "bold": true }, { "text": "When independent variables are highly correlated with each other. Should not be present as it complicates ranking variable importance." }] },
+          { "id": "ml-c2-sm-li-s33-5", "content": [{ "text": "Underfitting and Overfitting: ", "bold": true }, { "text": "Overfitting: model works well on training data but not test data. Underfitting: model doesn't perform well even on training data." }] }
+        ]
+      },
+      {
+        "id": "ml-c2-sm-s34-h3-logreg",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Logistic Regression" }]
+      },
+      {
+        "id": "ml-c2-sm-s34-list-logreg",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c2-sm-li-s34-1", "content": [{ "text": "One of the most popular Machine Learning algorithms." }] },
+          { "id": "ml-c2-sm-li-s34-2", "content": [{ "text": "The outcome must be a categorical or discrete value (e.g., Yes/No, 0/1, true/False)." }] },
+          { "id": "ml-c2-sm-li-s34-3", "content": [{ "text": "It gives probabilistic values which lie between 0 and 1." }] }
+        ]
+      },
+      {
+        "id": "ml-c2-sm-s34-p-sigmoid",
+        "type": "paragraph",
+        "content": [
+          { "text": "In Logistic regression, instead of fitting a regression line, we fit an \"S\" shaped logistic function (Sigmoid function), which predicts two maximum values (0 or 1)." }
+        ]
+      },
+      {
+        "id": "ml-c2-sm-s34-img-sigmoid",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap2-fundamentals/images/slide34_logistic_regression_sigmoid.png",
+        "alt": "Graph of a Sigmoid function (S-shaped curve) used in Logistic Regression, showing threshold value.",
+        "caption": [{ "text": "The Sigmoid (Logistic) Function." }]
+      },
+      {
+        "id": "ml-c2-sm-s35-h3-typeslogreg",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Types of Logistic Regression" }]
+      },
+      {
+        "id": "ml-c2-sm-s35-p1",
+        "type": "paragraph",
+        "content": [
+          { "text": "On the basis of the categories, Logistic Regression can be classified into three types:" }
+        ]
+      },
+      {
+        "id": "ml-c2-sm-s35-list-types",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c2-sm-li-s35-1", "content": [{ "text": "Binomial: ", "bold": true }, { "text": "Only two possible types of dependent variables (e.g., 0 or 1, Pass or Fail)." }] },
+          { "id": "ml-c2-sm-li-s35-2", "content": [{ "text": "Multinomial: ", "bold": true }, { "text": "3 or more possible unordered types of dependent variable (e.g., \"cat\", \"dogs\", or \"sheep\")." }] },
+          { "id": "ml-c2-sm-li-s35-3", "content": [{ "text": "Ordinal: ", "bold": true }, { "text": "3 or more possible ordered types of dependent variables (e.g., \"low\", \"Medium\", or \"High\")." }] }
+        ]
+      },
+      {
+        "id": "ml-c2-sm-s36-p1-prob",
+        "type": "paragraph",
+        "content": [
+          { "text": "It is a predictive analysis algorithm which works on the concept of probability." }
+        ]
+      },
+      {
+        "id": "ml-c2-sm-s36-img-sigeq",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap2-fundamentals/images/slide36_sigmoid_equation_graph.png",
+        "alt": "Graph of sigmoid function sig(x) = 1 / (1 + e^-x) with explanation f(x)= Output between 0 and 1, x=input, e=base of natural logarithm.",
+        "caption": [{ "text": "Logistic Regression and Probability." }]
+      },
+      {
+        "id": "ml-c2-sm-s37-h3-polyreg",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Polynomial Regression" }]
+      },
+      {
+        "id": "ml-c2-sm-s37-list-polyreg",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c2-sm-li-s37-1", "content": [{ "text": "Polynomial Regression is a type of regression which models the non-linear dataset using a linear model." }] },
+          { "id": "ml-c2-sm-li-s37-2", "content": [{ "text": "Tries to capture non-linear relationship between independent and dependent variable." }] },
+          { "id": "ml-c2-sm-li-s37-3", "content": [{ "text": "It's a non-linear curve between the value of x and corresponding conditional values of y." }] }
+        ]
+      },
+      {
+        "id": "ml-c2-sm-s37-img-polycurve",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap2-fundamentals/images/slide37_polynomial_regression_curve.png",
+        "alt": "Graph showing a non-linear curve for Polynomial Regression y=b0+b1x+b2x^2.",
+        "caption": [{ "text": "Polynomial Regression Curve." }]
+      },
+      {
+        "id": "ml-c2-sm-s38-h3-svm",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Support Vector Machine (SVM)" }]
+      },
+      {
+        "id": "ml-c2-sm-s38-img-svmhyperplane",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap2-fundamentals/images/slide38_svm_optimal_hyperplane.png",
+        "alt": "Diagram of SVM showing data points of two classes separated by an optimal hyperplane with maximum margin.",
+        "caption": [{ "text": "SVM Optimal Hyperplane." }]
+      },
+      {
+        "id": "ml-c2-sm-s39-p1-svmdef",
+        "type": "paragraph",
+        "content": [
+          { "text": "Support Vector Machine (SVM) is one of the most useful supervised ML algorithms. It can be used for both classification and regression tasks." }
+        ]
+      },
+      {
+        "id": "ml-c2-sm-s39-h4-idea",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Basic idea of support vector machines" }]
+      },
+      {
+        "id": "ml-c2-sm-s39-list-idea",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c2-sm-li-s39-1", "content": [{ "text": "SVM is a geometric model that views the input data as two sets of vectors in an n-dimensional space." }] },
+          { "id": "ml-c2-sm-li-s39-2", "content": [{ "text": "It constructs a separating hyperplane in that space, one which maximizes the margin between the two data sets." }] }
+        ]
+      },
+      {
+        "id": "ml-c2-sm-s40-p1-goodsep",
+        "type": "paragraph",
+        "content": [
+          { "text": "A good separation is achieved by the hyperplane that has the largest distance to the neighbouring data points of both classes. The vectors (points) that constrain the width of the margin are the support vectors. Support vectors are the data points that lie closest to the decision surface." }
+        ]
+      },
+      {
+        "id": "ml-c2-sm-s40-img-svmmargin",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap2-fundamentals/images/slide40_svm_margin_comparison.png",
+        "alt": "Diagram comparing two SVM solutions: Solution 1 with small margin, Solution 2 with large margin. Solution 2 is superior.",
+        "caption": [{ "text": "SVM Margin Maximization. Solution 2 is superior due to larger margin." }]
+      },
+      {
+        "id": "ml-c2-sm-s41-h3-svmterms",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "SVM Terminologies" }]
+      },
+      {
+        "id": "ml-c2-sm-s41-list-terms",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c2-sm-li-s41-1", "content": [{ "text": "Kernel: ", "bold": true }, { "text": "It is a function used to map a lower-dimensional data into higher dimensional data." }] },
+          { "id": "ml-c2-sm-li-s41-2", "content": [{ "text": "Hyperplane: ", "bold": true }, { "text": "It is a separation line between two classes." }] },
+          { "id": "ml-c2-sm-li-s41-3", "content": [{ "text": "Boundary line: ", "bold": true }, { "text": "Boundary lines are the two lines apart from hyperplane, which creates a margin for data points." }] },
+          { "id": "ml-c2-sm-li-s41-4", "content": [{ "text": "Support vectors: ", "bold": true }, { "text": "Support vectors are the datapoints which are nearest to the hyperplane and opposite class." }] }
+        ]
+      },
+      {
+        "id": "ml-c2-sm-s42-img-svmseparable",
+        "type": "image",
+        "src": "/data/research-methods-se/rmse-chap4-research-methodology/images/slide42_svm_data_separability.png",
+        "alt": "Two plots showing data points: one more easily separable than the other. Question: Which one is easy to separate?",
+        "caption": [{ "text": "SVM Data Separability. Which is easier to separate?" }]
+      },
+      {
+        "id": "ml-c2-sm-s43-p1-maxmargin",
+        "type": "paragraph",
+        "content": [
+          { "text": "SVMs maximize the margin around the separating hyperplane. The decision function is fully specified by a subset of training samples, the support vectors. In 2-Ds, it’s a line. In 3-Ds, it’s a plane." }
+        ]
+      },
+      {
+        "id": "ml-c2-sm-s43-img-maxmarginvis",
+        "type": "image",
+        "src": "/data/research-methods-se/rmse-chap4-research-methodology/images/slide43_svm_maximize_margin.png",
+        "alt": "Diagram illustrating SVM maximizing margin around separating hyperplane with support vectors highlighted.",
+        "caption": [{ "text": "SVM Maximizing Margin." }]
+      },
+      {
+        "id": "ml-c2-sm-s44-p1-kernel",
+        "type": "paragraph",
+        "content": [
+          { "text": "Hyperplane for linearly separable patterns. A hyperplane is a linear decision surface that splits the space into two parts. For non-linearly separable data, transformations of original data map into new space using the Kernel function." }
+        ]
+      },
+      {
+        "id": "ml-c2-sm-s44-img-kerneltrick",
+        "type": "image",
+        "src": "/data/research-methods-se/rmse-chap4-research-methodology/images/slide44_svm_kernel_trick.png",
+        "alt": "Diagram showing how SVM kernel function transforms non-linearly separable data (Cancer vs Normal) into a higher dimension where it becomes linearly separable.",
+        "caption": [{ "text": "SVM Kernel Function for Non-linear Separability." }]
+      },
+      {
+        "id": "ml-c2-sm-s45-h3-advsvm",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Advantages of SVM" }]
+      },
+      {
+        "id": "ml-c2-sm-s45-list-adv",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c2-sm-li-s45-1", "content": [{ "text": "Robust to very large number of variables and small samples." }] },
+          { "id": "ml-c2-sm-li-s45-2", "content": [{ "text": "Can learn both simple and highly complex classification models." }] },
+          { "id": "ml-c2-sm-li-s45-3", "content": [{ "text": "Employ sophisticated mathematical principles to avoid overfitting." }] },
+          { "id": "ml-c2-sm-li-s45-4", "content": [{ "text": "Can be used for both classification and regression tasks." }] },
+          { "id": "ml-c2-sm-li-s45-5", "content": [{ "text": "Effective in cases of limited data." }] }
+        ]
+      },
+      {
+        "id": "ml-c2-sm-s46-h3-dectree",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Decision Tree Regression" }]
+      },
+      {
+        "id": "ml-c2-sm-s46-p1-def",
+        "type": "paragraph",
+        "content": [
+          { "text": "Decision Tree is a supervised learning algorithm which can be used for solving both classification and regression problems. It can solve problems for both categorical and numerical data." }
+        ]
+      },
+      {
+        "id": "ml-c2-sm-s46-p2-example",
+        "type": "paragraph",
+        "content": [
+          { "text": "Example: The following model is trying to predict the choice of a person between Sports cars or Luxury car." }
+        ]
+      },
+      {
+        "id": "ml-c2-sm-s46-img-dectreecar",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap2-fundamentals/images/slide46_decision_tree_car_choice.png",
+        "alt": "Decision tree diagram predicting car choice (Sports vs Luxury) based on 'Over 25 yrs' and 'Married' attributes.",
+        "caption": [{ "text": "Decision Tree for Car Choice Prediction." }]
+      },
+      {
+        "id": "ml-c2-sm-s47-p1-structure",
+        "type": "paragraph",
+        "content": [
+          { "text": "Decision Tree regression builds a tree-like structure in which each internal node represents the \"test\" for an attribute, each branch represents the result of the test, and each leaf node represents the final decision or result. A decision tree is constructed starting from the root node/parent node (dataset), which splits into left and right child nodes (subsets of dataset). These child nodes are further divided into their children node, and themselves become the parent node of those nodes." }
+        ]
+      },
+      {
+        "id": "ml-c2-sm-s48-h3-randomforest",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Random Forest" }]
+      },
+      {
+        "id": "ml-c2-sm-s48-p1-def",
+        "type": "paragraph",
+        "content": [
+          { "text": "Random forest is one of the most powerful supervised learning algorithms which is capable of performing regression as well as classification tasks. The Random Forest regression is an ensemble learning method which combines multiple decision trees and predicts the final output based on the average of each tree output. The combined decision trees are called as base models, and it can be represented more formally as: g(x) = f0(x) + f1(x) + f2(x) + ...." }
+        ]
+      },
+      {
+        "id": "ml-c2-sm-s49-p1-overfitting",
+        "type": "paragraph",
+        "content": [
+          { "text": "With the help of Random Forest regression, we can prevent Over-fitting in the model by creating random subsets of the dataset." }
+        ]
+      },
+      {
+        "id": "ml-c2-sm-s49-img-randomforest",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap2-fundamentals/images/slide49_random_forest_diagram.png",
+        "alt": "Diagram of Random Forest: Test Sample Input goes to multiple Trees (Tree 1, Tree 2 ... Tree n), each gives a Prediction, then Average All Predictions gives Random Forest Prediction.",
+        "caption": [{ "text": "Random Forest Architecture." }]
+      },
+      {
+        "id": "ml-c2-sm-s50-h2-regularization",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Regularization" }]
+      },
+      {
+        "id": "ml-c2-sm-s50-p1-overunder",
+        "type": "paragraph",
+        "content": [
+          { "text": "While training a machine learning model, the model can easily be overfitted or under fitted. If we allow our machine learning model to look at the data too many times, it will find a lot of patterns in our data, including the ones which are unnecessary and tries to fit each data point on the curve is called Overfitting." }
+        ]
+      },
+      {
+        "id": "ml-c2-sm-s51-img-overfit",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap2-fundamentals/images/slide51_overfitted_model.png",
+        "alt": "Graph showing an overfitted curve tightly fitting all data points, including noise (Efficiency of a car vs. Distance travelled).",
+        "caption": [{ "text": "Overfitted Model." }]
+      },
+      {
+        "id": "ml-c2-sm-s51-p1-underfit",
+        "type": "paragraph",
+        "content": [
+          { "text": "In a scenario where the model has not been allowed to look at our data a sufficient number of times, the model won’t be able to find patterns in our test dataset. A scenario where a machine learning model can neither learn the relationship between variables in the testing data nor predict or classify a new data point is called Under fitting." }
+        ]
+      },
+      {
+        "id": "ml-c2-sm-s52-img-underfit",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap2-fundamentals/images/slide52_underfitted_model.png",
+        "alt": "Graph showing an underfitted line that fails to capture the trend in the data (Efficiency of a car vs. Distance travelled).",
+        "caption": [{ "text": "Underfitted Model." }]
+      },
+      {
+        "id": "ml-c2-sm-s53-h2-biasvariance",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Bias vs Variance" }]
+      },
+      {
+        "id": "ml-c2-sm-s53-p1-bias",
+        "type": "paragraph",
+        "content": [
+          { "text": "A Bias occurs when an algorithm has limited flexibility to learn from data. Such models pay very little attention to the training data and oversimplify the model. Therefore the validation error or prediction error will occur. Such models always lead to a high error on training and test data. High Bias causes underfitting in our model." }
+        ]
+      },
+      {
+        "id": "ml-c2-sm-s53-p2-variance",
+        "type": "paragraph",
+        "content": [
+          { "text": "Variance defines the algorithm’s sensitivity to specific sets of data. A model with a high variance pays a lot of attention to training data." }
+        ]
+      },
+      {
+        "id": "ml-c2-sm-s54-p1-variancecont",
+        "type": "paragraph",
+        "content": [
+          { "text": "Variance does not generalize therefore the validation error or prediction error are far apart from each other. Such models usually perform very well on training data but have high error rates on test data (overfitting)." }
+        ]
+      },
+      {
+        "id": "ml-c2-sm-s54-img-biasvariancegraph",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap2-fundamentals/images/slide54_bias_variance_tradeoff.png",
+        "alt": "Graph showing Error vs Model Complexity, illustrating High Bias (underfitting), High Variance (overfitting), and the optimal tradeoff point where Training Error and Validation Error are minimized.",
+        "caption": [{ "text": "Bias-Variance Tradeoff." }]
+      },
+      {
+        "id": "ml-c2-sm-s55-h3-reginml",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Regularization in Machine Learning" }]
+      },
+      {
+        "id": "ml-c2-sm-s55-p1-optimal",
+        "type": "paragraph",
+        "content": [
+          { "text": "An optimal model is one in which the model is sensitive to the pattern in our model, but at the same time can generalize to new data. Using Regularization, we can fit our machine learning model appropriately on a given test set and hence reduce the errors in it. It helps prevent overfitting or underfitting." }
+        ]
+      },
+      {
+        "id": "ml-c2-sm-s55-img-goodfit",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap2-fundamentals/images/slide55_regularization_good_fitting.png",
+        "alt": "Diagram showing an overfitted curve transformed into a good fitting line through regularization.",
+        "caption": [{ "text": "Regularization for Good Fitting." }]
+      },
+      {
+        "id": "ml-c2-sm-s56-h3-regtechniques",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Regularization Techniques" }]
+      },
+      {
+        "id": "ml-c2-sm-s56-p1",
+        "type": "paragraph",
+        "content": [
+          { "text": "There are two main types of regularization techniques: Ridge Regularization (L2) and Lasso Regularization (L1). Both are regularized versions of Linear regression algorithm." }
+        ]
+      },
+      {
+        "id": "ml-c2-sm-s56-img-regtypes",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap2-fundamentals/images/slide56_regularization_types.png",
+        "alt": "Diagram showing Regularization branching into Ridge (L2) Regularization and Lasso (L1) Regularization.",
+        "caption": [{ "text": "Types of Regularization Techniques." }]
+      },
+      {
+        "id": "ml-c2-sm-s57-h4-ridge",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Ridge Regression (L2) regularization" }]
+      },
+      {
+        "id": "ml-c2-sm-s57-p1",
+        "type": "paragraph",
+        "content": [
+          { "text": "Also known as Ridge Regression, it modifies the over-fitted or under-fitted models by adding the penalty equivalent to the sum of the squares of the magnitude of coefficients. Ridge regression is a regularization technique used to reduce the complexity of the model. It is also called L2 regularization. It helps to solve problems if we have more parameters." }
+        ]
+      },
+      {
+        "id": "ml-c2-sm-s57-img-ridgecost",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap2-fundamentals/images/slide57_ridge_cost_function.png",
+        "alt": "Formulas for Ridge Regression cost function: Cost function = Loss + λ * Σ||w||² and L(x,y) = Min(Σ(yi - wixi)² + λΣ(wi)²).",
+        "caption": [{ "text": "Ridge Regression (L2) Cost Function." }]
+      },
+      {
+        "id": "ml-c2-sm-s58-h4-lasso",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Lasso Regression (L1) regularization" }]
+      },
+      {
+        "id": "ml-c2-sm-s58-p1",
+        "type": "paragraph",
+        "content": [
+          { "text": "It modifies the over-fitted or under-fitted models by adding the penalty equivalent to the sum of the absolute values of coefficients. It is similar to Ridge Regression except that the penalty term contains only the absolute weights instead of a square of weights. Also known as L1." }
+        ]
+      },
+      {
+        "id": "ml-c2-sm-s58-img-lassocost",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap2-fundamentals/images/slide58_lasso_cost_function.png",
+        "alt": "Formulas for Lasso Regression cost function: Cost function = Loss + λ * Σ||w|| and L(x,y) = Min(Σ(yi - wixi)² + λΣ|wi|).",
+        "caption": [{ "text": "Lasso Regression (L1) Cost Function." }]
+      },
+      {
+        "id": "ml-c2-sm-s59-h2-costfunction",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Cost Function" }]
+      },
+      {
+        "id": "ml-c2-sm-s59-list-cost",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c2-sm-li-s59-1", "content": [{ "text": "Cost function: Its purpose is to quantify the difference between the predicted values of a model and the actual values observed in the data." }] },
+          { "id": "ml-c2-sm-li-s59-2", "content": [{ "text": "It evaluates how well the model's predictions match the actual target values." }] },
+          { "id": "ml-c2-sm-li-s59-3", "content": [{ "text": "In linear regression, the cost function is often the Mean Squared Error (MSE) or Mean Absolute Error (MAE), which measures the average squared or absolute difference between the predicted and actual values." }] },
+          { "id": "ml-c2-sm-li-s59-4", "content": [{ "text": "In logistic regression, the cost function is typically the Log Loss or Cross-Entropy Loss." }] }
+        ]
+      },
+      {
+        "id": "ml-c2-sm-s60-h2-logregex",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Logistic Regression Example (Python Code)" }]
+      },
+      {
+        "id": "ml-c2-sm-s60-code",
+        "type": "code",
+        "language": "python",
+        "code": "# Importing required libraries\nimport pandas as pd\nfrom sklearn.linear_model import LogisticRegression\nfrom sklearn.model_selection import train_test_split\nfrom sklearn.metrics import accuracy_score, confusion_matrix\n\n# Loading and preparing the data\ndata = pd.read_csv('data.csv')\nX = data[['feature1', 'feature2', '...']] # Selecting predictor variables\ny = data['outcome'] # Selecting outcome variable\n\n# Splitting the data into train and test sets\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\n\n# Creating and fitting the Logistic Regression model\nmodel = LogisticRegression()\nmodel.fit(X_train, y_train)\n\n# Making predictions on test set\ny_pred = model.predict(X_test)\n\n# Evaluating the model\naccuracy = accuracy_score(y_test, y_pred)\nconfusion = confusion_matrix(y_test, y_pred)\n\n# Printing the results\nprint(f'Accuracy: {accuracy}')\nprint(f'Confusion Matrix: {confusion}')"
+      },
+      {
+        "id": "ml-c2-sm-s61-h2-exercise",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Exercise - Work on Prediction" }]
+      },
+      {
+        "id": "ml-c2-sm-s61-p1-scenario",
+        "type": "paragraph",
+        "content": [
+          { "text": "There is a car making company that has recently launched a new car, has data as follow. So the company wanted to check/predict whether a user will purchase the product or not, one needs to find out the relationship between Age and Estimated Salary." }
+        ]
+      },
+      {
+        "id": "ml-c2-sm-s61-img-userdata",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap2-fundamentals/images/slide61_user_data_table.png",
+        "alt": "Table of user data including User ID, Gender, Age, EstimatedSalary, and Purchased (0 or 1).",
+        "caption": [{ "text": "User Data for Purchase Prediction Exercise." }]
+      },
+      {
+        "id": "ml-c2-sm-s61-p2-datasource",
+        "type": "paragraph",
+        "content": [
+          { "text": "Source of data: ", "link": "https://www.kaggle.com/code/sandragracenelson/logistic-regression-on-user-data-csv/input" }
+        ]
+      },
+      {
+        "id": "ml-c2-sm-s62-h2-labreq",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Lab Requirements" }]
+      },
+      {
+        "id": "ml-c2-sm-s62-list-reqs",
+        "type": "list",
+        "ordered": true,
+        "items": [
+          { "id": "ml-c2-sm-li-s62-1", "content": [{ "text": "Install Python3" }] },
+          { "id": "ml-c2-sm-li-s62-2", "content": [{ "text": "Install Anaconda Distribution" }] },
+          { "id": "ml-c2-sm-li-s62-3", "content": [{ "text": "Use Jupyter Notebook" }] },
+          { "id": "ml-c2-sm-li-s62-4", "content": [{ "text": "Install some packages using pip package manager using the editor: -pandas, -Sklearn, -matplotlib lib, -numpy" }] }
+        ]
+      }
+    ]
+  }
+]

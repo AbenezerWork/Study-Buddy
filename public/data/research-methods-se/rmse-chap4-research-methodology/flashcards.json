@@ -1,0 +1,118 @@
+
+[
+  {
+    "id": "rmse-c4-fc-1",
+    "front": "What is Research Philosophy composed of?",
+    "back": "Ontology (the nature of reality/being) + Epistemology (the nature of knowledge, how we can know reality)."
+  },
+  {
+    "id": "rmse-c4-fc-2",
+    "front": "What is a Research Paradigm?",
+    "back": "A framework guiding research, encompassing beliefs about how research should be conducted, including assumptions about ontology, epistemology, and axiology (values)."
+  },
+  {
+    "id": "rmse-c4-fc-3",
+    "front": "Name the layers of the Research Onion model.",
+    "back": "Philosophy, Approach, Strategy, Choices, Time Horizon, Techniques and Procedures."
+  },
+  {
+    "id": "rmse-c4-fc-4",
+    "front": "Describe Positivism as a research philosophy.",
+    "back": "Emphasizes observable phenomena and often uses quantitative methods. Assumes an objective reality that can be measured."
+  },
+  {
+    "id": "rmse-c4-fc-5",
+    "front": "Describe Interpretivism as a research philosophy.",
+    "back": "Focuses on understanding the subjective meaning of social phenomena, typically using qualitative methods. Reality is socially constructed."
+  },
+  {
+    "id": "rmse-c4-fc-6",
+    "front": "What is Critical Realism?",
+    "back": "Acknowledges an independent reality but recognizes that our understanding of it is mediated by social constructs."
+  },
+  {
+    "id": "rmse-c4-fc-7",
+    "front": "What is Constructivism as a research paradigm?",
+    "back": "Suggests that knowledge is constructed through social processes and interactions."
+  },
+  {
+    "id": "rmse-c4-fc-8",
+    "front": "What is Pragmatism as a research paradigm?",
+    "back": "Blends different methodologies and focuses on practical outcomes and solutions to problems."
+  },
+  {
+    "id": "rmse-c4-fc-9",
+    "front": "What is Research Methodology (in the context of the Onion Model)?",
+    "back": "The overall strategy and rationale of the research process, including methods for data collection and analysis, closely linked to the research paradigm."
+  },
+  {
+    "id": "rmse-c4-fc-10",
+    "front": "Differentiate Deductive and Inductive research approaches.",
+    "back": "Deductive: Starts with theory, then tests hypotheses (theory testing). Inductive: Starts with data collection, then develops theory (theory building)."
+  },
+  {
+    "id": "rmse-c4-fc-11",
+    "front": "What is an Independent Variable (X)?",
+    "back": "The variable that is assumed to be the cause; it is manipulated or observed to see its effect on another variable."
+  },
+  {
+    "id": "rmse-c4-fc-12",
+    "front": "What is a Dependent Variable (Y)?",
+    "back": "The variable that represents the effect or outcome; its value depends on the independent variable."
+  },
+  {
+    "id": "rmse-c4-fc-13",
+    "front": "What is an Intervening Variable (Z)?",
+    "back": "A variable that explains the relationship between an independent variable (X) and a dependent variable (Y); it's the means by which X affects Y."
+  },
+  {
+    "id": "rmse-c4-fc-14",
+    "front": "List three common Research Strategies.",
+    "back": "Experiment, Survey, Case study, Grounded theory, Ethnography, Action research."
+  },
+  {
+    "id": "rmse-c4-fc-15",
+    "front": "What is Triangulation in research?",
+    "back": "Using multiple methods or data sources in qualitative research to develop a comprehensive understanding of phenomena. Often an advantage of multi-method strategies."
+  },
+  {
+    "id": "rmse-c4-fc-16",
+    "front": "Differentiate Cross-Sectional and Longitudinal studies.",
+    "back": "Cross-Sectional: Data collected at one point in time (\"snapshot\"). Longitudinal: Data collected at multiple points in time from the same subjects (\"movie\")."
+  },
+  {
+    "id": "rmse-c4-fc-17",
+    "front": "Name two quantitative data collection methods/variants.",
+    "back": "Surveys/Questionnaires (can be quant), Automated Collection (logging, performance monitoring), Experiments (True, Quasi)."
+  },
+  {
+    "id": "rmse-c4-fc-18",
+    "front": "Name two qualitative data collection methods/variants.",
+    "back": "Interviews (Structured, Semi-structured, Unstructured), Observations (Participant, Non-participant), Document/Artifact Analysis (can be qual)."
+  },
+  {
+    "id": "rmse-c4-fc-19",
+    "front": "What is a Theoretical Framework?",
+    "back": "A structure that supports and informs research, providing a lens to interpret findings and connecting research to existing theories and literature."
+  },
+  {
+    "id": "rmse-c4-fc-20",
+    "front": "What is a Conceptual Framework?",
+    "back": "Focuses more on specific aspects of the research context, visually representing relationships among concepts/variables to guide the research process."
+  },
+  {
+    "id": "rmse-c4-fc-21",
+    "front": "What is Empirical Research?",
+    "back": "A systematic investigation to obtain knowledge through direct or indirect observation and experimentation, grounded in real-world evidence."
+  },
+  {
+    "id": "rmse-c4-fc-22",
+    "front": "If your research focuses on lived experiences of software developers, which paradigm is likely most relevant?",
+    "back": "Interpretivism or Constructivism, as these focus on subjective meaning and socially constructed knowledge."
+  },
+  {
+    "id": "rmse-c4-fc-23",
+    "front": "What is the core of the 'Research Onion' if you peel away all layers?",
+    "back": "The data collection methods or techniques and procedures used to gather evidence."
+  }
+]

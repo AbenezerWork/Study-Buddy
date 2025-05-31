@@ -1,0 +1,103 @@
+
+[
+  {
+    "id": "spm-ch1-fc-1",
+    "front": "What is Management?",
+    "back": "Achieving goals in a way that makes the best use of all resources. Involves activities like Planning, Organizing, Staffing, Directing, Controlling, Monitoring, Innovating, and Representing."
+  },
+  {
+    "id": "spm-ch1-fc-2",
+    "front": "Define 'Planning' in management.",
+    "back": "Deciding in advance what to do, when to do & how to do it. It bridges the gap from where we are & where we want to be. Essentially, 'deciding what is to be done'."
+  },
+  {
+    "id": "spm-ch1-fc-3",
+    "front": "What is a Project?",
+    "back": "A temporary effort to create a unique product or service. Projects usually include constraints and risks regarding cost, schedule, or performance outcome. It's a planned set of interrelated tasks executed over a fixed period within certain limitations."
+  },
+  {
+    "id": "spm-ch1-fc-4",
+    "front": "What is Software Project Management (SPM)?",
+    "back": "The discipline of planning, organizing, motivating, and controlling resources to achieve specific software project goals. It's a methodical approach from start to finish."
+  },
+  {
+    "id": "spm-ch1-fc-5",
+    "front": "List three key reasons for implementing SPM.",
+    "back": "1. Better control of financial, physical, and human resources. 2. Shorter development times and lower costs. 3. Higher quality and increased reliability of software."
+  },
+  {
+    "id": "spm-ch1-fc-6",
+    "front": "What are the main Project Parameters?",
+    "back": "Scope (what is/is not included), Quality (product, process, people), Cost (project cost, customer budget), Time, and Resources (people, equipment, facilities)."
+  },
+  {
+    "id": "spm-ch1-fc-7",
+    "front": "Name four Characteristics of Projects.",
+    "back": "Non-routine, Planned, Aiming at a specific target, Work carried out for a customer (others: involving specialism, multiple phases, constrained, large/complex)."
+  },
+  {
+    "id": "spm-ch1-fc-8",
+    "front": "What is the 'Triple Constraint' in project management?",
+    "back": "The three often competing goals that a project manager must balance: Scope (what must be done), Time (available time to complete), and Cost (budgeted amount)."
+  },
+  {
+    "id": "spm-ch1-fc-9",
+    "front": "What does the 'Invisibility' of software projects refer to?",
+    "back": "Progress in a software project is not immediately or physically visible, unlike in some other engineering disciplines."
+  },
+  {
+    "id": "spm-ch1-fc-10",
+    "front": "What are the components of the SMART criteria for objectives?",
+    "back": "Specific, Measurable, Achievable, Relevant, Time-constrained."
+  },
+  {
+    "id": "spm-ch1-fc-11",
+    "front": "What is 'Situational Management'?",
+    "back": "A management style where the current state of the organization determines operational procedures to achieve desired outcomes, emphasizing adaptability."
+  },
+  {
+    "id": "spm-ch1-fc-12",
+    "front": "What is 'Change Management'?",
+    "back": "A systematic approach to dealing with change from both organizational and individual perspectives, managing the transition from an old position to a new one."
+  },
+  {
+    "id": "spm-ch1-fc-13",
+    "front": "Differentiate between 'Hard Skills' and 'Soft Skills' for Project Managers.",
+    "back": "Hard skills: Product knowledge, SPM tools and techniques. Soft skills: Being able to work with people, communication, leadership."
+  },
+  {
+    "id": "spm-ch1-fc-14",
+    "front": "List the main phases of the Classic Project Life Cycle.",
+    "back": "Requirements Analysis, Specification, Design, Coding, Verification and Validation, Implementation/Installation, Maintenance and Support."
+  },
+  {
+    "id": "spm-ch1-fc-15",
+    "front": "What is the purpose of a 'Feasibility Study' in project management?",
+    "back": "To determine if a project is technically feasible and worthwhile from a business point of view before committing to planning and execution."
+  },
+  {
+    "id": "spm-ch1-fc-16",
+    "front": "Define 'Methodology' in project management.",
+    "back": "A sequenced group of methods or techniques used to perform project activities."
+  },
+  {
+    "id": "spm-ch1-fc-17",
+    "front": "What are the key activities in the ISO 12207 life-cycle's 'Requirements Analysis' phase?",
+    "back": "Requirements elicitation (what the client needs) and Analysis (converting customer-facing requirements into developer-understandable equivalents)."
+  },
+  {
+    "id": "spm-ch1-fc-18",
+    "front": "What is 'Management Control'?",
+    "back": "The process involving data collection, data processing into information, comparison with objectives/goals, modelling potential outcomes, and implementing decisions."
+  },
+  {
+    "id": "spm-ch1-fc-19",
+    "front": "What are the six steps in the Decision Making Process described?",
+    "back": "Define Problem, Fact Collection, Solution Finding, Select Solution, Implement Solution, Monitor Solution."
+  },
+  {
+    "id": "spm-ch1-fc-20",
+    "front": "Why is 'Conformity' a characteristic challenge in software projects?",
+    "back": "Software systems often have to conform to complex and sometimes changing requirements of human clients and existing systems."
+  }
+]

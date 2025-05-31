@@ -1,0 +1,97 @@
+
+[
+  {
+    "id": "ml-c1-mcq-1",
+    "question": "Who first introduced the term 'machine learning' in 1959?",
+    "options": ["Alan Turing", "Tom Mitchell", "Arthur Samuel", "Charles Babbage"],
+    "correctAnswerIndex": 2,
+    "explanation": "Arthur Samuel coined the term 'machine learning' in 1959 while at IBM."
+  },
+  {
+    "id": "ml-c1-mcq-2",
+    "question": "According to Tom Mitchell, a computer program learns from experience E, with respect to tasks T, and performance measure P. What does 'E' stand for?",
+    "options": ["Evaluation", "Examples (Data)", "Execution", "Efficiency"],
+    "correctAnswerIndex": 1,
+    "explanation": "'E' stands for Experience, which refers to the data or examples the system is exposed to."
+  },
+  {
+    "id": "ml-c1-mcq-3",
+    "question": "Which of the following is NOT a primary classification of Machine Learning algorithms?",
+    "options": ["Supervised Learning", "Reinforcement Learning", "Statistical Learning", "Unsupervised Learning"],
+    "correctAnswerIndex": 2,
+    "explanation": "The three main classifications are Supervised, Unsupervised, and Reinforcement Learning. Statistical Learning is a broader field related to ML."
+  },
+  {
+    "id": "ml-c1-mcq-4",
+    "question": "Training an algorithm with a dataset where input data is paired with corresponding output labels is characteristic of:",
+    "options": ["Unsupervised Learning", "Reinforcement Learning", "Supervised Learning", "Semi-Supervised Learning"],
+    "correctAnswerIndex": 2,
+    "explanation": "Supervised Learning involves training with labeled datasets where inputs are paired with known outputs."
+  },
+  {
+    "id": "ml-c1-mcq-5",
+    "question": "Predicting whether an email is spam or not is an example of which type of Supervised Learning problem?",
+    "options": ["Regression", "Clustering", "Classification", "Association"],
+    "correctAnswerIndex": 2,
+    "explanation": "Spam detection is a classification problem, as it involves assigning an email to a predefined category (spam or not-spam)."
+  },
+  {
+    "id": "ml-c1-mcq-6",
+    "question": "Which type of Machine Learning involves an agent learning through rewards and penalties from interacting with an environment?",
+    "options": ["Supervised Learning", "Unsupervised Learning", "Reinforcement Learning", "Deep Learning"],
+    "correctAnswerIndex": 2,
+    "explanation": "Reinforcement Learning is characterized by an agent learning from rewards and penalties received from its actions in an environment."
+  },
+  {
+    "id": "ml-c1-mcq-7",
+    "question": "Identifying distinct customer segments for targeted marketing campaigns is a typical application of:",
+    "options": ["Regression", "Supervised Learning", "Clustering", "Reinforcement Learning"],
+    "correctAnswerIndex": 2,
+    "explanation": "Customer segmentation is a common application of Clustering, an Unsupervised Learning technique."
+  },
+  {
+    "id": "ml-c1-mcq-8",
+    "question": "What is the primary goal of the 'Data Wrangling' step in the ML Life Cycle?",
+    "options": [
+      "To deploy the model to a real-world system.",
+      "To select analytical techniques and build models.",
+      "To clean and convert raw data into a usable format.",
+      "To gather data from various sources."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Data Wrangling focuses on cleaning raw data (handling missing values, duplicates, noise) and converting it into a format suitable for analysis."
+  },
+  {
+    "id": "ml-c1-mcq-9",
+    "question": "Which of these is considered a subset of Machine Learning that uses neural networks with multiple layers?",
+    "options": ["Artificial Intelligence", "Data Science", "Supervised Learning", "Deep Learning"],
+    "correctAnswerIndex": 3,
+    "explanation": "Deep Learning is a subfield of Machine Learning that specifically utilizes multi-layered neural networks."
+  },
+  {
+    "id": "ml-c1-mcq-10",
+    "question": "Which of the following is a significant challenge in Machine Learning projects?",
+    "options": [
+      "Abundance of perfectly labeled data",
+      "Robust model evaluation techniques are always straightforward",
+      "Interpretability issues and susceptibility to bias",
+      "Simplicity of handling unstructured data"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Challenges in ML include data quality issues, the need for robust model evaluation, interpretability, bias, and handling complex data."
+  },
+  {
+    "id": "ml-c1-mcq-11",
+    "front": "The period from 1974 to 1980, known for reduced funding and interest in AI, is called:",
+    "options": ["The AI Boom", "The Neural Network Era", "The First AI Winter", "The Deep Learning Revolution"],
+    "correctAnswerIndex": 2,
+    "explanation": "The duration of 1974 to 1980 was known as the First AI Winter due to challenges and reduced progress in the field."
+  },
+  {
+    "id": "ml-c1-mcq-12",
+    "front": "Which of these is an example of an Unsupervised Learning task?",
+    "options": ["Predicting house prices based on features.", "Classifying images of cats and dogs.", "Grouping similar customers based on purchasing behavior.", "Teaching a robot to play chess through trial and error."],
+    "correctAnswerIndex": 2,
+    "explanation": "Grouping similar customers (customer segmentation) is a classic example of clustering, an unsupervised learning task."
+  }
+]

@@ -1,0 +1,6 @@
+{
+  "name": "Study Buddy: Flashcards & Quizzes",
+  "description": "An interactive web application to study with flashcards and test your knowledge with multiple-choice questions. Built with React, TypeScript, and Tailwind CSS.",
+  "requestFramePermissions": [],
+  "prompt": ""
+}

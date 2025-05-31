@@ -1,0 +1,1062 @@
+
+[
+  {
+    "id": "rmse-chap5-topic-main",
+    "title": "Chapter 5: Research Design and Data Analysis",
+    "introduction": [
+      { "text": "This chapter (Part II of Research Methodology) focuses on Research Design, Sampling, Data collection methods, Data Analysis, Data Interpretation, and Findings. Authored by AASTU, March 2025." }
+    ],
+    "contentBlocks": [
+      {
+        "id": "rmse-c5-sm-block-slide1-topics",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c5-sm-li-s1-1", "content": [{ "text": "Research Model/Theory/Methodology", "bold": true }] },
+          { "id": "rmse-c5-sm-li-s1-2", "content": [{ "text": "Research Design", "bold": true }] },
+          { "id": "rmse-c5-sm-li-s1-3", "content": [{ "text": "Data Collection methods and", "bold": true }] },
+          { "id": "rmse-c5-sm-li-s1-4", "content": [{ "text": "Data Analysis", "bold": true }] }
+        ]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide2-h2-outline",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Outline Recap" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide2-list-outline",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c5-sm-li-s2-1", "content": [{ "text": "Part-I Research Methodology, Research Process “Onion”, Philosophy, Approaches, Strategies, Research Possibilities Grid, theoretical/Conceptual framework, Empirical Research (Chapter 4)" }] },
+          { "id": "rmse-c5-sm-li-s2-2", "content": [{ "text": "Part-II Research Design, Sampling, Data collection methods, Data Analysis, Data Interpretation and Findings (Chapter 5)", "bold": true }] }
+        ]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide3-h2-design",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Research Design" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide3-p1",
+        "type": "paragraph",
+        "content": [{ "text": "Research Design is a ", "bold": true }, { "text": "plan, structure", "bold": true }, { "text": " and ", "bold": true }, { "text": "strategy", "bold": true }, { "text": " of investigation… to obtain ", "bold": true }, { "text": "answers", "bold": true }, { "text": " to research ", "bold": true }, { "text": "questions", "bold": true }, { "text": " or ", "bold": true }, { "text": "problems.", "bold": true }, { "text": " It includes an outline of what the investigator will do from writing the ", "bold": true }, { "text": "hypotheses", "bold": true }, { "text": " …to the final ", "bold": true }, { "text": "analysis", "bold": true }, { "text": " of data (Kerlinger 1986: 279)." }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide3-p2",
+        "type": "paragraph",
+        "content": [{ "text": "Traditional Research Design is a ", "bold": true }, { "text": "blueprint", "bold": true }, { "text": " or ", "bold": true }, { "text": "detailed", "bold": true }, { "text": " plan for how a research study is to be completed (Thyer 1993: 94)." }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide3-p3",
+        "type": "paragraph",
+        "content": [{ "text": "Research Design is the ", "bold": true }, { "text": "arrangement", "bold": true }, { "text": " of the conditions for ", "bold": true }, { "text": "collection", "bold": true }, { "text": " and ", "bold": true }, { "text": "analysis", "bold": true }, { "text": " of ", "bold": true }, { "text": "data", "bold": true }, { "text": " in a manner that aims to combine relevance to the research purpose with ", "bold": true }, { "text": "economy", "bold": true }, { "text": " in procedure (Selltiz, Deutsch and Cook 1962: 50) ---"},{ "text": "this is what we need it in this lesson!", "bold":true, "italic":true}]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide3-activity",
+        "type": "alert",
+        "style": "info",
+        "title": [{"text": "Activity: What is difference between research proposal and research design?"}],
+        "content": [
+          {"text": "Ans: The research proposal outlines rationale ", "bold":true}, {"text":"why", "bold":true, "underline":true}, {"text":" and ", "bold":true}, {"text":"what", "bold":true, "underline":true}, {"text":" of your research, whereas the research design focuses on methodology and procedures for conducting research, the ", "bold":true}, {"text":"how", "bold":true, "underline":true},{"text":" it is carried out. Can you add more difference?....\nSource: (PDF) Research design and research proposal checklists", "bold":true}
+        ]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide4-h3-checklist",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Checklist for creating research design:" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide4-list-checklist",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c5-sm-li-s4-1", "content": [{ "text": "i. What ", "bold": true }, { "text": "method", "bold": true }, { "text": " you ", "bold": true }, { "text": "propose", "bold": true }, { "text": " to use" }] },
+          { "id": "rmse-c5-sm-li-s4-2", "content": [{ "text": "ii. ", "bold": true }, { "text": "How", "bold": true }, { "text": " you are going to ", "bold": true }, { "text": "collect", "bold": true }, { "text": " information from your respondents" }] },
+          { "id": "rmse-c5-sm-li-s4-3", "content": [{ "text": "iii. ", "bold": true }, { "text": "How", "bold": true }, { "text": " you are going to ", "bold": true }, { "text": "select", "bold": true }, { "text": " your respondents" }] },
+          { "id": "rmse-c5-sm-li-s4-4", "content": [{ "text": "iv. ", "bold": true }, { "text": "How", "bold": true }, { "text": " the information you are going to collect is ", "bold": true }, { "text": "to be analyzed", "bold": true }] },
+          { "id": "rmse-c5-sm-li-s4-5", "content": [{ "text": "v. ", "bold": true }, { "text": "How", "bold": true }, { "text": " you are going to ", "bold": true }, { "text": "communicate", "bold": true }, { "text": " your findings" }] },
+          { "id": "rmse-c5-sm-li-s4-6", "content": [{ "text": "Give rationale and justification for all above decisions", "bold": true }] },
+          { "id": "rmse-c5-sm-li-s4-7", "content": [{ "text": "Support them critically from the literature reviewed.", "bold": true }] }
+        ]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide4-p-helps",
+        "type": "paragraph",
+        "content": [{ "text": "Helps take decisions about how to complete the entire research process:" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide4-list-process",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c5-sm-li-s4-8", "content": [{ "text": "Validly" }, {"text": " . Accurately", "bold":true}] },
+          { "id": "rmse-c5-sm-li-s4-9", "content": [{ "text": "Objectively" }, {"text": " . Economically", "bold":true}] }
+        ]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide5-h3-steps",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Steps in Research Design" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide5-list-steps",
+        "type": "list",
+        "ordered": true,
+        "items": [
+          { "id": "rmse-c5-sm-li-s5-1", "content": [{ "text": "Step 1: Consider your aims and approach", "bold": true }] },
+          { "id": "rmse-c5-sm-li-s5-2", "content": [{ "text": "Step 2: Choose a type of research design", "bold": true }] },
+          { "id": "rmse-c5-sm-li-s5-3", "content": [{ "text": "Step 3: Identify your population and sampling method", "bold": true }] },
+          { "id": "rmse-c5-sm-li-s5-4", "content": [{ "text": "Step 4: Choose your data collection methods", "bold": true }] },
+          { "id": "rmse-c5-sm-li-s5-5", "content": [{ "text": "Step 5: Plan your data collection procedures", "bold": true }] },
+          { "id": "rmse-c5-sm-li-s5-6", "content": [{ "text": "Step 6: Decide on your data analysis strategies", "bold": true }] }
+        ]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide6-h3-step1",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Step1: Choose your aims and research approach" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide6-h4-qual",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Qualitative approach" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide6-list-qual",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c5-sm-li-s6-qual1", "content": [{ "text": "Understand subjective experiences, beliefs, and concepts" }] },
+          { "id": "rmse-c5-sm-li-s6-qual2", "content": [{ "text": "Gain in-depth knowledge of a specific context or culture" }] },
+          { "id": "rmse-c5-sm-li-s6-qual3", "content": [{ "text": "Explore under-researched problems and generate new ideas" }] }
+        ]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide6-h4-quant",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Quantitative approach" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide6-list-quant",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c5-sm-li-s6-quant1", "content": [{ "text": "Measure different ", "bold": true }, { "text": "types of variables", "bold": true }, { "text": " and describe frequencies, averages, and correlations" }] },
+          { "id": "rmse-c5-sm-li-s6-quant2", "content": [{ "text": "Test ", "bold": true }, { "text": "hypotheses", "bold": true }, { "text": " about relationships between variables" }] },
+          { "id": "rmse-c5-sm-li-s6-quant3", "content": [{ "text": "Test the effectiveness of a new treatment, program or product" }] }
+        ]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide7-h3-qualdesign",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "1. Qualitative Research Designs" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide7-p1",
+        "type": "paragraph",
+        "content": [{ "text": "Qualitative Research Designs: tend to be more flexible and ", "bold": true }, { "text": "inductive", "bold": true }, { "text": ", allowing you to adjust your approach based on what you find throughout the research process." }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide7-p2-example",
+        "type": "paragraph",
+        "content": [{ "text": "Example: ", "bold": true }, { "text": "If you want to generate ", "bold": true }, { "text": "new theory", "bold": true }, { "text": " for student centered active learning while teaching software engineering courses, a qualitative approach would make the most sense. You can use this type of research to explore exactly what teachers and students struggle with traditional lecture mode class sessions." }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide8-h3-quantdesign",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "2. Quantitative Research Designs" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide8-p1",
+        "type": "paragraph",
+        "content": [{ "text": "Quantitative Research Designs: tend to be more fixed and ", "bold": true }, { "text": "deductive", "bold": true }, { "text": ", with ", "bold": true }, { "text": "variables", "bold": true }, { "text": " and ", "bold": true }, { "text": "hypotheses", "bold": true }, { "text": " clearly defined in advance of data collection." }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide8-p2-example",
+        "type": "paragraph",
+        "content": [{ "text": "Example: ", "bold": true }, { "text": "If you want to ", "bold": true }, { "text": "test", "bold": true }, { "text": " the effectiveness of an student centered active teaching method, a ", "bold": true }, { "text": "quantitative", "bold": true }, { "text": " approach is most suitable. You can use this type of research to measure learning outcomes like grades and test scores." }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide8-alert-note",
+        "type": "alert",
+        "style": "info",
+        "content": [{ "text": "Note: Qualitative and quantitative approaches can also be combined to have a complete picture and more credible research result", "bold": true }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide9-h3-step2quant",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Step 2: Choose Type of Research Design (Quantitative)" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide9-p1",
+        "type": "paragraph",
+        "content": [{ "text": "Types of quantitative research designs: Quantitative designs can be split into ", "bold": true }, { "text": "four", "bold": true }, { "text": " main types." }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide9-p2-exp",
+        "type": "paragraph",
+        "content": [{ "text": "1. Experimental ", "bold": true }, { "text": " vs ", "bold": true }, { "text": "2. Quasi-experimental Designs:", "bold": true }, { "text": " allow you to test ", "bold": true }, { "text": "cause-and-effect", "bold": true }, { "text": " relationships" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide9-p3-desc",
+        "type": "paragraph",
+        "content": [{ "text": "3. Descriptive ", "bold": true }, { "text": " vs ", "bold": true }, { "text": "4. Correlational Designs:", "bold": true }, { "text": " allow you to ", "bold": true }, { "text": "measure", "bold": true }, { "text": " variables and ", "bold": true }, { "text": "describe relationships", "bold": true }, { "text": " between them." }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide10-h4-tablehead",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Quantitative Design Types: Purpose and Characteristics" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide10-h5-exp",
+        "type": "heading",
+        "level": 5,
+        "content": [{ "text": "Experimental" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide10-list-exp",
+        "type": "list", "ordered": false, "items": [
+          {"id": "rmse-c5-li-s10e1", "content": [{"text": "Used to test causal relationships"}]},
+          {"id": "rmse-c5-li-s10e2", "content": [{"text": "Involves manipulating an independent variable and measuring its effect on a dependent variable"}]},
+          {"id": "rmse-c5-li-s10e3", "content": [{"text": "Subjects are randomly assigned to groups"}]},
+          {"id": "rmse-c5-li-s10e4", "content": [{"text": "Usually conducted in a controlled environment (e.g., a lab)"}]}
+        ]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide10-h5-quasi",
+        "type": "heading",
+        "level": 5,
+        "content": [{ "text": "Quasi-experimental" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide10-list-quasi",
+        "type": "list", "ordered": false, "items": [
+          {"id": "rmse-c5-li-s10q1", "content": [{"text": "Used to test causal relationships"}]},
+          {"id": "rmse-c5-li-s10q2", "content": [{"text": "Similar to experimental design, but without random assignment"}]},
+          {"id": "rmse-c5-li-s10q3", "content": [{"text": "Often involves comparing the outcomes of pre-existing groups"}]},
+          {"id": "rmse-c5-li-s10q4", "content": [{"text": "Often conducted in a natural environment (higher ecological validity)"}]}
+        ]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide10-h5-corr",
+        "type": "heading",
+        "level": 5,
+        "content": [{ "text": "Correlational" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide10-list-corr",
+        "type": "list", "ordered": false, "items": [
+          {"id": "rmse-c5-li-s10c1", "content": [{"text": "Used to test whether (and how strongly) variables are related"}]},
+          {"id": "rmse-c5-li-s10c2", "content": [{"text": "Variables are measured without influencing them"}]}
+        ]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide10-h5-desc",
+        "type": "heading",
+        "level": 5,
+        "content": [{ "text": "Descriptive" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide10-list-desc",
+        "type": "list", "ordered": false, "items": [
+          {"id": "rmse-c5-li-s10d1", "content": [{"text": "Used to describe characteristics, averages, trends, etc"}]},
+          {"id": "rmse-c5-li-s10d2", "content": [{"text": "Variables are measured without influencing them"}]}
+        ]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide11-p1",
+        "type": "paragraph",
+        "content": [{"text": "With descriptive and correlational designs, you can get a clear picture of characteristics, trends and relationships as they exist in the real world. However, you can’t draw conclusions about cause and effect (because ", "bold":true}, {"text":"correlation doesn’t imply causation", "bold":true, "italic":true}, {"text":").", "bold":true}]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide11-p2-example",
+        "type": "paragraph",
+        "content": [{"text": "Example: ", "bold":true}, {"text":"You could use a correlational design to find out if the rise in online teaching in the past year correlates with any change in test scores. But this design can’t confirm a causal relationship between the two variables. Any change in test scores could have been influenced by ", "italic":true}, {"text":"many other variables", "italic":true, "bold":true}, {"text":", such as ", "italic":true}, {"text":"increased stress and health issues", "italic":true, "bold":true}, {"text":" among students and teachers.", "italic":true}]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide12-p1",
+        "type": "paragraph",
+        "content": [{"text": "Experiments are the strongest way to test ", "bold":true}, {"text":"cause-and-effect", "bold":true}, {"text":" relationships without the risk of other variables influencing the results. ", "bold":true}, {"text":"However,", "bold":true}, {"text":" their controlled conditions ", "bold":true}, {"text":"may not", "bold":true, "underline":true}, {"text":" always reflect how things work in the real world. They’re ", "bold":true}, {"text":"often", "bold":true, "italic":true}, {"text":" also more difficult and expensive to implement.", "bold":true}]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide12-p2-example",
+        "type": "paragraph",
+        "content": [{"text": "Example: ", "bold":true}, {"text":"In an experimental design, you could gather a sample of students and then randomly assign half of them to be taught with student centered and the other half to be taught in lecture mode, while controlling all other relevant variables. By comparing their outcomes in test scores, you can be more confident that it was the method of teaching (and not other variables) that caused any change in scores."}]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide13-h3-step2qual",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Types of qualitative research designs" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide13-p1",
+        "type": "paragraph",
+        "content": [{"text": "Qualitative designs are ", "bold":true}, {"text":"less strictly", "bold":true}, {"text":" defined."}]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide13-list-qualchar",
+        "type": "list", "ordered": false, "items": [
+            {"id": "rmse-c5-li-s13-1", "content": [{"text": "gain a rich, ", "bold":true}, {"text":"detailed", "bold":true, "underline":true}, {"text":" understanding of a ", "bold":true}, {"text":"specific", "bold":true, "underline":true}, {"text":" context or phenomenon, and"}] },
+            {"id": "rmse-c5-li-s13-2", "content": [{"text":"can ", "bold":true}, {"text":"often", "bold":true, "underline":true}, {"text":" be more ", "bold":true}, {"text":"creative", "bold":true, "underline":true}, {"text":" and ", "bold":true}, {"text":"flexible", "bold":true, "underline":true}, {"text":" in designing your research."}] }
+        ]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide13-p2",
+        "type": "paragraph",
+        "content": [{"text": "Qualitative designs can ", "bold":true}, {"text":"often", "bold":true, "underline":true}, {"text":" have ", "bold":true}, {"text":"similar", "bold":true, "underline":true}, {"text":" approaches in terms of:", "bold":true}]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide13-list-qualapp",
+        "type": "list", "ordered": false, "items": [
+            {"id": "rmse-c5-li-s13-3", "content": [{"text":"data collection, but ", "bold":true}, {"text":"focus on different", "bold":true, "underline":true}, {"text":" aspects when ", "bold":true}, {"text":"analyzing", "bold":true, "underline":true}, {"text":" the data."}] }
+        ]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide14-h4-tableheadqual",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Qualitative Design Types: Purpose and Characteristics" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide14-h5-cs",
+        "type": "heading",
+        "level": 5,
+        "content": [{ "text": "Case study" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide14-list-cs",
+        "type": "list", "ordered": false, "items": [
+          {"id": "rmse-c5-li-s14cs1", "content": [{"text": "Detailed study of a specific subject (e.g., a place, event, organization, etc)."}]},
+          {"id": "rmse-c5-li-s14cs2", "content": [{"text": "Data can be collected using a variety of sources and methods."}]},
+          {"id": "rmse-c5-li-s14cs3", "content": [{"text": "Focuses on gaining a holistic understanding of the case."}]}
+        ]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide14-h5-eth",
+        "type": "heading",
+        "level": 5,
+        "content": [{ "text": "Ethnography" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide14-list-eth",
+        "type": "list", "ordered": false, "items": [
+          {"id": "rmse-c5-li-s14e1", "content": [{"text": "Detailed study of the culture of a specific community or group."}]},
+          {"id": "rmse-c5-li-s14e2", "content": [{"text": "Data is collected by extended immersion and close observation."}]},
+          {"id": "rmse-c5-li-s14e3", "content": [{"text": "Focuses on describing and interpreting beliefs, conventions, social dynamics, etc."}]}
+        ]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide14-h5-gt",
+        "type": "heading",
+        "level": 5,
+        "content": [{ "text": "Grounded theory" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide14-list-gt",
+        "type": "list", "ordered": false, "items": [
+          {"id": "rmse-c5-li-s14gt1", "content": [{"text": "Aims to develop a theory inductively by systematically analyzing qualitative data."}]}
+        ]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide14-h5-ph",
+        "type": "heading",
+        "level": 5,
+        "content": [{ "text": "Phenomenology" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide14-list-ph",
+        "type": "list", "ordered": false, "items": [
+          {"id": "rmse-c5-li-s14ph1", "content": [{"text": "Aims to understand a phenomenon or event by describing participants' lived experiences."}]}
+        ]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide15-h3-step2data",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Step 2 (cont.): Choosing data collection methods" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide15-p1",
+        "type": "paragraph",
+        "content": [{"text": "Data collection methods are ways of directly measuring variables and gathering information."}]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide15-p2",
+        "type": "paragraph",
+        "content": [{"text": "Data collection is the ", "bold":true}, {"text":"most important work", "bold":true, "underline":true}, {"text":", is researcher. The collection of information must be containing on facts which is from the following ", "bold":true}, {"text":"two types", "bold":true, "underline":true}, {"text":" of researcher."}]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide15-h4-primary",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Primary data" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide15-p-primary",
+        "type": "paragraph",
+        "content": [{"text": "Original data, ", "bold":true}, {"text":"first time", "bold":true, "underline":true}, {"text":" collected data. Primary Data Collection: Primary data may be from the following:"}]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide15-list-primary",
+        "type": "list", "ordered": true, "items": [
+          {"id": "rmse-c5-li-s15p1", "content": [{"text": "Experiment"}]},
+          {"id": "rmse-c5-li-s15p2", "content": [{"text": "Questionnaire"}]},
+          {"id": "rmse-c5-li-s15p3", "content": [{"text": "Observation", "bold":true}]},
+          {"id": "rmse-c5-li-s15p4", "content": [{"text": "Interview", "bold":true}]}
+        ]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide15-h4-secondary",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Secondary data" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide15-p-secondary",
+        "type": "paragraph",
+        "content": [{"text": "Data collected for another purpose or primary data that undergone with statistical analysis. Secondary data collection: It has the following ", "bold":true}, {"text":"categories:", "bold":true, "underline":true}]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide15-list-secondary",
+        "type": "list", "ordered": true, "items": [
+          {"id": "rmse-c5-li-s15s1", "content": [{"text": "Review of literature", "bold":true}]},
+          {"id": "rmse-c5-li-s15s2", "content": [{"text": "Official and non-official reports", "bold":true}]},
+          {"id": "rmse-c5-li-s15s3", "content": [{"text": "Library approach", "bold":true}]}
+        ]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide16-h4-qvi",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Questionnaires vs. Interviews" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide16-h5-quest",
+        "type": "heading",
+        "level": 5,
+        "content": [{ "text": "Questionnaires" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide16-list-quest",
+        "type": "list", "ordered": false, "items": [
+          {"id": "rmse-c5-li-s16q1", "content": [{"text": "More common in quantitative research"}]},
+          {"id": "rmse-c5-li-s16q2", "content": [{"text": "May be distributed online, by phone, by mail or in person"}]},
+          {"id": "rmse-c5-li-s16q3", "content": [{"text": "Usually offer closed questions with limited options"}]},
+          {"id": "rmse-c5-li-s16q4", "content": [{"text": "Consistent data can be collected from many people"}]}
+        ]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide16-h5-inter",
+        "type": "heading",
+        "level": 5,
+        "content": [{ "text": "Interviews" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide16-list-inter",
+        "type": "list", "ordered": false, "items": [
+          {"id": "rmse-c5-li-s16i1", "content": [{"text": "More common in qualitative research"}]},
+          {"id": "rmse-c5-li-s16i2", "content": [{"text": "Conducted by researcher in person, by phone or online"}]},
+          {"id": "rmse-c5-li-s16i3", "content": [{"text": "Usually allow participants to answer in their own words"}]},
+          {"id": "rmse-c5-li-s16i4", "content": [{"text": "Ideas can be explored in-depth with a smaller group (e.g., focus group)"}]}
+        ]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide17-h4-obs",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Observation methods" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide17-list-obs",
+        "type": "list", "ordered": false, "items": [
+          {"id": "rmse-c5-li-s17obs1", "content": [{"text":"allow you to collect data ", "bold":true}, {"text":"unobtrusively", "bold":true, "underline":true}, {"text":", observing characteristics, behaviors or social interactions ", "bold":true}, {"text":"without", "bold":true, "underline":true}, {"text":" relying on self-reporting."}] },
+          {"id": "rmse-c5-li-s17obs2", "content": [{"text":"may be conducted ", "bold":true}, {"text":"in real time", "bold":true, "underline":true}, {"text":", taking notes as you observe, or you might make ", "bold":true}, {"text":"audiovisual recordings.", "bold":true, "underline":true}, {"text":" They can be ", "bold":true}, {"text":"qualitative", "bold":true, "underline":true}, {"text":" or ", "bold":true}, {"text":"quantitative.", "bold":true, "underline":true}] }
+        ]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide17-h5-quantobs",
+        "type": "heading",
+        "level": 5,
+        "content": [{ "text": "Quantitative observation" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide17-list-quantobs",
+        "type": "list", "ordered": false, "items": [
+          {"id": "rmse-c5-li-s17qo1", "content": [{"text": "Systematically counting or measuring"}]},
+          {"id": "rmse-c5-li-s17qo2", "content": [{"text": "Categories and criteria determined in advance"}]}
+        ]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide17-h5-qualobs",
+        "type": "heading",
+        "level": 5,
+        "content": [{ "text": "Qualitative observation" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide17-list-qualobs",
+        "type": "list", "ordered": false, "items": [
+          {"id": "rmse-c5-li-s17qlo1", "content": [{"text": "Taking detailed notes and writing rich descriptions"}]},
+          {"id": "rmse-c5-li-s17qlo2", "content": [{"text": "All relevant observations can be recorded"}]}
+        ]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide18-h4-othermethods",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Other methods of data collection" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide18-p1",
+        "type": "paragraph",
+        "content": [{"text":"There are many other ways you ", "bold":true}, {"text":"might", "bold":true, "underline":true}, {"text":" collect data ", "bold":true}, {"text":"depending on your field and topic.", "bold":true, "underline":true}]
+      },
+      { "id": "rmse-c5-sm-s18-f1-h5", "type": "heading", "level": 5, "content": [{"text": "Field: Media & communication"}] },
+      { "id": "rmse-c5-sm-s18-f1-p", "type": "paragraph", "content": [{"text": "Examples: Collecting a sample of texts (e.g., speeches, articles, or social media posts) for data on cultural norms and narratives"}] },
+      { "id": "rmse-c5-sm-s18-f2-h5", "type": "heading", "level": 5, "content": [{"text": "Field: Psychology"}] },
+      { "id": "rmse-c5-sm-s18-f2-p", "type": "paragraph", "content": [{"text": "Examples: Using technologies like neuroimaging, eye-tracking, or computer-based tasks to collect data on things like attention, emotional response, or reaction time"}] },
+      { "id": "rmse-c5-sm-s18-f3-h5", "type": "heading", "level": 5, "content": [{"text": "Field: Education"}] },
+      { "id": "rmse-c5-sm-s18-f3-p", "type": "paragraph", "content": [{"text": "Examples: Using tests or assignments to collect data on knowledge and skills"}] },
+      { "id": "rmse-c5-sm-s18-f4-h5", "type": "heading", "level": 5, "content": [{"text": "Field: Physical sciences"}] },
+      { "id": "rmse-c5-sm-s18-f4-p", "type": "paragraph", "content": [{"text": "Examples: Using scientific instruments to collect data on things like weight, blood pressure, or chemical composition"}] },
+      {
+        "id": "rmse-c5-sm-block-slide18-alert-note",
+        "type": "alert",
+        "style": "info",
+        "content": [{"text":"Note: If you’re ", "bold":true}, {"text":"not sure", "bold":true, "underline":true}, {"text":" which methods will work ", "bold":true}, {"text":"best", "bold":true, "underline":true}, {"text":" for your research design, try reading some papers in your field to see ", "bold":true}, {"text":"what kinds of data collection methods", "bold":true, "underline":true}, {"text":" they used.", "bold":true}]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide19-h4-secondarydata",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Secondary data" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide19-list-secdata",
+        "type": "list", "ordered": false, "items": [
+          {"id": "rmse-c5-li-s19sd1", "content": [{"text":"If you ", "bold":true}, {"text":"don’t", "bold":true, "underline":true}, {"text":" have the ", "bold":true}, {"text":"time", "bold":true, "underline":true}, {"text":" or ", "bold":true}, {"text":"resources", "bold":true, "underline":true}, {"text":" to collect data from the population using secondary data that other researchers ", "bold":true}, {"text":"already", "bold":true, "underline":true}, {"text":" collected."}] },
+          {"id": "rmse-c5-li-s19sd2", "content": [{"text":"Example: Datasets", "bold":true}, {"text":" from ", "bold":true}, {"text":"government", "bold":true, "underline":true}, {"text":" surveys or ", "bold":true}, {"text":"previous", "bold":true, "underline":true}, {"text":" studies on your topic."}] },
+          {"id": "rmse-c5-li-s19sd3", "content": [{"text":"Using secondary data can ", "bold":true}, {"text":"expand", "bold":true, "underline":true}, {"text":" the ", "bold":true}, {"text":"scope", "bold":true, "underline":true}, {"text":" of your research, as you may be able to access much larger and more varied samples ", "bold":true}, {"text":"than", "bold":true, "underline":true}, {"text":" you could collect yourself."}] },
+          {"id": "rmse-c5-li-s19sd4", "content": [{"text":"However, it also means you don’t have any control over which variables to measure or how to measure them, so the conclusions you can draw may be limited."}] }
+        ]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide20-h3-step2plan",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Step 2 (cont.): Planning data collection Procedures" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide20-p1",
+        "type": "paragraph",
+        "content": [{"text":"Planning systematic procedures is ", "bold":true}, {"text":"especially", "bold":true, "underline":true}, {"text":" important in ", "bold":true}, {"text":"quantitative research", "bold":true, "underline":true}, {"text":", where you need to:"}]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide20-list-quantneed",
+        "type": "list", "ordered": false, "items": [
+            {"id": "rmse-c5-li-s20qn1", "content": [{"text":"precisely define your variables and"}]},
+            {"id": "rmse-c5-li-s20qn2", "content": [{"text":"ensure", "bold":true, "underline":true}, {"text":" your measurements are high in ", "bold":true}, {"text":"reliability", "bold":true, "underline":true}, {"text":" and ", "bold":true}, {"text":"validity.", "bold":true, "underline":true}]}
+        ]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide20-h4-op",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Operationalization" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide20-p-op",
+        "type": "paragraph",
+        "content": [{"text":"turning concepts or variables into measurable indicators"}]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide20-list-op",
+        "type": "list", "ordered": false, "items": [
+            {"id": "rmse-c5-li-s20op1", "content": [{"text":"Some variables, like ", "bold":true}, {"text":"height or age", "bold":true, "underline":true}, {"text":", are easily ", "bold":true}, {"text":"measured.", "bold":true, "underline":true}] },
+            {"id": "rmse-c5-li-s20op2", "content": [{"text":"Some more ", "bold":true}, {"text":"abstract concepts", "bold":true, "underline":true}, {"text":", like satisfaction, anxiety, or competence are fuzzy and needs to be ", "bold":true}, {"text":"converted", "bold":true, "underline":true}, {"text":" into measurable indicator."}] }
+        ]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide21-h4-relval",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Reliability vs. Validity" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide21-h5-rel",
+        "type": "heading",
+        "level": 5,
+        "content": [{ "text": "Reliability" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide21-list-rel",
+        "type": "list", "ordered": false, "items": [
+          {"id": "rmse-c5-li-s21r1", "content": [{"text": "Does your measure capture the same concept consistently over time?"}]},
+          {"id": "rmse-c5-li-s21r2", "content": [{"text": "Does it produce the same results in different contexts?"}]},
+          {"id": "rmse-c5-li-s21r3", "content": [{"text": "Do all questions measure the exact same concept?"}]}
+        ]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide21-h5-val",
+        "type": "heading",
+        "level": 5,
+        "content": [{ "text": "Validity" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide21-list-val",
+        "type": "list", "ordered": false, "items": [
+          {"id": "rmse-c5-li-s21v1", "content": [{"text": "Do your measurement materials test all aspects of the concept? (content validity)"}]},
+          {"id": "rmse-c5-li-s21v2", "content": [{"text": "Does it correlate with different measures of the same concept? (criterion validity)"}]}
+        ]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide22-h4-samplingproc",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Sampling procedures:" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide22-list-samp",
+        "type": "list", "ordered": false, "items": [
+          {"id": "rmse-c5-li-s22sp1", "content": [{"text":"As well as ", "bold":true}, {"text":"choosing", "bold":true, "underline":true}, {"text":" an appropriate ", "bold":true}, {"text":"sampling method", "bold":true, "underline":true}, {"text":", you need a concrete plan for how you’ll actually contact and recruit your selected sample."}] },
+          {"id": "rmse-c5-li-s22sp2", "content": [{"text":"i.e. making decisions on questions include:"}] }
+        ]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide22-list-sampq",
+        "type": "list", "ordered": true, "items": [
+          {"id": "rmse-c5-li-s22sq1", "content": [{"text": "How many participants do you need for an adequate sample size?"}]},
+          {"id": "rmse-c5-li-s22sq2", "content": [{"text":"What ", "bold":true}, {"text":"inclusion and exclusion criteria", "bold":true, "underline":true}, {"text":" will you use to identify eligible participants?"}]},
+          {"id": "rmse-c5-li-s22sq3", "content": [{"text":"How will you contact your ", "bold":true}, {"text":"sample", "bold":true, "underline":true}, {"text":"—by mail, online, by phone, or in person?"}]},
+          {"id": "rmse-c5-li-s22sq4", "content": [{"text":"If you’re using a ", "bold":true}, {"text":"probability sampling method", "bold":true, "underline":true}, {"text":", it’s important that everyone who is randomly selected actually participates in the study. How will you ", "bold":true}, {"text":"ensure", "bold":true, "underline":true}, {"text":" a high response rate?"}]},
+          {"id": "rmse-c5-li-s22sq5", "content": [{"text":"If you’re using a ", "bold":true}, {"text":"non-probability method", "bold":true, "underline":true}, {"text":", how will you ", "bold":true}, {"text":"avoid", "bold":true, "underline":true}, {"text":" research bias and ensure a representative sample?"}]}
+        ]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide23-h4-datamgmt",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Data Management" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide23-list-datamgmt",
+        "type": "list", "ordered": false, "items": [
+          {"id": "rmse-c5-li-s23dm1", "content": [{"text":"It’s also important to create a data management plan for ", "bold":true}, {"text":"organizing", "bold":true, "underline":true}, {"text":" and ", "bold":true}, {"text":"storing", "bold":true, "underline":true}, {"text":" your data."}] },
+          {"id": "rmse-c5-li-s23dm2", "content": [{"text":"Will you need to ", "bold":true}, {"text":"transcribe", "bold":true, "underline":true}, {"text":" interviews or perform data entry for observations? You should ", "bold":true}, {"text":"anonymize", "bold":true, "underline":true}, {"text":" and safeguard any sensitive data, and make sure it’s ", "bold":true}, {"text":"backed", "bold":true, "underline":true}, {"text":" up regularly."}] },
+          {"id": "rmse-c5-li-s23dm3", "content": [{"text":"Keeping your data ", "bold":true}, {"text":"well-organized", "bold":true, "underline":true}, {"text":" will ", "bold":true}, {"text":"save time", "bold":true, "underline":true}, {"text":" when it comes to analyzing it."}] },
+          {"id": "rmse-c5-li-s23dm4", "content": [{"text":"It can also help ", "bold":true}, {"text":"other researchers", "bold":true, "underline":true}, {"text":" validate and add to your findings (high ", "bold":true}, {"text":"replicability", "bold":true, "underline":true}, {"text":")."}] }
+        ]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide24-h3-step3pop",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Step 3: Identify population and Sampling Methods" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide24-p1",
+        "type": "paragraph",
+        "content": [{"text":"Your research design should clearly define who or what your research will focus on, and ", "bold":true}, {"text":"how", "bold":true, "underline":true}, {"text":" you’ll go about ", "bold":true}, {"text":"choosing", "bold":true, "underline":true}, {"text":" your participants or subjects."}]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide24-p2",
+        "type": "paragraph",
+        "content": [{"text":"In research:"}]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide24-list-popsamp",
+        "type": "list", "ordered": false, "items": [
+          {"id": "rmse-c5-li-s24ps1", "content": [{"text":"a ", "bold":true}, {"text":"population", "bold":true, "underline":true}, {"text":" is the entire group that you want to ", "bold":true}, {"text":"draw", "bold":true, "underline":true}, {"text":" conclusions about, while"}] },
+          {"id": "rmse-c5-li-s24ps2", "content": [{"text":"a ", "bold":true}, {"text":"sample", "bold":true, "underline":true}, {"text":" is the smaller group of individuals you’ll actually collect data from."}] }
+        ]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide25-h4-identpop",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Identifying your population and sampling method" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide25-list-topics",
+        "type": "list", "ordered": false, "items": [
+          {"id": "rmse-c5-li-s25t1", "content": [{"text":"Population", "bold":true}]},
+          {"id": "rmse-c5-li-s25t2", "content": [{"text":"Sampling methods", "bold":true}]},
+          {"id": "rmse-c5-li-s25t3", "content": [{"text":"Sample Size", "bold":true}]}
+        ]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide25-img-popsamp",
+        "type": "image",
+        "src": "/data/research-methods-se/rmse-chap5-research-design-data-analysis/images/slide25_population_sample.png",
+        "alt": "Diagram showing a large 'Population' group, an arrow 'Select a sample from the population' pointing to a smaller 'Sample' group, and an arrow 'Generalize conclusions from the sample to the population' pointing back to 'Population'.",
+        "caption": [{"text":"Population to Sample and Generalization."}]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide26-h4-defpop",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Identifying your population: Defining the population" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide26-p1",
+        "type": "paragraph",
+        "content": [{"text":"A ", "bold":true}, {"text":"population", "bold":true, "underline":true}, {"text":" can be made up of anything you want to study—plants, animals, organizations, texts, countries, etc. In the social sciences, it most often refers to a group of people."}]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide26-p2-example",
+        "type": "paragraph",
+        "content": [{"text":"Example: ", "bold":true}, {"text":"We will you focus on people from a specific demographic, region or background? Are you interested in people with a certain job or medical condition, or users of a particular product? The more precisely you define your population, the easier it will be to gather a representative sample."}]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide27-p1-example",
+        "type": "paragraph",
+        "content": [{"text":"Example (cont.): ", "bold":true}, {"text":"If you’re studying the effectiveness of student centered teaching in the Ethiopia, it would be very difficult to get a sample that’s representative of all university students in the country. To make the research more manageable, and to draw more precise conclusions, you could focus on a narrower population—for example, 4th year students in urban areas of the country."}]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide28-h4-probnonprob",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Identifying sampling method: Probability vs. Non-probability" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide28-h5-prob",
+        "type": "heading",
+        "level": 5,
+        "content": [{ "text": "Probability sampling" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide28-list-prob",
+        "type": "list", "ordered": false, "items": [
+          {"id": "rmse-c5-li-s28p1", "content": [{"text": "Sample is selected using random methods"}]},
+          {"id": "rmse-c5-li-s28p2", "content": [{"text": "Mainly used in quantitative research"}]},
+          {"id": "rmse-c5-li-s28p3", "content": [{"text": "Allows you to make strong statistical inferences about the population"}]}
+        ]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide28-h5-nonprob",
+        "type": "heading",
+        "level": 5,
+        "content": [{ "text": "Non-probability sampling" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide28-list-nonprob",
+        "type": "list", "ordered": false, "items": [
+          {"id": "rmse-c5-li-s28np1", "content": [{"text": "Sample selected in a non-random way"}]},
+          {"id": "rmse-c5-li-s28np2", "content": [{"text": "Used in both qualitative and quantitative research"}]},
+          {"id": "rmse-c5-li-s28np3", "content": [{"text":"Easier to achieve, but more risk of ", "bold":true}, {"text":"research bias", "bold":true, "underline":true}]}
+        ]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide29-h4-methodsimg",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Sampling methods (Visual)" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide29-img-types",
+        "type": "image",
+        "src": "/data/research-methods-se/rmse-chap5-research-design-data-analysis/images/slide29_sampling_methods.png",
+        "alt": "Diagram showing Types of Sampling Methods: Left side (Probabilistic) includes Simple Random Sampling and Convenience Sample (incorrectly placed, should be non-prob). Right side (Non-Probabilistic) shows Systematic, Stratified, Cluster, Voluntary Response, Purposive, Snowball Sampling. Source: www.homeworkjoy.com",
+        "caption": [{"text":"Types of Sampling Method Techniques and Examples."}]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide29-alert-note",
+        "type": "alert",
+        "style": "warning",
+        "content": [{"text":"Note: methods in the left side are probabilistic whereas those in the right side are non-probabilistic methods. (Slide image seems to mix Convenience under probabilistic; it's typically non-probabilistic)."}]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide30-h4-samplesize",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Sample Size" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide30-p1",
+        "type": "paragraph",
+        "content": [{"text":"According to Uma Sekaran in Research Method for Business 4th Edition, Roscoe (1975) proposed the rules of thumb for determining sample size where sample size larger than 30 and less than 500 are appropriate for most research, and the minimum size of sample should be 30% of the population."}]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide30-p2",
+        "type": "paragraph",
+        "content": [{"text":"The size of the sample depends on a number of factors and the researchers have to give the statistically information before they can get an answer. For example, these information like (confidence level, standard deviation, margin of error and population size) to determine the sample size."}]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide31-h3-step4analysis",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Step 4: Deciding on your data analysis strategies" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide31-p1",
+        "type": "paragraph",
+        "content": [{"text":"The ", "bold":true}, {"text":"final step", "bold":true, "underline":true}, {"text":" of designing your research is planning how you will ", "bold":true}, {"text":"analyze", "bold":true, "underline":true}, {"text":" the data."}]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide31-h4-quant",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "1. Quantitative Data Analysis: Descriptive and Inferential statistics" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide31-h5-desc",
+        "type": "heading",
+        "level": 5,
+        "content": [{ "text": "(a) Descriptive Statistics" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide31-p-desc",
+        "type": "paragraph",
+        "content": [{"text":"helps to summarize sample data in terms of:"}]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide31-list-desc",
+        "type": "list", "ordered": false, "items": [
+          {"id": "rmse-c5-li-s31d1", "content": [{"text":"The ", "bold":true}, {"text":"distribution", "bold":true, "underline":true}, {"text":" of the data (e.g., the frequency of each score on a test)"}]},
+          {"id": "rmse-c5-li-s31d2", "content": [{"text":"The ", "bold":true}, {"text":"central tendency", "bold":true, "underline":true}, {"text":" of the data (e.g., the ", "bold":true}, {"text":"mean", "bold":true, "underline":true}, {"text":" to describe the average score)"}]},
+          {"id": "rmse-c5-li-s31d3", "content": [{"text":"The ", "bold":true}, {"text":"variability", "bold":true, "underline":true}, {"text":" of the data (e.g., the ", "bold":true}, {"text":"standard deviation", "bold":true, "underline":true}, {"text":" to describe how spread out the scores are)"}]}
+        ]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide32-h5-inf",
+        "type": "heading",
+        "level": 5,
+        "content": [{ "text": "(b) Inferential statistics" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide32-p1",
+        "type": "paragraph",
+        "content": [{"text":"The specific calculations you can do depend on the ", "underline":true}, {"text":"level of measurement", "underline":true}, {"text":" of your variables."}]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide32-p2",
+        "type": "paragraph",
+        "content": [{"text":"helps to estimates about the population based on your sample data."}]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide32-list-inf",
+        "type": "list", "ordered": false, "items": [
+          {"id": "rmse-c5-li-s32i1", "content": [{"text":"To test ", "bold":true}, {"text":"hypotheses", "bold":true, "underline":true}, {"text":" about a relationship between variables."}]},
+          {"id": "rmse-c5-li-s32i2", "content": [{"text":"To conduct ", "bold":true}, {"text":"Regression", "bold":true, "underline":true}, {"text":" and correlation tests look for ", "bold":true}, {"text":"associations", "bold":true, "underline":true}, {"text":" between two or more variables,"}]},
+          {"id": "rmse-c5-li-s32i3", "content": [{"text":"To make comparison tests (such as ", "bold":true}, {"text":"t tests", "bold":true, "underline":true}, {"text":" and ", "bold":true}, {"text":"ANOVAs", "bold":true, "underline":true}, {"text":") look for differences in the outcomes of different groups."}]}
+        ]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide32-p3",
+        "type": "paragraph",
+        "content": [{"text":"Your ", "bold":true}, {"text":"choice of statistical test", "bold":true, "underline":true}, {"text":" depends on various aspects of your research design, including the ", "bold":true}, {"text":"types of variables", "bold":true, "underline":true}, {"text":" you’re dealing with and the distribution of your data."}]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide33-h4-hypotest",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Testing Hypothesis : Ho vs Ha" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide33-img1",
+        "type": "image",
+        "src": "/data/research-methods-se/rmse-chap5-research-design-data-analysis/images/slide33_hypothesis_testing_flow.png",
+        "alt": "Flowchart for hypothesis testing: Data -> State Hypothesis -> Select Test Statistic -> Calculate Test Statistic -> Statistical Decision. If Do not Reject Ho, Conclude Ho may be true. If Reject Ho, Conclude Ha is true.",
+        "caption": [{"text":"Steps in Hypothesis Testing."}]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide33-img2",
+        "type": "image",
+        "src": "/data/research-methods-se/rmse-chap5-research-design-data-analysis/images/slide33_ho_ha_distribution.png",
+        "alt": "Diagram showing a normal distribution curve with H0 Accepted region in the middle and Rejection Regions for Null Hypothesis (H0) vs Alternative Hypothesis (H1) on the tails. Source: www.statisticalaid.com",
+        "caption": [{"text":"Hypothesis Testing Distribution."}]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide33-img3",
+        "type": "image",
+        "src": "/data/research-methods-se/rmse-chap5-research-design-data-analysis/images/slide33_type1_type2_error.png",
+        "alt": "Table showing Type I error (Reject Ho when Ho true) and Type II error (Accept Ho when Ha true), and Correct decisions.",
+        "caption": [{"text":"Type I and Type II Errors in Hypothesis Testing."}]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide34-h4-scales",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Types of Measurement Scales" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide34-list-vars",
+        "type": "list", "ordered": false, "items": [
+          {"id": "rmse-c5-li-s34v1", "content": [{"text":"Variables: ", "bold":true}, {"text":"Independent and Dep. Variables"}]},
+          {"id": "rmse-c5-li-s34v2", "content": [{"text":"Discrete vs Continuous"}]},
+          {"id": "rmse-c5-li-s34v3", "content": [{"text":"Levels of Measurement: nominal, ordinal, Interval, ratio"}]}
+        ]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide34-list-levels",
+        "type": "list", "ordered": true, "items": [
+          {"id": "rmse-c5-li-s34l1", "content": [{"text":"Nominal: ", "bold":true}, {"text":"the data can only be categorized"}]},
+          {"id": "rmse-c5-li-s34l2", "content": [{"text":"Ordinal: ", "bold":true}, {"text":"the data can be categorized and ranked"}]},
+          {"id": "rmse-c5-li-s34l3", "content": [{"text":"Interval: ", "bold":true}, {"text":"the data can be categorized, ranked, and evenly spaced"}]},
+          {"id": "rmse-c5-li-s34l4", "content": [{"text":"Ratio: ", "bold":true}, {"text":"the data can be categorized, ranked, evenly spaced, and has a natural zero."}]}
+        ]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide34-img-scales",
+        "type": "image",
+        "src": "/data/research-methods-se/rmse-chap5-research-design-data-analysis/images/slide34_measurement_scales.png",
+        "alt": "Visual representation of Nominal (Named variables), Ordinal (Named + ordered variables), Interval (Named + ordered + proportionate interval between variables), and Ratio (Named + ordered + proportionate interval + Can accommodate absolute zero) scales.",
+        "caption": [{"text":"Levels of Measurement."}]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide35-h3-noirexamples",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Nominal, ordinal, interval, and ratio data examples" }]
+      },
+      { "id": "rmse-c5-sm-s35-nom-h4", "type": "heading", "level": 4, "content": [{"text": "Examples of nominal scales"}] },
+      { "id": "rmse-c5-sm-s35-nom-list", "type": "list", "ordered": false, "items": [
+          {"id": "rmse-c5-li-s35n1", "content": [{"text": "City of birth"}]},
+          {"id": "rmse-c5-li-s35n2", "content": [{"text": "Gender"}]},
+          {"id": "rmse-c5-li-s35n3", "content": [{"text": "Ethnicity"}]},
+          {"id": "rmse-c5-li-s35n4", "content": [{"text": "Car brands"}]},
+          {"id": "rmse-c5-li-s35n5", "content": [{"text": "Marital status"}]}
+      ]},
+      { "id": "rmse-c5-sm-s35-ord-h4", "type": "heading", "level": 4, "content": [{"text": "Examples of ordinal scales"}] },
+      { "id": "rmse-c5-sm-s35-ord-list", "type": "list", "ordered": false, "items": [
+          {"id": "rmse-c5-li-s35o1", "content": [{"text": "Top 5 Olympic medalists"}]},
+          {"id": "rmse-c5-li-s35o2", "content": [{"text": "Language ability (e.g., beginner, intermediate, fluent)"}]},
+          {"id": "rmse-c5-li-s35o3", "content": [{"text":"Likert-type questions ", "bold":true}, {"text":"(e.g., very dissatisfied to very satisfied)"}]}
+      ]},
+      { "id": "rmse-c5-sm-s35-int-h4", "type": "heading", "level": 4, "content": [{"text": "Examples of interval scales"}] },
+      { "id": "rmse-c5-sm-s35-int-list", "type": "list", "ordered": false, "items": [
+          {"id": "rmse-c5-li-s35i1", "content": [{"text": "Test scores (e.g., IQ or exams)"}]},
+          {"id": "rmse-c5-li-s35i2", "content": [{"text": "Personality inventories"}]},
+          {"id": "rmse-c5-li-s35i3", "content": [{"text": "Temperature in Fahrenheit or Celsius"}]}
+      ]},
+      { "id": "rmse-c5-sm-s35-rat-h4", "type": "heading", "level": 4, "content": [{"text": "Examples of ratio scales"}] },
+      { "id": "rmse-c5-sm-s35-rat-list", "type": "list", "ordered": false, "items": [
+          {"id": "rmse-c5-li-s35r1", "content": [{"text": "Height"}]},
+          {"id": "rmse-c5-li-s35r2", "content": [{"text": "Age"}]},
+          {"id": "rmse-c5-li-s35r3", "content": [{"text": "Weight"}]},
+          {"id": "rmse-c5-li-s35r4", "content": [{"text": "Temperature in Kelvin"}]}
+      ]},
+      {
+        "id": "rmse-c5-sm-block-slide36-h3-levelimportance",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Why are levels of measurement important?" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide36-p1-example",
+        "type": "paragraph",
+        "content": [{"text":"Example: A variable at 2 levels of measurement. You can measure the variable of income at an ordinal or ratio level."}]
+      },
+      { "id": "rmse-c5-sm-s36-table-h4", "type": "heading", "level": 4, "content": [{"text": "Income Measurement Example"}] },
+      { "id": "rmse-c5-sm-s36-rowA-h5", "type": "heading", "level": 5, "content": [{"text": "Participant A"}] },
+      { "id": "rmse-c5-sm-s36-rowA-p", "type": "paragraph", "content": [{"text": "Income (ordinal level): Bracket 1\nIncome (ratio level): $12,550"}] },
+      { "id": "rmse-c5-sm-s36-rowB-h5", "type": "heading", "level": 5, "content": [{"text": "Participant B"}] },
+      { "id": "rmse-c5-sm-s36-rowB-p", "type": "paragraph", "content": [{"text": "Income (ordinal level): Bracket 2\nIncome (ratio level): $39,700"}] },
+      { "id": "rmse-c5-sm-s36-rowC-h5", "type": "heading", "level": 5, "content": [{"text": "Participant C"}] },
+      { "id": "rmse-c5-sm-s36-rowC-p", "type": "paragraph", "content": [{"text": "Income (ordinal level): Bracket 3\nIncome (ratio level): $40,300"}] },
+      { "id": "rmse-c5-sm-s36-p-explain", "type": "paragraph", "content": [{"text":"At a ratio level, you can see that the difference between A and B’s incomes is far greater than the difference between B and C’s incomes.\nAt an ordinal level, however, you only know the income bracket for each participant, not their exact income. Since you cannot say exactly how much each income differs from the others in your data set, you can only order the income levels and group the participants."}] },
+      {
+        "id": "rmse-c5-sm-block-slide37-h3-descstats",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Which descriptive statistics can I apply on my data?" }]
+      },
+      { "id": "rmse-c5-sm-s37-nom-h4", "type": "heading", "level": 4, "content": [{"text": "Data type: Nominal"}] },
+      { "id": "rmse-c5-sm-s37-nom-p", "type": "paragraph", "content": [{"text": "Mathematical operations: Equality (=, ≠)\nMeasures of central tendency: Mode\nMeasures of variability: None"}] },
+      { "id": "rmse-c5-sm-s37-ord-h4", "type": "heading", "level": 4, "content": [{"text": "Data type: Ordinal"}] },
+      { "id": "rmse-c5-sm-s37-ord-p", "type": "paragraph", "content": [{"text": "Mathematical operations: Equality (=, ≠), Comparison (>, <)\nMeasures of central tendency: Mode, Median\nMeasures of variability: Range, Interquartile range"}] },
+      { "id": "rmse-c5-sm-s37-int-h4", "type": "heading", "level": 4, "content": [{"text": "Data type: Interval"}] },
+      { "id": "rmse-c5-sm-s37-int-p", "type": "paragraph", "content": [{"text": "Mathematical operations: Equality (=, ≠), Comparison (>, <), Addition, subtraction (+, -)\nMeasures of central tendency: Mode, Median, Arithmetic mean\nMeasures of variability: Range, Interquartile range, Standard deviation, Variance"}] },
+      { "id": "rmse-c5-sm-s37-rat-h4", "type": "heading", "level": 4, "content": [{"text": "Data type: Ratio"}] },
+      { "id": "rmse-c5-sm-s37-rat-p", "type": "paragraph", "content": [{"text": "Mathematical operations: Equality (=, ≠), Comparison (>, <), Addition, subtraction (+, -), Multiplication, division (×, ÷)\nMeasures of central tendency: Mode, Median, Arithmetic mean, *Geometric mean\nMeasures of variability: Range, Interquartile range, Standard deviation, Variance, **Relative standard deviation"}] },
+      {
+        "id": "rmse-c5-sm-block-slide38-h3-hypoteststats",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Which statistics can I apply on my data for hypothesis testing?" }]
+      },
+      { "id": "rmse-c5-sm-s38-table-p", "type": "paragraph", "content": [{"text": "This slide presents a table showing which statistical tests (Binomial, t-test, Chi-Square, Mann-Whitney U, One-way ANOVA, Kruskal-Wallis, Pearson correlation, Spearman correlation, Point biserial, t-test for paired samples, Wilcoxon-Test, Analysis of variance for repeated measurements, Friedman Test) are applicable for nominal, ordinal, and metric data types."}] },
+      { "id": "rmse-c5-sm-s38-examples-h4", "type": "heading", "level": 4, "content": [{"text": "Examples of hypothesis testing:"}] },
+      { "id": "rmse-c5-sm-s38-ttest-h5", "type": "heading", "level": 5, "content": [{"text": "Independent sample t-test"}] },
+      { "id": "rmse-c5-sm-s38-ttest-p", "type": "paragraph", "content": [{"text": "Is there a difference in the average number of burglaries (dependent variable) in houses with and without alarm systems (independent variable with 2 groups)?"}] },
+      { "id": "rmse-c5-sm-s38-paired-h5", "type": "heading", "level": 5, "content": [{"text": "Paired t-test"}] },
+      { "id": "rmse-c5-sm-s38-paired-p", "type": "paragraph", "content": [{"text": "Does the consumption of cigarettes have a negative effect on the blood pressure? (Before and after measurement)"}] },
+      { "id": "rmse-c5-sm-s38-anova-h5", "type": "heading", "level": 5, "content": [{"text": "ANOVA"}] },
+      { "id": "rmse-c5-sm-s38-anova-p", "type": "paragraph", "content": [{"text": "People living in small, medium or large cities (independent variable with three groups) differ in their health awareness (dependent variable)."}] },
+      {
+        "id": "rmse-c5-sm-block-slide39-h4-qualanalysis",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "2. Qualitative Data Analysis" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide39-p1",
+        "type": "paragraph",
+        "content": [{"text":"In qualitative research, your data will usually be very dense with information and ideas. Instead of summing it up in numbers, you’ll need to comb through the data in ", "bold":true}, {"text":"detail", "bold":true, "underline":true}, {"text":", interpret its ", "bold":true}, {"text":"meanings", "bold":true, "underline":true}, {"text":", identify ", "bold":true}, {"text":"patterns", "bold":true, "underline":true}, {"text":", and ", "bold":true}, {"text":"extract", "bold":true, "underline":true}, {"text":" the parts that are ", "bold":true}, {"text":"most relevant", "bold":true, "underline":true}, {"text":" to your ", "bold":true}, {"text":"research question.", "bold":true, "underline":true}]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide39-p2",
+        "type": "paragraph",
+        "content": [{"text":"Two of the most common approaches: ", "bold":true}, {"text":"thematic analysis", "bold":true, "underline":true}, {"text":" and ", "bold":true}, {"text":"discourse analysis", "bold":true, "underline":true}]
+      },
+      { "id": "rmse-c5-sm-s39-them-h5", "type": "heading", "level": 5, "content": [{"text": "Thematic analysis"}] },
+      { "id": "rmse-c5-sm-s39-them-p", "type": "paragraph", "content": [{"text": "Characteristics: Focuses on the content of the data. Involves coding and organizing the data to identify key themes."}] },
+      { "id": "rmse-c5-sm-s39-disc-h5", "type": "heading", "level": 5, "content": [{"text": "Discourse analysis"}] },
+      { "id": "rmse-c5-sm-s39-disc-p", "type": "paragraph", "content": [{"text": "Characteristics: Focuses on putting the data in context. Involves analyzing different levels of communication (language, structure, tone, etc)."}] },
+      { "id": "rmse-c5-sm-s39-note", "type": "alert", "style":"info", "content": [{"text":"Note: There are ", "bold":true}, {"text":"many other ways", "bold":true, "underline":true}, {"text":" of analyzing qualitative data ", "bold":true}, {"text":"depending", "bold":true, "underline":true}, {"text":" on the aims of your research."}] },
+      {
+        "id": "rmse-c5-sm-block-slide40-h2-summary",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Research Design - Summary" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide40-img-summary",
+        "type": "image",
+        "src": "/data/research-methods-se/rmse-chap5-research-design-data-analysis/images/slide40_choosing_methodology.png",
+        "alt": "Infographic: Choosing the Right Research Methodology. Steps: 1. Qualitative vs Quantitative vs Mixed Methods. 2. Data Collection Techniques. 3. Sampling Methods. 4. Tools for Data Analysis. 5. Ensuring Validity and Reliability.",
+        "caption": [{"text":"Summary of Choosing the Right Research Methodology."}]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide41-h2-activity",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Research Design - Activity" }]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide41-q1",
+        "type": "alert",
+        "style": "info",
+        "title": [{"text":"1: Identify the type of variables or measurement scales"}],
+        "content": [
+            {"text": "a) Tree, house, taxi, gender\nb) Academic rank: BSc, MSc, PhD\nc) Temperature, CGPA,\nd) Height, Income"}
+        ]
+      },
+      {
+        "id": "rmse-c5-sm-block-slide41-q2",
+        "type": "alert",
+        "style": "info",
+        "title": [{"text":"2: What type of sampling is used in the following cases?"}],
+        "content": [
+            {"text": "i) There are three bags (A, B and C), each with different balls. Bag A has 50 balls, bag B has 100 balls, and bag C has 200 balls. We have to choose a sample of balls from each bag proportionally. Suppose 5 balls from bag A, 10 balls from bag B and 20 balls from bag C."},
+            {"text": "\nii) In researching customer support services in a particular region, we ask your few customers to complete a survey on the products after the purchase. This is a convenient way to collect data. Still, as we only surveyed customers taking the same product. At the same time, the sample is not representative of all the customers in that area."}
+        ]
+      }
+    ],
+    "summary": [
+      { "text": "Chapter 5 covered Research Design (plan, structure, strategy), steps in designing research, types of quantitative (experimental, correlational) and qualitative (case study, ethnography) designs, data collection methods (primary/secondary, surveys, interviews, observation), planning procedures (operationalization, reliability, validity, sampling, data management), population and sampling methods, and data analysis strategies (descriptive/inferential statistics, levels of measurement, qualitative analysis)." }
+    ]
+  }
+]

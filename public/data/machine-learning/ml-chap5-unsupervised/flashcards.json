@@ -1,0 +1,78 @@
+
+[
+  {
+    "id": "ml-c5-fc-1",
+    "front": "What is the primary aim of Unsupervised Learning?",
+    "back": "To find the underlying structure or distribution of data, exploring it to find intrinsic structures without pre-existing labels."
+  },
+  {
+    "id": "ml-c5-fc-2",
+    "front": "How does Unsupervised Learning differ from Supervised Learning regarding training data?",
+    "back": "Unsupervised learning uses unlabeled training data, meaning models are not supervised. Supervised learning uses labeled data."
+  },
+  {
+    "id": "ml-c5-fc-3",
+    "front": "What kind of patterns does Unsupervised Learning try to find in data?",
+    "back": "It tries to find hidden patterns and insights from the given data by itself."
+  },
+  {
+    "id": "ml-c5-fc-4",
+    "front": "Can Unsupervised Learning be directly applied to a regression or classification problem?",
+    "back": "No, because it lacks corresponding output data (labels) for training on such tasks directly."
+  },
+  {
+    "id": "ml-c5-fc-5",
+    "front": "Why is Unsupervised Learning considered closer to 'real AI' or human learning?",
+    "back": "It's similar to how humans learn by experience and observing patterns without explicit instruction, working on unlabeled and uncategorized data."
+  },
+  {
+    "id": "ml-c5-fc-6",
+    "front": "What are the two main types of Unsupervised Learning problems shown on slide 71?",
+    "back": "Clustering and Association."
+  },
+  {
+    "id": "ml-c5-fc-7",
+    "front": "Define 'Clustering' in Unsupervised Learning.",
+    "back": "A method of grouping objects into clusters such that objects with most similarities remain in a group."
+  },
+  {
+    "id": "ml-c5-fc-8",
+    "front": "Define 'Association' in Unsupervised Learning.",
+    "back": "An unsupervised learning method used for finding relationships between variables in a large database. It determines the set of items that occur together in the dataset."
+  },
+  {
+    "id": "ml-c5-fc-9",
+    "front": "List three popular Unsupervised Learning algorithms mentioned.",
+    "back": "K-means clustering, KNN (k-nearest Neighbors - though often used in supervised context, can be adapted for unsupervised), Principal component analysis (PCA)."
+  },
+  {
+    "id": "ml-c5-fc-10",
+    "front": "What is K-Means Clustering?",
+    "back": "A partitioning clustering algorithm that separates a dataset into K distinct, non-overlapping subsets (clusters)."
+  },
+  {
+    "id": "ml-c5-fc-11",
+    "front": "What is the first step in the K-Means algorithm's working principle (Initialization)?",
+    "back": "Randomly select K data points as initial cluster centers."
+  },
+  {
+    "id": "ml-c5-fc-12",
+    "front": "What is the 'Assignment' step in K-Means clustering?",
+    "back": "Assign each data point to the cluster whose center is nearest."
+  },
+  {
+    "id": "ml-c5-fc-13",
+    "front": "What is the 'Update Centers' step in K-Means clustering?",
+    "back": "Recalculate the cluster centers as the mean (or based on variance, Euclidean distance) of the data points in each cluster."
+  },
+  {
+    "id": "ml-c5-fc-14",
+    "front": "When does the K-Means algorithm stop iterating?",
+    "back": "It iterates the assignment and update steps until convergence (when cluster assignments stabilize or maximum iterations are reached)."
+  },
+  {
+    "id": "ml-c5-fc-15",
+    "front": "What is the goal of the K-Means algorithm regarding the number of clusters 'K'?",
+    "back": "To specify the number of clusters 'K' that the data should be grouped into."
+  }
+]

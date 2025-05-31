@@ -1,0 +1,108 @@
+
+[
+  {
+    "id": "rmse-c1-fc-1",
+    "front": "What is Research? (Core Definition)",
+    "back": "Research is a systematic process of inquiry to discover, interpret, or revise facts, theories, or applications. It aims to advance knowledge and seek solutions to problems."
+  },
+  {
+    "id": "rmse-c1-fc-2",
+    "front": "Breakdown of the term 'Research'",
+    "back": "Re: Again, a new, over again. Search: To examine closely and carefully, to test and try or to probe."
+  },
+  {
+    "id": "rmse-c1-fc-3",
+    "front": "What is NOT considered research?",
+    "back": "Merely gathering information, transporting facts without analysis, or simply learning about something. Research problems usually don't have simple 'Yes/No' answers."
+  },
+  {
+    "id": "rmse-c1-fc-4",
+    "front": "List 3 primary goals of research.",
+    "back": "Examples: To get a degree, to solve a problem, to serve society, to get intellectual joy, to face a challenge."
+  },
+  {
+    "id": "rmse-c1-fc-5",
+    "front": "Key characteristics of the Nature of Research.",
+    "back": "Originates with a question/problem, requires clear goals, a specific plan, guided by problem/hypothesis, accepts assumptions, involves data collection/interpretation, and is cyclical."
+  },
+  {
+    "id": "rmse-c1-fc-6",
+    "front": "What are the 5 Qualities (Features) of Research?",
+    "back": "Systematic (ordered inquiry), Logical (evaluates conclusions), Empirical (data-based decisions), Reductive (generalizes from individual events), Replicable (testable procedures)."
+  },
+  {
+    "id": "rmse-c1-fc-7",
+    "front": "List the 8 Stages of the Research Process.",
+    "back": "1. Identifying Research Problem, 2. Literature Review, 3. Formulating Hypotheses, 4. Research Design, 5. Data Collection, 6. Data Analysis, 7. Drawing Conclusions, 8. Reporting and Dissemination."
+  },
+  {
+    "id": "rmse-c1-fc-8",
+    "front": "Name the 3 perspectives for classifying research types.",
+    "back": "Application (Pure/Applied), Objectives (Descriptive, Correlational, Explanatory, Exploratory), Enquiry Mode (Quantitative/Qualitative)."
+  },
+  {
+    "id": "rmse-c1-fc-9",
+    "front": "Differentiate Quantitative and Qualitative research.",
+    "back": "Quantitative: Numerical data (e.g., measuring code efficiency). Qualitative: Descriptive data (e.g., interviews on developer burnout)."
+  },
+  {
+    "id": "rmse-c1-fc-10",
+    "front": "List three common Research Designs.",
+    "back": "Experimental (controlled testing), Case Study (in-depth analysis), Survey (collecting user feedback)."
+  },
+  {
+    "id": "rmse-c1-fc-11",
+    "front": "What are the three main elements of a theory according to Dubin (1978)?",
+    "back": "1. A set of well-defined concepts (units), 2. Laws of interaction (rules governing relationships), 3. Boundary (scope where theory applies)."
+  },
+  {
+    "id": "rmse-c1-fc-12",
+    "front": "What is the role of theory in research?",
+    "back": "It can be a goal or guide, provides a frame of reference, helps formulate answers from research, and guides future research."
+  },
+  {
+    "id": "rmse-c1-fc-13",
+    "front": "Define 'Variables' in research.",
+    "back": "Any characteristic that varies (i.e., more than one value). Can be categorical or numerical, discrete or continuous. Main types: Independent (IV) and Dependent (DV)."
+  },
+  {
+    "id": "rmse-c1-fc-14",
+    "front": "Explain Deductive Reasoning with an example.",
+    "back": "Starts with general statements (premises) to reach a specific conclusion. E.g., All A are B; C is A; Therefore, C is B."
+  },
+  {
+    "id": "rmse-c1-fc-15",
+    "front": "Explain Inductive Reasoning with an example.",
+    "back": "Starts from specific observations to develop a general conclusion. E.g., Every quiz so far has been easy, therefore the test will be easy."
+  },
+  {
+    "id": "rmse-c1-fc-16",
+    "front": "What is Research Originality?",
+    "back": "Novelty in ideas, methods, or perspectives that advance the field (What's new?). Example: A first-of-its-kind approach."
+  },
+  {
+    "id": "rmse-c1-fc-17",
+    "front": "What is Research Contribution?",
+    "back": "Tangible impact on theory, practice, or tools in the field (Why does it matter?). Example: Measurable improvements or paradigm shifts."
+  },
+  {
+    "id": "rmse-c1-fc-18",
+    "front": "Key ethical considerations in SE Research.",
+    "back": "Informed Consent, Privacy (anonymizing data), Bias Mitigation."
+  },
+  {
+    "id": "rmse-c1-fc-19",
+    "front": "Define 'Hypothesis'.",
+    "back": "A tentative assumption of the study or expected results of the study."
+  },
+  {
+    "id": "rmse-c1-fc-20",
+    "front": "List two Core SE Research Areas.",
+    "back": "Examples: Software Development Processes (Agile/DevOps), Quality Assurance (Testing automation), Maintenance & Evolution."
+  },
+  {
+    "id": "rmse-c1-fc-21",
+    "front": "List two Emerging Hot Topics in SE Research.",
+    "back": "Examples: AI in SE (LLMs for code generation), Security & Privacy, Quantum Software Engineering, Green SE."
+  }
+]

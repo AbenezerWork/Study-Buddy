@@ -1,0 +1,105 @@
+
+[
+  {
+    "id": "subj-ml",
+    "name": "Machine Learning",
+    "chapters": [
+      {
+        "id": "ml-chap1-overview",
+        "name": "Chapter 1: Overview of ML",
+        "flashcardsPath": "/data/machine-learning/ml-chap1-overview/flashcards.json",
+        "mcqsPath": "/data/machine-learning/ml-chap1-overview/mcqs.json",
+        "studyMaterialPath": "/data/machine-learning/ml-chap1-overview/study-material.json"
+      },
+      {
+        "id": "ml-chap2-fundamentals",
+        "name": "Chapter 2: Fundamentals of Machine Learning",
+        "flashcardsPath": "/data/machine-learning/ml-chap2-fundamentals/flashcards.json",
+        "mcqsPath": "/data/machine-learning/ml-chap2-fundamentals/mcqs.json",
+        "studyMaterialPath": "/data/machine-learning/ml-chap2-fundamentals/study-material.json"
+      },
+      {
+        "id": "ml-chap3-introduction",
+        "name": "Chapter 3: Introduction to Machine Learning",
+        "flashcardsPath": "/data/machine-learning/ml-chap3-introduction/flashcards.json",
+        "mcqsPath": "/data/machine-learning/ml-chap3-introduction/mcqs.json",
+        "studyMaterialPath": "/data/machine-learning/ml-chap3-introduction/study-material.json"
+      },
+      {
+        "id": "ml-chap4-supervised",
+        "name": "Chapter 4: Machine Learning - Supervised and Unsupervised Learning",
+        "flashcardsPath": "/data/machine-learning/ml-chap4-supervised/flashcards.json",
+        "mcqsPath": "/data/machine-learning/ml-chap4-supervised/mcqs.json",
+        "studyMaterialPath": "/data/machine-learning/ml-chap4-supervised/study-material.json"
+      },
+      {
+        "id": "ml-chap5-advanced-deep-learning",
+        "name": "Chapter 5: Advanced ML and Deep Learning Introduction",
+        "flashcardsPath": "/data/machine-learning/ml-chap5-advanced-deep-learning/flashcards.json",
+        "mcqsPath": "/data/machine-learning/ml-chap5-advanced-deep-learning/mcqs.json",
+        "studyMaterialPath": "/data/machine-learning/ml-chap5-advanced-deep-learning/study-material.json"
+      }
+    ]
+  },
+  {
+    "id": "subj-spm",
+    "name": "Software Project Management",
+    "chapters": [
+      {
+        "id": "spm-chap1-intro",
+        "name": "Chapter 1: Introduction to Software Project Management",
+        "flashcardsPath": "/data/software-project-management/spm-chapter-1-introduction/flashcards.json",
+        "mcqsPath": "/data/software-project-management/spm-chapter-1-introduction/mcqs.json",
+        "studyMaterialPath": "/data/software-project-management/spm-chapter-1-introduction/study-material.json"
+      }
+    ]
+  },
+  {
+    "id": "subj-rmse",
+    "name": "Research Methods in Software Engineering",
+    "chapters": [
+      {
+        "id": "rmse-chap1-intro-research-basics",
+        "name": "Chapter 1: Introduction to Research Basics",
+        "flashcardsPath": "/data/research-methods-se/rmse-chap1-intro-research-basics/flashcards.json",
+        "mcqsPath": "/data/research-methods-se/rmse-chap1-intro-research-basics/mcqs.json",
+        "studyMaterialPath": "/data/research-methods-se/rmse-chap1-intro-research-basics/study-material.json"
+      },
+      {
+        "id": "rmse-chap2-literature-review",
+        "name": "Chapter 2: Literature Review",
+        "flashcardsPath": "/data/research-methods-se/rmse-chap2-literature-review/flashcards.json",
+        "mcqsPath": "/data/research-methods-se/rmse-chap2-literature-review/mcqs.json",
+        "studyMaterialPath": "/data/research-methods-se/rmse-chap2-literature-review/study-material.json"
+      },
+      {
+        "id": "rmse-chap3-research-proposal-writing",
+        "name": "Chapter 3: Research Proposal and Writing",
+        "flashcardsPath": "/data/research-methods-se/rmse-chap3-research-proposal-writing/flashcards.json",
+        "mcqsPath": "/data/research-methods-se/rmse-chap3-research-proposal-writing/mcqs.json",
+        "studyMaterialPath": "/data/research-methods-se/rmse-chap3-research-proposal-writing/study-material.json"
+      },
+      {
+        "id": "rmse-chap4-research-methodology",
+        "name": "Chapter 4: Research Methodology",
+        "flashcardsPath": "/data/research-methods-se/rmse-chap4-research-methodology/flashcards.json",
+        "mcqsPath": "/data/research-methods-se/rmse-chap4-research-methodology/mcqs.json",
+        "studyMaterialPath": "/data/research-methods-se/rmse-chap4-research-methodology/study-material.json"
+      },
+      {
+        "id": "rmse-chap5-research-design-data-analysis",
+        "name": "Chapter 5: Research Design and Data Analysis",
+        "flashcardsPath": "/data/research-methods-se/rmse-chap5-research-design-data-analysis/flashcards.json",
+        "mcqsPath": "/data/research-methods-se/rmse-chap5-research-design-data-analysis/mcqs.json",
+        "studyMaterialPath": "/data/research-methods-se/rmse-chap5-research-design-data-analysis/study-material.json"
+      },
+      {
+        "id": "rmse-chap6-ethics-communication",
+        "name": "Chapter 6: Research Ethics and Communication Skills",
+        "flashcardsPath": "/data/research-methods-se/rmse-chap6-ethics-communication/flashcards.json",
+        "mcqsPath": "/data/research-methods-se/rmse-chap6-ethics-communication/mcqs.json",
+        "studyMaterialPath": "/data/research-methods-se/rmse-chap6-ethics-communication/study-material.json"
+      }
+    ]
+  }
+]

@@ -1,0 +1,113 @@
+
+[
+  {
+    "id": "spm-ch1-mcq-1",
+    "question": "Which of the following is NOT a primary activity of management?",
+    "options": ["Planning", "Organizing", "Marketing", "Controlling"],
+    "correctAnswerIndex": 2,
+    "explanation": "While marketing might be an organizational function, the core management activities discussed are Planning, Organizing, Staffing, Directing, Controlling, Monitoring, Innovating, and Representing."
+  },
+  {
+    "id": "spm-ch1-mcq-2",
+    "question": "A project is characterized by being:",
+    "options": ["Permanent and routine", "Temporary and unique", "Ongoing and repetitive", "Permanent and unique"],
+    "correctAnswerIndex": 1,
+    "explanation": "A project is a temporary effort undertaken to create a unique product, service, or result."
+  },
+  {
+    "id": "spm-ch1-mcq-3",
+    "question": "What does SPM primarily stand for in the context of this material?",
+    "options": ["Standard Project Metrics", "Software Process Model", "Software Project Management", "System Performance Monitoring"],
+    "correctAnswerIndex": 2,
+    "explanation": "SPM refers to Software Project Management, the discipline of managing software-specific projects."
+  },
+  {
+    "id": "spm-ch1-mcq-4",
+    "question": "The 'Triple Constraint' of project management refers to the balance between:",
+    "options": ["Time, Resources, and Quality", "Scope, Time, and Cost", "Scope, Quality, and Risk", "Cost, Resources, and Risk"],
+    "correctAnswerIndex": 1,
+    "explanation": "The Triple Constraint involves balancing Scope (what needs to be done), Time (schedule), and Cost (budget)."
+  },
+  {
+    "id": "spm-ch1-mcq-5",
+    "question": "Which characteristic describes the difficulty in seeing the progress of software development easily?",
+    "options": ["Complexity", "Conformity", "Flexibility", "Invisibility"],
+    "correctAnswerIndex": 3,
+    "explanation": "'Invisibility' refers to the challenge that progress in software projects is not always immediately or physically apparent."
+  },
+  {
+    "id": "spm-ch1-mcq-6",
+    "question": "What does the 'A' in the SMART criteria for objectives stand for?",
+    "options": ["Accurate", "Achievable", "Assignable", "Appropriate"],
+    "correctAnswerIndex": 1,
+    "explanation": "SMART stands for Specific, Measurable, Achievable, Relevant, and Time-constrained."
+  },
+  {
+    "id": "spm-ch1-mcq-7",
+    "question": "Which of these is a key benefit of Software Project Management?",
+    "options": [
+      "Increased individual programmer autonomy",
+      "Guaranteed project success regardless of team skills",
+      "Better control of financial, physical, and human resources",
+      "Elimination of all project risks"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "SPM aims for better control over resources, improved customer relations, shorter development times, lower costs, and higher quality, among other benefits."
+  },
+  {
+    "id": "spm-ch1-mcq-8",
+    "question": "Which of the following is NOT a characteristic of projects?",
+    "options": ["Non-routine", "Planned", "Ongoing and repetitive", "Constrained by time and resources"],
+    "correctAnswerIndex": 2,
+    "explanation": "Projects are temporary and non-routine, whereas ongoing and repetitive tasks are typically operational work."
+  },
+  {
+    "id": "spm-ch1-mcq-9",
+    "question": "The management approach where managers act as coaches, communicate vision, and remove barriers is known as:",
+    "options": ["Traditional culture", "Situational management", "Quality culture", "Change management"],
+    "correctAnswerIndex": 2,
+    "explanation": "Quality culture emphasizes managers as coaches, focusing on vision, resources, barrier removal, employee input, trust, training, and recognition."
+  },
+  {
+    "id": "spm-ch1-mcq-10",
+    "question": "Which phase in the Classic Project Life Cycle involves turning the design into a working system?",
+    "options": ["Requirements Analysis", "Specification", "Design", "Coding"],
+    "correctAnswerIndex": 3,
+    "explanation": "The 'Coding' phase is where the actual software is developed based on the design specifications."
+  },
+  {
+    "id": "spm-ch1-mcq-11",
+    "question": "According to the ISO 12207 life-cycle, 'Qualification testing' primarily involves:",
+    "options": ["Testing individual software modules", "Testing the system (not just the software)", "Testing the development tools", "Testing the user documentation"],
+    "correctAnswerIndex": 1,
+    "explanation": "Qualification testing in ISO 12207 focuses on testing the entire system, which includes software, hardware, and other components, not just the software in isolation."
+  },
+  {
+    "id": "spm-ch1-mcq-12",
+    "question": "Which of these is a common problem experienced in software projects from a manager's point of view?",
+    "options": ["Excessive documentation", "Overly clear role definitions", "Poor estimates and plans", "Too much communication"],
+    "correctAnswerIndex": 2,
+    "explanation": "Common problems include poor estimates and plans, lack of quality standards, lack of guidance, lack of techniques to make progress visible, poor role definition, and incorrect success criteria."
+  },
+  {
+    "id": "spm-ch1-mcq-13",
+    "question": "The role of a 'Project Authority' (e.g., Project Board) typically includes:",
+    "options": ["Writing the code for the project", "Performing daily stand-up meetings", "Setting the project scope and approving costs", "Marketing the final product"],
+    "correctAnswerIndex": 2,
+    "explanation": "A project authority is responsible for setting the project scope and allocating/approving costs."
+  },
+  {
+    "id": "spm-ch1-mcq-14",
+    "question": "The step 'Modelling' in management control involves:",
+    "options": ["Building physical prototypes of the software", "Working out the probable outcomes of various decisions", "Creating detailed user interface designs", "Documenting past project failures"],
+    "correctAnswerIndex": 1,
+    "explanation": "Modelling in management control refers to analyzing and predicting the likely results of different decisions, such as assessing the impact of hiring more staff."
+  },
+  {
+    "id": "spm-ch1-mcq-15",
+    "question": "The final step in the described Decision Making Process is:",
+    "options": ["Fact Collection", "Select Solution", "Implement Solution", "Monitor Solution"],
+    "correctAnswerIndex": 3,
+    "explanation": "The Decision Making Process outlined is: Define Problem, Fact Collection, Solution Finding, Select Solution, Implement Solution, and Monitor Solution."
+  }
+]

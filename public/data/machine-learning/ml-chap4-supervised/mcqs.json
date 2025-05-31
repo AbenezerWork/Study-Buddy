@@ -1,0 +1,188 @@
+
+[
+  {
+    "id": "ml-c4-mcq-1",
+    "question": "Which of these is NOT one of the 7 basic steps in Machine Learning?",
+    "options": ["Data Collection", "Feature Engineering", "Algorithm Design from Scratch", "Validation"],
+    "correctAnswerIndex": 2,
+    "explanation": "While understanding algorithms is key, designing them from scratch isn't a mandatory basic step for all ML projects; often, existing algorithms are modeled and tuned."
+  },
+  {
+    "id": "ml-c4-mcq-2",
+    "question": "In ML, what are 'Labels'?",
+    "options": [
+      "The input variables used for prediction.",
+      "The desired outcome or target variable the model aims to predict.",
+      "The parameters adjusted during model training.",
+      "The visualization tools used for data exploration."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Labels represent the desired outcome or prediction that the model aims to achieve."
+  },
+  {
+    "id": "ml-c4-mcq-3",
+    "question": "Overfitting typically means a model:",
+    "options": [
+      "Is too simple and performs poorly on all data.",
+      "Performs well on training data but poorly on new, unseen (test) data.",
+      "Performs poorly on training data but well on test data.",
+      "Takes too long to train."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Overfitting occurs when a model learns the training data too well, including noise, and fails to generalize to unseen data."
+  },
+  {
+    "id": "ml-c4-mcq-4",
+    "question": "Supervised learning involves training an algorithm on:",
+    "options": [
+      "Unlabeled data to find hidden patterns.",
+      "Labeled data where input is paired with corresponding output.",
+      "Data through a system of rewards and penalties.",
+      "Data that has no clear structure."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Supervised learning uses labeled datasets, meaning input data is paired with known output labels."
+  },
+  {
+    "id": "ml-c4-mcq-5",
+    "question": "Linear Regression is primarily used for predicting:",
+    "options": ["Categorical labels", "Continuous variables", "Clusters in data", "Optimal actions in an environment"],
+    "correctAnswerIndex": 1,
+    "explanation": "Linear Regression is used for predicting continuous variables, assuming a linear relationship."
+  },
+  {
+    "id": "ml-c4-mcq-6",
+    "question": "The `random_state` parameter in `sklearn.model_selection.train_test_split` is used to:",
+    "options": [
+      "Determine the proportion of data for the test set.",
+      "Ensure the split is truly random every time.",
+      "Reproduce the same train-test split for consistency.",
+      "Automatically select the best features."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "`random_state` ensures that the data split is the same each time the code is run, which is important for reproducibility."
+  },
+  {
+    "id": "ml-c4-mcq-7",
+    "question": "Which algorithm is specifically designed for binary or multi-class classification problems, often outputting probabilities?",
+    "options": ["Linear Regression", "K-Means Clustering", "Logistic Regression", "Principal Component Analysis"],
+    "correctAnswerIndex": 2,
+    "explanation": "Logistic Regression is used for classification tasks and models the probability of a discrete outcome."
+  },
+  {
+    "id": "ml-c4-mcq-8",
+    "question": "The AUC-ROC curve is a performance metric for:",
+    "options": ["Regression models", "Clustering algorithms", "Classification models", "Dimensionality reduction techniques"],
+    "correctAnswerIndex": 2,
+    "explanation": "The AUC-ROC curve evaluates the performance of classification models across different thresholds."
+  },
+  {
+    "id": "ml-c4-mcq-9",
+    "question": "Mean Absolute Error (MAE) and Mean Squared Error (MSE) are metrics used to evaluate:",
+    "options": ["Classification models", "Regression models", "Unsupervised learning algorithms", "Reinforcement learning agents"],
+    "correctAnswerIndex": 1,
+    "explanation": "MAE and MSE are common metrics for evaluating the performance of regression models by measuring the difference between predicted and actual continuous values."
+  },
+  {
+    "id": "ml-c4-mcq-10",
+    "question": "K-Nearest Neighbors (KNN) classifies a new data point based on:",
+    "options": [
+      "A predefined decision boundary.",
+      "The majority class label among its 'k' nearest neighbors.",
+      "A linear equation derived from the data.",
+      "The probability calculated by Bayes' Theorem."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "KNN assigns a class label based on the majority vote of its k nearest neighbors in the feature space."
+  },
+  {
+    "id": "ml-c4-mcq-11",
+    "question": "Which algorithm builds a tree-like structure where internal nodes represent tests on attributes and leaf nodes represent class labels?",
+    "options": ["Support Vector Machine", "Naïve Bayes", "Decision Tree", "Logistic Regression"],
+    "correctAnswerIndex": 2,
+    "explanation": "Decision Trees use a tree-like model of decisions and their possible consequences, including chance event outcomes, resource costs, and utility."
+  },
+  {
+    "id": "ml-c4-mcq-12",
+    "question": "Naïve Bayes classifiers are based on which theorem and assume feature independence?",
+    "options": ["Central Limit Theorem", "Pythagorean Theorem", "Bayes' Theorem", "Noether's Theorem"],
+    "correctAnswerIndex": 2,
+    "explanation": "Naïve Bayes algorithms are based on Bayes' Theorem and make a 'naïve' assumption of conditional independence between features."
+  },
+  {
+    "id": "ml-c4-mcq-13",
+    "question": "What is the primary goal of a Support Vector Machine (SVM) in classification?",
+    "options": [
+      "To group similar data points into clusters.",
+      "To find a linear relationship between variables.",
+      "To find an optimal hyperplane that maximizes the margin between classes.",
+      "To predict probabilities for each class using a sigmoid function."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "SVM aims to find the hyperplane that best separates data points of different classes by maximizing the margin between them."
+  },
+  {
+    "id": "ml-c4-mcq-14",
+    "question": "What does 'Feature Scaling' aim to achieve in data preprocessing?",
+    "options": [
+      "Increase the number of features in the dataset.",
+      "Normalize the range of independent variables or features of data.",
+      "Convert categorical features into numerical ones.",
+      "Remove irrelevant features from the dataset."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Feature scaling normalizes the range of features to prevent variables with larger magnitudes from dominating those with smaller magnitudes, improving model performance."
+  },
+  {
+    "id": "ml-c4-mcq-15",
+    "question": "The 'Sigmoid function' or 'logistic function' is characteristic of which algorithm?",
+    "options": ["Linear Regression", "Decision Tree", "K-Nearest Neighbors", "Logistic Regression"],
+    "correctAnswerIndex": 3,
+    "explanation": "Logistic Regression uses the sigmoid function to map any real-valued number into a value between 0 and 1, representing probability."
+  },
+  {
+    "id": "ml-c4-unsup-mcq-1",
+    "question": "What is the main characteristic of the training data used in Unsupervised Learning?",
+    "options": ["It is fully labeled with correct outputs.", "It is unlabeled and uncategorized.", "It consists only of numerical data.", "It is primarily used for regression tasks."],
+    "correctAnswerIndex": 1,
+    "explanation": "Unsupervised learning models are trained using unlabeled and uncategorized training datasets."
+  },
+  {
+    "id": "ml-c4-unsup-mcq-2",
+    "question": "Which of the following best describes the goal of Unsupervised Learning?",
+    "options": [
+      "To predict a continuous value based on input features.",
+      "To classify data into predefined categories.",
+      "To find hidden patterns and intrinsic structures in data.",
+      "To learn a mapping function from input to output variables."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Unsupervised learning aims to find the underlying structure or distribution of data, exploring it to find hidden patterns and insights."
+  },
+  {
+    "id": "ml-c4-unsup-mcq-3",
+    "question": "Grouping similar customers based on their purchasing behavior is an example of which Unsupervised Learning task?",
+    "options": ["Association", "Regression", "Clustering", "Classification"],
+    "correctAnswerIndex": 2,
+    "explanation": "Clustering is a method of grouping objects into clusters such that objects with most similarities remain in a group, like customer segmentation."
+  },
+  {
+    "id": "ml-c4-unsup-mcq-4",
+    "question": "Which of these algorithms is primarily used for Unsupervised Learning?",
+    "options": ["Linear Regression", "Logistic Regression", "K-Means Clustering", "Decision Tree"],
+    "correctAnswerIndex": 2,
+    "explanation": "K-Means Clustering is a popular unsupervised learning algorithm used for partitioning data into K distinct clusters."
+  },
+  {
+    "id": "ml-c4-unsup-mcq-5",
+    "question": "What is the first step in implementing the K-Means clustering algorithm after specifying 'K'?",
+    "options": [
+      "Assign each data point to the closest cluster center.",
+      "Randomly initialize cluster centers (centroids).",
+      "Recompute the cluster centers.",
+      "Evaluate the quality of the clusters formed."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "After specifying 'K', the K-Means algorithm starts by randomly initializing K cluster centers (centroids)."
+  }
+]

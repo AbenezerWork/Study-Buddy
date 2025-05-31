@@ -1,0 +1,108 @@
+
+[
+  {
+    "id": "ml-c1-fc-1",
+    "front": "What is Machine Learning (ML)?",
+    "back": "A growing technology that enables computers to learn automatically from past data. It's a field of study that gives computers the ability to learn without being explicitly programmed (Arthur Samuel, 1959)."
+  },
+  {
+    "id": "ml-c1-fc-2",
+    "front": "Tom Mitchell's (1998) definition of ML involves what three components?",
+    "back": "A computer program learns from Experience (E) with respect to some class of Tasks (T) and performance measure (P), if its performance at tasks in T, as measured by P, improves with experience E."
+  },
+  {
+    "id": "ml-c1-fc-3",
+    "front": "Explain Experience (E) in Tom Mitchell's ML definition.",
+    "back": "This refers to the data or examples the system is exposed to. For example, a dataset of handwritten words for a handwriting recognition system."
+  },
+  {
+    "id": "ml-c1-fc-4",
+    "front": "Explain Tasks (T) in Tom Mitchell's ML definition.",
+    "back": "These are the specific activities or problems that the machine is learning to perform or solve. For example, recognizing and classifying handwritten words."
+  },
+  {
+    "id": "ml-c1-fc-5",
+    "front": "Explain Performance Measure (P) in Tom Mitchell's ML definition.",
+    "back": "This is the metric used to evaluate how well the machine is doing in performing tasks from T. For example, the percent of words correctly classified."
+  },
+  {
+    "id": "ml-c1-fc-6",
+    "front": "How does a Machine Learning system generally work?",
+    "back": "It learns from historical data, builds prediction models (using algorithms), and predicts the output for new data. The accuracy depends on the amount of data."
+  },
+  {
+    "id": "ml-c1-fc-7",
+    "front": "List three key features of ML.",
+    "back": "1. Uses data to detect patterns. 2. Can learn from past data and improve automatically. 3. It is a data-driven technology. (Also similar to data mining)."
+  },
+  {
+    "id": "ml-c1-fc-8",
+    "front": "Why is there an increasing need for ML?",
+    "back": "ML is capable of doing tasks too complex for direct human implementation, handling rapid data production, solving complex problems, aiding decision making, and finding hidden patterns."
+  },
+  {
+    "id": "ml-c1-fc-9",
+    "front": "Who coined the term 'Machine Learning' and when?",
+    "back": "Arthur Samuel in 1959, while at IBM, for a program that played checkers."
+  },
+  {
+    "id": "ml-c1-fc-10",
+    "front": "What was the 'AI Winter'?",
+    "back": "A period from 1974 to 1980 characterized by reduced funding and interest in AI research due to unfulfilled promises and limitations."
+  },
+  {
+    "id": "ml-c1-fc-11",
+    "front": "Name the three main classifications of Machine Learning algorithms.",
+    "back": "Supervised Learning, Unsupervised Learning, and Reinforcement Learning."
+  },
+  {
+    "id": "ml-c1-fc-12",
+    "front": "What is Supervised Learning?",
+    "back": "Training an algorithm on a labeled dataset, where input data is paired with corresponding output labels. The goal is to learn a mapping from input to output."
+  },
+  {
+    "id": "ml-c1-fc-13",
+    "front": "What are the two main types of problems solved by Supervised Learning?",
+    "back": "Classification (e.g., spam detection) and Regression (e.g., predicting house prices)."
+  },
+  {
+    "id": "ml-c1-fc-14",
+    "front": "What is Unsupervised Learning?",
+    "back": "Training a model on unlabeled data, where the algorithm explores the inherent structure to find hidden patterns or group objects with similar patterns."
+  },
+  {
+    "id": "ml-c1-fc-15",
+    "front": "Name two main types of problems solved by Unsupervised Learning.",
+    "back": "Clustering (e.g., customer segmentation, anomaly detection) and Association (e.g., dimensionality reduction)."
+  },
+  {
+    "id": "ml-c1-fc-16",
+    "front": "What is Reinforcement Learning?",
+    "back": "An agent learns to make decisions by interacting with an environment, receiving feedback in the form of rewards or penalties for its actions."
+  },
+  {
+    "id": "ml-c1-fc-17",
+    "front": "List three application areas of Machine Learning.",
+    "back": "Image Recognition (Facebook Deepface), Speech Recognition (Siri, Alexa), Self-driving cars (Tesla), Email Spam Filtering, Product Recommendations."
+  },
+  {
+    "id": "ml-c1-fc-18",
+    "front": "What are the 7 steps in the Machine Learning Life Cycle?",
+    "back": "1. Gathering Data, 2. Data Preparation, 3. Data Wrangling, 4. Data Analysis, 5. Train Model, 6. Test Model, 7. Deployment."
+  },
+  {
+    "id": "ml-c1-fc-19",
+    "front": "What is 'Data Wrangling' in the ML lifecycle?",
+    "back": "The process of cleaning and converting raw data into a usable format. This includes handling missing values, duplicate data, invalid data, and noise removal."
+  },
+  {
+    "id": "ml-c1-fc-20",
+    "front": "What is the relationship between AI, ML, and Deep Learning (DL)?",
+    "back": "AI is the broader concept. ML is a subset of AI. DL is a subfield of ML that uses neural networks with multiple layers."
+  },
+  {
+    "id": "ml-c1-fc-21",
+    "front": "What is a key challenge in Machine Learning projects?",
+    "back": "Data quality issues, insufficient data, the need for robust model evaluation, interpretability issues, susceptibility to bias, and handling complex, unstructured data."
+  }
+]

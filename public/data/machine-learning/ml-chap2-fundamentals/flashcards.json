@@ -1,0 +1,127 @@
+[
+  {
+    "id": "ml-c2-fc-1",
+    "front": "What are the three main types of Machine Learning algorithms?",
+    "back": "Supervised Learning, Unsupervised Learning, and Reinforcement Learning."
+  },
+  {
+    "id": "ml-c2-fc-2",
+    "front": "What is Supervised Learning?",
+    "back": "Training an algorithm on a labeled dataset, where input data is paired with corresponding output labels. The goal is y=f(x), to learn a mapping from input x to output y."
+  },
+  {
+    "id": "ml-c2-fc-3",
+    "front": "List the steps involved in Supervised Learning.",
+    "back": "1. Determine type of training dataset. 2. Collect/Gather labeled training data. 3. Split dataset (training, test, validation). 4. Determine input features. 5. Determine suitable algorithm. 6. Execute algorithm on training data. 7. Evaluate model accuracy with test set."
+  },
+  {
+    "id": "ml-c2-fc-4",
+    "front": "What are the two main categories of Supervised Learning algorithms?",
+    "back": "Regression algorithms (predict continuous variables) and Classification algorithms (predict categorical variables)."
+  },
+  {
+    "id": "ml-c2-fc-5",
+    "front": "What is Unsupervised Learning?",
+    "back": "Training a model on unlabeled data. The algorithm explores the inherent structure to find hidden patterns or insights."
+  },
+  {
+    "id": "ml-c2-fc-6",
+    "front": "What are the two main problem types in Unsupervised Learning?",
+    "back": "Clustering (grouping similar objects) and Association (finding relationships between variables)."
+  },
+  {
+    "id": "ml-c2-fc-7",
+    "front": "What is Reinforcement Learning (RL)?",
+    "back": "An agent learns to make decisions by interacting with an environment, receiving feedback (rewards or penalties) for its actions."
+  },
+  {
+    "id": "ml-c2-fc-8",
+    "front": "Define 'Agent' and 'Environment' in Reinforcement Learning.",
+    "back": "Agent: An entity that perceives/explores the environment and acts upon it. Environment: A situation in which an agent is present or surrounded by."
+  },
+  {
+    "id": "ml-c2-fc-9",
+    "front": "What is Linear Regression used for?",
+    "back": "Predictive analysis for continuous numbers (e.g., salary, age), showing a linear relationship between dependent and independent variables."
+  },
+  {
+    "id": "ml-c2-fc-10",
+    "front": "What is the main difference between Simple and Multiple Linear Regression?",
+    "back": "Simple Linear Regression uses one independent variable to predict the dependent variable. Multiple Linear Regression uses more than one independent variable."
+  },
+  {
+    "id": "ml-c2-fc-11",
+    "front": "What is Logistic Regression primarily used for?",
+    "back": "Predicting categorical or discrete outcomes (e.g., Yes/No, 0/1). It gives probabilistic values between 0 and 1 using a sigmoid function."
+  },
+  {
+    "id": "ml-c2-fc-12",
+    "front": "Name the three types of Logistic Regression based on categories.",
+    "back": "Binomial (2 outcomes), Multinomial (3+ unordered outcomes), Ordinal (3+ ordered outcomes)."
+  },
+  {
+    "id": "ml-c2-fc-13",
+    "front": "What is Polynomial Regression?",
+    "back": "A type of regression that models a non-linear dataset using a linear model by transforming input features into polynomial features."
+  },
+  {
+    "id": "ml-c2-fc-14",
+    "front": "What is a Support Vector Machine (SVM)?",
+    "back": "A supervised ML algorithm used for classification and regression. It finds a hyperplane that best separates data into classes by maximizing the margin."
+  },
+  {
+    "id": "ml-c2-fc-15",
+    "front": "Define 'Hyperplane' and 'Support Vectors' in SVM.",
+    "back": "Hyperplane: A separation line (or plane/surface in higher dimensions) between classes. Support Vectors: Data points closest to the hyperplane that influence its position and orientation."
+  },
+  {
+    "id": "ml-c2-fc-16",
+    "front": "What is a Decision Tree?",
+    "back": "A supervised learning algorithm (for classification/regression) that builds a tree-like structure. Internal nodes test attributes, branches represent outcomes, and leaf nodes represent class labels or continuous values."
+  },
+  {
+    "id": "ml-c2-fc-17",
+    "front": "What is Random Forest?",
+    "back": "An ensemble learning method that combines multiple decision trees. It predicts by averaging the outputs (regression) or taking a majority vote (classification) of individual trees, often preventing overfitting."
+  },
+  {
+    "id": "ml-c2-fc-18",
+    "front": "What is Overfitting in a machine learning model?",
+    "back": "When a model learns the training data too well, including noise and outliers, leading to poor performance on new, unseen data. It fits the training data too closely."
+  },
+  {
+    "id": "ml-c2-fc-19",
+    "front": "What is Underfitting in a machine learning model?",
+    "back": "When a model is too simple to capture the underlying patterns in the training data, leading to poor performance on both training and test data."
+  },
+  {
+    "id": "ml-c2-fc-20",
+    "front": "What is Regularization in machine learning?",
+    "back": "Techniques used to prevent overfitting by adding a penalty term to the model's cost function, discouraging overly complex models. Examples include L1 (Lasso) and L2 (Ridge) regularization."
+  },
+  {
+    "id": "ml-c2-fc-21",
+    "front": "Explain Bias in the context of ML models.",
+    "back": "Bias occurs when an algorithm has limited flexibility to learn from data, oversimplifying the model. High bias leads to underfitting and high error on both training and test data."
+  },
+  {
+    "id": "ml-c2-fc-22",
+    "front": "Explain Variance in the context of ML models.",
+    "back": "Variance defines an algorithm's sensitivity to specific sets of data. High variance means the model pays too much attention to training data (captures noise) and performs poorly on test data (overfitting)."
+  },
+  {
+    "id": "ml-c2-fc-23",
+    "front": "What is a Cost Function (or Loss Function) in machine learning?",
+    "back": "A function that quantifies the difference between the predicted values of a model and the actual values in the data. It evaluates how well the model's predictions match the actual target values."
+  },
+  {
+    "id": "ml-c2-fc-24",
+    "front": "Name a common cost function for Linear Regression.",
+    "back": "Mean Squared Error (MSE) or Mean Absolute Error (MAE)."
+  },
+  {
+    "id": "ml-c2-fc-25",
+    "front": "Name a common cost function for Logistic Regression.",
+    "back": "Log Loss or Cross-Entropy Loss."
+  }
+]

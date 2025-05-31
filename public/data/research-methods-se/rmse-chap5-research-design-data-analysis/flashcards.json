@@ -1,0 +1,103 @@
+
+[
+  {
+    "id": "rmse-c5-fc-1",
+    "front": "What is Research Design?",
+    "back": "A plan, structure, and strategy of investigation to obtain answers to research questions or problems. It's a blueprint for how a research study will be completed."
+  },
+  {
+    "id": "rmse-c5-fc-2",
+    "front": "List the 6 main steps in creating a research design.",
+    "back": "1. Consider aims and approach. 2. Choose type of research design. 3. Identify population and sampling method. 4. Choose data collection methods. 5. Plan data collection procedures. 6. Decide on data analysis strategies."
+  },
+  {
+    "id": "rmse-c5-fc-3",
+    "front": "What are Qualitative Research Designs characterized by?",
+    "back": "Tend to be more flexible and inductive, allowing adjustments during the research process. Aim to understand subjective experiences and generate new theories."
+  },
+  {
+    "id": "rmse-c5-fc-4",
+    "front": "What are Quantitative Research Designs characterized by?",
+    "back": "Tend to be more fixed and deductive, with variables and hypotheses clearly defined before data collection. Aim to measure variables and test hypotheses."
+  },
+  {
+    "id": "rmse-c5-fc-5",
+    "front": "Name two main types of Quantitative research designs for testing cause-and-effect.",
+    "back": "Experimental Designs and Quasi-experimental Designs."
+  },
+  {
+    "id": "rmse-c5-fc-6",
+    "front": "Name two main types of Quantitative research designs for measuring variables and describing relationships.",
+    "back": "Descriptive Designs and Correlational Designs."
+  },
+  {
+    "id": "rmse-c5-fc-7",
+    "front": "Why can't correlational designs establish cause-and-effect?",
+    "back": "Because correlation does not imply causation; other variables might be influencing the observed relationship."
+  },
+  {
+    "id": "rmse-c5-fc-8",
+    "front": "List two types of Qualitative research designs.",
+    "back": "Case study, Ethnography, Grounded theory, Phenomenology."
+  },
+  {
+    "id": "rmse-c5-fc-9",
+    "front": "Differentiate Primary Data and Secondary Data.",
+    "back": "Primary Data: Original data collected for the first time by the researcher (e.g., experiments, surveys). Secondary Data: Data collected by others for another purpose, or primary data that has undergone analysis (e.g., literature reviews, government datasets)."
+  },
+  {
+    "id": "rmse-c5-fc-10",
+    "front": "What is Operationalization in research?",
+    "back": "The process of turning abstract concepts or variables into measurable indicators."
+  },
+  {
+    "id": "rmse-c5-fc-11",
+    "front": "Define Reliability in measurement.",
+    "back": "The consistency of a measure; whether it produces the same results over time or in different contexts for the same concept."
+  },
+  {
+    "id": "rmse-c5-fc-12",
+    "front": "Define Validity in measurement.",
+    "back": "The accuracy of a measure; whether it truly measures what it intends to measure. Includes content validity and criterion validity."
+  },
+  {
+    "id": "rmse-c5-fc-13",
+    "front": "What is a 'Population' in research?",
+    "back": "The entire group that you want to draw conclusions about."
+  },
+  {
+    "id": "rmse-c5-fc-14",
+    "front": "What is a 'Sample' in research?",
+    "back": "The smaller group of individuals from whom you will actually collect data, selected from the population."
+  },
+  {
+    "id": "rmse-c5-fc-15",
+    "front": "Differentiate Probability Sampling and Non-probability Sampling.",
+    "back": "Probability Sampling: Sample is selected using random methods, allowing strong statistical inferences (common in quantitative). Non-probability Sampling: Sample selected non-randomly, easier but higher risk of bias (used in both qual/quant)."
+  },
+  {
+    "id": "rmse-c5-fc-16",
+    "front": "What are Descriptive Statistics used for?",
+    "back": "To summarize sample data in terms of distribution (frequency), central tendency (mean, median, mode), and variability (standard deviation, range)."
+  },
+  {
+    "id": "rmse-c5-fc-17",
+    "front": "What are Inferential Statistics used for?",
+    "back": "To make estimates or inferences about a population based on sample data, often by testing hypotheses about relationships or differences."
+  },
+  {
+    "id": "rmse-c5-fc-18",
+    "front": "Name the four levels of measurement scales.",
+    "back": "Nominal (categorized), Ordinal (categorized and ranked), Interval (categorized, ranked, evenly spaced), Ratio (categorized, ranked, evenly spaced, natural zero)."
+  },
+  {
+    "id": "rmse-c5-fc-19",
+    "front": "What is Thematic Analysis?",
+    "back": "A common approach in qualitative data analysis that involves identifying, analyzing, and reporting patterns (themes) within the data."
+  },
+  {
+    "id": "rmse-c5-fc-20",
+    "front": "What are 'inclusion and exclusion criteria' in sampling?",
+    "back": "Specific characteristics defined by the researcher to determine which individuals are eligible (inclusion) or ineligible (exclusion) to participate in a study."
+  }
+]

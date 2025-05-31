@@ -1,0 +1,128 @@
+
+[
+  {
+    "id": "ml-c5-adv-mcq-1",
+    "question": "What is the primary purpose of Ensemble Learning techniques?",
+    "options": [
+      "To simplify individual models.",
+      "To combine multiple models to improve overall predictive performance.",
+      "To reduce the amount of training data needed.",
+      "To exclusively use deep learning models."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Ensemble techniques combine multiple models to achieve better accuracy and robustness than a single model."
+  },
+  {
+    "id": "ml-c5-adv-mcq-2",
+    "question": "Bagging is short for:",
+    "options": ["Bootstrap Aggregating", "Boosting Aggregation", "Bias Grouping", "Bayesian Grouping"],
+    "correctAnswerIndex": 0,
+    "explanation": "Bagging stands for Bootstrap Aggregating."
+  },
+  {
+    "id": "ml-c5-adv-mcq-3",
+    "question": "How does Bagging primarily help in improving model performance?",
+    "options": [
+      "By increasing the bias of the model.",
+      "By reducing the variance of the model, thus reducing overfitting.",
+      "By sequentially training models to focus on errors.",
+      "By using only one type of base model (e.g., only decision trees)."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Bagging helps to reduce overfitting by reducing the variance of the model by training on different subsets of data."
+  },
+  {
+    "id": "ml-c5-adv-mcq-4",
+    "question": "Which ensemble technique trains base models sequentially, with each subsequent model focusing on instances misclassified by previous models?",
+    "options": ["Bagging", "Stacking", "Boosting", "Random Forest"],
+    "correctAnswerIndex": 2,
+    "explanation": "Boosting trains models sequentially, giving higher weight to misclassified instances from previous models."
+  },
+  {
+    "id": "ml-c5-adv-mcq-5",
+    "question": "AdaBoost and Gradient Boosting are examples of which type of ensemble learning technique?",
+    "options": ["Bagging", "Stacking", "Boosting", "Clustering"],
+    "correctAnswerIndex": 2,
+    "explanation": "AdaBoost and Gradient Boosting are well-known Boosting algorithms."
+  },
+  {
+    "id": "ml-c5-adv-mcq-6",
+    "question": "Deep Learning is a subset of which field?",
+    "options": ["Statistics", "Artificial Intelligence only", "Machine Learning", "Data Mining"],
+    "correctAnswerIndex": 2,
+    "explanation": "Deep Learning is a subset of Machine Learning, which itself is a subset of Artificial Intelligence."
+  },
+  {
+    "id": "ml-c5-adv-mcq-7",
+    "question": "Deep Learning models are primarily inspired by:",
+    "options": [
+      "The structure of relational databases.",
+      "The structure and function of the human brain (neural networks).",
+      "Classical statistical methods.",
+      "Genetic algorithms."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Deep learning models, particularly neural networks, are inspired by the human brain."
+  },
+  {
+    "id": "ml-c5-adv-mcq-8",
+    "question": "Which layer in an Artificial Neural Network is responsible for the actual computation and learning?",
+    "options": ["Input Layer", "Output Layer", "Hidden Layer(s)", "Perceptron Layer"],
+    "correctAnswerIndex": 2,
+    "explanation": "Hidden layers are where the actual computation, application of weights/biases, and activation functions occur for learning."
+  },
+  {
+    "id": "ml-c5-adv-mcq-9",
+    "question": "What is the basic unit of a Neural Network, introduced by Frank Rosenblatt?",
+    "options": ["Neuron", "Synapse", "Perceptron", "Activation Unit"],
+    "correctAnswerIndex": 2,
+    "explanation": "The Perceptron, introduced by Frank Rosenblatt, is considered the basic unit of a Neural Network."
+  },
+  {
+    "id": "ml-c5-adv-mcq-10",
+    "question": "Which activation function squashes its input to a range between 0 and 1 and is commonly used in binary classification output layers?",
+    "options": ["ReLU", "Tanh", "Sigmoid", "Softmax"],
+    "correctAnswerIndex": 2,
+    "explanation": "The Sigmoid function outputs values between 0 and 1, making it suitable for binary classification probabilities."
+  },
+  {
+    "id": "ml-c5-adv-mcq-11",
+    "question": "The ReLU activation function is defined as:",
+    "options": ["1 / (1 + e^-x)", "max(0, x)", "(e^x - e^-x) / (e^x + e^-x)", "A simple step function"],
+    "correctAnswerIndex": 1,
+    "explanation": "ReLU (Rectified Linear Unit) is defined as max(0, x)."
+  },
+  {
+    "id": "ml-c5-adv-mcq-12",
+    "question": "Which activation function is typically used in the output layer for multi-class classification tasks to produce a probability distribution?",
+    "options": ["Sigmoid", "ReLU", "Tanh", "Softmax"],
+    "correctAnswerIndex": 3,
+    "explanation": "Softmax is used in the output layer for multi-class classification as it outputs a probability distribution where the sum of probabilities equals 1."
+  },
+  {
+    "id": "ml-c5-adv-mcq-13",
+    "question": "What is a common drawback of the Sigmoid activation function, especially in deep networks?",
+    "options": ["Dying ReLU problem", "Computationally very expensive", "Vanishing gradient problem", "Outputs are not zero-centered"],
+    "correctAnswerIndex": 2,
+    "explanation": "The Sigmoid function is prone to the vanishing gradient problem, where gradients become very small, hindering learning in deep layers."
+  },
+  {
+    "id": "ml-c5-adv-mcq-14",
+    "question": "In an ANN, the term added to the weighted sum of inputs to allow the activation function to be shifted is called:",
+    "options": ["Weight", "Input Feature", "Learning Rate", "Bias"],
+    "correctAnswerIndex": 3,
+    "explanation": "The bias term (b) is added to the weighted sum of inputs, allowing the activation function to be shifted for more flexible decision boundaries."
+  },
+  {
+    "id": "ml-c5-adv-mcq-15",
+    "question": "Bootstrap sampling, used in Bagging, involves:",
+    "options": [
+      "Selecting samples without replacement.",
+      "Selecting all samples from the dataset.",
+      "Randomly selecting samples from the original dataset with replacement.",
+      "Selecting only misclassified samples."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Bootstrap sampling involves randomly selecting samples from the original dataset with replacement, meaning some instances may be selected multiple times."
+  }
+]

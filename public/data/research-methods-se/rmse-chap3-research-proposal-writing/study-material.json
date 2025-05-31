@@ -1,0 +1,1048 @@
+[
+  {
+    "id": "rmse-chap3-topic-main",
+    "title": "Chapter 3: Research Proposal and Writing",
+    "introduction": [
+      { "text": "This chapter delves into the critical aspects of creating a research proposal, including its definition, purpose, types, components, and the process of writing it, along with common pitfalls and tips for success in the context of software engineering research." }
+    ],
+    "contentBlocks": [
+      {
+        "id": "rmse-c3-sm-block-slide1-img",
+        "type": "image",
+        "src": "/data/research-methods-se/rmse-chap3-research-proposal-writing/images/slide1_title_page.png",
+        "alt": "Title slide for SWEG4108 Research Methods in Software Engineering, AASTU, College of Engineering, Department of Software Engineering. Girma N. (PhD), Feb, 2025, Addis Ababa, Ethiopia.",
+        "caption": [{ "text": "Title Page for Chapter 3." }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide2-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Lesson Outline" }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide2-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c3-sm-li-s2-1", "content": [{ "text": "What is research proposal?" }] },
+          { "id": "rmse-c3-sm-li-s2-2", "content": [{ "text": "Types of proposal : Article/Thesis/Dissertation Writing" }] },
+          { "id": "rmse-c3-sm-li-s2-3", "content": [{ "text": "Components/Formats of a Research Proposal" }] },
+          { "id": "rmse-c3-sm-li-s2-4", "content": [{ "text": "Example research Proposal" }] },
+          { "id": "rmse-c3-sm-li-s2-5", "content": [{ "text": "Formulating Research problem" }] },
+          { "id": "rmse-c3-sm-li-s2-6", "content": [{ "text": "Formulating Research Questions" }] },
+          { "id": "rmse-c3-sm-li-s2-7", "content": [{ "text": "Formulating Research Objectives" }] },
+          { "id": "rmse-c3-sm-li-s2-8", "content": [{ "text": "Formulating Research Hypothesis" }] },
+          { "id": "rmse-c3-sm-li-s2-9", "content": [{ "text": "Research methodology" }] },
+          { "id": "rmse-c3-sm-li-s2-10", "content": [{ "text": "Schedule" }] },
+          { "id": "rmse-c3-sm-li-s2-11", "content": [{ "text": "Review of Proposals: check list of quality" }] }
+        ]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide3-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Research Proposal: What?" }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide3-p1",
+        "type": "paragraph",
+        "content": [{ "text": "A research proposal is a document that presents a plan for a research study, including the research question, objectives, methodology, and anticipated outcomes." }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide3-p2",
+        "type": "paragraph",
+        "content": [{ "text": "A research proposal is a blueprint for research, outlining objectives, methods, and significance (Walliman, 2011)." }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide3-alert",
+        "type": "alert",
+        "style": "info",
+        "content": [{ "text": "It is a plan. It clearly describes what you intend to research, why it's important, and how you'll conduct the study. Think of it as a detailed roadmap.", "italic": true, "bold": true }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide4-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Research Proposal: Purpose?" }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide4-h3",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Purpose of a Research Proposal" }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide4-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c3-sm-li-s4-1", "content": [{ "text": "The primary purpose is to convince stakeholders (professors, funding agencies, supervisors) that your research is worthwhile, feasible, and well-planned." }] },
+          { "id": "rmse-c3-sm-li-s4-2", "content": [{ "text": "Software Engineering Context: Justifies studying problems like code quality, DevOps optimization, or AI tool evaluation." }] },
+          { "id": "rmse-c3-sm-li-s4-3", "content": [{ "text": "Example: \"Evaluating GPT-4 for Automated Code Review in Agile Teams.\"" }] }
+        ]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide4-img",
+        "type": "image",
+        "src": "/data/research-methods-se/rmse-chap3-research-proposal-writing/images/slide4_research_proposal_icon.png",
+        "alt": "Icon representing a research proposal: a magnifying glass over a document symbol.",
+        "caption": [{ "text": "Icon for Research Proposal." }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide5-h3",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Types of Proposals" }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide5-p1",
+        "type": "paragraph",
+        "content": [{ "text": "Different contexts require different proposal formats. We can categorize them broadly:" }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide5-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c3-sm-li-s5-1", "content": [{ "text": "Academic Thesis Proposal: ", "bold": true }, { "text": "Detailed, theory-driven. Example: \"Formal Verification of Smart Contracts.\"" }] },
+          { "id": "rmse-c3-sm-li-s5-2", "content": [{ "text": "Industry Grant Proposal: ", "bold": true }, { "text": "Focuses on practical impact and return on investment. Example: \"Reducing AWS Costs via Serverless Architecture Optimization.\"" }] },
+          { "id": "rmse-c3-sm-li-s5-3", "content": [{ "text": "Conference/Journal Submission: ", "bold": true }, { "text": "Concise, aligned with the specific publication's scope. Example: \"Empirical Study of CI/CD Pipeline Failures.\"" }] }
+        ]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide5-q",
+        "type": "alert",
+        "style": "info",
+        "title": [{ "text": "Question for Thought:" }],
+        "content": [{ "text": "How would the structure differ between an academic thesis proposal and an industry grant proposal?" , "italic": true, "bold": true }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide6-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Research Proposal: Research Problem?" }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide6-p1",
+        "type": "paragraph",
+        "content": [{ "text": "Finding a good research problem is the first crucial step. Here are common sources:" }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide6-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c3-sm-li-s6-1", "content": [{ "text": "Practical Challenges: ", "bold": true }, { "text": "Real-world problems in software development (maintenance, debugging)." }] },
+          { "id": "rmse-c3-sm-li-s6-2", "content": [{ "text": "Emerging Technologies: ", "bold": true }, { "text": "New technologies (AI, ML, Cloud) create new research opportunities." }] },
+          { "id": "rmse-c3-sm-li-s6-3", "content": [{ "text": "User Needs and Experiences: ", "bold": true }, { "text": "Usability studies reveal areas for improvement." }] },
+          { "id": "rmse-c3-sm-li-s6-4", "content": [{ "text": "Theoretical Gaps: ", "bold": true }, { "text": "Inconsistencies in existing literature." }] },
+          { "id": "rmse-c3-sm-li-s6-5", "content": [{ "text": "Industry Trends: ", "bold": true }, { "text": "Shifts in methodologies (Agile, DevOps)." }] },
+          { "id": "rmse-c3-sm-li-s6-6", "content": [{ "text": "Interdisciplinary Approaches: ", "bold": true }, { "text": "Combining SE with psychology, sociology, etc." }] },
+          { "id": "rmse-c3-sm-li-s6-7", "content": [{ "text": "Practitioner Feedback: ", "bold": true }, { "text": "Surveys, interviews with developers." }] }
+        ]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide6-q",
+        "type": "alert",
+        "style": "info",
+        "title": [{ "text": "Question:" }],
+        "content": [{ "text": "Can you think of a current \"practical challenge\" in software development that could be a research problem?" , "italic": true }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide7-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Research Proposal: Problem Formulation?" }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide7-p1",
+        "type": "paragraph",
+        "content": [{ "text": "Problem formulation is the process of clearly ", "italic": true }, { "text": "defining", "italic": true, "bold": true }, { "text": " the specific issue your research will address. It's about turning a general area of interest into a focused, researchable problem.", "italic": true }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide7-p2",
+        "type": "paragraph",
+        "content": [{ "text": "Relationship to Research Questions: Specific research questions should ", "italic": true }, { "text": "stem directly", "italic": true, "bold": true }, { "text": " from the problem statement.", "italic": true }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide8-h3",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Procedures to problem formulation:" }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide8-list",
+        "type": "list",
+        "ordered": true,
+        "items": [
+          { "id": "rmse-c3-sm-li-s8-1", "content": [{ "text": "Identify the Domain: ", "bold": true }, { "text": "Choose a specific area within software engineering (e.g., testing, security, requirements engineering)." }] },
+          { "id": "rmse-c3-sm-li-s8-2", "content": [{ "text": "Review Literature: ", "bold": true }, { "text": "Understand existing research, identify gaps, and gather insights." }] },
+          { "id": "rmse-c3-sm-li-s8-3", "content": [{ "text": "Gather Practical Insights: ", "bold": true }, { "text": "Talk to industry practitioners to understand real-world challenges." }] },
+          { "id": "rmse-c3-sm-li-s8-4", "content": [{ "text": "Define the Problem Statement: ", "bold": true }, { "text": "Clearly articulate the problem (precise, relevant, feasible)." }] },
+          { "id": "rmse-c3-sm-li-s8-5", "content": [{ "text": "Explore Context and Impact: ", "bold": true }, { "text": "Consider the problem's significance and potential impact." }] },
+          { "id": "rmse-c3-sm-li-s8-6", "content": [{ "text": "Formulate Research Questions: ", "bold": true }, { "text": "Develop specific, measurable questions." }] },
+          { "id": "rmse-c3-sm-li-s8-7", "content": [{ "text": "Establish Research Objectives: ", "bold": true }, { "text": "Define clear objectives." }] }
+        ]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide8-q",
+        "type": "alert",
+        "style": "info",
+        "title": [{ "text": "Question:" }],
+        "content": [{ "text": "Why is a literature review so important ", "italic": true }, { "text": "before", "italic": true, "bold": true }, { "text": " finalizing the problem statement?" , "italic": true }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide9-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Research Proposal: Components?" }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide9-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c3-sm-li-s9-1", "content": [{ "text": "Title: ", "bold": true }, { "text": "Concise statement of the research topic." }] },
+          { "id": "rmse-c3-sm-li-s9-2", "content": [{ "text": "Introduction: ", "bold": true }, { "text": "Background and context." }] },
+          { "id": "rmse-c3-sm-li-s9-3", "content": [{ "text": "Problem Statement: ", "bold": true }, { "text": "Clear definition of the problem." }] },
+          { "id": "rmse-c3-sm-li-s9-4", "content": [{ "text": "Research Objectives: ", "bold": true }, { "text": "Specific goals." }] },
+          { "id": "rmse-c3-sm-li-s9-5", "content": [{ "text": "Research Questions: ", "bold": true }, { "text": "Questions the research seeks to answer." }] },
+          { "id": "rmse-c3-sm-li-s9-6", "content": [{ "text": "Literature Review: ", "bold": true }, { "text": "Summary of existing research." }] },
+          { "id": "rmse-c3-sm-li-s9-7", "content": [{ "text": "Methodology: ", "bold": true }, { "text": "Research design, data collection, analysis." }] },
+          { "id": "rmse-c3-sm-li-s9-8", "content": [{ "text": "Expected Outcomes: ", "bold": true }, { "text": "Potential findings and significance." }] },
+          { "id": "rmse-c3-sm-li-s9-9", "content": [{ "text": "Timeline: ", "bold": true }, { "text": "Schedule for the research." }] },
+          { "id": "rmse-c3-sm-li-s9-10", "content": [{ "text": "Budget (if applicable): ", "bold": true }, { "text": "Estimated costs." }] },
+          { "id": "rmse-c3-sm-li-s9-11", "content": [{ "text": "References: ", "bold": true }, { "text": "List of cited sources." }] }
+        ]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide10-h3",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Research Proposal Flow Chart" }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide10-img",
+        "type": "image",
+        "src": "/data/research-methods-se/rmse-chap3-research-proposal-writing/images/slide10_proposal_flowchart.png",
+        "alt": "Flow chart of a research proposal including Introduction, Literature Review, Methodology, Preliminary Data, Statement of Limitations, and Conclusion, with connections to aspects like Research Question, Theoretical Approach, Ethics, and Importance.",
+        "caption": [{ "text": "Source: Research proposal is a concise and coherent summary of your proposed research." }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide11-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Research Proposal: Components Example" }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide11-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c3-sm-li-s11-1", "content": [{ "text": "Title: ", "bold": true }, { "text": "\"The Impact of Agile Methodologies on Software Quality\"" }] },
+          { "id": "rmse-c3-sm-li-s11-2", "content": [{ "text": "Introduction: ", "bold": true }, { "text": "Discusses the rise of Agile." }] },
+          { "id": "rmse-c3-sm-li-s11-3", "content": [{ "text": "Literature Review: ", "bold": true }, { "text": "Reviews existing studies on Agile." }] },
+          { "id": "rmse-c3-sm-li-s11-4", "content": [{ "text": "Research Problem: ", "bold": true }, { "text": "Lack of empirical data on Agile's effect on quality." }] },
+          { "id": "rmse-c3-sm-li-s11-5", "content": [
+              { "text": "Research Questions:", "bold": true },
+              { "text": "\n– How do Agile practices affect defect rates?\n– What quality metrics are most influenced by Agile?" }
+            ]
+          },
+          { "id": "rmse-c3-sm-li-s11-6", "content": [
+              { "text": "Research Methodology Overview:", "bold": true },
+              { "text": "\n– Objective: Empirically assess Agile's impact on quality.\n– Approach: Mixed methods (quantitative and qualitative)." }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide11-q",
+        "type": "alert",
+        "style": "info",
+        "title": [{ "text": "Question for Thought:" }],
+        "content": [{ "text": "What are the advantages of using a mixed methods approach in this example?" , "italic": true, "bold": true }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide12-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Research Proposal: Titles?" }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide12-p1",
+        "type": "paragraph",
+        "content": [{ "text": "Which of them are good research titles?" }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide12-list",
+        "type": "list",
+        "ordered": true,
+        "items": [
+          { "id": "rmse-c3-sm-li-s12-1", "content": [{ "text": "\"Evaluating the Effectiveness of Continuous Integration in Reducing Software Bugs.\" (Specific, focused)" }] },
+          { "id": "rmse-c3-sm-li-s12-2", "content": [{ "text": "\"The Impact of Software Development Practices on Software Quality.\" (Too broad)" }] },
+          { "id": "rmse-c3-sm-li-s12-3", "content": [{ "text": "\"Assessing User Satisfaction in Software Applications Using Agile Development.\" (Specific, focused)" }] },
+          { "id": "rmse-c3-sm-li-s12-4", "content": [{ "text": "\"User Satisfaction in Software Applications\" (Too broad, lacks context)" }] }
+        ]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide13-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Research Proposal: Importance of Problem" }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide13-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c3-sm-li-s13-1", "content": [{ "text": "Foundation for Research: ", "bold": true }, { "text": "Influences the entire research project." }] },
+          { "id": "rmse-c3-sm-li-s13-2", "content": [{ "text": "Focus: ", "bold": true }, { "text": "Keeps the research from becoming too broad." }] },
+          { "id": "rmse-c3-sm-li-s13-3", "content": [{ "text": "Guides Methodology: ", "bold": true }, { "text": "The problem dictates the research methods." }] },
+          { "id": "rmse-c3-sm-li-s13-4", "content": [{ "text": "Enhances Relevance: ", "bold": true }, { "text": "Ensures the research addresses important questions." }] }
+        ]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide14-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Research Proposal: Research Questions" }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide14-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c3-sm-li-s14-1", "content": [{ "text": "Identify the Research Problem: ", "bold": true }, { "text": "Start with a clear problem." }] },
+          { "id": "rmse-c3-sm-li-s14-2", "content": [{ "text": "Ensure Clarity and Focus: ", "bold": true }, { "text": "Questions should be specific and guide the research." }] },
+          { "id": "rmse-c3-sm-li-s14-3", "content": [{ "text": "Consider the Type of Research: ", "bold": true }, { "text": "Exploratory, descriptive, explanatory, or evaluative." }] },
+          { "id": "rmse-c3-sm-li-s14-4", "content": [{ "text": "Use Open-Ended Questions: ", "bold": true }, { "text": "Encourage exploration (How, What, Why)." }] },
+          { "id": "rmse-c3-sm-li-s14-5", "content": [{ "text": "Align with Objectives: ", "bold": true }, { "text": "Questions should align with research goals." }] }
+        ]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide14-q",
+        "type": "alert",
+        "style": "info",
+        "title": [{ "text": "Question for Thought:" }],
+        "content": [{ "text": "What's the difference between an exploratory research question and an explanatory one?" , "italic": true, "bold": true }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide15-h3",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Research Questions: Examples" }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide15-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c3-sm-li-s15-1", "content": [{ "text": "What are the current challenges faced by software teams in adopting agile methodologies? (Exploratory Questions)" }] },
+          { "id": "rmse-c3-sm-li-s15-2", "content": [{ "text": "How do different software development practices affect the quality of software products in small vs. large teams? (Descriptive Questions)" }] },
+          { "id": "rmse-c3-sm-li-s15-3", "content": [{ "text": "What factors contribute to the success or failure of software projects in remote working environments? (Explanatory Questions)" }] },
+          { "id": "rmse-c3-sm-li-s15-4", "content": [{ "text": "How does the effectiveness of pair programming compare to solo programming in terms of code quality and developer satisfaction? (Comparative Questions)" }] },
+          { "id": "rmse-c3-sm-li-s15-5", "content": [{ "text": "What impact does implementing continuous integration have on the software development lifecycle of organizations? (Evaluative Questions)" }] },
+          { "id": "rmse-c3-sm-li-s15-6", "content": [{ "text": "How do user feedback mechanisms influence the iterative design process in software development? (User-Centric Questions)" }] },
+          { "id": "rmse-c3-sm-li-s15-7", "content": [{ "text": "What are the implications of adopting microservices architecture on software maintainability and scalability? (Technology-Focused Questions)" }] }
+        ]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide16-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Research Proposal: Research Objectives?" }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide16-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c3-sm-li-s16-1", "content": [{ "text": "Definition: ", "bold": true }, { "text": "Goals that the research aims to achieve." }] },
+          { "id": "rmse-c3-sm-li-s16-2", "content": [{ "text": "Example: ", "bold": true }, { "text": "\"To analyze the defect rates in Agile projects compared to Waterfall projects.\"" }] },
+          { "id": "rmse-c3-sm-li-s16-3", "content": [{ "text": "Bad Example: ", "bold": true }, { "text": "\"To learn about software.\" (Too vague)" }] },
+          { "id": "rmse-c3-sm-li-s16-4", "content": [{ "text": "Tip: ", "bold": true }, { "text": "Use actionable verbs (analyze, evaluate, compare)." }] },
+          { "id": "rmse-c3-sm-li-s16-5", "content": [{ "text": "SMART Objectives: ", "bold": true }, { "text": "Specific, Measurable, Attainable, Relevant, Time-bound." }] }
+        ]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide16-q",
+        "type": "alert",
+        "style": "info",
+        "title": [{ "text": "Question for Thought:" }],
+        "content": [{ "text": "Why is it important to use actionable verbs in your research objectives?" , "italic": true, "bold": true }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide17-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Research Proposal: SMART Objectives?" }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide17-p1",
+        "type": "paragraph",
+        "content": [{ "text": "SMART Objectives: ", "bold": true }, { "text": "A framework for writing clear, achievable objectives." }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide17-p2",
+        "type": "paragraph",
+        "content": [{ "text": "Example: ", "bold": true }, { "text": "\"Assess the effectiveness of TDD in reducing bug density by 20% over 6 months.\"" }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide18-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Research Proposal: Research Hypothesis?" }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide18-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c3-sm-li-s18-1", "content": [{ "text": "Understand the Research Problem: ", "bold": true }, { "text": "Begin with a clear understanding." }] },
+          { "id": "rmse-c3-sm-li-s18-2", "content": [{ "text": "Make it Testable: ", "bold": true }, { "text": "Allow for empirical validation. "}, { "text": "Avoid", "bold": true }, { "text": " ambiguity." }] },
+          { "id": "rmse-c3-sm-li-s18-3", "content": [{ "text": "Establish Relationships: ", "bold": true }, { "text": "Predict a relationship between variables." }] },
+          { "id": "rmse-c3-sm-li-s18-4", "content": [{ "text": "Identify Variables: ", "bold": true }, { "text": "Clearly define independent and dependent variables." }] },
+          { "id": "rmse-c3-sm-li-s18-5", "content": [
+            { "text": "Example:", "bold": true },
+            { "text": "\n– Null Hypothesis (H0): \"Pair programming has no effect on code quality.\"\n– Alternative Hypothesis (H1): \"Pair programming reduces defect density by 15%.\""}
+          ]}
+        ]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide19-h3-activity",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Research Hypothesis: Activity – Identify variables" }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide19-list",
+        "type": "list",
+        "ordered": true,
+        "items": [
+          { "id": "rmse-c3-sm-li-s19-1", "content": [{ "text": "Hypothesis: Incorporating user feedback during the development process will enhance user satisfaction with the final product (=Influence of User Feedback)" }] },
+          { "id": "rmse-c3-sm-li-s19-2", "content": [{ "text": "Hypothesis: Organizations that implement continuous integration practices will experience shorter release cycles compared to those that do not. (= Adoption of Continuous Integration)" }] },
+          { "id": "rmse-c3-sm-li-s19-3", "content": [{ "text": "Hypothesis: Developers who practice test-driven development (TDD) will have higher code coverage compared to those who do not use TDD. (=Comparison of Programming Techniques)" }] },
+          { "id": "rmse-c3-sm-li-s19-4", "content": [{ "text": "Hypothesis: Providing formal training on software tools will increase the productivity of software developers. (=Impact of Training on Efficiency)" }] }
+        ]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide19-q",
+        "type": "alert",
+        "style": "info",
+        "title": [{ "text": "Questions for Thought:" }],
+        "content": [
+          { "text": "What is the purpose of stating a null hypothesis? "},
+          { "text": "Why is it essential that a hypothesis be testable?"}
+        ]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide20-h3-activity2",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Research Hypothesis: Activity (Variables Example)" }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide20-h4-devmethod",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Impact of Development Methodologies:" }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide20-list-devmethod",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c3-sm-li-s20-1", "content": [{ "text": "Hypothesis: Agile teams produce higher-quality software than Waterfall teams." }] },
+          { "id": "rmse-c3-sm-li-s20-2", "content": [{ "text": "Independent Variable: Development methodology (Agile vs. Waterfall)" }] },
+          { "id": "rmse-c3-sm-li-s20-3", "content": [{ "text": "Dependent Variable: Software quality (measured by defect rates)" }] }
+        ]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide20-h4-codereview",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Effect of Code Reviews:" }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide20-list-codereview",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c3-sm-li-s20-4", "content": [{ "text": "Hypothesis: Regular code reviews reduce software defects." }] },
+          { "id": "rmse-c3-sm-li-s20-5", "content": [{ "text": "Independent Variable: Frequency of code reviews" }] },
+          { "id": "rmse-c3-sm-li-s20-6", "content": [{ "text": "Dependent Variable: Number of defects" }] }
+        ]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide21-h3-activity3",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Research Hypothesis vs. Questions" }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide21-p1",
+        "type": "paragraph",
+        "content": [{ "text": "Activity: Compares research questions and hypotheses across several aspects:" }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide21-q",
+        "type": "alert",
+        "style": "info",
+        "title": [{ "text": "Question:" }],
+        "content": [{ "text": "When would you choose to use research ", "italic": true }, { "text": "questions", "italic": true, "bold": true }, { "text": " instead of "}, { "text": "hypotheses?", "italic": true, "bold": true }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide22-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Research Questions vs Hypotheses (Comparison Table)" }]
+      },
+      {
+        "id": "rmse-c3-sm-block-s22-def-h3",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Aspect: Definition" }]
+      },
+      {
+        "id": "rmse-c3-sm-block-s22-def-list",
+        "type": "list", "ordered": false, "items": [
+          { "id": "rmse-c3-sm-li-s22-def-rq", "content": [{ "text": "Research Questions: ", "bold": true }, { "text": "Open-ended inquiries that guide the research focus." }] },
+          { "id": "rmse-c3-sm-li-s22-def-hyp", "content": [{ "text": "Hypotheses: ", "bold": true }, { "text": "Testable statements predicting the relationship between variables." }] }
+        ]
+      },
+      {
+        "id": "rmse-c3-sm-block-s22-pur-h3",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Aspect: Purpose" }]
+      },
+      {
+        "id": "rmse-c3-sm-block-s22-pur-list",
+        "type": "list", "ordered": false, "items": [
+          { "id": "rmse-c3-sm-li-s22-pur-rq", "content": [{ "text": "Research Questions: ", "bold": true }, { "text": "To identify what the researcher aims to explore." }] },
+          { "id": "rmse-c3-sm-li-s22-pur-hyp", "content": [{ "text": "Hypotheses: ", "bold": true }, { "text": "To predict outcomes and establish relationships for testing." }] }
+        ]
+      },
+      {
+        "id": "rmse-c3-sm-block-s22-nat-h3",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Aspect: Nature" }]
+      },
+      {
+        "id": "rmse-c3-sm-block-s22-nat-list",
+        "type": "list", "ordered": false, "items": [
+          { "id": "rmse-c3-sm-li-s22-nat-rq", "content": [{ "text": "Research Questions: ", "bold": true }, { "text": "Qualitative, exploratory, and descriptive in nature." }] },
+          { "id": "rmse-c3-sm-li-s22-nat-hyp", "content": [{ "text": "Hypotheses: ", "bold": true }, { "text": "Quantitative, confirmatory, and predictive in nature." }] }
+        ]
+      },
+      {
+        "id": "rmse-c3-sm-block-s22-form-h3",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Aspect: Formulation" }]
+      },
+      {
+        "id": "rmse-c3-sm-block-s22-form-list",
+        "type": "list", "ordered": false, "items": [
+          { "id": "rmse-c3-sm-li-s22-form-rq", "content": [{ "text": "Research Questions: ", "bold": true }, { "text": "Usually framed as questions (e.g., \"What is...?\")." }] },
+          { "id": "rmse-c3-sm-li-s22-form-hyp", "content": [{ "text": "Hypotheses: ", "bold": true }, { "text": "Formulated as statements (e.g., \"If... then...\")." }] }
+        ]
+      },
+      {
+        "id": "rmse-c3-sm-block-s22-use-h3",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Aspect: Use in Research" }]
+      },
+      {
+        "id": "rmse-c3-sm-block-s22-use-list",
+        "type": "list", "ordered": false, "items": [
+          { "id": "rmse-c3-sm-li-s22-use-rq", "content": [{ "text": "Research Questions: ", "bold": true }, { "text": "Used when exploring new areas or generating insights." }] },
+          { "id": "rmse-c3-sm-li-s22-use-hyp", "content": [{ "text": "Hypotheses: ", "bold": true }, { "text": "Used when testing specific predictions or theories." }] }
+        ]
+      },
+      {
+        "id": "rmse-c3-sm-block-s22-flex-h3",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Aspect: Flexibility" }]
+      },
+      {
+        "id": "rmse-c3-sm-block-s22-flex-list",
+        "type": "list", "ordered": false, "items": [
+          { "id": "rmse-c3-sm-li-s22-flex-rq", "content": [{ "text": "Research Questions: ", "bold": true }, { "text": "Can be modified as research progresses." }] },
+          { "id": "rmse-c3-sm-li-s22-flex-hyp", "content": [{ "text": "Hypotheses: ", "bold": true }, { "text": "Typically fixed once formulated to ensure focused testing." }] }
+        ]
+      },
+      {
+        "id": "rmse-c3-sm-block-s22-ex-h3",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Aspect: Examples" }]
+      },
+      {
+        "id": "rmse-c3-sm-block-s22-ex-list",
+        "type": "list", "ordered": false, "items": [
+          { "id": "rmse-c3-sm-li-s22-ex-rq", "content": [{ "text": "Research Questions: ", "bold": true }, { "text": "\"What factors influence software developer satisfaction?\"" }] },
+          { "id": "rmse-c3-sm-li-s22-ex-hyp", "content": [{ "text": "Hypotheses: ", "bold": true }, { "text": "\"Higher salaries lead to increased software developer satisfaction.\"" }] }
+        ]
+      },
+      {
+        "id": "rmse-c3-sm-block-s22-data-h3",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Aspect: Data Collection" }]
+      },
+      {
+        "id": "rmse-c3-sm-block-s22-data-list",
+        "type": "list", "ordered": false, "items": [
+          { "id": "rmse-c3-sm-li-s22-data-rq", "content": [{ "text": "Research Questions: ", "bold": true }, { "text": "Guides the type of data to be collected (qualitative or quantitative)." }] },
+          { "id": "rmse-c3-sm-li-s22-data-hyp", "content": [{ "text": "Hypotheses: ", "bold": true }, { "text": "Helps determine the statistical methods for data analysis." }] }
+        ]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide23-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Research Proposal: Methodology Design?" }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide23-list1",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c3-sm-li-s23-1", "content": [{ "text": "Consider Methodological Approaches: ", "bold": true }, { "text": "Reflect on potential research methods and approaches." }] },
+          { "id": "rmse-c3-sm-li-s23-2", "content": [{ "text": "Seek Feedback: ", "bold": true }, { "text": "Share your problem formulation with peers/mentors." }] },
+          { "id": "rmse-c3-sm-li-s23-3", "content": [{ "text": "Finalize the Problem Statement: ", "bold": true }, { "text": "Revise and finalize the statement." }] },
+          { "id": "rmse-c3-sm-li-s23-4", "content": [{ "text": "Methods in SE Research:", "bold": true }] }
+        ]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide23-list2",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c3-sm-li-s23-5", "content": [{ "text": "Experimental: ", "bold": true }, { "text": "Controlled testing (e.g., A/B testing a new IDE plugin)." }] },
+          { "id": "rmse-c3-sm-li-s23-6", "content": [{ "text": "Case Study: ", "bold": true }, { "text": "Analyzing a failed software project." }] },
+          { "id": "rmse-c3-sm-li-s23-7", "content": [{ "text": "Survey: ", "bold": true }, { "text": "Collecting developer feedback." }] }
+        ]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide23-q",
+        "type": "alert",
+        "style": "info",
+        "title": [{ "text": "Question for Thought:" }],
+        "content": [{ "text": "\"What methodology would you use to study the adoption of AI code assistants in Ethiopian startups?\"" , "italic": true, "bold": true }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide24-h3-quant",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Quantitative Methods - Example" }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide24-h4-datacol",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Data Collection:" }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide24-list-datacol",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c3-sm-li-s24-1", "content": [{ "text": "Surveys to software development teams using Agile." }] },
+          { "id": "rmse-c3-sm-li-s24-2", "content": [{ "text": "Collection of quality metrics (defect rates, customer satisfaction)." }] }
+        ]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide24-h4-dataanal",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Data Analysis:" }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide24-list-dataanal",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c3-sm-li-s24-3", "content": [{ "text": "Statistical analysis (e.g., regression) to assess relationships." }] }
+        ]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide24-q",
+        "type": "alert",
+        "style": "info",
+        "title": [{ "text": "Question for Thought:" }],
+        "content": [{ "text": "What are some potential limitations of using surveys as a data collection method?" , "italic": true, "bold": true }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide25-h3-qual",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Qualitative Methods - Example" }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide25-h4-interviews",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Interviews:" }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide25-list-interviews",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c3-sm-li-s25-1", "content": [{ "text": "Semi-structured interviews with project managers and developers." }] },
+          { "id": "rmse-c3-sm-li-s25-2", "content": [{ "text": "Focus on experiences with Agile." }] }
+        ]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide25-h4-casestudies",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Case Studies:" }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide25-list-casestudies",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c3-sm-li-s25-3", "content": [{ "text": "In-depth analysis of select Agile projects." }] }
+        ]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide25-q",
+        "type": "alert",
+        "style": "info",
+        "title": [{ "text": "Question for Thought:" }],
+        "content": [{ "text": "What are the strengths of using qualitative methods like interviews?" , "italic": true, "bold": true }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide26-h3-sample",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Sample Selection" }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide26-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c3-sm-li-s26-1", "content": [{ "text": "Participants: ", "bold": true }, { "text": "Software development teams that have implemented Agile." }] },
+          { "id": "rmse-c3-sm-li-s26-2", "content": [{ "text": "Sampling Method: ", "bold": true }, { "text": "Purposive sampling to select diverse teams." }] }
+        ]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide26-q",
+        "type": "alert",
+        "style": "info",
+        "title": [{ "text": "Question for Thought:" }],
+        "content": [{ "text": "Why is purposive sampling appropriate in this scenario?" , "italic": true, "bold": true }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide27-h3-analysis",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Data Analysis Techniques" }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide27-h4-quant",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Quantitative Analysis:" }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide27-list-quant",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c3-sm-li-s27-1", "content": [{ "text": "Statistical software (e.g., Python, R, SPSS)." }] },
+          { "id": "rmse-c3-sm-li-s27-2", "content": [{ "text": "Comparison of defect rates before and after Agile." }] }
+        ]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide27-h4-qual",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Qualitative Analysis:" }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide27-list-qual",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c3-sm-li-s27-3", "content": [{ "text": "Thematic analysis of interview transcripts." }] },
+          { "id": "rmse-c3-sm-li-s27-4", "content": [{ "text": "Coding for recurring themes." }] }
+        ]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide27-q",
+        "type": "alert",
+        "style": "info",
+        "title": [{ "text": "Question for Thought:" }],
+        "content": [{ "text": "What is \"thematic analysis,\" and how is it conducted?" , "italic": true, "bold": true }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide28-h3-outcomes",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Quality Metrics and Expected Outcomes" }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide28-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c3-sm-li-s28-1", "content": [{ "text": "Quality Metrics: ", "bold": true }, { "text": "Defect rates, code maintainability, customer satisfaction, time to market." }] },
+          { "id": "rmse-c3-sm-li-s28-2", "content": [
+              { "text": "Expected Outcomes:", "bold": true },
+              { "text": "\n– Tested Hypothesis: Agile practices reduce defect rates and improve quality.\n– Potential Contributions: Provide empirical data, inform best practices."}
+            ]
+          }
+        ]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide28-q",
+        "type": "alert",
+        "style": "info",
+        "title": [{ "text": "Question for Thought:" }],
+        "content": [{ "text": "How could you quantify \"code maintainability\"?" , "italic": true, "bold": true }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide29-h2-schedule",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Research Proposal: Schedule Template" }]
+      },
+      { "id": "rmse-c3-sm-block-s29-phase1-h3", "type": "heading", "level": 3, "content": [{ "text": "1. Background Research and Literature Review" }] },
+      { "id": "rmse-c3-sm-block-s29-phase1-list", "type": "list", "ordered": false, "items": [
+          { "id": "rmse-c3-sm-li-s29-1obj", "content": [{ "text": "Objectives: ", "bold": true }, { "text": "Meet with advisor for initial discussion, Review existing Agile methodologies, Analyze relevant literature, Refine research questions." }] },
+          { "id": "rmse-c3-sm-li-s29-1dead", "content": [{ "text": "Deadline: ", "bold": true }, { "text": "25 Nov 2024" }] },
+          { "id": "rmse-c3-sm-li-s29-1out", "content": [{ "text": "Expected Output: ", "bold": true }, { "text": "Literature review summary" }] }
+      ]},
+      { "id": "rmse-c3-sm-block-s29-phase2-h3", "type": "heading", "level": 3, "content": [{ "text": "2. Research Design Planning" }] },
+      { "id": "rmse-c3-sm-block-s29-phase2-list", "type": "list", "ordered": false, "items": [
+          { "id": "rmse-c3-sm-li-s29-2obj", "content": [{ "text": "Objectives: ", "bold": true }, { "text": "Design survey instruments, Identify participant recruitment channels, Finalize sampling methods and data analysis techniques." }] },
+          { "id": "rmse-c3-sm-li-s29-2dead", "content": [{ "text": "Deadline: ", "bold": true }, { "text": "30 Nov 2024" }] },
+          { "id": "rmse-c3-sm-li-s29-2out", "content": [{ "text": "Expected Output: ", "bold": true }, { "text": "Finalized research design document" }] }
+      ]},
+      { "id": "rmse-c3-sm-block-s29-phase3-h3", "type": "heading", "level": 3, "content": [{ "text": "3. Data Collection and Preparation" }] },
+      { "id": "rmse-c3-sm-block-s29-phase3-list", "type": "list", "ordered": false, "items": [
+          { "id": "rmse-c3-sm-li-s29-3obj", "content": [{ "text": "Objectives: ", "bold": true }, { "text": "Recruit participants and distribute surveys, Conduct interviews with selected participants, Transcribe and code responses, Clean and organize data." }] },
+          { "id": "rmse-c3-sm-li-s29-3dead", "content": [{ "text": "Deadline: ", "bold": true }, { "text": "30 Nov 2024" }] },
+          { "id": "rmse-c3-sm-li-s29-3out", "content": [{ "text": "Expected Output: ", "bold": true }, { "text": "Collected and cleaned data set" }] }
+      ]},
+      { "id": "rmse-c3-sm-block-s29-phase4-h3", "type": "heading", "level": 3, "content": [{ "text": "4. Data Analysis" }] },
+      { "id": "rmse-c3-sm-block-s29-phase4-list", "type": "list", "ordered": false, "items": [
+          { "id": "rmse-c3-sm-li-s29-4obj", "content": [{ "text": "Objectives: ", "bold": true }, { "text": "Perform statistical analysis on survey data, Conduct thematic analysis of interview transcripts, Draft results and discussion chapters." }] },
+          { "id": "rmse-c3-sm-li-s29-4dead", "content": [{ "text": "Deadline: ", "bold": true }, { "text": "10 Dec 2024" }] },
+          { "id": "rmse-c3-sm-li-s29-4out", "content": [{ "text": "Expected Output: ", "bold": true }, { "text": "Data analysis report" }] }
+      ]},
+      { "id": "rmse-c3-sm-block-s29-phase5-h3", "type": "heading", "level": 3, "content": [{ "text": "5. Writing" }] },
+      { "id": "rmse-c3-sm-block-s29-phase5-list", "type": "list", "ordered": false, "items": [
+          { "id": "rmse-c3-sm-li-s29-5obj", "content": [{ "text": "Objectives: ", "bold": true }, { "text": "Complete a full thesis draft." }] },
+          { "id": "rmse-c3-sm-li-s29-5dead", "content": [{ "text": "Deadline: ", "bold": true }, { "text": "25 Dec 2024" }] },
+          { "id": "rmse-c3-sm-li-s29-5out", "content": [{ "text": "Expected Output: ", "bold": true }, { "text": "Draft thesis document" }] }
+      ]},
+      { "id": "rmse-c3-sm-block-s29-phase6-h3", "type": "heading", "level": 3, "content": [{ "text": "6. Revision" }] },
+      { "id": "rmse-c3-sm-block-s29-phase6-list", "type": "list", "ordered": false, "items": [
+          { "id": "rmse-c3-sm-li-s29-6obj", "content": [{ "text": "Objectives: ", "bold": true }, { "text": "Meet with advisor to discuss feedback and revisions, Complete thesis and make defense." }] },
+          { "id": "rmse-c3-sm-li-s29-6dead", "content": [{ "text": "Deadline: ", "bold": true }, { "text": "31 Dec 2024" }] },
+          { "id": "rmse-c3-sm-li-s29-6out", "content": [{ "text": "Expected Output: ", "bold": true }, { "text": "Final thesis ready for submission" }] }
+      ]},
+      { "id": "rmse-c3-sm-block-s29-note", "type": "alert", "style": "info", "content": [{ "text": "The schedule outlines the research phases, objectives, deadlines, and expected outputs." }] },
+
+      {
+        "id": "rmse-c3-sm-block-slide30-h2-budget",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Research Proposal: Budget Template" }]
+      },
+      { "id": "rmse-c3-sm-block-s30-item1-h3", "type": "heading", "level": 3, "content": [{ "text": "1. Personnel Costs" }] },
+      { "id": "rmse-c3-sm-block-s30-item1-list", "type": "list", "ordered": false, "items": [
+          { "id": "rmse-c3-sm-li-s30-1desc", "content": [{ "text": "Description: ", "bold": true }, { "text": "Salaries for research assistants and collaborators." }] },
+          { "id": "rmse-c3-sm-li-s30-1cost", "content": [{ "text": "Estimated Cost (ETB): ", "bold": true }, { "text": "5,000" }] }
+      ]},
+      { "id": "rmse-c3-sm-block-s30-item2-h3", "type": "heading", "level": 3, "content": [{ "text": "2. Software Licenses" }] },
+      { "id": "rmse-c3-sm-block-s30-item2-list", "type": "list", "ordered": false, "items": [
+          { "id": "rmse-c3-sm-li-s30-2desc", "content": [{ "text": "Description: ", "bold": true }, { "text": "Licenses for necessary software tools and platforms." }] },
+          { "id": "rmse-c3-sm-li-s30-2cost", "content": [{ "text": "Estimated Cost (ETB): ", "bold": true }, { "text": "1,500" }] }
+      ]},
+      { "id": "rmse-c3-sm-block-s30-item3-h3", "type": "heading", "level": 3, "content": [{ "text": "3. Hardware Costs" }] },
+      { "id": "rmse-c3-sm-block-s30-item3-list", "type": "list", "ordered": false, "items": [
+          { "id": "rmse-c3-sm-li-s30-3desc", "content": [{ "text": "Description: ", "bold": true }, { "text": "Computers, servers, and other hardware." }] },
+          { "id": "rmse-c3-sm-li-s30-3cost", "content": [{ "text": "Estimated Cost (ETB): ", "bold": true }, { "text": "3,000" }] }
+      ]},
+      { "id": "rmse-c3-sm-block-s30-item4-h3", "type": "heading", "level": 3, "content": [{ "text": "4. Participant Incentives" }] },
+      { "id": "rmse-c3-sm-block-s30-item4-list", "type": "list", "ordered": false, "items": [
+          { "id": "rmse-c3-sm-li-s30-4desc", "content": [{ "text": "Description: ", "bold": true }, { "text": "Compensation for study participants." }] },
+          { "id": "rmse-c3-sm-li-s30-4cost", "content": [{ "text": "Estimated Cost (ETB): ", "bold": true }, { "text": "2,000" }] }
+      ]},
+      { "id": "rmse-c3-sm-block-s30-item5-h3", "type": "heading", "level": 3, "content": [{ "text": "5. Travel Expenses" }] },
+      { "id": "rmse-c3-sm-block-s30-item5-list", "type": "list", "ordered": false, "items": [
+          { "id": "rmse-c3-sm-li-s30-5desc", "content": [{ "text": "Description: ", "bold": true }, { "text": "Travel for field studies or conferences." }] },
+          { "id": "rmse-c3-sm-li-s30-5cost", "content": [{ "text": "Estimated Cost (ETB): ", "bold": true }, { "text": "1,000" }] }
+      ]},
+      { "id": "rmse-c3-sm-block-s30-item6-h3", "type": "heading", "level": 3, "content": [{ "text": "6. Publication Fees" }] },
+      { "id": "rmse-c3-sm-block-s30-item6-list", "type": "list", "ordered": false, "items": [
+          { "id": "rmse-c3-sm-li-s30-6desc", "content": [{ "text": "Description: ", "bold": true }, { "text": "Costs for submitting papers to journals." }] },
+          { "id": "rmse-c3-sm-li-s30-6cost", "content": [{ "text": "Estimated Cost (ETB): ", "bold": true }, { "text": "800" }] }
+      ]},
+      { "id": "rmse-c3-sm-block-s30-item7-h3", "type": "heading", "level": 3, "content": [{ "text": "7. Miscellaneous Costs" }] },
+      { "id": "rmse-c3-sm-block-s30-item7-list", "type": "list", "ordered": false, "items": [
+          { "id": "rmse-c3-sm-li-s30-7desc", "content": [{ "text": "Description: ", "bold": true }, { "text": "Unexpected expenses and contingencies." }] },
+          { "id": "rmse-c3-sm-li-s30-7cost", "content": [{ "text": "Estimated Cost (ETB): ", "bold": true }, { "text": "700" }] }
+      ]},
+      { "id": "rmse-c3-sm-block-s30-total-h3", "type": "heading", "level": 3, "content": [{ "text": "Total Budget" }] },
+      { "id": "rmse-c3-sm-block-s30-total-p", "type": "paragraph", "content": [{ "text": "14,000 ETB", "bold": true }] },
+      { "id": "rmse-c3-sm-block-s30-note", "type": "alert", "style": "info", "content": [{ "text": "Budget: Lists budget items (personnel, software, hardware, participant incentives, travel, publication fees, miscellaneous costs) and estimated costs." }] },
+
+      {
+        "id": "rmse-c3-sm-block-slide31-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Research Proposal: Common Pitfalls in Proposals?" }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide31-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c3-sm-li-s31-1", "content": [{ "text": "Vague Objectives: ", "bold": true }, { "text": "\"Study cloud computing\" → \"Evaluate AWS Lambda cold starts...\"" }] },
+          { "id": "rmse-c3-sm-li-s31-2", "content": [{ "text": "Overambitious Scope: ", "bold": true }, { "text": "\"Improve all AI tools\" → \"Optimize GPT-4 for Java code completion.\"" }] },
+          { "id": "rmse-c3-sm-li-s31-3", "content": [{ "text": "Ignoring Literature: ", "bold": true }, { "text": "Failing to cite foundational frameworks." }] },
+          { "id": "rmse-c3-sm-li-s31-4", "content": [{ "text": "Example: ", "bold": true }, { "text": "Weak vs. Strong title." }] }
+        ]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide31-q",
+        "type": "alert",
+        "style": "info",
+        "title": [{ "text": "Question for Thought:" }],
+        "content": [{ "text": "How can you avoid having an overambitious scope in your research proposal?" , "italic": true, "bold": true }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide32-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Research Proposal: Tips?" }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide32-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c3-sm-li-s32-1", "content": [{ "text": "Be Clear and Concise: ", "bold": true }, { "text": "Use straightforward language. "}, { "text": "Avoid jargons", "bold": true }] },
+          { "id": "rmse-c3-sm-li-s32-2", "content": [{ "text": "Stay Focused: ", "bold": true }, { "text": "Keep on "}, { "text": "topic and relevant.", "bold": true }] },
+          { "id": "rmse-c3-sm-li-s32-3", "content": [{ "text": "Use Credible Sources: ", "bold": true }, { "text": "Support claims", "bold": true }, { "text": " with literature." }] },
+          { "id": "rmse-c3-sm-li-s32-4", "content": [{ "text": "Follow Formatting Guidelines: ", "bold": true }, { "text": "Adhere to "}, { "text": "institutional", "bold": true }, { "text": " requirements." }] },
+          { "id": "rmse-c3-sm-li-s32-5", "content": [{ "text": "Structure: ", "bold": true }, { "text": "Follow a "}, { "text": "logical", "bold": true }, { "text": " structure to guide the reader through your proposal." }] },
+          { "id": "rmse-c3-sm-li-s32-6", "content": [{ "text": "Justification: ", "bold": true }, { "text": "Justify your "}, { "text": "choices", "bold": true }, { "text": " in methodology and objectives." }] },
+          { "id": "rmse-c3-sm-li-s32-7", "content": [{ "text": "Feedback: ", "bold": true }, { "text": "Seek feedback from "}, { "text": "peers or mentors before", "bold": true }, { "text": " submission." }] },
+          { "id": "rmse-c3-sm-li-s32-8", "content": [{ "text": "Revision: ", "bold": true }, { "text": "Revise your proposal "}, { "text": "multiple times to refine", "bold": true }, { "text": " your arguments and presentation." }] }
+        ]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide32-q",
+        "type": "alert",
+        "style": "info",
+        "title": [{ "text": "Question for Thought:" }],
+        "content": [{ "text": "Why is it important to get feedback on your proposal before submitting it?" , "italic": true, "bold": true }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide33-h2-quiz",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "*Class Quiz" }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide33-list-quiz",
+        "type": "list",
+        "ordered": true,
+        "items": [
+          { "id": "rmse-c3-sm-li-s33-q1", "content": [{ "text": "Briefly explain the difference between an academic thesis proposal and an industry grant proposal. How might their structures and emphasis differ?" }] },
+          { "id": "rmse-c3-sm-li-s33-q2", "content": [{ "text": "Why is it crucial to clearly define the research problem before formulating research questions and objectives?" }] },
+          { "id": "rmse-c3-sm-li-s33-q3", "content": [{ "text": "Explain the difference between an independent variable and a dependent variable. Provide a software engineering example." }] },
+          { "id": "rmse-c3-sm-li-s33-q4", "content": [
+              { "text": "You are proposing research on the impact of using code generation tools (like GitHub Copilot) on the productivity of junior software developers in Ethiopia." },
+              { "text": "\na. Write a concise problem statement (1-2 sentences).\nb. Formulate one research question.\nc. Propose one research objective (make it SMART).\nd. State a null hypothesis and an alternative hypothesis.\ne. Briefly describe a suitable research methodology (including data collection)." }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide34-h2-activity",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Research Proposal: Research Questions Examples Activity" }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide34-p-activity",
+        "type": "paragraph",
+        "content": [{ "text": "Identify the type of research to answer the following research questions (Technology Focused Question, User-Centric, Evaluative, Comparative, Explanatory, Descriptive, Exploratory)" }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide34-list-activity",
+        "type": "list",
+        "ordered": true,
+        "items": [
+          { "id": "rmse-c3-sm-li-s34-q1", "content": [{ "text": "\"What are the current challenges faced by software teams in adopting agile methodologies?\"" }] },
+          { "id": "rmse-c3-sm-li-s34-q2", "content": [{ "text": "\"How do different software development practices affect the quality of software products in small vs. large teams?\"" }] },
+          { "id": "rmse-c3-sm-li-s34-q3", "content": [{ "text": "\"What factors contribute to the success or failure of software projects in remote working environments?\"" }] },
+          { "id": "rmse-c3-sm-li-s34-q4", "content": [{ "text": "\"How does the effectiveness of pair programming compare to solo programming in terms of code quality and developer satisfaction?\"" }] },
+          { "id": "rmse-c3-sm-li-s34-q5", "content": [{ "text": "\"What impact does implementing continuous integration have on the software development lifecycle of organizations?\"" }] },
+          { "id": "rmse-c3-sm-li-s34-q6", "content": [{ "text": "\"How do user feedback mechanisms influence the iterative design process in software development?\"" }] },
+          { "id": "rmse-c3-sm-li-s34-q7", "content": [{ "text": "\"What are the implications of adopting microservices architecture on software maintainability and scalability?\"" }] }
+        ]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide35-h2-endactivity",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Research Proposal: End Chapter Activity" }]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide35-q1",
+        "type": "alert",
+        "style": "info",
+        "title": [{ "text": "Question 1:" }],
+        "content": [
+          { "text": "A software company in Addis Ababa is experiencing high turnover rates among its junior developers. They suspect this is due to a lack of effective mentoring." },
+          { "text": "\na. Formulate a problem statement for a research project to investigate this issue.\nb. Develop three research questions related to this problem.\nc. Propose a methodology (including data collection methods) to address these questions.\nd. Identify potential ethical considerations for this research." }
+        ]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide36-q2",
+        "type": "alert",
+        "style": "info",
+        "title": [{ "text": "Question 2:" }],
+        "content": [
+          { "text": "You are interested in researching the effectiveness of using a new AI-powered code review tool in a large, distributed software development team." },
+          { "text": "\na. Develop a SMART objective for this research.\nb. Formulate a null hypothesis and an alternative hypothesis related to the tool's impact on code quality.\nc. Describe how you would select a sample of developers for your study.\nd. What quantitative and qualitative data would you collect?" }
+        ]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide37-q3",
+        "type": "alert",
+        "style": "info",
+        "title": [{ "text": "Question 3:" }],
+        "content": [
+          { "text": "You want to compare the use of two different testing frameworks (e.g., JUnit vs. TestNG) for Java projects." },
+          { "text": "\na. Develop a Title\nb. Formulate a research question questions for your research project.\nc. Propose a methodology (including data collection methods) to address these questions.\nd. Develop a Hypothesis" }
+        ]
+      },
+      {
+        "id": "rmse-c3-sm-block-slide38-assignment",
+        "type": "alert",
+        "style": "warning",
+        "title": [{ "text": "Assignment:" }],
+        "content": [{ "text": "Preparing Research Proposal" }]
+      }
+    ],
+    "summary": [
+      { "text": "This chapter provided a comprehensive guide to understanding, formulating, and writing a research proposal, covering its definition, purpose, types, structure, common challenges, and best practices, with a focus on applications in software engineering." }
+    ]
+  }
+]

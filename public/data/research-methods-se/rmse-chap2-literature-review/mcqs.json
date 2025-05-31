@@ -1,0 +1,183 @@
+
+[
+  {
+    "id": "rmse-c2-mcq-1",
+    "question": "What is the primary purpose of a literature review?",
+    "options": [
+      "To list as many articles as possible.",
+      "To provide a systematic examination of existing research to identify gaps and trends.",
+      "To prove one's own hypothesis before starting research.",
+      "To only summarize very old research papers."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "A literature review systematically examines existing research to understand the current state, identify gaps, trends, and foundational theories (Slide 3)."
+  },
+  {
+    "id": "rmse-c2-mcq-2",
+    "question": "Which type of literature review uses statistical methods to aggregate results from multiple quantitative studies?",
+    "options": [
+      "Narrative Review",
+      "Systematic Review",
+      "Meta-Analysis",
+      "Scoping Review"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Meta-Analysis involves the statistical aggregation of results from quantitative studies (Slide 5, 7)."
+  },
+  {
+    "id": "rmse-c2-mcq-3",
+    "question": "Which of the following is a core component of Critical Thinking?",
+    "options": [
+      "Accepting information without question.",
+      "Focusing only on positive aspects.",
+      "Evaluation: Assessing the credibility and relevance of information.",
+      "Avoiding complex problem-solving."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Evaluation, which includes assessing credibility, relevance, and significance, is a key component of critical thinking (Slide 8)."
+  },
+  {
+    "id": "rmse-c2-mcq-4",
+    "question": "When is a Systematic Review more suitable than a Narrative Review in SE, according to the material?",
+    "options": [
+      "When a quick overview is needed.",
+      "When exploring a very new or unclear area.",
+      "When addressing specific research questions and needing thorough, unbiased evidence.",
+      "When flexibility in approach is prioritized over rigor."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Systematic reviews are used when addressing specific research questions requiring thorough evidence, aiming to reduce bias and be replicable (Slide 5, 6)."
+  },
+  {
+    "id": "rmse-c2-mcq-5",
+    "question": "Which of these is NOT a characteristic of 'Poor Thinking' as described in Slide 13?",
+    "options": [
+      "Aimless",
+      "Emotionally Driven",
+      "Judicious (Critical)",
+      "Dogmatic"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "'Judicious (Critical)' is a characteristic of Quality Thinking, not Poor Thinking (Slide 13)."
+  },
+  {
+    "id": "rmse-c2-mcq-6",
+    "question": "What is the first step in the Critical Thinking Research Process outlined in Slide 15?",
+    "options": [
+      "Research your topic.",
+      "Consider all arguments.",
+      "Define your research question.",
+      "Determine your thesis."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "The first step listed is 'Define your research question.' (Slide 15)."
+  },
+  {
+    "id": "rmse-c2-mcq-7",
+    "question": "The 'Introduction' section of a research article primarily addresses:",
+    "options": [
+      "How the study was conducted.",
+      "What happened (the data).",
+      "Why the study was done (purpose, hypothesis).",
+      "What the findings mean."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "The Introduction explains the 'Why': topic, purpose of the study, and research hypothesis (Slide 17)."
+  },
+  {
+    "id": "rmse-c2-mcq-8",
+    "question": "Which Boolean operator is used to narrow search results by requiring all specified terms to be present?",
+    "options": [
+      "OR",
+      "NOT",
+      "AND",
+      "NEAR"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "The AND operator is used to filter results so that all connected keywords are present (Slide 19)."
+  },
+  {
+    "id": "rmse-c2-mcq-9",
+    "question": "Journals, books, and newspapers are generally considered what type of research resource?",
+    "options": [
+      "Primary Sources",
+      "Secondary Sources",
+      "Tertiary Sources",
+      "Quaternary Sources"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Slide 21 categorizes journals and books as Secondary Sources, which analyze or interpret primary sources."
+  },
+  {
+    "id": "rmse-c2-mcq-10",
+    "question": "When critiquing research, 'Validity' primarily refers to:",
+    "options": [
+      "Whether the study addresses your research question.",
+      "Whether the author is an expert in the field.",
+      "Whether the methods used are sound and appropriate.",
+      "Whether the journal is peer-reviewed."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Validity concerns whether the research methods are sound (e.g., appropriate sample size, correct procedures) (Slide 23)."
+  },
+  {
+    "id": "rmse-c2-mcq-11",
+    "question": "What is a major concern with 'Predatory Journals'?",
+    "options": [
+      "They are too expensive to access.",
+      "They publish high-quality, rigorously peer-reviewed articles.",
+      "They are fraudulent publishers with unprofessional, untrusted content.",
+      "They only publish research from specific institutions."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Predatory journals are fraudulent, publishing unprofessional, untrusted, and often non-peer-reviewed articles (Slide 29)."
+  },
+  {
+    "id": "rmse-c2-mcq-12",
+    "question": "Properly paraphrasing and citing sources is crucial to avoid:",
+    "options": [
+      "Bias",
+      "Poor Authorship",
+      "Plagiarism",
+      "Irrelevance"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Plagiarism is the act of using someone else's work without proper citation. Proper paraphrasing and citing are essential to avoid it (Slide 30)."
+  },
+  {
+    "id": "rmse-c2-mcq-13",
+    "question": "The synthesis of findings from multiple QUALITATIVE studies to create new interpretations is known as:",
+    "options": [
+      "Systematic Review",
+      "Meta-Analysis",
+      "Narrative Review",
+      "Meta-synthesis"
+    ],
+    "correctAnswerIndex": 3,
+    "explanation": "Meta-synthesis specifically deals with integrating and interpreting qualitative research findings (Slide 5, 7)."
+  },
+  {
+    "id": "rmse-c2-mcq-14",
+    "question": "According to Slide 18, what is the first step in the process of conducting a literature review?",
+    "options": [
+      "Search using databases",
+      "Evaluate Sources",
+      "Define Scope",
+      "Synthesize findings"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "The process outlined on Slide 18 begins with 'Define Scope: Narrow to specific SE topics'."
+  },
+  {
+    "id": "rmse-c2-mcq-15",
+    "question": "Which ethical pitfall involves not giving credit to original ideas or foundational frameworks?",
+    "options": [
+      "Plagiarism",
+      "Poor Authorship",
+      "Bias in source selection",
+      "Lack of informed consent"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Authorship, as described on Slide 30, is about giving credit to original ideas. Failing to do so is poor authorship."
+  }
+]

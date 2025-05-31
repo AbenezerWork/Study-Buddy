@@ -1,0 +1,183 @@
+
+[
+  {
+    "id": "rmse-c5-mcq-1",
+    "question": "According to Kerlinger (1986), a Research Design is a plan, structure, and strategy to obtain answers to:",
+    "options": [
+      "Only financial questions",
+      "Research questions or problems",
+      "The researcher's personal interests",
+      "Ethical dilemmas"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Slide 3 defines Research Design as a plan to obtain answers to research questions or problems."
+  },
+  {
+    "id": "rmse-c5-mcq-2",
+    "question": "Which of the following is the FIRST step in creating a research design as per Slide 5?",
+    "options": [
+      "Choose your data collection methods",
+      "Identify your population and sampling method",
+      "Consider your aims and approach",
+      "Plan your data collection procedures"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Slide 5 lists 'Step 1: Consider your aims and approach' as the first step."
+  },
+  {
+    "id": "rmse-c5-mcq-3",
+    "question": "A research design that tends to be more flexible and inductive, allowing adjustments during the process, is typically:",
+    "options": [
+      "Quantitative Research Design",
+      "Experimental Design",
+      "Qualitative Research Design",
+      "Correlational Design"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Slide 7 states that Qualitative Research Designs tend to be more flexible and inductive."
+  },
+  {
+    "id": "rmse-c5-mcq-4",
+    "question": "Which type of quantitative research design is best for testing cause-and-effect relationships?",
+    "options": [
+      "Descriptive Design",
+      "Correlational Design",
+      "Experimental Design",
+      "Case Study Design"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Slide 9 and 12 explain that Experimental designs are the strongest way to test cause-and-effect relationships."
+  },
+  {
+    "id": "rmse-c5-mcq-5",
+    "question": "A detailed study of the culture of a specific community or group, involving extended immersion and close observation, is known as:",
+    "options": [
+      "Case Study",
+      "Grounded Theory",
+      "Phenomenology",
+      "Ethnography"
+    ],
+    "correctAnswerIndex": 3,
+    "explanation": "Slide 14 defines Ethnography as a detailed study of the culture of a specific community or group, involving immersion and observation."
+  },
+  {
+    "id": "rmse-c5-mcq-6",
+    "question": "Data collected for the first time by the researcher for a specific study is called:",
+    "options": [
+      "Secondary data",
+      "Tertiary data",
+      "Primary data",
+      "Archival data"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Slide 15 defines Primary data as original data, collected for the first time by the researcher."
+  },
+  {
+    "id": "rmse-c5-mcq-7",
+    "question": "Turning abstract concepts like 'satisfaction' or 'anxiety' into measurable indicators is called:",
+    "options": [
+      "Generalization",
+      "Operationalization",
+      "Hypothesizing",
+      "Sampling"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Slide 20 defines Operationalization as turning concepts or variables into measurable indicators."
+  },
+  {
+    "id": "rmse-c5-mcq-8",
+    "question": "If a measure consistently produces the same results for the same concept over time, it is said to have high:",
+    "options": [
+      "Validity",
+      "Objectivity",
+      "Reliability",
+      "Economy"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Slide 21 describes reliability in terms of consistent measurement over time or contexts."
+  },
+  {
+    "id": "rmse-c5-mcq-9",
+    "question": "In research, the entire group you want to draw conclusions about is called the:",
+    "options": [
+      "Sample",
+      "Cohort",
+      "Population",
+      "Subgroup"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Slide 24 defines a population as the entire group that you want to draw conclusions about."
+  },
+  {
+    "id": "rmse-c5-mcq-10",
+    "question": "Which sampling method involves selecting participants in a non-random way and carries a higher risk of research bias?",
+    "options": [
+      "Simple Random Sampling",
+      "Stratified Sampling",
+      "Probability Sampling",
+      "Non-probability Sampling"
+    ],
+    "correctAnswerIndex": 3,
+    "explanation": "Slide 28 indicates Non-probability sampling is non-random and has a higher risk of research bias."
+  },
+  {
+    "id": "rmse-c5-mcq-11",
+    "question": "Descriptive statistics help to summarize sample data in terms of all the following EXCEPT:",
+    "options": [
+      "The distribution of the data",
+      "The central tendency of the data",
+      "The variability of the data",
+      "The causal relationship between variables"
+    ],
+    "correctAnswerIndex": 3,
+    "explanation": "Slide 31 lists distribution, central tendency, and variability as aspects summarized by descriptive statistics. Causal relationships are typically explored with inferential statistics or experimental designs."
+  },
+  {
+    "id": "rmse-c5-mcq-12",
+    "question": "Which level of measurement allows data to be categorized, ranked, and have evenly spaced intervals, but lacks a true natural zero?",
+    "options": [
+      "Nominal",
+      "Ordinal",
+      "Interval",
+      "Ratio"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Slide 34 defines Interval scale as data that can be categorized, ranked, and evenly spaced, but Ratio scale has the natural zero."
+  },
+  {
+    "id": "rmse-c5-mcq-13",
+    "question": "A t-test or ANOVA would typically be used for what purpose in quantitative data analysis?",
+    "options": [
+      "To describe the central tendency of a single variable.",
+      "To make comparison tests for differences in outcomes between groups.",
+      "To explore themes in qualitative data.",
+      "To measure the frequency distribution of nominal data."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Slide 32 mentions t-tests and ANOVAs are used to make comparison tests looking for differences in the outcomes of different groups."
+  },
+  {
+    "id": "rmse-c5-mcq-14",
+    "question": "Identifying patterns and extracting relevant parts from dense qualitative data by coding for recurring themes is characteristic of:",
+    "options": [
+      "Inferential statistics",
+      "Regression analysis",
+      "Thematic analysis",
+      "Experimental design"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Slide 39 describes thematic analysis as an approach to qualitative data analysis that involves identifying patterns (themes)."
+  },
+  {
+    "id": "rmse-c5-mcq-15",
+    "question": "Identifying the variable type for 'Academic rank: BSc, MSc, PhD' (Slide 41, Activity 1b):",
+    "options": [
+      "Nominal",
+      "Ordinal",
+      "Interval",
+      "Ratio"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Academic ranks like BSc, MSc, PhD can be ordered/ranked, but the difference between them is not necessarily equal or measurable in fixed units, making it an Ordinal scale."
+  }
+]

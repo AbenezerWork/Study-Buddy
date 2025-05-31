@@ -1,0 +1,181 @@
+
+[
+  {
+    "id": "rmse-c4-mcq-1",
+    "question": "What does 'Ontology' primarily deal with in research philosophy?",
+    "options": [
+      "The methods of data collection.",
+      "The nature of knowledge and how it can be acquired.",
+      "The nature of reality and being.",
+      "The ethical values guiding the research."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Ontology is concerned with the nature of reality, existence, or what can be said to exist (Slide 4, 5, 10)."
+  },
+  {
+    "id": "rmse-c4-mcq-2",
+    "question": "Which layer of the Research Onion encompasses the researcher's worldview, such as positivism or interpretivism?",
+    "options": [
+      "Strategy",
+      "Approach",
+      "Philosophy",
+      "Techniques and Procedures"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Philosophy is the outermost layer representing the researcher's worldview (Slide 8)."
+  },
+  {
+    "id": "rmse-c4-mcq-3",
+    "question": "A research approach that starts with developing a theory and hypotheses, then designs a strategy to test them, is known as:",
+    "options": [
+      "Inductive",
+      "Deductive",
+      "Abductive",
+      "Mixed-methods"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Deductive reasoning involves testing pre-existing theories or hypotheses (Slide 13, 16)."
+  },
+  {
+    "id": "rmse-c4-mcq-4",
+    "question": "Which research paradigm suggests that knowledge is constructed through social processes and interactions?",
+    "options": [
+      "Positivism",
+      "Interpretivism",
+      "Constructivism",
+      "Pragmatism"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Constructivism posits that knowledge is socially constructed (Slide 11)."
+  },
+  {
+    "id": "rmse-c4-mcq-5",
+    "question": "If a study collects data at a single point in time to get a 'snapshot', what is its time horizon?",
+    "options": [
+      "Longitudinal",
+      "Sequential",
+      "Cross-sectional",
+      "Retrospective"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Cross-sectional studies collect data at one point in time (Slide 26)."
+  },
+  {
+    "id": "rmse-c4-mcq-6",
+    "question": "Which data collection method is described as 'Quant: Performance, user behavior, code characteristics' and has 'Objective, high volume, minimal effort' as pros?",
+    "options": [
+      "Interviews",
+      "Observations",
+      "Automated Collection (Logging, Code Analysis)",
+      "Repository Mining"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Automated Collection methods like logging and code analysis fit this description on Slide 27."
+  },
+  {
+    "id": "rmse-c4-mcq-7",
+    "question": "A framework that focuses more on the specific aspects of the research context and visually represents relationships among concepts is a:",
+    "options": [
+      "Theoretical Framework",
+      "Conceptual Framework",
+      "Methodological Framework",
+      "Ontological Framework"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "A Conceptual Framework visually represents relationships specific to the research context (Slide 29)."
+  },
+  {
+    "id": "rmse-c4-mcq-8",
+    "question": "Is gathering data from GitHub repositories conceptual or empirical research?",
+    "options": [
+      "Primarily Conceptual",
+      "Primarily Empirical",
+      "Both equally",
+      "Neither"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Gathering data from GitHub repositories involves observation of real-world artifacts and data, making it empirical research (Slide 30 quiz question)."
+  },
+  {
+    "id": "rmse-c4-mcq-9",
+    "question": "In the 'Research Possibilities Grid' (Slide 33), 'Interpretivism' is associated with which nature of data?",
+    "options": [
+      "Quantitative",
+      "Qualitative",
+      "Mixed Qual/Quants",
+      "Secondary Data"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Slide 33 shows Interpretivism aligned with Qualitative data."
+  },
+  {
+    "id": "rmse-c4-mcq-10",
+    "question": "What is Epistemology concerned with? (Quiz Q1)",
+    "options": [
+      "What reality is.",
+      "How we can know what we know; the theory of knowledge.",
+      "The specific methods used to collect data.",
+      "The values and ethics of research."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Epistemology is about the nature of knowledge and how it is acquired (Slide 5, Class Quiz Q1)."
+  },
+  {
+    "id": "rmse-c4-mcq-11",
+    "question": "If a researcher believes there's one objective truth waiting to be discovered, their philosophical stance is likely: (Quiz Q3)",
+    "options": [
+      "Interpretivism",
+      "Constructivism",
+      "Positivism",
+      "Pragmatism"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Positivism aligns with the belief in an objective, discoverable truth (Slide 9, Class Quiz Q3)."
+  },
+  {
+    "id": "rmse-c4-mcq-12",
+    "question": "In a study of code quality and testing, 'code quality' (e.g., defect density) is likely the: (Quiz Q7)",
+    "options": [
+      "Independent variable",
+      "Dependent variable",
+      "Intervening variable",
+      "Confounding variable"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Code quality is the outcome or effect being measured, making it the dependent variable. Testing methods or efforts would be independent variables. (Class Quiz Q7, Slide 19)"
+  },
+  {
+    "id": "rmse-c4-mcq-13",
+    "question": "If you have very limited time for research, which approach might be more practical? (Quiz Q8)",
+    "options": [
+      "Inductive, as it's more flexible.",
+      "Deductive, as it's often quicker by building on existing theories.",
+      "Both are equally time-consuming.",
+      "Neither, time doesn't affect approach choice."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Deductive approaches can be quicker as they use existing frameworks and are more structured (Slide 21, Class Quiz Q8)."
+  },
+  {
+    "id": "rmse-c4-mcq-14",
+    "question": "Are interviews always a qualitative method? (Quiz Q10)",
+    "options": [
+      "True",
+      "False"
+    ],
+    "correctAnswerIndex": 0,
+    "explanation": "While typically qualitative, highly structured interviews can sometimes yield quantifiable data. However, in the context of the slides, they are primarily presented as qualitative. Slide 27 lists interviews under Qual. (Class Quiz Q10)"
+  },
+  {
+    "id": "rmse-c4-mcq-15",
+    "question": "Which of the following best describes the 'Research Strategy' layer in the Research Onion?",
+    "options": [
+      "The researcher's fundamental beliefs about reality.",
+      "Whether the reasoning is deductive or inductive.",
+      "The overall plan for how the research will be conducted (e.g., case study, experiment).",
+      "The specific tools used for data collection like questionnaires."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Strategy refers to how the research will be conducted, including choices like case study, experiment, survey, etc. (Slide 8)."
+  }
+]

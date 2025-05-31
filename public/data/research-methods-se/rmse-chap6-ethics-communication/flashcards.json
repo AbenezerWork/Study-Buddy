@@ -1,0 +1,102 @@
+[
+  {
+    "id": "rmse-c6-fc-1",
+    "front": "What are the four Core Research Ethics Principles?",
+    "back": "Respect for Persons (informed consent, autonomy), Beneficence (maximize benefits, minimize harm), Justice (fair distribution of benefits/burdens), Integrity (honesty, transparency)."
+  },
+  {
+    "id": "rmse-c6-fc-2",
+    "front": "List two reasons why Research Ethics are important.",
+    "back": "Fosters Trust, enhances Reputation, ensures Legal Compliance, contributes to Advancement of Knowledge."
+  },
+  {
+    "id": "rmse-c6-fc-3",
+    "front": "Name three key Slide Preparation Skills.",
+    "back": "Audience Understanding, Content Tailoring, Presentation Relevance, Audience Engagement, Content Structure, Audience Analysis, Visual Design."
+  },
+  {
+    "id": "rmse-c6-fc-4",
+    "front": "What does 'Content Structure' in slide preparation involve?",
+    "back": "Using a clear introduction, body, and conclusion format for the presentation."
+  },
+  {
+    "id": "rmse-c6-fc-5",
+    "front": "What are the key aspects of 'Visual Design' for slides?",
+    "back": "Limit text, use consistent fonts and colors, and utilize white space effectively."
+  },
+  {
+    "id": "rmse-c6-fc-6",
+    "front": "List the four main Research Presentation Techniques.",
+    "back": "1. Understanding Your Audience, 2. Engaging Your Audience, 3. Structuring Your Presentation, 4. Handling Q and A."
+  },
+  {
+    "id": "rmse-c6-fc-7",
+    "front": "Why is 'Understanding Your Audience' crucial before a presentation?",
+    "back": "To tailor content to their level of understanding (experts vs. laypeople) and interests, ensuring effective communication."
+  },
+  {
+    "id": "rmse-c6-fc-8",
+    "front": "What are the typical components of 'Structuring Your Presentation'?",
+    "back": "Introduction, Background, Methodology, Findings, Discussion, Conclusion, and Q&A."
+  },
+  {
+    "id": "rmse-c6-fc-9",
+    "front": "Name two types of Plagiarism.",
+    "back": "Direct Plagiarism, Self-Plagiarism, Mosaic Plagiarism, Accidental & Paraphrasing issues."
+  },
+  {
+    "id": "rmse-c6-fc-10",
+    "front": "Define Direct Plagiarism.",
+    "back": "Copying text directly from a source without using citation or quotation marks."
+  },
+  {
+    "id": "rmse-c6-fc-11",
+    "front": "Define Self-Plagiarism.",
+    "back": "Reusing one's own previously submitted or published work without proper acknowledgment or citation."
+  },
+  {
+    "id": "rmse-c6-fc-12",
+    "front": "List three Plagiarism Prevention Strategies.",
+    "back": "Understand Citation Styles, Keep Track of Sources, Use Plagiarism Detection Tools, Practice Proper Paraphrasing, Seek Educational Resources, Code Attribution."
+  },
+  {
+    "id": "rmse-c6-fc-13",
+    "front": "What is 'Code Attribution' in software engineering research ethics?",
+    "back": "Properly documenting and attributing code snippets, libraries, and algorithms from external sources, often by including comments in code with source links."
+  },
+  {
+    "id": "rmse-c6-fc-14",
+    "front": "What are two implications of Unethical Practices in research?",
+    "back": "Harm to Participants, Misleading Results, Loss of Funding, Legal Repercussions."
+  },
+  {
+    "id": "rmse-c6-fc-15",
+    "front": "What is 'Validity' in research quality?",
+    "back": "The extent to which research measures what it claims to measure and produces accurate results (includes internal, external, construct validity)."
+  },
+  {
+    "id": "rmse-c6-fc-16",
+    "front": "What is 'Reliability' in research quality?",
+    "back": "The consistency of research results across different measurements, trials, or observers (includes test-retest, inter-rater reliability)."
+  },
+  {
+    "id": "rmse-c6-fc-17",
+    "front": "What is 'Replicability' in research quality?",
+    "back": "The ability for research to be reproduced by independent researchers using the same methodology."
+  },
+  {
+    "id": "rmse-c6-fc-18",
+    "front": "Name two components of 'Impact Assessment' for research quality.",
+    "back": "Citation metrics, Industry adoption, Societal benefits, Knowledge advancement."
+  },
+  {
+    "id": "rmse-c6-fc-19",
+    "front": "What is the purpose of the 'Peer Review Process'?",
+    "back": "Critical evaluation by experts in the field to ensure quality before publication, involving validation of methodology, contribution, and suggesting improvements."
+  },
+  {
+    "id": "rmse-c6-fc-20",
+    "front": "Why is 'Research Documentation' important for quality?",
+    "back": "It provides a comprehensive record of research procedures, data, and findings, ensuring transparency and enabling verification/replication."
+  }
+]

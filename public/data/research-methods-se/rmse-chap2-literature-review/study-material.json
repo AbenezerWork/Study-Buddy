@@ -1,0 +1,924 @@
+
+[
+  {
+    "id": "rmse-chap2-topic-main",
+    "title": "Chapter 2: Literature Review",
+    "introduction": [
+      { "text": "This chapter covers the essentials of conducting a literature review, its importance, types, and related concepts like critical thinking and ethical considerations in the context of software engineering research." }
+    ],
+    "contentBlocks": [
+      {
+        "id": "rmse-c2-sm-block-slide2-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Lesson Outline" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide2-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c2-sm-li-s2-1", "content": [{ "text": "What is Literature Review" }] },
+          { "id": "rmse-c2-sm-li-s2-2", "content": [{ "text": "Types of Literature Reviews" }] },
+          { "id": "rmse-c2-sm-li-s2-3", "content": [{ "text": "Critical Thinking: What, What's not, Why to students?" }] },
+          { "id": "rmse-c2-sm-li-s2-4", "content": [{ "text": "Evaluating/Critiquing Literature: How to review?" }] },
+          { "id": "rmse-c2-sm-li-s2-5", "content": [{ "text": "How to write literature review" }] },
+          { "id": "rmse-c2-sm-li-s2-6", "content": [{ "text": "Searching Tools" }] }
+        ]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide3-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "What's Literature Review" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide3-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c2-sm-li-s3-1", "content": [{ "text": "A systematic examination of existing research to identify gaps, trends, and foundational theories (Ridley, 2008)." }] },
+          { "id": "rmse-c2-sm-li-s3-2", "content": [{ "text": "A comprehensive survey of existing research on a specific topic." }] },
+          { "id": "rmse-c2-sm-li-s3-3", "content": [{ "text": "In SE: contextualizes your work within prior studies e.g. \"In studying software development methodologies, a literature review helps identify which approaches are well-supported by evidence and which require further exploration.\"" }] }
+        ]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide4-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Purpose of a Literature Review: Why It Matters" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide4-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c2-sm-li-s4-1", "content": [{ "text": "Avoids duplication." }] },
+          { "id": "rmse-c2-sm-li-s4-2", "content": [{ "text": "Builds credibility by citing authoritative sources." }] },
+          { "id": "rmse-c2-sm-li-s4-3", "content": [{ "text": "Establishes a foundation for new and methodology." }] },
+          { "id": "rmse-c2-sm-li-s4-4", "content": [{ "text": "Identifies gaps and develops a theoretical framework/methodology." }] },
+          { "id": "rmse-c2-sm-li-s4-5", "content": [{ "text": "Survey scholarly sources on a specific topic." }] },
+          { "id": "rmse-c2-sm-li-s4-6", "content": [{ "text": "Provide an overview of current knowledge." }] },
+          { "id": "rmse-c2-sm-li-s4-7", "content": [{ "text": "Appears as part of a dissertation/thesis or on its own." }] }
+        ]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide5-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Types of Literature Reviews: Common Types" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide5-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c2-sm-li-s5-1", "content": [{ "text": "Systematic Review: ", "bold": true }, { "text": "Rigorous protocol (e.g., analyzing all studies on \"code review tools\")." }] },
+          { "id": "rmse-c2-sm-li-s5-2", "content": [{ "text": "Narrative Review: ", "bold": true }, { "text": "Thematic summary (e.g., trends in \"software sustainability\")." }] },
+          { "id": "rmse-c2-sm-li-s5-3", "content": [{ "text": "Meta-Analysis: ", "bold": true }, { "text": "Statistical aggregation of results (e.g., effectiveness of TDD)." }] },
+          { "id": "rmse-c2-sm-li-s5-4", "content": [{ "text": "Meta-synthesis: ", "bold": true }, { "text": "a qualitative research method that integrates findings from multiple qualitative studies to create new interpretations, theories, or insights." }] }
+        ]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide5-q",
+        "type": "alert",
+        "style": "info",
+        "title": [{ "text": "Question:" }],
+        "content": [{ "text": "\"When would a systematic review be more suitable than a narrative review in SE?\"" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide6-7-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Detailed Comparison of Literature Review Types" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-s6-narrative-h3",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Narrative Literature Review" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-s6-narrative-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c2-sm-li-s6-narr-desc", "content": [{ "text": "Description: ", "bold": true }, { "text": "Critiques and summarizes existing literature, identifying gaps and inconsistencies." }] },
+          { "id": "rmse-c2-sm-li-s6-narr-when", "content": [{ "text": "When to Use: ", "bold": true }, { "text": "When you have a focused research question." }] },
+          { "id": "rmse-c2-sm-li-s6-narr-pros", "content": [{ "text": "Pros: ", "bold": true }, { "text": "Provides a comprehensive overview; flexible in approach." }] },
+          { "id": "rmse-c2-sm-li-s6-narr-cons", "content": [{ "text": "Cons: ", "bold": true }, { "text": "Can be subjective; lacks rigorous methodology." }] },
+          { "id": "rmse-c2-sm-li-s6-narr-ex", "content": [{ "text": "Example: ", "bold": true }, { "text": "A review of agile principles in software industries." }] }
+        ]
+      },
+      {
+        "id": "rmse-c2-sm-block-s6-scoping-h3",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Scoping Literature Review" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-s6-scoping-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c2-sm-li-s6-scop-desc", "content": [{ "text": "Description: ", "bold": true }, { "text": "Maps the breadth of literature on a topic; identifies gaps and emerging evidence." }] },
+          { "id": "rmse-c2-sm-li-s6-scop-when", "content": [{ "text": "When to Use: ", "bold": true }, { "text": "When exploring a new or unclear area of research." }] },
+          { "id": "rmse-c2-sm-li-s6-scop-pros", "content": [{ "text": "Pros: ", "bold": true }, { "text": "Broad overview; identifies key themes and gaps." }] },
+          { "id": "rmse-c2-sm-li-s6-scop-cons", "content": [{ "text": "Cons: ", "bold": true }, { "text": "Less depth on specific questions; may lack rigor." }] },
+          { "id": "rmse-c2-sm-li-s6-scop-ex", "content": [{ "text": "Example: ", "bold": true }, { "text": "A Scoping Literature Review of Software Testing Practices in Agile Development." }] }
+        ]
+      },
+      {
+        "id": "rmse-c2-sm-block-s6-systematic-h3",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Systematic Literature Review" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-s6-systematic-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c2-sm-li-s6-sys-desc", "content": [{ "text": "Description: ", "bold": true }, { "text": "Comprehensive and methodical approach to literature selection, often includes meta-analysis or meta-synthesis." }] },
+          { "id": "rmse-c2-sm-li-s6-sys-when", "content": [{ "text": "When to Use: ", "bold": true }, { "text": "When addressing specific research questions and needing thorough evidence." }] },
+          { "id": "rmse-c2-sm-li-s6-sys-pros", "content": [{ "text": "Pros: ", "bold": true }, { "text": "Reduces bias; replicable; clear methodology." }] },
+          { "id": "rmse-c2-sm-li-s6-sys-cons", "content": [{ "text": "Cons: ", "bold": true }, { "text": "Time-consuming; may miss relevant studies due to strict criteria." }] },
+          { "id": "rmse-c2-sm-li-s6-sys-ex", "content": [{ "text": "Example: ", "bold": true }, { "text": "Systematic Literature Review on Agile Software Development Practices." }] }
+        ]
+      },
+      {
+        "id": "rmse-c2-sm-block-s7-metaanalysis-h3",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Meta-Analysis" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-s7-metaanalysis-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c2-sm-li-s7-metaA-desc", "content": [{ "text": "Description: ", "bold": true }, { "text": "Analyzes and synthesizes quantitative findings from multiple studies using statistical methods." }] },
+          { "id": "rmse-c2-sm-li-s7-metaA-when", "content": [{ "text": "When to Use: ", "bold": true }, { "text": "When quantitative studies on the same subject exist." }] },
+          { "id": "rmse-c2-sm-li-s7-metaA-pros", "content": [{ "text": "Pros: ", "bold": true }, { "text": "Provides strong evidence; identifies patterns and relationships." }] },
+          { "id": "rmse-c2-sm-li-s7-metaA-cons", "content": [{ "text": "Cons: ", "bold": true }, { "text": "Requires access to data; potential for publication bias." }] },
+          { "id": "rmse-c2-sm-li-s7-metaA-ex", "content": [{ "text": "Example: ", "bold": true }, { "text": "A Meta-Analysis of Software Development Methodologies and Their Impact on Project Success." }] }
+        ]
+      },
+      {
+        "id": "rmse-c2-sm-block-s7-metasynthesis-h3",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Meta-Synthesis" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-s7-metasynthesis-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c2-sm-li-s7-metaS-desc", "content": [{ "text": "Description: ", "bold": true }, { "text": "Integrates and interprets qualitative findings from various studies." }] },
+          { "id": "rmse-c2-sm-li-s7-metaS-when", "content": [{ "text": "When to Use: ", "bold": true }, { "text": "When exploring qualitative research findings on a topic." }] },
+          { "id": "rmse-c2-sm-li-s7-metaS-pros", "content": [{ "text": "Pros: ", "bold": true }, { "text": "Generates new insights; captures depth of qualitative data." }] },
+          { "id": "rmse-c2-sm-li-s7-metaS-cons", "content": [{ "text": "Cons: ", "bold": true }, { "text": "Can be subjective; may lack generalizability." }] },
+          { "id": "rmse-c2-sm-li-s7-metaS-ex", "content": [{ "text": "Example: ", "bold": true }, { "text": "A Meta-Synthesis of Qualitative Research on Agile Software Development Practices." }] }
+        ]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide8-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "What is Critical Thinking?" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide8-p1",
+        "type": "paragraph",
+        "content": [{ "text": "Critical Thinking is the ", "bold": true }, { "text": "active and systematic process", "bold": true }, { "text": " of engaging in the following components:" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide8-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c2-sm-li-s8-1", "content": [{ "text": "Communication: ", "bold": true }, { "text": "The exchange of ideas and arguments "}, { "text": "clearly and effectively.", "bold": true } ] },
+          { "id": "rmse-c2-sm-li-s8-2", "content": [{ "text": "Problem-Solving: ", "bold": true }, { "text": "The ability to identify, analyze, and find solutions to "}, { "text": "challenges.", "bold": true } ] },
+          { "id": "rmse-c2-sm-li-s8-3", "content": [{ "text": "Evaluation: ", "bold": true }, { "text": "The process of "}, { "text": "assessing", "bold": true }, { "text": " the credibility, relevance, and significance of information and arguments." }] },
+          { "id": "rmse-c2-sm-li-s8-4", "content": [{ "text": "Analysis: ", "bold": true }, { "text": "The "}, { "text": "breakdown", "bold": true }, { "text": " of complex information into simpler, understandable parts." }] },
+          { "id": "rmse-c2-sm-li-s8-5", "content": [{ "text": "Synthesis: ", "bold": true }, { "text": "The "}, { "text": "integration", "bold": true }, { "text": " of different pieces of information to "}, { "text": "create new", "bold": true }, { "text": " insights or solutions." }] },
+          { "id": "rmse-c2-sm-li-s8-6", "content": [{ "text": "Reflection: ", "bold": true }, { "text": "The thoughtful consideration of one's own beliefs, assumptions, and reasoning processes." }] }
+        ]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide8-img",
+        "type": "image",
+        "src": "/data/research-methods-se/rmse-chap2-literature-review/images/slide8_thinking_silhouette.png",
+        "alt": "Silhouette of a person in a thinking pose.",
+        "caption": [{ "text": "Critical thinking involves active engagement." }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide9-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Why is critical thinking important to employees?" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide9-h3",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "The Importance of Critical Thinking for Employers" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide9-p1",
+        "type": "paragraph",
+        "content": [{ "text": "Critical thinking is essential for employers. Here are some key questions to consider:" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide9-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c2-sm-li-s9-1", "content": [{ "text": "Are you able to "}, { "text": "analyze", "bold": true }, { "text": " situations effectively?" }] },
+          { "id": "rmse-c2-sm-li-s9-2", "content": [{ "text": "Can you "}, { "text": "find solutions", "bold": true }, { "text": " to complex problems?" }] },
+          { "id": "rmse-c2-sm-li-s9-3", "content": [{ "text": "Do you "}, { "text": "communicate", "bold": true }, { "text": " your ideas logically and clearly?" }] },
+          { "id": "rmse-c2-sm-li-s9-4", "content": [{ "text": "Can you "}, { "text": "make sound", "bold": true }, { "text": " decisions based on data and logic rather than emotions?" }] },
+          { "id": "rmse-c2-sm-li-s9-5", "content": [{ "text": "These skills are "}, { "text": "highly valued", "bold": true }, { "text": " in today's workforce." }] }
+        ]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide9-img",
+        "type": "image",
+        "src": "/data/research-methods-se/rmse-chap2-literature-review/images/slide9_business_meeting.png",
+        "alt": "Image of people in a business meeting, discussing.",
+        "caption": [{ "text": "Critical thinking in the workplace." }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide10-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Why is critical thinking important to society?" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide10-p1",
+        "type": "paragraph",
+        "content": [{ "text": "Failures in critical thinking", "bold": true }, { "text": " are disastrous" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide10-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c2-sm-li-s10-1", "content": [{ "text": "Space Shuttles Challenger & Columbia disasters" }] },
+          { "id": "rmse-c2-sm-li-s10-2", "content": [{ "text": "9/11 Terrorist Attacks—NY World Trade Center & Pentagon" }] },
+          { "id": "rmse-c2-sm-li-s10-3", "content": [{ "text": "Poor levee construction in New Orleans" }] },
+          { "id": "rmse-c2-sm-li-s10-4", "content": [{ "text": "BP deepwater drilling safety procedures, ......" }] }
+        ]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide10-img-container",
+        "type": "paragraph", 
+        "content": [{ "text": "Images depicting consequences of critical thinking failures:" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide10-img1",
+        "type": "image",
+        "src": "/data/research-methods-se/rmse-chap2-literature-review/images/slide10_challenger_debris.png",
+        "alt": "Image of debris from Space Shuttle Challenger tragedy.",
+        "caption": [{ "text": "Challenger disaster." }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide10-img2",
+        "type": "image",
+        "src": "/data/research-methods-se/rmse-chap2-literature-review/images/slide10_wtc_attack.png",
+        "alt": "Image of the 9/11 attack on the World Trade Center.",
+        "caption": [{ "text": "9/11 Terrorist Attack." }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide10-img3",
+        "type": "image",
+        "src": "/data/research-methods-se/rmse-chap2-literature-review/images/slide10_new_orleans_levee.png",
+        "alt": "Image of flooding in New Orleans due to levee failure.",
+        "caption": [{ "text": "New Orleans levee failure." }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide10-img4",
+        "type": "image",
+        "src": "/data/research-methods-se/rmse-chap2-literature-review/images/slide10_bp_oil_spill.png",
+        "alt": "Image of the BP deepwater horizon oil spill.",
+        "caption": [{ "text": "BP oil spill." }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide11-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Why is critical thinking important to student learning?" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide11-p1",
+        "type": "paragraph",
+        "content": [{ "text": "College-level learning is deeper than memorizing facts:" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide11-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c2-sm-li-s11-1", "content": [{ "text": "Science – analyzing results of experiments in light of existing theories" }] },
+          { "id": "rmse-c2-sm-li-s11-2", "content": [{ "text": "Math – selecting appropriate problem-solving strategies" }] },
+          { "id": "rmse-c2-sm-li-s11-3", "content": [{ "text": "Humanities – putting literature and art into historical context" }] },
+          { "id": "rmse-c2-sm-li-s11-4", "content": [{ "text": "Health fields – evaluating patients and making decisions in clinical settings" }] },
+          { "id": "rmse-c2-sm-li-s11-5", "content": [{ "text": "Communications – debate; persuasive writing" }] },
+          { "id": "rmse-c2-sm-li-s11-6", "content": [{ "text": "Criminal justice/fire science – reacting correctly to simulations" }] },
+          { "id": "rmse-c2-sm-li-s11-7", "content": [{ "text": "Political science/sociology – analyzing others' points of view" }] }
+        ]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide11-img-container",
+        "type": "paragraph",
+        "content": [{ "text": "Visuals representing diverse academic fields:" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide11-img1",
+        "type": "image",
+        "src": "/data/research-methods-se/rmse-chap2-literature-review/images/slide11_speaker.png",
+        "alt": "Silhouette of a speaker at a podium.",
+        "caption": [{ "text": "Communication and debate." }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide11-img2",
+        "type": "image",
+        "src": "/data/research-methods-se/rmse-chap2-literature-review/images/slide11_student_studying.png",
+        "alt": "Student studying with books and a pen.",
+        "caption": [{ "text": "Focused student learning." }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide11-img3",
+        "type": "image",
+        "src": "/data/research-methods-se/rmse-chap2-literature-review/images/slide11_microscope.png",
+        "alt": "A microscope.",
+        "caption": [{ "text": "Scientific investigation." }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide12-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Non-Critical Thinking: Characteristics" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide12-list-col1",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c2-sm-li-s12-1", "content": [{ "text": "Fun: Engaging and enjoyable." }] },
+          { "id": "rmse-c2-sm-li-s12-2", "content": [{ "text": "Exciting: Thrilling and interesting." }] },
+          { "id": "rmse-c2-sm-li-s12-3", "content": [{ "text": "Feels Good: Evokes positive emotions." }] },
+          { "id": "rmse-c2-sm-li-s12-4", "content": [{ "text": "Attention-getting: Draws notice." }] },
+          { "id": "rmse-c2-sm-li-s12-5", "content": [{ "text": "Popular: Widely liked." }] },
+          { "id": "rmse-c2-sm-li-s12-6", "content": [{ "text": "Patriotic: Inspires national pride." }] },
+          { "id": "rmse-c2-sm-li-s12-7", "content": [{ "text": "Free: No cost; accessible to all." }] }
+        ]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide12-list-col2",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c2-sm-li-s12-8", "content": [{ "text": "Chic: Stylish and trendy." }] },
+          { "id": "rmse-c2-sm-li-s12-9", "content": [{ "text": "Spontaneous: Impulsive and exciting." }] },
+          { "id": "rmse-c2-sm-li-s12-10", "content": [{ "text": "Advantageous: Beneficial and favorable." }] },
+          { "id": "rmse-c2-sm-li-s12-11", "content": [{ "text": "Easy: Simple and low-effort." }] },
+          { "id": "rmse-c2-sm-li-s12-12", "content": [{ "text": "Beneficial to Me: Helpful to my goals." }] },
+          { "id": "rmse-c2-sm-li-s12-13", "content": [{ "text": "Deeply Moving/Felt: Evokes strong emotions." }] }
+        ]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide12-alert",
+        "type": "alert",
+        "style": "warning",
+        "content": [{ "text": "Overcoming these poor thinking characteristics is a significant challenge!" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide13-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Thinking is NOT Created Equally" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide13-h3-poor",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Poor Thinking (Majority of people)" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide13-list-poor",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c2-sm-li-s13-1", "content": [{ "text": "Aimless" }] },
+          { "id": "rmse-c2-sm-li-s13-2", "content": [{ "text": "Emotionally Driven" }] },
+          { "id": "rmse-c2-sm-li-s13-3", "content": [{ "text": "Dogmatic" }] },
+          { "id": "rmse-c2-sm-li-s13-4", "content": [{ "text": "Undisciplined" }] }
+        ]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide13-img",
+        "type": "image",
+        "src": "/data/research-methods-se/rmse-chap2-literature-review/images/slide13_scales.png",
+        "alt": "Scales of justice, imbalanced.",
+        "caption": [{ "text": "Comparing poor and quality thinking." }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide13-h3-quality",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Quality Thinking (Where we want you)" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide13-list-quality",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c2-sm-li-s13-5", "content": [{ "text": "Accomplishes a Goal" }] },
+          { "id": "rmse-c2-sm-li-s13-6", "content": [{ "text": "Seeks Truth" }] },
+          { "id": "rmse-c2-sm-li-s13-7", "content": [{ "text": "Judicious (Critical)" }] },
+          { "id": "rmse-c2-sm-li-s13-8", "content": [{ "text": "Generative (Creative)" }] }
+        ]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide14-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Fundamental & Powerful Concept: Critical Thinking" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide14-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c2-sm-li-s14-1", "content": [{ "text": "Critical thinking is "}, { "text": "thinking about your thinking", "bold": true }, { "text": ", while you're thinking, in order to achieve "}, { "text": "better", "bold": true }, { "text": " thinking (Paul & Elder, 2006)." }] },
+          { "id": "rmse-c2-sm-li-s14-2", "content": [{ "text": "Critical thinking is "}, { "text": "reflective", "bold": true }, { "text": ", involves "}, { "text": "standards", "bold": true }, { "text": ", is "}, { "text": "authentic", "bold": true }, { "text": " and involves being "}, { "text": "reasonable", "bold": true }, { "text": " (Nosich, 2012, pp. 3-4)." }] },
+          { "id": "rmse-c2-sm-li-s14-3", "content": [{ "text": "When a medical doctor examines a patient and conducts medical tests, the process is "}, { "text": "active and systematic", "bold": true }, { "text": " and results in a correct diagnosis." }] },
+          { "id": "rmse-c2-sm-li-s14-4", "content": [{ "text": "Critical thinking is like a "}, { "text": "pair of binoculars", "bold": true }, { "text": "—they allow you to get up close, explore details, put what you see in "}, { "text": "context and understand more", "bold": true }, { "text": " of what you are seeing (Nosich, 2012, p. 34)." }] }
+        ]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide15-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Steps in the Critical Thinking Research Process" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide15-list",
+        "type": "list",
+        "ordered": true,
+        "items": [
+          { "id": "rmse-c2-sm-li-s15-1", "content": [{ "text": "Define your research question." }] },
+          { "id": "rmse-c2-sm-li-s15-2", "content": [{ "text": "Research your topic." }] },
+          { "id": "rmse-c2-sm-li-s15-3", "content": [{ "text": "Consider all arguments." }] },
+          { "id": "rmse-c2-sm-li-s15-4", "content": [{ "text": "Tentatively commit to a position." }] },
+          { "id": "rmse-c2-sm-li-s15-5", "content": [{ "text": "Determine your thesis." }] },
+          { "id": "rmse-c2-sm-li-s15-6", "content": [{ "text": "Begin writing OR revisit Step 2." }] }
+        ]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide16-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Structure of a Research Article (Diagram)" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide16-img",
+        "type": "image",
+        "src": "/data/research-methods-se/rmse-chap2-literature-review/images/slide16_article_structure.png",
+        "alt": "Funnel diagram showing the structure of a research article: Abstract, Introduction, Methods, Results, Discussion, References.",
+        "caption": [{ "text": "Typical structure of a research article." }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide17-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Structure of a Research Article (Detailed)" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide17-h3-struct",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Structure of an article" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide17-p-struct",
+        "type": "paragraph",
+        "content": [{ "text": "The journal articles mostly follow the format of abstract, introduction, methods, results, discussion, conclusion, and bibliography." }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide17-h3-abs",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Abstract (Summary)" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide17-p-abs",
+        "type": "paragraph",
+        "content": [{ "text": "A concise summary of the article, including methodology, results and their implications, authors' interpretations and conclusions." }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide17-h3-intro",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Introduction (Why)" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide17-p-intro",
+        "type": "paragraph",
+        "content": [{ "text": "The authors introduce their topic, explain the purpose of the study, and present the statement of the research hypothesis. There is also a brief overview of the other literature that has been written about the same topic." }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide17-h3-methods",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Methods/Methodology / Materials (How)" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide17-p-methods",
+        "type": "paragraph",
+        "content": [{ "text": "It provides the technical details of how the study was conducted, the identification of participants, procedures, and materials." }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide17-h3-results",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Results (What Happened)" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide17-p-results",
+        "type": "paragraph",
+        "content": [{ "text": "Includes the data the authors use to reach their conclusions. These are often presented in figures, tables and graphs." }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide17-h3-discuss",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Discussion / Analysis / (What It Means)" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide17-p-discuss",
+        "type": "paragraph",
+        "content": [{ "text": "The authors analyse the data, evaluate whether the results of their study answered their hypothesis and explain how results support the conclusions." }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide17-h3-concl",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Conclusion (What Was Learned)" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide17-p-concl",
+        "type": "paragraph",
+        "content": [{ "text": "Here the authors offer their final thoughts about how the study adds to the existing knowledge on the topic, the strengths and weaknesses of the study, and recommendations for future research." }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide17-h3-ref",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "References" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide17-p-ref",
+        "type": "paragraph",
+        "content": [{ "text": "A list of sources cited in the journal article." }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide18-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "How to Conduct a Literature Review: Steps" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide18-h3-proc",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Process:" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide18-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c2-sm-li-s18-1", "content": [{ "text": "Define Scope: ", "bold": true }, { "text": "Narrow to specific SE topics (e.g., \"AI in software testing\")." }] },
+          { "id": "rmse-c2-sm-li-s18-2", "content": [{ "text": "Search: ", "bold": true }, { "text": "Use databases (IEEE Xplore, ACM DL) with keywords (\"agile AND productivity\")." }] },
+          { "id": "rmse-c2-sm-li-s18-3", "content": [{ "text": "Evaluate Sources: ", "bold": true }, { "text": "Check relevance, credibility, and publication date." }] },
+          { "id": "rmse-c2-sm-li-s18-4", "content": [{ "text": "Synthesize: ", "bold": true }, { "text": "Group findings by theme (e.g., \"success factors for open-source collaboration\")." }] }
+        ]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide18-q",
+        "type": "alert",
+        "style": "info",
+        "title": [{ "text": "Question:" }],
+        "content": [{ "text": "\"How would you refine keywords for a study on AI in software testing?\"" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide18-img",
+        "type": "image",
+        "src": "/data/research-methods-se/rmse-chap2-literature-review/images/slide18_lit_review_steps.png",
+        "alt": "Diagram showing 5 steps of literature review: Search for relevant literature, Evaluate sources, Identify themes debates and gaps, Outline the structure, Write your literature review.",
+        "caption": [{ "text": "Steps in conducting a literature review." }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide19-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "1. Searching efficiently: Sources, Tools & Techniques" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide19-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c2-sm-li-s19-1", "content": [{ "text": "Keywords: ", "bold": true }, { "text": "Boolean operators (AND/OR/NOT) to filter results (e.g., \"microservices AND scalability NOT security\")." }] },
+          { "id": "rmse-c2-sm-li-s19-2", "content": [{ "text": "Google Scholar: ", "bold": true }, { "text": "Tracking citations from key papers." }] }
+        ]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide19-h3-ex",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Example:" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide19-p-ex",
+        "type": "paragraph",
+        "content": [{ "text": "Search query: (\"software maintenance\" AND \"technical debt\") AND (\"machine learning\")." }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide20-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "2. Searching efficiently: Sources, Tools & Techniques (Continued)" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide20-list-sources",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c2-sm-li-s20-1", "content": [{ "text": "Library catalogue" }] },
+          { "id": "rmse-c2-sm-li-s20-2", "content": [{ "text": "Databases", "bold": true }] }
+        ]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide20-list-databases",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c2-sm-li-s20-db1", "content": [{ "text": "PsycINFO" }] },
+          { "id": "rmse-c2-sm-li-s20-db2", "content": [{ "text": "PubMed" }] },
+          { "id": "rmse-c2-sm-li-s20-db3", "content": [{ "text": "IEEE Xplore" }] },
+          { "id": "rmse-c2-sm-li-s20-db4", "content": [{ "text": "Springer" }] },
+          { "id": "rmse-c2-sm-li-s20-db5", "content": [{ "text": "Google Scholar" }] },
+          { "id": "rmse-c2-sm-li-s20-db6", "content": [{ "text": "...." }] }
+        ]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide20-p-aastu",
+        "type": "paragraph",
+        "content": [{ "text": "AASTU: Journals, E-Books and Research Intelligence Tools", "bold": true }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide20-p-network",
+        "type": "paragraph",
+        "content": [
+            { "text": "IP Address: 10.2.16.51—(130)\nSubnet mask: 255.255.254.0\nDefault Gateway: 10.2.16.1\nDNS Server: 10.2.6.21\n8.8.8.8" }
+        ]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide20-list-links",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c2-sm-li-s20-link1", "content": [{ "text": "Emerald Insight", "link": "https://www.emerald.com/insight/" }] },
+          { "id": "rmse-c2-sm-li-s20-link2", "content": [{ "text": "SpringerLink", "link": "https://link.springer.com/" }] },
+          { "id": "rmse-c2-sm-li-s20-link3", "content": [{ "text": "HeinOnline", "link": "https://heinonline.org/HOL/Welcome" }] },
+          { "id": "rmse-c2-sm-li-s20-link4", "content": [{ "text": "IEEE Xplore", "link": "https://ieeexplore.ieee.org/Xplore/home.jsp" }] },
+          { "id": "rmse-c2-sm-li-s20-link5", "content": [{ "text": "Taylor & Francis Online", "link": "http://www.tandfonline.com/" }] },
+          { "id": "rmse-c2-sm-li-s20-link6", "content": [{ "text": "Wiley Online Library", "link": "https://onlinelibrary.wiley.com/" }] },
+          { "id": "rmse-c2-sm-li-s20-link7", "content": [{ "text": "Scopus", "link": "https://www.scopus.com/search/form.uri?display=basic" }] }
+        ]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide21-h3",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "What types of resources do you use for research?" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide21-img",
+        "type": "image",
+        "src": "/data/research-methods-se/rmse-chap2-literature-review/images/slide21_resource_types.png",
+        "alt": "Venn diagram showing Primary (Reports, Theses, Emails, Conference proceedings, Company reports, Unpublished manuscript sources, Some government publications), Secondary (Books, Journals, Newspapers, Some government publications), and Tertiary (Indexes, Abstracts, Catalogues, Encyclopaedias, Dictionaries, Bibliographies, Citation indexes) resources. Arrows indicate increasing level of detail and increasing time to publish.",
+        "caption": [{ "text": "Types of research resources." }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide22-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "2. Evaluate and select sources: Questions to ask about sources" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide22-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c2-sm-li-s22-1", "content": [{ "text": "What "}, { "text": "question", "bold": true }, { "text": " is addressed?" }] },
+          { "id": "rmse-c2-sm-li-s22-2", "content": [{ "text": "What are the "}, { "text": "key concepts", "bold": true }, { "text": "?" }] },
+          { "id": "rmse-c2-sm-li-s22-3", "content": [{ "text": "What are the "}, { "text": "key theories and methods", "bold": true }, { "text": "?" }] },
+          { "id": "rmse-c2-sm-li-s22-4", "content": [{ "text": "What are the "}, { "text": "results and conclusions", "bold": true }, { "text": "?" }] },
+          { "id": "rmse-c2-sm-li-s22-5", "content": [{ "text": "How does it "}, { "text": "relate to other", "bold": true }, { "text": " studies?" }] },
+          { "id": "rmse-c2-sm-li-s22-6", "content": [{ "text": "What are the "}, { "text": "key insights and arguments", "bold": true }, { "text": "?" }] },
+          { "id": "rmse-c2-sm-li-s22-7", "content": [{ "text": "What are the "}, { "text": "strengths and weaknesses", "bold": true }, { "text": " of the research?" }] }
+        ]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide23-h3",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Critiquing Research" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide23-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c2-sm-li-s23-1", "content": [{ "text": "Validity: ", "bold": true }, { "text": "Are the methods sound? (e.g., small sample size in a user study)." }] },
+          { "id": "rmse-c2-sm-li-s23-2", "content": [{ "text": "Relevance: ", "bold": true }, { "text": "Does the study address your research question?" }] },
+          { "id": "rmse-c2-sm-li-s23-3", "content": [{ "text": "Bias: ", "bold": true }, { "text": "Are industry-funded studies impartial?" }] },
+          { "id": "rmse-c2-sm-li-s23-4", "content": [{ "text": "Author: ", "bold": true }, { "text": "\"Who is the author? Are they experts in the field? What are their credentials and affiliations?\"" }] },
+          { "id": "rmse-c2-sm-li-s23-5", "content": [{ "text": "Publication: ", "bold": true }, { "text": "\"Where was it published? Is it a reputable journal or conference? Is it peer-reviewed?\"" }] },
+          { "id": "rmse-c2-sm-li-s23-6", "content": [{ "text": "Evidence: ", "bold": true }, { "text": "\"Is the information supported by evidence? Are there citations to other sources?\"" }] }
+        ]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide24-h3",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Taking notes" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide24-list-main",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c2-sm-li-s24-1", "content": [{ "text": "Summaries of key points" }] },
+          { "id": "rmse-c2-sm-li-s24-2", "content": [{ "text": "Source information:" }] }
+        ]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide24-list-sub",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c2-sm-li-s24-sub1", "content": [{ "text": "Author name" }] },
+          { "id": "rmse-c2-sm-li-s24-sub2", "content": [{ "text": "Title & Journal name" }] },
+          { "id": "rmse-c2-sm-li-s24-sub3", "content": [{ "text": "Year of publication" }] },
+          { "id": "rmse-c2-sm-li-s24-sub4", "content": [{ "text": "Page numbers" }] }
+        ]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide25-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "4. Write your literature review: The body" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide25-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c2-sm-li-s25-1", "content": [{ "text": "May be divided into sections" }] },
+          { "id": "rmse-c2-sm-li-s25-2", "content": [{ "text": "Analyze and interpret" }] },
+          { "id": "rmse-c2-sm-li-s25-3", "content": [{ "text": "Critically evaluate", "bold": true }] },
+          { "id": "rmse-c2-sm-li-s25-4", "content": [{ "text": "Synthesize different", "bold": true }, { "text": " sources" }] },
+          { "id": "rmse-c2-sm-li-s25-5", "content": [{ "text": "Use well-structured paragraphs" }] },
+          { "id": "rmse-c2-sm-li-s25-6", "content": [{ "text": "Cite your sources", "bold": true }] }
+        ]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide26-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Tips: Searching Tool for the relevant article" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide26-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c2-sm-li-s26-1", "content": [{ "text": "Using the site "}, { "text": "scholar.google.com", "bold": true, "link": "https://scholar.google.com" }, { "text": " that lets you search within academic publications." }] },
+          { "id": "rmse-c2-sm-li-s26-2", "content": [{ "text": "Google scholar ", "bold": true }, { "text": "provide additional features to help you know more about the searched papers." }] }
+        ]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide27-img",
+        "type": "image",
+        "src": "/data/research-methods-se/rmse-chap2-literature-review/images/slide27_google_scholar.png",
+        "alt": "Screenshot of Google Scholar search results for 'meditation stress review'.",
+        "caption": [{ "text": "Google Scholar interface." }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide28-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Tips: How to get access to the article" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide28-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c2-sm-li-s28-1", "content": [{ "text": "Contacting a "}, { "text": "librarian", "bold": true }, { "text": " for support if the library has subscription." }] },
+          { "id": "rmse-c2-sm-li-s28-2", "content": [{ "text": "Use "}, { "text": "Sci-Hub", "bold": true }, { "text": " but "}, { "text": "illegal", "bold": true }, { "text": " database of articles and books breaking the copyright laws (but this "}, { "text": "might change", "bold": true }, { "text": " in the future). Because of this, we cannot officially recommend its usage." }] }
+        ]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide29-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Tips: Predatory Journals – Scavenger" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide29-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c2-sm-li-s29-1", "content": [{ "text": "Beware of Predatory Journals – "}, { "text": "fraudulent publishers", "bold": true }] },
+          { "id": "rmse-c2-sm-li-s29-2", "content": [{ "text": "Are journals which publish "}, { "text": "unprofessional, untrusted, money based, poor formatting, not peer-reviewed fabricated/ungenuine", "bold": true }, { "text": " articles." }] },
+          { "id": "rmse-c2-sm-li-s29-3", "content": [{ "text": "Check it! – the journal is "}, { "text": "not", "bold": true }, { "text": " the updated list of predatory journals ("}, { "text": "https://predatoryjournals.com/journals/", "link": "https://predatoryjournals.com/journals/" }, { "text": ")" }] }
+        ]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide30-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Tips: Ethical Considerations" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide30-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c2-sm-li-s30-1", "content": [{ "text": "Plagiarism: ", "bold": true }, { "text": "Properly paraphrasing and citing sources (use IEEE style)." }] },
+          { "id": "rmse-c2-sm-li-s30-2", "content": [{ "text": "Authorship: ", "bold": true }, { "text": "Giving credit to original ideas (e.g., citing foundational SE frameworks)." }] }
+        ]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide30-q",
+        "type": "alert",
+        "style": "info",
+        "title": [{ "text": "Question:" }],
+        "content": [{ "text": "\"What ethical pitfalls should you avoid when summarizing a paper's findings?\"" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide31-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Summary" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide31-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c2-sm-li-s31-1", "content": [{ "text": "A literature review grounds your research in existing knowledge." }] },
+          { "id": "rmse-c2-sm-li-s31-2", "content": [{ "text": "Synthesis and critique are essential for identifying contributions." }] }
+        ]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide31-h3-hw",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Homework Activity:" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide31-hw-p",
+        "type": "alert",
+        "style": "info",
+        "content": [{ "text": "\"Select 3 papers on 'AI in software testing' and draft a synthesis table (themes, gaps, strengths).\"" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide32-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "References" }]
+      },
+      {
+        "id": "rmse-c2-sm-block-slide32-list",
+        "type": "list",
+        "ordered": true,
+        "items": [
+          { "id": "rmse-c2-sm-li-s32-1", "content": [{ "text": "Ridley, D. (2008). The Literature Review: A Step-by-Step Guide for Students." }] },
+          { "id": "rmse-c2-sm-li-s32-2", "content": [{ "text": "Cooper, D. R., & Schindler, P. S. (2009). Business Research Methods." }] },
+          { "id": "rmse-c2-sm-li-s32-3", "content": [{ "text": "Mauthner, M. (2002). Ethics in Qualitative Research." }] }
+        ]
+      }
+    ],
+    "summary": [
+      { "text": "Chapter 2 detailed the process and importance of literature reviews, different review types, the role of critical thinking, effective search strategies, source evaluation, and ethical considerations in research." }
+    ]
+  }
+]

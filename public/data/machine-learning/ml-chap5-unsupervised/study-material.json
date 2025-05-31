@@ -1,0 +1,162 @@
+
+[
+  {
+    "id": "ml-c5-sm-unsupervised-intro",
+    "title": "Unsupervised Learning",
+    "introduction": [
+      { "text": "This chapter explores Unsupervised Learning, a machine learning technique where models learn from unlabeled data to find hidden patterns and intrinsic structures." }
+    ],
+    "contentBlocks": [
+      {
+        "id": "ml-c5-sm-s70-h2-aims",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Aims and Characteristics of Unsupervised Learning" }]
+      },
+      {
+        "id": "ml-c5-sm-s70-list-aims",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c5-sm-li-s70-1", "content": [{ "text": "Aims to find the ", "bold": true }, { "text": "underlying structure", "bold": true }, { "text": " or the ", "bold": true }, { "text": "distribution", "bold": true }, { "text": " of data. We want to explore the data to find some intrinsic structures in them." }] },
+          { "id": "ml-c5-sm-li-s70-2", "content": [{ "text": "It's a machine learning technique in which models are ", "bold": true }, { "text": "not supervised using training dataset", "bold": true }, { "text": " (i.e., no labels)." }] },
+          { "id": "ml-c5-sm-li-s70-3", "content": [{ "text": "Models itself find the ", "bold": true }, { "text": "hidden patterns and insights", "bold": true }, { "text": " from the given data." }] },
+          { "id": "ml-c5-sm-li-s70-4", "content": [{ "text": "Cannot be ", "bold": true }, { "text": "directly applied", "bold": true }, { "text": " to a regression or classification problem because it lacks labeled output data for training such tasks." }] },
+          { "id": "ml-c5-sm-li-s70-5", "content": [{ "text": "Much similar to how a human learns to think by their own experiences, which makes it closer to the real AI." }] },
+          { "id": "ml-c5-sm-li-s70-6", "content": [{ "text": "Works on ", "bold": true }, { "text": "unlabeled and uncategorized data,", "bold": true }, { "text": " which makes unsupervised learning more important for exploratory data analysis." }] }
+        ]
+      },
+      {
+        "id": "ml-c5-sm-s71-h2-types",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Types of Unsupervised Learning Problems" }]
+      },
+      {
+        "id": "ml-c5-sm-s71-img-types",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap5-unsupervised/images/slide71_unsupervised_types.png",
+        "alt": "Diagram showing Unsupervised Learning branching into Clustering and Association.",
+        "caption": [{ "text": "Main types of Unsupervised Learning." }]
+      },
+      {
+        "id": "ml-c5-sm-s71-h3-clustering",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Clustering" }]
+      },
+      {
+        "id": "ml-c5-sm-s71-p-clustering",
+        "type": "paragraph",
+        "content": [{ "text": "Clustering is a method of grouping the objects into clusters such that objects with most similarities remains into a group." }]
+      },
+      {
+        "id": "ml-c5-sm-s71-h3-association",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Association" }]
+      },
+      {
+        "id": "ml-c5-sm-s71-p-association",
+        "type": "paragraph",
+        "content": [{ "text": "An association rule is an unsupervised learning method which is used for finding the relationships between variables in the large database. It determines the set of items that occurs together in the dataset." }]
+      },
+      {
+        "id": "ml-c5-sm-s72-h2-algos",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Popular Unsupervised Learning Algorithms" }]
+      },
+      {
+        "id": "ml-c5-sm-s72-list-algos",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c5-sm-li-s72-1", "content": [{ "text": "K-means clustering" }] },
+          { "id": "ml-c5-sm-li-s72-2", "content": [{ "text": "KNN (k-nearest Neighbors) - Can be adapted for clustering." }] },
+          { "id": "ml-c5-sm-li-s72-3", "content": [{ "text": "Principal component analysis (PCA) - Used for dimensionality reduction." }] }
+        ]
+      },
+      {
+        "id": "ml-c5-sm-s73-h2-kmeans",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "K-Means Clustering" }]
+      },
+      {
+        "id": "ml-c5-sm-s73-img-kmeans",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap5-unsupervised/images/slide73_kmeans_overview.png",
+        "alt": "Diagrams showing K-Means clustering: Input Data (apples) -> Model -> Output (grouped apples), and data points before and after K-Means clustering.",
+        "caption": [{ "text": "Overview of K-Means Clustering." }]
+      },
+      {
+        "id": "ml-c5-sm-s74-h3-kmeansalgo",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "K-Means Algorithm" }]
+      },
+      {
+        "id": "ml-c5-sm-s74-p-definition",
+        "type": "paragraph",
+        "content": [{ "text": "Definition: ", "bold": true }, { "text": "K-Means is a partitioning clustering algorithm that separates a dataset into K distinct, non-overlapping subsets (clusters)." }]
+      },
+      {
+        "id": "ml-c5-sm-s74-h4-principle",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Working Principle:" }]
+      },
+      {
+        "id": "ml-c5-sm-s74-list-principle",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c5-sm-li-s74-1", "content": [{ "text": "Initialization: ", "bold": true }, { "text": "Randomly select K data points as initial cluster centers." }] },
+          { "id": "ml-c5-sm-li-s74-2", "content": [{ "text": "Assignment: ", "bold": true }, { "text": "Assign each data point to the cluster whose center is nearest." }] },
+          { "id": "ml-c5-sm-li-s74-3", "content": [{ "text": "Update Centers: ", "bold": true }, { "text": "Recalculate the cluster centers as the mean (or based on variance, Euclidean distance) of the data points in each cluster." }] },
+          { "id": "ml-c5-sm-li-s74-4", "content": [{ "text": "Repeat: ", "bold": true }, { "text": "Iterate steps 2 (Assignment) and 3 (Update Centers) until convergence (when cluster assignments stabilize)." }] }
+        ]
+      },
+      {
+        "id": "ml-c5-sm-s75-h3-kmeanssteps",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "K-Means Algorithm: 5 Steps Implementation" }]
+      },
+      {
+        "id": "ml-c5-sm-s75-p-givenk",
+        "type": "paragraph",
+        "content": [{ "text": "Given k, the k-means algorithm is implemented in 5 steps:" }]
+      },
+      {
+        "id": "ml-c5-sm-s75-img-steps",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap5-unsupervised/images/slide75_kmeans_5_steps.png",
+        "alt": "Diagram showing 5 steps of K-Means: 01 Specify number of clusters 'K', 02 Randomly initialize cluster centers (centroids), 03 Assign each data point to closest cluster center, 04 Recompute cluster centers as mean, 05 Repeat steps 3 and 4 until convergence.",
+        "caption": [{ "text": "5 Steps of K-Means Algorithm Implementation. Source: domino.ai" }]
+      },
+      {
+        "id": "ml-c5-sm-s76-h2-pythonimpl",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Python Implementation: Problem Statement Example" }]
+      },
+      {
+        "id": "ml-c5-sm-s76-p-problem",
+        "type": "paragraph",
+        "content": [{ "text": "Problem Statement: ", "bold": true }, { "text": "A retail store wants to get insights about its customers. And then build a system that can cluster customers into different groups." }]
+      },
+      {
+        "id": "ml-c5-sm-s76-p-link",
+        "type": "paragraph",
+        "content": [
+          { "text": "Example Python Implementation Notebook: ", "link": "https://github.com/NelakurthiSudheer/Mall-Customers-Segmentation/blob/main/Python%20Code/Implemenation%20in%20Python.ipynb" }
+        ]
+      }
+    ],
+    "summary": [
+      { "text": "This chapter introduced Unsupervised Learning, highlighting its core principles, common types like Clustering and Association, popular algorithms such as K-Means, and its practical application in customer segmentation." }
+    ]
+  }
+]

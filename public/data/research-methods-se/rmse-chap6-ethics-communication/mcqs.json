@@ -1,0 +1,112 @@
+[
+  {
+    "id": "rmse-c6-mcq-1",
+    "question": "Which core research ethics principle emphasizes informed consent and autonomy, especially for vulnerable groups?",
+    "options": ["Beneficence", "Justice", "Respect for Persons", "Integrity"],
+    "correctAnswerIndex": 2,
+    "explanation": "Respect for Persons focuses on informed consent and autonomy (Slide 2)."
+  },
+  {
+    "id": "rmse-c6-mcq-2",
+    "question": "Focusing on maximizing benefits while minimizing harm to participants is central to which ethical principle?",
+    "options": ["Justice", "Integrity", "Respect for Persons", "Beneficence"],
+    "correctAnswerIndex": 3,
+    "explanation": "Beneficence is about maximizing benefits and minimizing harm (Slide 2)."
+  },
+  {
+    "id": "rmse-c6-mcq-3",
+    "question": "Which of the following is NOT listed as a key aspect of the importance of research ethics on Slide 3?",
+    "options": ["Trust", "Reputation", "Rapid Publication Speed", "Legal Compliance"],
+    "correctAnswerIndex": 2,
+    "explanation": "Slide 3 lists Trust, Reputation, Legal Compliance, and Advancement of Knowledge. Rapid publication speed is not a direct ethical importance listed there."
+  },
+  {
+    "id": "rmse-c6-mcq-4",
+    "question": "In slide preparation, knowing the audience's background, interests, and knowledge level refers to:",
+    "options": ["Content Tailoring", "Audience Understanding", "Presentation Relevance", "Visual Design"],
+    "correctAnswerIndex": 1,
+    "explanation": "Audience Understanding involves knowing the background, interests, and knowledge level of the audience (Slide 4)."
+  },
+  {
+    "id": "rmse-c6-mcq-5",
+    "question": "Using a clear intro, body, and conclusion format in slide preparation pertains to:",
+    "options": ["Audience Analysis", "Visual Design", "Content Structure", "Audience Engagement"],
+    "correctAnswerIndex": 2,
+    "explanation": "Content Structure involves using a clear intro, body, and conclusion (Slide 4, 6)."
+  },
+  {
+    "id": "rmse-c6-mcq-6",
+    "question": "According to Slide 7 (Audience Analysis), what are two key aspects of designing effective slides?",
+    "options": ["Using complex animations and many colors", "Limit Text and Use High-Quality Images", "Including as much detail as possible and using small fonts", "Focusing only on expert terminology and avoiding visuals"],
+    "correctAnswerIndex": 1,
+    "explanation": "Slide 7 highlights 'Limit Text' and 'Use High-Quality Images' for effective slide design in the context of audience analysis."
+  },
+  {
+    "id": "rmse-c6-mcq-7",
+    "question": "Which of the following is NOT part of the 'Essential Skills for Impactful Research Presentations' shown on Slide 10?",
+    "options": ["Understanding Your Audience", "Engaging Your Audience", "Memorizing the entire script", "Structuring Your Presentation"],
+    "correctAnswerIndex": 2,
+    "explanation": "Slide 10 lists Understanding Your Audience, Engaging Your Audience, Structuring Your Presentation, and Handling Questions. Memorizing a script is a delivery tactic, not a core structural skill highlighted."
+  },
+  {
+    "id": "rmse-c6-mcq-8",
+    "question": "Copying text without citation or quotation marks is known as:",
+    "options": ["Self-Plagiarism", "Mosaic Plagiarism", "Direct Plagiarism", "Accidental Paraphrasing"],
+    "correctAnswerIndex": 2,
+    "explanation": "Direct Plagiarism is defined as copying text without citation or quotation marks (Slide 15)."
+  },
+  {
+    "id": "rmse-c6-mcq-9",
+    "question": "Reusing one's own previous work without acknowledgment is termed:",
+    "options": ["Direct Plagiarism", "Self-Plagiarism", "Mosaic Plagiarism", "Proper Referencing"],
+    "correctAnswerIndex": 1,
+    "explanation": "Self-Plagiarism involves reusing one's own work without acknowledgment (Slide 15)."
+  },
+  {
+    "id": "rmse-c6-mcq-10",
+    "question": "Which strategy for plagiarism prevention involves using tools like Zotero or Mendeley?",
+    "options": ["Keep Track of Sources", "Understand Citation Styles", "Practice Proper Paraphrasing", "Use Plagiarism Detection Tools"],
+    "correctAnswerIndex": 1,
+    "explanation": "Slide 16 mentions using citation management tools under 'Understand Citation Styles'."
+  },
+  {
+    "id": "rmse-c6-mcq-11",
+    "question": "Which implication of unethical practices involves researchers facing legal action for violating ethical standards?",
+    "options": ["Harm to Participants", "Misleading Results", "Loss of Funding", "Legal Repercussions"],
+    "correctAnswerIndex": 3,
+    "explanation": "Legal Repercussions refer to facing legal action for violating ethical standards (Slide 17)."
+  },
+  {
+    "id": "rmse-c6-mcq-12",
+    "question": "The extent to which research measures what it claims to measure and produces accurate results is known as:",
+    "options": ["Reliability", "Replicability", "Validity", "Impact Assessment"],
+    "correctAnswerIndex": 2,
+    "explanation": "Validity is the extent to which research measures what it claims to measure accurately (Slide 18)."
+  },
+  {
+    "id": "rmse-c6-mcq-13",
+    "question": "The consistency of research results across different measurements, trials, or observers refers to:",
+    "options": ["Validity", "Reliability", "Replicability", "Peer Review Process"],
+    "correctAnswerIndex": 1,
+    "explanation": "Reliability is about the consistency of research results (Slide 18)."
+  },
+  {
+    "id": "rmse-c6-mcq-14",
+    "question": "The ability for research to be reproduced by independent researchers using the same methodology is:",
+    "options": ["Impact Assessment", "Research Documentation", "Validity", "Replicability"],
+    "correctAnswerIndex": 3,
+    "explanation": "Replicability is the ability for research to be reproduced independently (Slide 18)."
+  },
+  {
+    "id": "rmse-c6-mcq-15",
+    "question": "What is the primary role of the Peer Review Process in ensuring research quality?",
+    "options": [
+      "To ensure the research gets funded quickly.",
+      "To provide a comprehensive recording of research procedures.",
+      "Critical evaluation by experts in the field to ensure quality before publication.",
+      "To measure the research's influence on academia and industry."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "The Peer Review Process involves critical evaluation by experts to ensure quality before publication (Slide 18)."
+  }
+]

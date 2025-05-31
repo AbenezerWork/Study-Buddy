@@ -1,0 +1,93 @@
+
+[
+  {
+    "id": "ml-c5-mcq-1",
+    "question": "What is the main characteristic of the training data used in Unsupervised Learning?",
+    "options": ["It is fully labeled with correct outputs.", "It is unlabeled and uncategorized.", "It consists only of numerical data.", "It is primarily used for regression tasks."],
+    "correctAnswerIndex": 1,
+    "explanation": "Unsupervised learning models are trained using unlabeled and uncategorized training datasets."
+  },
+  {
+    "id": "ml-c5-mcq-2",
+    "question": "Which of the following best describes the goal of Unsupervised Learning?",
+    "options": [
+      "To predict a continuous value based on input features.",
+      "To classify data into predefined categories.",
+      "To find hidden patterns and intrinsic structures in data.",
+      "To learn a mapping function from input to output variables."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Unsupervised learning aims to find the underlying structure or distribution of data, exploring it to find hidden patterns and insights."
+  },
+  {
+    "id": "ml-c5-mcq-3",
+    "question": "Grouping similar customers based on their purchasing behavior is an example of which Unsupervised Learning task?",
+    "options": ["Association", "Regression", "Clustering", "Classification"],
+    "correctAnswerIndex": 2,
+    "explanation": "Clustering is a method of grouping objects into clusters such that objects with most similarities remain in a group, like customer segmentation."
+  },
+  {
+    "id": "ml-c5-mcq-4",
+    "question": "Determining which items are frequently bought together in a supermarket is an example of:",
+    "options": ["Clustering", "Regression", "Association", "Reinforcement Learning"],
+    "correctAnswerIndex": 2,
+    "explanation": "Association rule learning is used for finding relationships between variables, such as items that occur together in a dataset (market basket analysis)."
+  },
+  {
+    "id": "ml-c5-mcq-5",
+    "question": "Which of these algorithms is primarily used for Unsupervised Learning?",
+    "options": ["Linear Regression", "Logistic Regression", "K-Means Clustering", "Decision Tree"],
+    "correctAnswerIndex": 2,
+    "explanation": "K-Means Clustering is a popular unsupervised learning algorithm used for partitioning data into K distinct clusters."
+  },
+  {
+    "id": "ml-c5-mcq-6",
+    "question": "What is the first step in implementing the K-Means clustering algorithm?",
+    "options": [
+      "Assign each data point to the closest cluster center.",
+      "Specify the number of clusters 'K' and randomly initialize cluster centers.",
+      "Recompute the cluster centers.",
+      "Evaluate the quality of the clusters formed."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "The K-Means algorithm starts by specifying 'K' and then randomly initializing K cluster centers (centroids)."
+  },
+  {
+    "id": "ml-c5-mcq-7",
+    "question": "During the K-Means algorithm, how are new cluster centers typically calculated after data points have been assigned to clusters?",
+    "options": [
+      "By selecting the K most distant points.",
+      "As the mean (average) of all data points in each cluster.",
+      "By taking the K points with the highest variance.",
+      "They remain fixed after initialization."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Cluster centers (centroids) are recomputed as the mean of all data points assigned to that cluster."
+  },
+  {
+    "id": "ml-c5-mcq-8",
+    "question": "Unsupervised learning is often described as being closer to human learning because:",
+    "options": [
+      "It always achieves higher accuracy than supervised methods.",
+      "It requires a teacher to provide correct answers.",
+      "It learns from experiences and unlabeled data, similar to how humans discover patterns.",
+      "It is only applicable to text and image data."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "It's considered similar to human learning as it involves discovering patterns from experiences without explicit labels."
+  },
+  {
+    "id": "ml-c5-mcq-9",
+    "question": "Which of the following is NOT explicitly listed as a popular unsupervised learning algorithm on slide 72?",
+    "options": ["K-means clustering", "Support Vector Machines (SVM)", "KNN (k-nearest Neighbors)", "Principal component analysis"],
+    "correctAnswerIndex": 1,
+    "explanation": "Support Vector Machines (SVM) are primarily supervised learning algorithms. K-means, KNN (adapted), and PCA are listed/implied for unsupervised learning."
+  },
+  {
+    "id": "ml-c5-mcq-10",
+    "question": "The problem statement on slide 76, 'A retail store wants to get insights about its customers. And then build a system that can cluster customers into different groups,' is a typical application of:",
+    "options": ["Supervised Regression", "Reinforcement Learning", "Unsupervised Clustering", "Supervised Classification"],
+    "correctAnswerIndex": 2,
+    "explanation": "Clustering customers into different groups based on their characteristics to gain insights is an unsupervised clustering task."
+  }
+]

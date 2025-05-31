@@ -1,0 +1,63 @@
+
+[
+  {
+    "id": "ml-c3-fc-1",
+    "front": "What is Machine Learning (ML) according to Arthur Samuel?",
+    "back": "ML is the field of study that gives computers the ability to learn without being explicitly programmed (Arthur Samuel, 1959)."
+  },
+  {
+    "id": "ml-c3-fc-2",
+    "front": "What are the three components (E, T, P) in Tom Mitchell's definition of ML?",
+    "back": "Experience (E): Data or examples. Tasks (T): Specific activities or problems. Performance Measure (P): Metric to evaluate task performance."
+  },
+  {
+    "id": "ml-c3-fc-3",
+    "front": "Give an example of AI/ML in everyday life.",
+    "back": "Tagging a face in a Facebook photo, autonomous cars detecting objects, Google Directions providing real-time traffic, Google Translator, Siri for speech-to-text."
+  },
+  {
+    "id": "ml-c3-fc-4",
+    "front": "What is the main difference between Traditional Programming and Machine Learning approach?",
+    "back": "Traditional Programming: Data + Program -> Results. Machine Learning: Data + Results -> Program (model)."
+  },
+  {
+    "id": "ml-c3-fc-5",
+    "front": "List two reasons why Machine Learning is important.",
+    "back": "Rapid increment in data production, solving complex problems difficult for humans, decision making in various sectors, finding hidden patterns in data."
+  },
+  {
+    "id": "ml-c3-fc-6",
+    "front": "What is the relationship between AI, ML, and Deep Learning (DL)?",
+    "back": "AI is the broadest concept. ML is a subset of AI. DL is a subfield of ML that uses neural networks."
+  },
+  {
+    "id": "ml-c3-fc-7",
+    "front": "What is Supervised Learning?",
+    "back": "Training an algorithm on a labeled dataset, where input data is paired with corresponding output labels. Goal is to learn a mapping from input to output."
+  },
+  {
+    "id": "ml-c3-fc-8",
+    "front": "What is Unsupervised Learning?",
+    "back": "Training a model on unlabeled data, where the algorithm explores the inherent structure to find hidden patterns or group objects."
+  },
+  {
+    "id": "ml-c3-fc-9",
+    "front": "What is Reinforcement Learning?",
+    "back": "An agent learns to make decisions by interacting with an environment, receiving feedback (rewards or penalties) for its actions."
+  },
+  {
+    "id": "ml-c3-fc-10",
+    "front": "Name two challenges in Machine Learning.",
+    "back": "Data quality issues, insufficient data, need for robust model evaluation, interpretability issues, susceptibility to bias, handling complex unstructured data."
+  },
+  {
+    "id": "ml-c3-fc-11",
+    "front": "What does it mean for ML to perform a specified task without being directly told how to do it?",
+    "back": "ML algorithms learn patterns from data to make predictions or decisions, rather than following explicit pre-programmed instructions for every specific scenario."
+  },
+  {
+    "id": "ml-c3-fc-12",
+    "front": "Provide an example of Task T, Experience E, and Performance P for email spam filtering.",
+    "back": "Task T: Identifying spam messages. Experience E: Using data of previously labeled email messages. Performance P: Accuracy of spam detection, improving over time."
+  }
+]

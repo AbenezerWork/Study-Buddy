@@ -1,0 +1,103 @@
+
+[
+  {
+    "id": "ml-c5-adv-fc-1",
+    "front": "What is Ensemble Learning in Machine Learning?",
+    "back": "Techniques involving combining multiple individual models (base models or weak learners) to improve overall predictive performance, accuracy, and robustness compared to a single model."
+  },
+  {
+    "id": "ml-c5-adv-fc-2",
+    "front": "Name three common types of Ensemble Methods.",
+    "back": "Bagging, Boosting, and Stacking."
+  },
+  {
+    "id": "ml-c5-adv-fc-3",
+    "front": "What does 'Bagging' stand for and what is its primary goal?",
+    "back": "Bagging stands for Bootstrap Aggregating. It's an ensemble technique used to improve the stability and accuracy of machine learning algorithms by reducing variance."
+  },
+  {
+    "id": "ml-c5-adv-fc-4",
+    "front": "How does Bagging work?",
+    "back": "It creates multiple bootstrap samples (random sampling with replacement) from the original dataset, trains a base model on each sample, and combines predictions via voting (classification) or averaging (regression)."
+  },
+  {
+    "id": "ml-c5-adv-fc-5",
+    "front": "What is 'Boosting' in Ensemble Learning?",
+    "back": "An ensemble technique where base models are trained sequentially, with each subsequent model focusing more on instances misclassified by previous models. Succeeding models are dependent on previous ones."
+  },
+  {
+    "id": "ml-c5-adv-fc-6",
+    "front": "How are predictions combined in Boosting methods?",
+    "back": "Through a weighted sum or voting, where models that performed better on difficult instances might have higher weights."
+  },
+  {
+    "id": "ml-c5-adv-fc-7",
+    "front": "Name two examples of Boosting algorithms.",
+    "back": "AdaBoost (Adaptive Boosting) and Gradient Boosting."
+  },
+  {
+    "id": "ml-c5-adv-fc-8",
+    "front": "What is Deep Learning (DL)?",
+    "back": "A subset of machine learning, inspired by the structure and function of the human brain (neural networks), designed to automatically learn features and patterns from large amounts of data."
+  },
+  {
+    "id": "ml-c5-adv-fc-9",
+    "front": "How is Deep Learning typically implemented?",
+    "back": "Through deep networks, which are neural networks with multiple hidden layers."
+  },
+  {
+    "id": "ml-c5-adv-fc-10",
+    "front": "What is an Artificial Neural Network (ANN)?",
+    "back": "A computational model biologically inspired by the human brain's neural network, which processes information and learns from examples."
+  },
+  {
+    "id": "ml-c5-adv-fc-11",
+    "front": "What is the role of the Input Layer in an ANN?",
+    "back": "It directly accepts input features of the data and passes the raw data into the network without transformations."
+  },
+  {
+    "id": "ml-c5-adv-fc-12",
+    "front": "What happens in the Hidden Layer(s) of an ANN?",
+    "back": "Actual computation and learning take place. Neurons apply weights and biases to inputs, followed by an activation function to introduce non-linearity."
+  },
+  {
+    "id": "ml-c5-adv-fc-13",
+    "front": "What is the role of the Output Layer in an ANN?",
+    "back": "It is the final layer that produces the output prediction. The number of neurons corresponds to output classes (classification) or values (regression)."
+  },
+  {
+    "id": "ml-c5-adv-fc-14",
+    "front": "What is a Perceptron?",
+    "back": "The basic unit of a Neural Network. It can be defined as a neural network with a single layer that classifies linear data. Introduced by Frank Rosenblatt in 1957."
+  },
+  {
+    "id": "ml-c5-adv-fc-15",
+    "front": "Name the four major components of a Perceptron.",
+    "back": "1. Input Features (x), 2. Weights (w), 3. Bias (b), 4. Activation Function."
+  },
+  {
+    "id": "ml-c5-adv-fc-16",
+    "front": "What is the purpose of an Activation Function in a neural network?",
+    "back": "To introduce non-linearity into the network, allowing it to learn complex patterns and relationships in data. It determines the output of a neuron."
+  },
+  {
+    "id": "ml-c5-adv-fc-17",
+    "front": "Describe the Sigmoid activation function.",
+    "back": "Formula: σ(x) = 1 / (1 + e⁻ˣ). Range: (0, 1). Properties: Smooth, differentiable, squashes input to (0,1), used in binary classification. Drawback: Prone to vanishing gradient."
+  },
+  {
+    "id": "ml-c5-adv-fc-18",
+    "front": "Describe the ReLU (Rectified Linear Unit) activation function.",
+    "back": "Formula: ReLU(x) = max(0, x). Range: [0, +∞). Properties: Simple, computationally efficient, sparsely activated, helps overcome vanishing gradient. Drawback: Can lead to 'dying ReLU' problem."
+  },
+  {
+    "id": "ml-c5-adv-fc-19",
+    "front": "When is the Softmax activation function typically used?",
+    "back": "In the output layer of neural networks for multi-class classification tasks, where outputs need to be interpreted as probabilities (sum of probabilities equals 1)."
+  },
+  {
+    "id": "ml-c5-adv-fc-20",
+    "front": "What is the 'vanishing gradient' problem?",
+    "back": "A difficulty found in training ANNs with gradient-based learning methods and backpropagation. Gradients of the loss function approach zero, making the network hard to train, especially in deep networks with certain activation functions like Sigmoid."
+  }
+]

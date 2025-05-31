@@ -1,0 +1,103 @@
+
+[
+  {
+    "id": "rmse-c2-fc-1",
+    "front": "What is a Literature Review?",
+    "back": "A systematic examination of existing research to identify gaps, trends, and foundational theories. It's a comprehensive survey of research on a specific topic."
+  },
+  {
+    "id": "rmse-c2-fc-2",
+    "front": "List 3 purposes of a Literature Review.",
+    "back": "Avoids duplication, builds credibility, establishes a foundation for new methodology, identifies gaps, provides an overview of current knowledge."
+  },
+  {
+    "id": "rmse-c2-fc-3",
+    "front": "Name four common types of Literature Reviews.",
+    "back": "Systematic Review, Narrative Review, Meta-Analysis, Meta-synthesis. (Also Scoping Review from table)."
+  },
+  {
+    "id": "rmse-c2-fc-4",
+    "front": "Define Systematic Review.",
+    "back": "A review following a rigorous protocol, often analyzing all studies on a specific topic (e.g., 'code review tools'). Aims to reduce bias and be replicable."
+  },
+  {
+    "id": "rmse-c2-fc-5",
+    "front": "Define Narrative Review.",
+    "back": "A thematic summary of existing literature, identifying gaps and inconsistencies, often used for a focused research question. Can be more subjective."
+  },
+  {
+    "id": "rmse-c2-fc-6",
+    "front": "What is Meta-Analysis?",
+    "back": "A statistical aggregation of results from multiple quantitative studies to identify patterns and relationships (e.g., effectiveness of TDD)."
+  },
+  {
+    "id": "rmse-c2-fc-7",
+    "front": "What is Meta-synthesis?",
+    "back": "A qualitative research method that integrates findings from multiple qualitative studies to create new interpretations, theories, or insights."
+  },
+  {
+    "id": "rmse-c2-fc-8",
+    "front": "What is Critical Thinking?",
+    "back": "The active and systematic process of engaging in components like communication, problem-solving, evaluation, analysis, synthesis, and reflection."
+  },
+  {
+    "id": "rmse-c2-fc-9",
+    "front": "List 3 components of Critical Thinking.",
+    "back": "Evaluation (assessing credibility), Analysis (breaking down complex info), Synthesis (integrating info for new insights), Communication, Problem-Solving, Reflection."
+  },
+  {
+    "id": "rmse-c2-fc-10",
+    "front": "Why is critical thinking important for employees?",
+    "back": "Enables effective analysis of situations, finding solutions to complex problems, clear communication, and sound decision-making based on logic."
+  },
+  {
+    "id": "rmse-c2-fc-11",
+    "front": "What are some characteristics of Non-Critical Thinking?",
+    "back": "Fun, exciting, feels good, attention-getting, popular, patriotic, free, chic, spontaneous, advantageous, easy, beneficial to me, deeply moving/felt."
+  },
+  {
+    "id": "rmse-c2-fc-12",
+    "front": "Contrast Poor Thinking vs. Quality Thinking.",
+    "back": "Poor: Aimless, Emotionally Driven, Dogmatic, Undisciplined. Quality: Accomplishes a Goal, Seeks Truth, Judicious (Critical), Generative (Creative)."
+  },
+  {
+    "id": "rmse-c2-fc-13",
+    "front": "List the 6 steps in the Critical Thinking Research Process.",
+    "back": "1. Define research question. 2. Research topic. 3. Consider all arguments. 4. Tentatively commit to a position. 5. Determine thesis. 6. Begin writing OR revisit Step 2."
+  },
+  {
+    "id": "rmse-c2-fc-14",
+    "front": "What are the typical sections of a research article?",
+    "back": "Abstract, Introduction, Methods, Results, Discussion, Conclusion, References."
+  },
+  {
+    "id": "rmse-c2-fc-15",
+    "front": "List the 4 main steps to conduct a Literature Review.",
+    "back": "1. Define Scope. 2. Search (using databases, keywords). 3. Evaluate Sources (relevance, credibility). 4. Synthesize (group findings by theme)."
+  },
+  {
+    "id": "rmse-c2-fc-16",
+    "front": "Name two tools/techniques for searching efficiently.",
+    "back": "Keywords with Boolean operators (AND/OR/NOT), Google Scholar for tracking citations. Databases like IEEE Xplore, ACM DL."
+  },
+  {
+    "id": "rmse-c2-fc-17",
+    "front": "What are Primary, Secondary, and Tertiary resources in research?",
+    "back": "Primary: Original materials (reports, theses, emails). Secondary: Analysis/interpretation of primary (books, journals). Tertiary: Index/organize primary/secondary (indexes, encyclopedias)."
+  },
+  {
+    "id": "rmse-c2-fc-18",
+    "front": "What key aspects should you evaluate in a source?",
+    "back": "Validity (sound methods), Relevance (addresses question), Bias (impartiality), Author (expertise), Publication (reputable), Evidence (supported info)."
+  },
+  {
+    "id": "rmse-c2-fc-19",
+    "front": "What are Predatory Journals?",
+    "back": "Fraudulent publishers that produce unprofessional, untrusted, often money-based, poorly formatted, non-peer-reviewed, and potentially fabricated articles."
+  },
+  {
+    "id": "rmse-c2-fc-20",
+    "front": "What are two key ethical considerations in literature reviews?",
+    "back": "Plagiarism (properly paraphrasing and citing) and Authorship (giving credit to original ideas)."
+  }
+]

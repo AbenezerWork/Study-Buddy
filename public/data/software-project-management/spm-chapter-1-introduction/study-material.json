@@ -1,0 +1,865 @@
+
+[
+  {
+    "id": "spm-ch1-topic-main",
+    "title": "Chapter 1: Software Project Management",
+    "introduction": [
+      { "text": "Main questions to be addressed in this chapter include: What is software project management? How does it differ from ordinary project management? What are its characteristics and problems? How is project success determined?" }
+    ],
+    "contentBlocks": [
+      {
+        "id": "spm-ch1-sm-block-1",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "What is management?" }]
+      },
+      {
+        "id": "spm-ch1-sm-block-2",
+        "type": "paragraph",
+        "content": [
+          { "text": "Management is achieving goals in a way that makes the best use of all resources. This involves the following activities:" }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-3",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "spm-ch1-sm-li-1", "content": [{ "text": "Planning - ", "bold": true }, { "text": "It is the basic function of management. “Planning is deciding in advance what to do, when to do & how to do. It bridges the gap from where we are & where we want to be”. Quote: ", "italic": true }, { "text": "“deciding what is to be done”", "italic": true }] },
+          { "id": "spm-ch1-sm-li-2", "content": [{ "text": "Organizing - ", "bold": true }, { "text": "It is the process of bringing together physical, financial and human resources and developing productive relationship amongst them for achievement of organizational goals. Quote: ", "italic": true }, { "text": "“making arrangements”", "italic": true }] },
+          { "id": "spm-ch1-sm-li-3", "content": [{ "text": "Staffing - ", "bold": true }, { "text": "It is the function of manning the organization structure and keeping it manned. Manpower, training. Quote: ", "italic": true }, { "text": "“selecting the right people for the job”", "italic": true }] },
+          { "id": "spm-ch1-sm-li-4", "content": [{ "text": "Directing: ", "bold": true }, { "text": "Supervision, Motivation, Leadership, Communication. Quote: ", "italic": true }, { "text": "“giving instructions”", "italic": true }, { "text": "." }] },
+          { "id": "spm-ch1-sm-li-5", "content": [{ "text": "Controlling - ", "bold": true }, { "text": "The purpose of controlling is to ensure that everything occurs in conformities with the standards." }] },
+          { "id": "spm-ch1-sm-li-6", "content": [{ "text": "Monitoring - ", "bold": true }, { "text": "checking on progress" }] },
+          { "id": "spm-ch1-sm-li-7", "content": [{ "text": "Innovating - ", "bold": true }, { "text": "coming up with solutions when problems emerge" }] },
+          { "id": "spm-ch1-sm-li-8", "content": [{ "text": "Representing - ", "bold": true }, { "text": "liaising with clients, users, developers and other stakeholders" }] }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-4",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "What is a project?" }]
+      },
+      {
+        "id": "spm-ch1-sm-block-5",
+        "type": "paragraph",
+        "content": [
+          { "text": "A project is a temporary effort to create a unique product or service. Projects usually include constraints and risks regarding cost, schedule or performance outcome." }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-6",
+        "type": "paragraph",
+        "content": [
+          { "text": "A project is Planned set of interrelated tasks to be executed over a fixed period and within certain cost and other limitations." }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-7",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "What is Software Project Management?" }]
+      },
+      {
+        "id": "spm-ch1-sm-block-8",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "spm-ch1-sm-li-9", "content": [{ "text": "Software Project Management is the discipline of planning, organizing, motivating, and controlling resources to achieve specific goals." }] },
+          { "id": "spm-ch1-sm-li-10", "content": [{ "text": "Software Project management is a methodical approach to planning and guiding software project processes from start to finish." }] },
+          { "id": "spm-ch1-sm-li-11", "content": [{ "text": "Software Project Management (SPM) is a proper way of planning and leading software projects. It is a part of project management in which software projects are planned, implemented, monitored, and controlled." }] }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-9",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Why Software Project Management?" }]
+      },
+      {
+        "id": "spm-ch1-sm-block-10",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "spm-ch1-sm-li-12", "content": [{ "text": "Better control of financial, physical, and human resources" }] },
+          { "id": "spm-ch1-sm-li-13", "content": [{ "text": "Improved customer relations" }] },
+          { "id": "spm-ch1-sm-li-14", "content": [{ "text": "Shorter development times" }] },
+          { "id": "spm-ch1-sm-li-15", "content": [{ "text": "Lower costs" }] },
+          { "id": "spm-ch1-sm-li-16", "content": [{ "text": "Higher quality and increased reliability" }] },
+          { "id": "spm-ch1-sm-li-17", "content": [{ "text": "Improved productivity" }] },
+          { "id": "spm-ch1-sm-li-18", "content": [{ "text": "Better internal coordination" }] }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-11",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Project Parameters" }]
+      },
+      {
+        "id": "spm-ch1-sm-block-12",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "spm-ch1-sm-li-19", "content": [{ "text": "Scope", "bold": true }, { "text": ": What is included, What is NOT included" }] },
+          { "id": "spm-ch1-sm-li-20", "content": [{ "text": "Quality", "bold": true }, { "text": ": Product, Process, People" }] },
+          { "id": "spm-ch1-sm-li-21", "content": [{ "text": "Cost", "bold": true }, { "text": ": Project cost, Customer budget" }] },
+          { "id": "spm-ch1-sm-li-22", "content": [{ "text": "Time", "bold": true }] },
+          { "id": "spm-ch1-sm-li-23", "content": [{ "text": "Resources", "bold": true }, { "text": ": People, Equipment, Physical facilities" }] }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-13",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Characteristics of projects" }]
+      },
+      {
+        "id": "spm-ch1-sm-block-14",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "spm-ch1-sm-li-24", "content": [{ "text": "Non-routine" }] },
+          { "id": "spm-ch1-sm-li-25", "content": [{ "text": "Planned" }] },
+          { "id": "spm-ch1-sm-li-26", "content": [{ "text": "Aiming at a specific target" }] },
+          { "id": "spm-ch1-sm-li-27", "content": [{ "text": "Work carried out for a customer" }] },
+          { "id": "spm-ch1-sm-li-28", "content": [{ "text": "Involving several specialism." }] },
+          { "id": "spm-ch1-sm-li-29", "content": [{ "text": "Made up of several different phases." }] },
+          { "id": "spm-ch1-sm-li-30", "content": [{ "text": "Constrained by time and resources." }] },
+          { "id": "spm-ch1-sm-li-31", "content": [{ "text": "Large and/or complex." }] }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-15",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Trade off" }]
+      },
+      {
+        "id": "spm-ch1-sm-block-16",
+        "type": "paragraph",
+        "content": [
+          { "text": "Trade-offs is also other characteristics of software project management." }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-17",
+        "type": "paragraph",
+        "content": [
+          { "text": "A trade-off is a situation where you have to choose between two or more alternatives that have different advantages and disadvantages. Trade-offs can be categorized as the following lists."
+          }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-18",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "spm-ch1-sm-li-32", "content": [{ "text": "Scope vs. Budget:" }] },
+          { "id": "spm-ch1-sm-li-33", "content": [{ "text": "Scope vs. Schedule:" }] },
+          { "id": "spm-ch1-sm-li-34", "content": [{ "text": "Budget vs. Schedule:" }] }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-19",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Common Trade-off in Software Development" }]
+      },
+      {
+        "id": "spm-ch1-sm-block-20",
+        "type": "image",
+        "src": "/data/software-project-management/spm-chapter-1-introduction/images/common-trade-offs.png",
+        "alt": "Diagram showing common trade-offs in software development: Simplicity vs. Extensibility, Performance vs. Scalability, Flexibility vs. Complexity, Cost vs. Maintainability, Development Speed vs. Code Quality, User Requirements vs. Technical Feasibility, Customization vs. Standardization, User Experience vs. Security, Innovation vs. Compatibility, Performance vs. Resource Utilization.",
+        "caption": [{ "text": "Common Trade-offs in Software Development." }]
+      },
+      {
+        "id": "spm-ch1-sm-block-21",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Management approaches" }]
+      },
+      {
+        "id": "spm-ch1-sm-block-22",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "spm-ch1-sm-li-35", "content": [{ "text": "Traditional culture, ", "bold": true }, { "text": "managers think and employee do what they are told, the role of the manager in a traditional management model is to solve problems at the top level." }] },
+          { "id": "spm-ch1-sm-li-36", "content": [{ "text": "Quality culture, ", "bold": true }, { "text": "managers are coaches of the team they do:" }] }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-23",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "spm-ch1-sm-li-37", "content": [{ "text": "communicate the vision, mission, and goals" }] },
+          { "id": "spm-ch1-sm-li-38", "content": [{ "text": "Provide resources" }] },
+          { "id": "spm-ch1-sm-li-39", "content": [{ "text": "Remove barriers" }] },
+          { "id": "spm-ch1-sm-li-40", "content": [{ "text": "Seek employee input and feedback" }] },
+          { "id": "spm-ch1-sm-li-41", "content": [{ "text": "Build trust" }] },
+          { "id": "spm-ch1-sm-li-42", "content": [{ "text": "Provide training" }] },
+          { "id": "spm-ch1-sm-li-43", "content": [{ "text": "Reward and recognize performance" }] }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-24",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Software project versus other projects." }]
+      },
+      {
+        "id": "spm-ch1-sm-block-25",
+        "type": "paragraph",
+        "content": [
+          { "text": "Are software projects really different from other projects?" }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-26",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "spm-ch1-sm-li-44", "content": [{ "text": "Invisibility, ", "bold": true }, { "text": "progress in software project is not immediately visible." }] },
+          { "id": "spm-ch1-sm-li-45", "content": [{ "text": "Complexity.", "bold": true }] },
+          { "id": "spm-ch1-sm-li-46", "content": [{ "text": "Conformity, ", "bold": true }, { "text": "software system has to conform to the requirement of human clients." }] },
+          { "id": "spm-ch1-sm-li-47", "content": [{ "text": "Flexibility, ", "bold": true }, { "text": "one strength of software is its flexible and easy to change." }] }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-27",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Categories of Software projects" }]
+      },
+      {
+        "id": "spm-ch1-sm-block-28",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "spm-ch1-sm-li-48", "content": [{ "text": "Information system project, ", "bold": true }, { "text": "system interface with organization, registration system." }] },
+          { "id": "spm-ch1-sm-li-49", "content": [{ "text": "Embedded system ", "bold": true }, { "text": "(process control), system interface with a machine, control the air conditioning equipment in a building." }] },
+          { "id": "spm-ch1-sm-li-50", "content": [{ "text": "Objectives vs. Product.", "bold": true }] }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-29",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "SPM at it's Most Basic..." }]
+      },
+      {
+        "id": "spm-ch1-sm-block-30",
+        "type": "paragraph",
+        "content": [
+          { "text": "Key software project management responsibilities include:" }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-31",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "spm-ch1-sm-li-51", "content": [{ "text": "creating clear and realistic project objectives," }] },
+          { "id": "spm-ch1-sm-li-52", "content": [{ "text": "building project requirements" }] },
+          { "id": "spm-ch1-sm-li-53", "content": [{ "text": "managing the triple constraint for projects, which is cost, time, and scope" }] }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-32",
+        "type": "paragraph",
+        "content": [
+          { "text": "The Triple Constraint" }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-33",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "spm-ch1-sm-li-54", "content": [{ "text": "The "}, { "text": "scope", "bold": true }, { "text": " constraint refers to what must be done to produce the project's end result" }] },
+          { "id": "spm-ch1-sm-li-55", "content": [{ "text": "The "}, { "text": "time", "bold": true }, { "text": " constraint refers to the amount of time available to complete a project" }] },
+          { "id": "spm-ch1-sm-li-56", "content": [{ "text": "The "}, { "text": "cost", "bold": true }, { "text": " constraint refers to the budgeted amount available for the project" }] }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-33b",
+        "type": "paragraph",
+        "content": [
+            { "text": "It is the project manager's duty to balance these three often competing goals." }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-33c",
+        "type": "image",
+        "src": "/data/software-project-management/spm-chapter-1-introduction/images/triple-constraint.png",
+        "alt": "Diagram of the triple constraint: Scope, Cost, Time goals with a target in the middle. Text says 'Successful project management means meeting all three goals (scope, time, and cost) - and satisfying the project's sponsor!'",
+        "caption": [{ "text": "PM at it's Most Basic... cont..."}]
+      },
+      {
+        "id": "spm-ch1-sm-block-34",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Management Styles" }]
+      },
+      {
+        "id": "spm-ch1-sm-block-35",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "spm-ch1-sm-li-57", "content": [
+            { "text": "Situational management, ", "bold": true, "underline": true }, 
+            { "text": " is a method whereby the current state of the organization determines what operational procedures will be implemented to achieve desired outcomes. "},
+            { "text": "Situational management", "italic": true}, {"text": " emphasizes a very adaptive management style." }
+          ]},
+          { "id": "spm-ch1-sm-li-58", "content": [
+            { "text": "Change management, ", "bold": true, "underline": true }, 
+            { "text": " is a systematic approach to dealing with "}, 
+            { "text": "change", "bold": true}, 
+            { "text": ", both from the perspective of an organization and on the individual level." }
+          ]}
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-36",
+        "type": "paragraph",
+        "content": [
+          { "text": "To define Change Management, you could say that it is about managing this transition from the old position to the new one." }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-37",
+        "type": "paragraph",
+        "content": [
+          { "text": "Change management has at least three different aspects, including: " }, 
+          { "text": "adapting", "underline": true}, 
+          { "text": " to change, " }, 
+          { "text": "controlling", "underline": true}, 
+          { "text": " change, and " }, 
+          { "text": "implementing", "underline": true}, 
+          { "text": " change" }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-38",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Suggested Skills for Project Managers" }]
+      },
+      {
+        "id": "spm-ch1-sm-block-39",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "spm-ch1-sm-li-59", "content": [{ "text": "Project managers need a wide variety of skills." }] },
+          { "id": "spm-ch1-sm-li-60", "content": [{ "text": "Comfortable with change." }] },
+          { "id": "spm-ch1-sm-li-61", "content": [{ "text": "Understand the organizations they work in." }] },
+          { "id": "spm-ch1-sm-li-62", "content": [{ "text": "Able to lead teams to accomplish project goals." }] },
+          { "id": "spm-ch1-sm-li-63", "content": [{ "text": "Need both “hard” and “soft” skills." }] }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-40",
+        "type": "list",
+        "ordered": false,
+        "items": [
+            { "id": "spm-ch1-sm-li-63a", "content": [{ "text": "Hard skills - product knowledge, knowing the various SPM tools and techniques." }] },
+            { "id": "spm-ch1-sm-li-63b", "content": [{ "text": "Soft skills - being able to work with people" }] }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-41",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "spm-ch1-sm-li-64", "content": [{ "text": "Communication skills: Listens, persuades." }] },
+          { "id": "spm-ch1-sm-li-65", "content": [{ "text": "Organizational skills: Plans, sets goals, analyzes." }] },
+          { "id": "spm-ch1-sm-li-66", "content": [{ "text": "Team-building skills: Shows empathy, motivates, ..." }] },
+          { "id": "spm-ch1-sm-li-67", "content": [{ "text": "Leadership skills: Sets examples, provides vision (big picture), positive, energetic." }] },
+          { "id": "spm-ch1-sm-li-68", "content": [{ "text": "Coping skills: Flexible, creative, patient, persistent." }] },
+          { "id": "spm-ch1-sm-li-69", "content": [{ "text": "Technology skills: Experience, project knowledge." }] }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-42",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Activities covered by project management" }]
+      },
+      {
+        "id": "spm-ch1-sm-block-43",
+        "type": "image",
+        "src": "/data/software-project-management/spm-chapter-1-introduction/images/feasibility-plan-execution-cycle.png",
+        "alt": "Figure 1.2 The feasibility study/plan/execution cycle. Diagram shows: Feasibility study (Is it worth doing?) leads to Plan (How do we do it?) which leads to Project Execution (Do it!). An arrow shows this cycle.",
+        "caption": [{ "text": "Figure 1.2 The feasibility study/plan/execution cycle" }]
+      },
+      {
+        "id": "spm-ch1-sm-block-44",
+        "type": "paragraph",
+        "content": [
+          { "text": "Feasibility study", "bold": true }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-45",
+        "type": "paragraph",
+        "content": [
+          { "text": "Is project technically feasible and worthwhile from a business point of view?" }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-46",
+        "type": "paragraph",
+        "content": [
+          { "text": "Planning", "bold": true }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-47",
+        "type": "paragraph",
+        "content": [
+          { "text": "Only done if project is feasible" }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-48",
+        "type": "paragraph",
+        "content": [
+          { "text": "Execution", "bold": true }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-49",
+        "type": "paragraph",
+        "content": [
+          { "text": "Implement plan, but plan may be changed as we go along" }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-50",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Methods, Plans and Methodologies" }]
+      },
+      {
+        "id": "spm-ch1-sm-block-51",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "spm-ch1-sm-li-70", "content": [{ "text": "Method – Steps to perform a type of activity" }] },
+          { "id": "spm-ch1-sm-li-71", "content": [{ "text": "Plan – Converting a method to a real activity" }] }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-52",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "spm-ch1-sm-li-72", "content": [{ "text": "Start and end dates" }] },
+          { "id": "spm-ch1-sm-li-73", "content": [{ "text": "Who will carry it out" }] },
+          { "id": "spm-ch1-sm-li-74", "content": [{ "text": "What tools and materials will be used" }] }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-53",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "spm-ch1-sm-li-75", "content": [{ "text": "Methodology – Sequenced group of methods or techniques" }] }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-54",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Classic Project Life Cycle" }]
+      },
+      {
+        "id": "spm-ch1-sm-block-55",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "spm-ch1-sm-li-76", "content": [{ "text": "Requirements Analysis" }] },
+          { "id": "spm-ch1-sm-li-77", "content": [{ "text": "Specification" }] },
+          { "id": "spm-ch1-sm-li-78", "content": [{ "text": "Design" }] },
+          { "id": "spm-ch1-sm-li-79", "content": [{ "text": "Coding" }] },
+          { "id": "spm-ch1-sm-li-80", "content": [{ "text": "Verification and Validation" }] },
+          { "id": "spm-ch1-sm-li-81", "content": [{ "text": "Implementation/Installation" }] },
+          { "id": "spm-ch1-sm-li-82", "content": [{ "text": "Maintenance and Support" }] }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-56",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "The software development life-cycle (ISO 12207)" }]
+      },
+      {
+        "id": "spm-ch1-sm-block-57",
+        "type": "image",
+        "src": "/data/software-project-management/spm-chapter-1-introduction/images/iso-12207-sdlc.png",
+        "alt": "Diagram illustrating the ISO 12207 software development life-cycle, showing processes like Requirements Analysis, Architecture Design, Detailed Design, Code and Test, Integration, Qualification Test, Installation, and Acceptance Support, with feedback loops between system and software levels, and overall Process Implementation.",
+        "caption": [{ "text": "ISO 12207 Software Development Life-cycle." }]
+      },
+      {
+        "id": "spm-ch1-sm-block-58",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "ISO 12207 life-cycle: Requirements analysis" }]
+      },
+      {
+        "id": "spm-ch1-sm-block-59",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "spm-ch1-sm-li-83", "content": [{ "text": "Requirements elicitation: what does the client need?" }] },
+          { "id": "spm-ch1-sm-li-84", "content": [{ "text": "Analysis: converting ‘customer-facing’ requirements into equivalents that developers can understand" }] },
+          { "id": "spm-ch1-sm-li-85", "content": [{ "text": "Requirements will cover" }] }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-60",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "spm-ch1-sm-li-86", "content": [{ "text": "Functions" }] },
+          { "id": "spm-ch1-sm-li-87", "content": [{ "text": "Quality" }] },
+          { "id": "spm-ch1-sm-li-88", "content": [{ "text": "Resource constraints i.e. costs" }] }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-61",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "ISO 12207 life-cycle: Other Stages" }]
+      },
+      {
+        "id": "spm-ch1-sm-block-62",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "spm-ch1-sm-li-89", "content": [{ "text": "Architecture design", "bold": true }, { "text": ": Based on system requirements, Defines components of system: hardware, software, organizational. Software requirements will come out of this." }] },
+          { "id": "spm-ch1-sm-li-90", "content": [{ "text": "Code and test", "bold": true }, { "text": ": Of individual components" }] },
+          { "id": "spm-ch1-sm-li-91", "content": [{ "text": "Integration", "bold": true }, { "text": ": Putting the components together" }] }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-63",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "ISO12207 continued" }]
+      },
+      {
+        "id": "spm-ch1-sm-block-64",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "spm-ch1-sm-li-92", "content": [{ "text": "Qualification testing", "bold": true }, { "text": ": Testing the system (not just the software)" }] },
+          { "id": "spm-ch1-sm-li-93", "content": [{ "text": "Installation", "bold": true }, { "text": ": The process of making the system operational. Includes setting up standing data, setting system parameters, installing on operational hardware platforms, user training etc" }] },
+          { "id": "spm-ch1-sm-li-94", "content": [{ "text": "Acceptance support", "bold": true }, { "text": ": Including maintenance and enhancement" }] }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-65",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Problems with software projects" }]
+      },
+      {
+        "id": "spm-ch1-sm-block-66",
+        "type": "paragraph",
+        "content": [
+          { "text": "commonly experienced problems (from "}, { "text": "the manager’s", "italic": true }, { "text": " point of view)" }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-67",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "spm-ch1-sm-li-95", "content": [{ "text": "poor estimates and plans;" }] },
+          { "id": "spm-ch1-sm-li-96", "content": [{ "text": "lack of quality standards and measures;" }] },
+          { "id": "spm-ch1-sm-li-97", "content": [{ "text": "lack of guidance about making organizational decisions;" }] },
+          { "id": "spm-ch1-sm-li-98", "content": [{ "text": "lack of techniques to make progress visible;" }] },
+          { "id": "spm-ch1-sm-li-99", "content": [{ "text": "poor role definition – who does what?" }] },
+          { "id": "spm-ch1-sm-li-100", "content": [{ "text": "incorrect success criteria." }] }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-68",
+        "type": "paragraph",
+        "content": [
+          { "text": "Problems with software projects (Another point of view)" }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-69",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "spm-ch1-sm-li-101", "content": [{ "text": "lack of knowledge of application area;" }] },
+          { "id": "spm-ch1-sm-li-102", "content": [{ "text": "lack of up-to-date documentation;" }] },
+          { "id": "spm-ch1-sm-li-103", "content": [{ "text": "preceding activities not completed on time;" }] },
+          { "id": "spm-ch1-sm-li-104", "content": [{ "text": "lack of communication between users and technicians;" }] },
+          { "id": "spm-ch1-sm-li-105", "content": [{ "text": "lack of commitment –" }] },
+          { "id": "spm-ch1-sm-li-106", "content": [{ "text": "narrow scope of technical expertise;" }] },
+          { "id": "spm-ch1-sm-li-107", "content": [{ "text": "changing statutory requirements;" }] },
+          { "id": "spm-ch1-sm-li-108", "content": [{ "text": "changing software environment;" }] },
+          { "id": "spm-ch1-sm-li-109", "content": [{ "text": "deadline pressure;" }] },
+          { "id": "spm-ch1-sm-li-110", "content": [{ "text": "lack of training" }] }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-70",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Setting objectives" }]
+      },
+      {
+        "id": "spm-ch1-sm-block-71",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "spm-ch1-sm-li-111", "content": [{ "text": "Answering the question ‘What do we have to do to have a success?’" }] },
+          { "id": "spm-ch1-sm-li-112", "content": [{ "text": "Need for a project authority" }] }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-72",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "spm-ch1-sm-li-113", "content": [{ "text": "Sets the project scope" }] },
+          { "id": "spm-ch1-sm-li-114", "content": [{ "text": "Allocates/approves costs" }] }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-73",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "spm-ch1-sm-li-115", "content": [{ "text": "Could be one person - or a group" }] },
+          { "id": "spm-ch1-sm-li-116", "content": [{ "text": "Project Board" }] },
+          { "id": "spm-ch1-sm-li-117", "content": [{ "text": "Project Management Board" }] },
+          { "id": "spm-ch1-sm-li-118", "content": [{ "text": "Steering committee" }] }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-74",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Objectives" }]
+      },
+      {
+        "id": "spm-ch1-sm-block-75",
+        "type": "paragraph",
+        "content": [
+          { "text": "Informally", "italic": true }, { "text": ", the objective of a project can be defined by completing the statement:" }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-76",
+        "type": "paragraph",
+        "content": [
+          { "text": "The project will be regarded as a success if…………………" }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-77",
+        "type": "paragraph",
+        "content": [
+          { "text": "Rather like "}, { "text": "post-conditions", "italic": true }, { "text": " for the project" }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-78",
+        "type": "paragraph",
+        "content": [
+          { "text": "Focus on "}, { "text": "what", "italic": true }, { "text": " will be put in place, rather than "}, { "text": "how", "italic": true }, { "text": " activities will be carried out" }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-79",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Objectives should be SMART" }]
+      },
+      {
+        "id": "spm-ch1-sm-block-80",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "spm-ch1-sm-li-119", "content": [{ "text": "S – specific, that is, concrete and well-defined" }] },
+          { "id": "spm-ch1-sm-li-120", "content": [{ "text": "M – measurable, that is, satisfaction of the objective can be objectively judged" }] },
+          { "id": "spm-ch1-sm-li-121", "content": [{ "text": "A – achievable, that is, it is within the power of the individual or group concerned to meet the target" }] },
+          { "id": "spm-ch1-sm-li-122", "content": [{ "text": "R – relevant, the objective must relevant to the true purpose of the project" }] },
+          { "id": "spm-ch1-sm-li-123", "content": [{ "text": "T – time constrained: there is defined point in time by which the objective should be achieved" }] }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-81",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Goals/sub-objectives" }]
+      },
+      {
+        "id": "spm-ch1-sm-block-82",
+        "type": "paragraph",
+        "content": [
+          { "text": "These are steps along the way to achieving the objective. Informally, these can be defined by completing the sentence..." }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-83",
+        "type": "paragraph",
+        "content": [
+          { "text": "Objective X will be achieved IF the following goals are all achieved" }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-84",
+        "type": "paragraph",
+        "content": [
+          { "text": "A…………………." }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-85",
+        "type": "paragraph",
+        "content": [
+          { "text": "B…………………." }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-86",
+        "type": "paragraph",
+        "content": [
+          { "text": "C………………… etc" }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-87",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Goals/sub-objectives continued" }]
+      },
+      {
+        "id": "spm-ch1-sm-block-88",
+        "type": "paragraph",
+        "content": [
+          { "text": "Often a goal can be allocated to an individual. Individual may have the capability of achieving goal, but not the objective on their own e.g." }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-89",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "spm-ch1-sm-li-124", "content": [{ "text": "Objective – user satisfaction with software product" }] },
+          { "id": "spm-ch1-sm-li-125", "content": [{ "text": "Analyst goal – accurate requirements" }] },
+          { "id": "spm-ch1-sm-li-126", "content": [{ "text": "Developer goal – software that is reliable" }] }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-90",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Management control" }]
+      },
+      {
+        "id": "spm-ch1-sm-block-91",
+        "type": "image",
+        "src": "/data/software-project-management/spm-chapter-1-introduction/images/project-control-cycle.png",
+        "alt": "Figure 1.4 The project control cycle. Diagram shows 'The real world' feeding into 'Data collection', then to 'Data processing' (which provides 'Information'), then to 'Making decisions/plans' (influenced by 'Modelling' and 'Define objectives'), leading to 'Decisions', then 'Implementation', which feeds back to 'The real world' as 'Actions'.",
+        "caption": [{ "text": "Figure 1.4 The project control cycle." }]
+      },
+      {
+        "id": "spm-ch1-sm-block-92",
+        "type": "paragraph",
+        "content": [
+          { "text": "Data – the raw details e.g. ‘6,000 documents processed at location X’" }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-93",
+        "type": "paragraph",
+        "content": [
+          { "text": "Information – the data is processed to produce something that is meaningful and useful e.g. ‘productivity is 100 documents a day’" }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-94",
+        "type": "paragraph",
+        "content": [
+          { "text": "Comparison with objectives/goals e.g. we will not meet target of processing all documents by 31st March" }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-95",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Management control - continued" }]
+      },
+      {
+        "id": "spm-ch1-sm-block-96",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "spm-ch1-sm-li-127", "content": [{ "text": "Modelling – working out the probable outcomes of various decisions e.g. if we employ two more staff at location X how quickly can we get the documents processed?" }] },
+          { "id": "spm-ch1-sm-li-128", "content": [{ "text": "Implementation – carrying out the remedial actions that have been decided upon" }] }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-97",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Effective decision making" }]
+      },
+      {
+        "id": "spm-ch1-sm-block-98",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "spm-ch1-sm-li-129", "content": [{ "text": "Ability to negotiate and influence the organization and the project management team" }] },
+          { "id": "spm-ch1-sm-li-130", "content": [{ "text": "Guidelines:" }] }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-99",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "spm-ch1-sm-li-131", "content": [{ "text": "focus on goals to be served" }] },
+          { "id": "spm-ch1-sm-li-132", "content": [{ "text": "follow a decision making process" }] },
+          { "id": "spm-ch1-sm-li-133", "content": [{ "text": "study the environment factors" }] },
+          { "id": "spm-ch1-sm-li-134", "content": [{ "text": "develop personal qualities" }] },
+          { "id": "spm-ch1-sm-li-135", "content": [{ "text": "simulate team creativity" }] },
+          { "id": "spm-ch1-sm-li-136", "content": [{ "text": "manage opportunity" }] }
+        ]
+      },
+      {
+        "id": "spm-ch1-sm-block-100",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Decision making process" }]
+      },
+      {
+        "id": "spm-ch1-sm-block-101",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "spm-ch1-sm-li-137", "content": [{ "text": "Define Problem:" }] },
+          { "id": "spm-ch1-sm-li-138", "content": [{ "text": "Fact Collection:" }] },
+          { "id": "spm-ch1-sm-li-139", "content": [{ "text": "Solution Finding:" }] },
+          { "id": "spm-ch1-sm-li-140", "content": [{ "text": "Select Solution:" }] },
+          { "id": "spm-ch1-sm-li-141", "content": [{ "text": "Implement Solution" }] },
+          { "id": "spm-ch1-sm-li-142", "content": [{ "text": "Monitor Solution" }] }
+        ]
+      }
+    ],
+    "summary": [
+      { "text": "Key takeaway's include: Projects are non-routine and uncertain. Software projects have particular problems like lack of visibility. Clear, objectively assessable objectives are essential. Control is needed as plans often change. Communication is paramount." }
+    ]
+  }
+]

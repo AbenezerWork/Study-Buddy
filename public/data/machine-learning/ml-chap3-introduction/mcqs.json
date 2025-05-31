@@ -1,0 +1,98 @@
+
+[
+  {
+    "id": "ml-c3-mcq-1",
+    "question": "Which of these is an example of Machine Learning in daily life as mentioned in the 'Brain Storm' section?",
+    "options": ["Writing a document in Microsoft Word", "Google Directions suggesting the best path", "Playing a pre-programmed video game", "Manually calculating a budget"],
+    "correctAnswerIndex": 1,
+    "explanation": "Google Directions uses ML to learn real-time traffic situations and suggest the best path."
+  },
+  {
+    "id": "ml-c3-mcq-2",
+    "question": "What is the relationship between Artificial Intelligence (AI), Machine Learning (ML), and Deep Learning (DL)?",
+    "options": [
+      "ML is a subset of DL, which is a subset of AI.",
+      "AI is a subset of ML, which is a subset of DL.",
+      "DL is a subset of ML, which is a subset of AI.",
+      "AI, ML, and DL are separate, unrelated fields."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Deep Learning is a subfield of Machine Learning, and Machine Learning is a subfield of Artificial Intelligence."
+  },
+  {
+    "id": "ml-c3-mcq-3",
+    "question": "Who defined Machine Learning as 'a sub-field of computer science that gives computers the ability to learn without being explicitly programmed'?",
+    "options": ["Tom Mitchell", "Geoffrey Hinton", "Arthur Samuel", "Alan Turing"],
+    "correctAnswerIndex": 2,
+    "explanation": "Arthur Samuel (1959) provided this definition of Machine Learning."
+  },
+  {
+    "id": "ml-c3-mcq-4",
+    "question": "In Tom Mitchell's definition of ML, what does 'P' (Performance Measure) refer to?",
+    "options": [
+      "The programming language used.",
+      "The specific activities the machine learns.",
+      "The metric used to evaluate how well the machine performs a task.",
+      "The dataset the machine is exposed to."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "'P' refers to the Performance Measure, which is the metric used to evaluate the machine's performance on tasks."
+  },
+  {
+    "id": "ml-c3-mcq-5",
+    "question": "What is the key difference in input/output between Traditional Programming and Machine Learning?",
+    "options": [
+      "Traditional: Program + Results -> Data; ML: Data + Program -> Results",
+      "Traditional: Data + Program -> Results; ML: Data + Results -> Program",
+      "Traditional: Results + Program -> Data; ML: Program + Data -> Results",
+      "There is no fundamental difference in their input/output flow."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Traditional Programming takes Data and a Program to produce Results. Machine Learning takes Data and desired Results (labels/patterns) to produce a Program (model)."
+  },
+  {
+    "id": "ml-c3-mcq-6",
+    "question": "Which is NOT listed as a reason for the importance of Machine Learning?",
+    "options": [
+      "Solving complex problems difficult for humans.",
+      "Finding hidden patterns in data.",
+      "Reducing the need for data storage.",
+      "Rapid increment in the production of data."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "The importance of ML includes handling large data volumes, solving complex problems, and finding patterns. Reducing data storage needs is not a primary listed importance."
+  },
+  {
+    "id": "ml-c3-mcq-7",
+    "question": "Learning from labeled data, where input is paired with known output, is called:",
+    "options": ["Unsupervised Learning", "Reinforcement Learning", "Supervised Learning", "Deep Learning"],
+    "correctAnswerIndex": 2,
+    "explanation": "Supervised Learning involves training on labeled datasets."
+  },
+  {
+    "id": "ml-c3-mcq-8",
+    "question": "An agent learning through rewards and penalties by interacting with an environment is characteristic of:",
+    "options": ["Supervised Learning", "Unsupervised Learning", "Reinforcement Learning", "Associative Learning"],
+    "correctAnswerIndex": 2,
+    "explanation": "Reinforcement Learning involves an agent learning through interaction and feedback (rewards/penalties)."
+  },
+  {
+    "id": "ml-c3-mcq-9",
+    "question": "Which of the following is a challenge in Machine Learning?",
+    "options": [
+      "Perfectly clean and abundant data is always available.",
+      "Models are always easily interpretable.",
+      "Data quality issues and insufficient data.",
+      "Bias is never a concern in ML models."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Data quality issues, insufficient data, interpretability, and bias are common challenges in Machine Learning."
+  },
+  {
+    "id": "ml-c3-mcq-10",
+    "question": "The task of 'identifying spam messages' using previously labeled email data falls under which component of Tom Mitchell's ML definition?",
+    "options": ["Experience (E)", "Task (T)", "Performance Measure (P)", "Algorithm (A)"],
+    "correctAnswerIndex": 1,
+    "explanation": "Identifying spam messages is the specific 'Task (T)' the machine learning system is designed to perform."
+  }
+]

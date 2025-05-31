@@ -1,0 +1,375 @@
+
+[
+  {
+    "id": "ml-c5-adv-topic-ensemble",
+    "title": "Ensemble Learning in ML",
+    "introduction": [
+      { "text": "Ensemble techniques in machine learning involve combining multiple individual models (often referred to as base models or weak learners) to improve overall predictive performance. These techniques leverage the concept that combining diverse models can often produce more accurate and robust predictions compared to using a single model. Ensemble methods are widely used across various machine learning tasks, including classification, regression, and anomaly detection." }
+    ],
+    "contentBlocks": [
+      {
+        "id": "ml-c5-adv-s3-img-ensembletypes",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap5-advanced-deep-learning/images/slide3_ensemble_methods_types.png",
+        "alt": "Diagram showing Ensemble Methods branching into Bagging, Boosting, and Stacking.",
+        "caption": [{ "text": "Common Types of Ensemble Methods." }]
+      },
+      {
+        "id": "ml-c5-adv-s4-h3-bagging",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Bagging (Bootstrap Aggregating)" }]
+      },
+      {
+        "id": "ml-c5-adv-s4-p-baggingdef",
+        "type": "paragraph",
+        "content": [{ "text": "Bagging, short for Bootstrap Aggregating, is an ensemble learning technique used to improve the stability and accuracy of machine learning algorithms. It works by combining the predictions of multiple base models, each trained on a subset of the original dataset." }]
+      },
+      {
+        "id": "ml-c5-adv-s5-h4-howbaggingworks",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "How Bagging Works" }]
+      },
+      {
+        "id": "ml-c5-adv-s5-list-baggingsteps",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c5-adv-li-s5-1", "content": [{ "text": "Bootstrap Sampling: ", "bold": true }, { "text": "Bagging starts by creating multiple bootstrap samples from the original dataset. Bootstrap sampling involves randomly selecting samples from the original dataset with replacement. This means that some instances may be selected multiple times, while others may not be selected at all." }] },
+          { "id": "ml-c5-adv-li-s5-2", "content": [{ "text": "Base Model Training: ", "bold": true }, { "text": "Once the bootstrap samples are created, a base model (e.g., decision tree, random forest, etc.) is trained on each bootstrap sample." }] },
+          { "id": "ml-c5-adv-li-s6-1", "content": [{ "text": "Voting or Averaging: ", "bold": true }, { "text": "After training all the base models, bagging combines their predictions through a voting mechanism (for classification tasks) or averaging (for regression tasks)." }] }
+        ]
+      },
+      {
+        "id": "ml-c5-adv-s7-img-baggingdiagram",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap5-advanced-deep-learning/images/slide7_bagging_diagram.png",
+        "alt": "Diagram illustrating the Bagging process: Original Data -> Multiple Subsets (D1-D5) -> Multiple Models (Model 1-5) -> Combined Prediction.",
+        "caption": [{ "text": "Bagging ML Process." }]
+      },
+      {
+        "id": "ml-c5-adv-s7-p-baggingbenefit",
+        "type": "paragraph",
+        "content": [{ "text": "Bagging helps to reduce overfitting by reducing the variance of the model." }]
+      },
+      {
+        "id": "ml-c5-adv-s8-h3-boosting",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Boosting" }]
+      },
+      {
+        "id": "ml-c5-adv-s8-p-boostingdef",
+        "type": "paragraph",
+        "content": [{ "text": "Boosting is another ensemble learning technique used to improve the performance of machine learning models. Unlike bagging, which trains each base model independently, boosting trains base models sequentially, with each subsequent model focusing more on the instances that were misclassified by the previous models. The succeeding models are dependent on the previous model." }]
+      },
+      {
+        "id": "ml-c5-adv-s9-h4-howboostingworks",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "How Boosting Works" }]
+      },
+      {
+        "id": "ml-c5-adv-s9-list-boostingsteps",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c5-adv-li-s9-A", "content": [{ "text": "A. Base Model Training: ", "bold": true }, { "text": "Boosting starts by training a base model (often a weak learner) on the original dataset." }] },
+          { "id": "ml-c5-adv-li-s9-B", "content": [{ "text": "B. Instance Weighting: ", "bold": true }, { "text": "After the first model is trained, the misclassified instances are given higher weights, while the correctly classified instances are given lower weights. This allows subsequent models to focus more on the difficult instances." }] },
+          { "id": "ml-c5-adv-li-s9-C", "content": [{ "text": "C. Sequential Training: ", "bold": true }, { "text": "The subsequent models are trained sequentially, with each model focusing more on the instances that were misclassified by the previous models. The weights of the instances are adjusted after each model is trained." }] },
+          { "id": "ml-c5-adv-li-s10-D", "content": [{ "text": "D. Combining Predictions: ", "bold": true }, { "text": "Finally, the predictions of all the models are combined through a weighted sum or voting to produce the final prediction." }] }
+        ]
+      },
+      {
+        "id": "ml-c5-adv-s10-p-boostingexamples",
+        "type": "paragraph",
+        "content": [{ "text": "Example: AdaBoost (Adaptive Boosting) and Gradient Boosting." }]
+      },
+      {
+        "id": "ml-c5-adv-s11-h4-baggingexample",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Bagging - Example (Python Code Snippets)" }]
+      },
+      {
+        "id": "ml-c5-adv-s11-img-baggingcode",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap5-advanced-deep-learning/images/slide11_bagging_example_code.png",
+        "alt": "Python code snippets for Bagging: Splitting dataset, Importing Libraries, Splitting into Train/Test, Initializing and Training Bagging Classifier, Evaluating the Classifier.",
+        "caption": [{ "text": "Python code example for Bagging." }]
+      },
+      {
+        "id": "ml-c5-adv-s12-h4-adaboostexample",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "AdaBoost - Example (Python Code Snippets)" }]
+      },
+      {
+        "id": "ml-c5-adv-s12-p-adaboostinfo",
+        "type": "paragraph",
+        "content": [{ "text": "Adaptive boosting or AdaBoost: is one of the simplest boosting algorithms. Usually, decision trees are used for modelling." }]
+      },
+      {
+        "id": "ml-c5-adv-s12-img-adaboostcode",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap5-advanced-deep-learning/images/slide12_adaboost_example_code.png",
+        "alt": "Python code snippets for AdaBoost: Splitting Dataset and Initializing, Training model and predicting, Evaluating the model (accuracy, classification report, confusion matrix).",
+        "caption": [{ "text": "Python code example for AdaBoost." }]
+      }
+    ]
+  },
+  {
+    "id": "ml-c5-adv-topic-deeplearning",
+    "title": "Introduction to Deep Learning",
+    "introduction": [
+      { "text": "This section introduces Deep Learning (DL), a powerful subset of Machine Learning." }
+    ],
+    "contentBlocks": [
+      {
+        "id": "ml-c5-adv-s21-h3-whatisdl",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "What is Deep Learning?" }]
+      },
+      {
+        "id": "ml-c5-adv-s21-list-dl",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c5-adv-li-s21-1", "content": [{ "text": "Deep learning is a subset of machine learning, which itself is a subset of artificial intelligence (AI)." }] },
+          { "id": "ml-c5-adv-li-s21-2", "content": [{ "text": "Deep learning models are inspired by the structure and function of the human brain, specifically neural networks, and they are designed to automatically learn features and patterns from large amounts of data." }] },
+          { "id": "ml-c5-adv-li-s21-3", "content": [{ "text": "The output from each preceding layer is taken as input by each one of the successive layers." }] }
+        ]
+      },
+      {
+        "id": "ml-c5-adv-s22-p-dlcont",
+        "type": "paragraph",
+        "content": [{ "text": "Deep learning models are capable enough to focus on the accurate features themselves by requiring a little guidance from the programmer and are very helpful in solving out the problem of dimensionality. Deep learning algorithms are used, especially when we have a huge number of inputs and outputs. Deep learning is a collection of statistical techniques of machine learning for learning feature hierarchies that are actually based on artificial neural networks." }]
+      },
+      {
+        "id": "ml-c5-adv-s23-h3-dlimplementation",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Deep Learning Implementation" }]
+      },
+      {
+        "id": "ml-c5-adv-s23-p-dlimpl",
+        "type": "paragraph",
+        "content": [{ "text": "Deep learning is implemented by the help of deep networks, which are nothing but neural networks with multiple hidden layers." }]
+      },
+      {
+        "id": "ml-c5-adv-s23-img-deepnetwork",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap5-advanced-deep-learning/images/slide23_deep_learning_network.png",
+        "alt": "Diagram of a deep neural network showing Input Layer, Hidden Layer 1, Hidden Layer 2, and Output Layer, illustrating pattern recognition and feature extraction.",
+        "caption": [{ "text": "Deep Neural Network Structure." }]
+      },
+      {
+        "id": "ml-c5-adv-s24-h3-ann",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Artificial Neural Network (ANN)" }]
+      },
+      {
+        "id": "ml-c5-adv-s24-list-ann",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c5-adv-li-s24-1", "content": [{ "text": "Neural Networks process information in a similar way the human brain does, and these networks actually learn from examples; you cannot program them to perform a specific task." }] },
+          { "id": "ml-c5-adv-li-s24-2", "content": [{ "text": "They will learn only from past experiences as well as examples." }] },
+          { "id": "ml-c5-adv-li-s24-3", "content": [{ "text": "Artificial Neural Network is biologically inspired by the neural network, which constitutes after the human brain." }] }
+        ]
+      },
+      {
+        "id": "ml-c5-adv-s25-img-annstructure",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap5-advanced-deep-learning/images/slide25_ann_structure.png",
+        "alt": "Diagram of an Artificial Neural Network with Input Layer, Hidden Layers, and Output Layer.",
+        "caption": [{ "text": "Basic Structure of an Artificial Neural Network." }]
+      },
+      {
+        "id": "ml-c5-adv-s26-h4-inputlayer",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Input Layer" }]
+      },
+      {
+        "id": "ml-c5-adv-s26-p-inputlayer",
+        "type": "paragraph",
+        "content": [{ "text": "This layer consists of neurons that directly accept the input features of the data. It does not perform any transformations or computations. Instead, it acts as a channel to pass the raw data into the network. The primary role of the input layer is to serve as the entry point for the input data into the neural network. For example, if the input is an image of 28x28 pixels, the input layer will have 784 neurons (one for each pixel)." }]
+      },
+      {
+        "id": "ml-c5-adv-s27-h4-hiddenlayer",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Hidden Layer(s)" }]
+      },
+      {
+        "id": "ml-c5-adv-s27-p-hiddenlayer",
+        "type": "paragraph",
+        "content": [{ "text": "Hidden layers are where the actual computation and learning take place. These layers consist of neurons that apply weights and biases to the input, followed by an activation function to introduce non-linearity. There can be one or multiple hidden layers, and each layer transforms the input data into a more abstract and useful representation." }]
+      },
+      {
+        "id": "ml-c5-adv-s28-h4-outputlayer",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Output Layer" }]
+      },
+      {
+        "id": "ml-c5-adv-s28-p-outputlayer",
+        "type": "paragraph",
+        "content": [{ "text": "The output layer is the final layer of the neural network that produces the output prediction. The number of neurons in this layer corresponds to the number of output classes or the number of values to predict in the case of regression tasks. In a classification task, it typically uses a softmax activation function to provide class probabilities. In regression tasks, it may use a linear activation function." }]
+      },
+      {
+        "id": "ml-c5-adv-s29-h3-perceptrons",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Perceptrons" }]
+      },
+      {
+        "id": "ml-c5-adv-s29-list-perceptrons",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c5-adv-li-s29-1", "content": [{ "text": "The Neural Network's basic unit is called a Perceptron." }] },
+          { "id": "ml-c5-adv-li-s29-2", "content": [{ "text": "So, a perceptron can be defined as a neural network with a single layer that classifies linear data." }] },
+          { "id": "ml-c5-adv-li-s29-3", "content": [{ "text": "It further constitutes four major components." }] },
+          { "id": "ml-c5-adv-li-s29-4", "content": [{ "text": "It was introduced by Frank Rosenblatt in 1957 and is used for binary classification tasks." }] }
+        ]
+      },
+      {
+        "id": "ml-c5-adv-s30-h4-perceptronparts",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Perceptron's Parts" }]
+      },
+      {
+        "id": "ml-c5-adv-s30-p-inputfeatures",
+        "type": "paragraph",
+        "content": [{ "text": "A. Input Features (x): ", "bold": true }, { "text": "These are the inputs to the perceptron. Each input is associated with a feature of the data. For example, in an image recognition task, each pixel value can be an input feature." }]
+      },
+      {
+        "id": "ml-c5-adv-s30-p-weights",
+        "type": "paragraph",
+        "content": [{ "text": "B. Weights (w): ", "bold": true }, { "text": "Each input feature is multiplied by a corresponding weight. Weights are parameters that the perceptron learns during training. They determine the importance of each input feature in making the prediction." }]
+      },
+      {
+        "id": "ml-c5-adv-s31-p-bias",
+        "type": "paragraph",
+        "content": [{ "text": "C. Bias (b): ", "bold": true }, { "text": "The bias term is added to the weighted sum of inputs. It allows the activation function to be shifted left or right, enabling the perceptron to make more flexible decisions. Bias helps in the adjustment of the curve of activation function so as to accomplish a precise output." }]
+      },
+      {
+        "id": "ml-c5-adv-s31-p-activation",
+        "type": "paragraph",
+        "content": [{ "text": "D. Activation Function: ", "bold": true }, { "text": "The weighted sum of the inputs plus the bias is passed through an activation function. The activation function determines the output of the perceptron based on this sum." }]
+      },
+      {
+        "id": "ml-c5-adv-s32-p-stepfunction",
+        "type": "paragraph",
+        "content": [{ "text": "For a basic perceptron, the activation function is usually a step function (Heaviside step function), which outputs 1 if the weighted sum is greater than a certain threshold and 0 otherwise. Activation functions introduce non-linearity, allowing networks to learn complex patterns." }]
+      },
+      {
+        "id": "ml-c5-adv-s32-img-perceptronmath",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap5-advanced-deep-learning/images/slide32_perceptron_equations.png",
+        "alt": "Equations for Perceptron: Weighted Sum z = Σ(wi*xi) + b, and Activation Function Output = 1 if z ≥ 0, else 0.",
+        "caption": [{ "text": "Perceptron Operation Equations." }]
+      },
+      {
+        "id": "ml-c5-adv-s33-img-perceptrondiag",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap5-advanced-deep-learning/images/slide33_perceptron_diagram.png",
+        "alt": "Diagram showing Perceptron parts: Inputs (X1..Xn), Weights (W1..Wn), Summation (Σ(wi*xi) + bias), Activation Function (f(x)), Output (ŷ).",
+        "caption": [{ "text": "Visual Diagram of a Perceptron." }]
+      },
+      {
+        "id": "ml-c5-adv-s34-h3-activationtypes",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Types of Activation Functions" }]
+      },
+      {
+        "id": "ml-c5-adv-s34-img-sigmoid",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap5-advanced-deep-learning/images/slide34_sigmoid_function.png",
+        "alt": "Sigmoid Function details: Formula, Range (0,1), Properties, Drawbacks.",
+        "caption": [{ "text": "1. Sigmoid Function." }]
+      },
+      {
+        "id": "ml-c5-adv-s35-img-tanh",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap5-advanced-deep-learning/images/slide35_tanh_function.png",
+        "alt": "Hyperbolic Tangent (Tanh) Function details: Formula, Range (-1,1), Properties, Drawbacks.",
+        "caption": [{ "text": "2. Hyperbolic Tangent (Tanh) Function." }]
+      },
+      {
+        "id": "ml-c5-adv-s36-img-relu",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap5-advanced-deep-learning/images/slide36_relu_function.png",
+        "alt": "Rectified Linear Unit (ReLU) Function details: Formula, Range [0, +∞), Properties, Drawbacks.",
+        "caption": [{ "text": "3. Rectified Linear Unit (ReLU)." }]
+      },
+      {
+        "id": "ml-c5-adv-s37-img-softmax",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap5-advanced-deep-learning/images/slide37_softmax_function.png",
+        "alt": "Softmax Function details: Formula, Range (0,1) and sum is 1, Properties.",
+        "caption": [{ "text": "5. Softmax Function (Note: Slide numbers jump from 3 to 5 for activation types)." }]
+      },
+      {
+        "id": "ml-c5-adv-s38-h3-whenactivate",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "When to use which Activation function" }]
+      },
+      {
+        "id": "ml-c5-adv-s38-list-usecases",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c5-adv-li-s38-1", "content": [{ "text": "Sigmoid:", "bold": true }, { "text": " Use for binary classification tasks where the output needs to be interpreted as a probability between 0 and 1." }] },
+          { "id": "ml-c5-adv-li-s38-2", "content": [{ "text": "Hyperbolic Tangent (Tanh):", "bold": true }, { "text": " Use in hidden layers of neural networks for zero-centered activations and when outputs need to be in the range (-1, 1)." }] },
+          { "id": "ml-c5-adv-li-s38-3", "content": [{ "text": "Rectified Linear Unit (ReLU):", "bold": true }, { "text": " Use in hidden layers of deep neural networks for faster convergence and to overcome the vanishing gradient problem." }] },
+          { "id": "ml-c5-adv-li-s38-4", "content": [{ "text": "Leaky ReLU:", "bold": true }, { "text": " Use to address the \"dying ReLU\" problem in deep neural networks where some neurons become inactive during training." }] },
+          { "id": "ml-c5-adv-li-s38-5", "content": [{ "text": "Softmax:", "bold": true }, { "text": " Use in the output layer of neural networks for multi-class classification tasks where outputs need to be interpreted as probabilities and the sum of probabilities equals 1." }] }
+        ]
+      },
+      {
+        "id": "ml-c5-adv-s39-img-summarytable",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap5-advanced-deep-learning/images/slide39_activation_summary_table.png",
+        "alt": "Summary Table for Activation Functions: Layer (Hidden, Output Regression, Output Binary Classification, Output Multi-class Classification), Common Functions, Purpose.",
+        "caption": [{ "text": "Activation Function Usage Summary Table." }]
+      },
+      {
+        "id": "ml-c5-adv-s40-h3-perceptronsummary",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Perceptron's Summary" }]
+      },
+      {
+        "id": "ml-c5-adv-s40-img-perceptsummary",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap5-advanced-deep-learning/images/slide40_perceptron_summary_table.png",
+        "alt": "Table summarizing Perceptron components: Input Features, Weights, Bias, Activation Function, Output.",
+        "caption": [{ "text": "Perceptron Components Summary." }]
+      },
+      {
+        "id": "ml-c5-adv-s41-h3-simpleimpl",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Simple Implementation (TensorFlow/Keras Example)" }]
+      },
+      {
+        "id": "ml-c5-adv-s41-code-tfkeras",
+        "type": "code",
+        "language": "python",
+        "code": "# importing tensorflow library to create our ANN model. If your model has more than 2 layers it\n# is called deep learning network.\nimport tensorflow.keras\nfrom keras.models import Sequential\nfrom keras.layers import Dense\n\nmodel = Sequential()\n# input dim is number of inputs. It is always the same as feature size. (X)\n# 40 is number of neurons or units.\nmodel.add(Dense(40, input_dim=5, activation='relu'))\nmodel.add(Dense(40, activation='relu'))\nmodel.add(Dense(1, input_dim=5, activation='linear')) # Output layer, linear for regression\n\n# Compile the model\nmodel.compile(loss='binary_crossentropy', optimizer='adam', metrics=['accuracy'])\n\n# Train the model (assuming X_train_scaled, y_train are defined)\n# model.fit(X_train_scaled, y_train, epochs=10, batch_size=32)\n\n# Evaluate the model on test data (assuming X_test_scaled, y_test are defined)\n# loss, accuracy = model.evaluate(X_test_scaled, y_test)\n# print(f\"Test Accuracy:\", accuracy)\n\nprint(\"TensorFlow/Keras model structure defined. Ready for training and evaluation.\")"
+      }
+    ],
+    "summary": [
+      { "text": "This chapter introduced Advanced Machine Learning concepts including Ensemble Learning (Bagging, Boosting with examples) and provided an introduction to Deep Learning, covering Artificial Neural Networks (ANNs), their layers (Input, Hidden, Output), the Perceptron model, various Activation Functions, and a simple implementation example using TensorFlow/Keras." }
+    ]
+  }
+]

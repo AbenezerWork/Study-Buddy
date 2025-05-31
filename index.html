@@ -1,0 +1,90 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Title will be set dynamically by App.tsx -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      html {
+        scroll-behavior: smooth;
+        /* Increased to accommodate potentially sticky TOC or fixed headers */
+        scroll-padding-top: 7rem; /* Adjust as needed */
+      }
+      body {
+        overflow-x: hidden; /* Prevent horizontal scrollbars */
+        transition: background-color 0.3s ease; /* For potential future theming */
+      }
+      /* For Flashcard flip animation */
+      .perspective {
+        perspective: 1000px;
+      }
+      .preserve-3d {
+        transform-style: preserve-3d;
+      }
+      .rotate-y-180 {
+        transform: rotateY(180deg);
+      }
+      .backface-hidden {
+        backface-visibility: hidden;
+        -webkit-backface-visibility: hidden; /* Safari */
+      }
+       /* Scrollbar styling for a cleaner look */
+      ::-webkit-scrollbar {
+        width: 8px; /* Slightly thinner */
+        height: 8px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #e5e7eb; /* Lighter track */
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #9ca3af; /* Softer thumb color */
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #6b7280; /* Slightly darker hover */
+      }
+      /* Basic prose styling for study material, though StudyMaterialView now handles its own styling more directly */
+      .prose h1 { @apply text-3xl font-bold mb-4 mt-6; } /* Added for consistency if prose is used elsewhere */
+      .prose h2 { @apply text-2xl font-semibold mb-3 mt-5; }
+      .prose h3 { @apply text-xl font-semibold mb-2 mt-4; }
+      .prose p { @apply mb-4 leading-relaxed; }
+      .prose ul { @apply list-disc pl-5 mb-4; }
+      .prose ol { @apply list-decimal pl-5 mb-4; }
+      .prose li { @apply mb-1; }
+      .prose a { @apply text-indigo-600 hover:underline; }
+      .prose strong { @apply font-semibold; }
+      .prose em { @apply italic; }
+      .prose code { @apply px-1 py-0.5 bg-slate-200 text-sm rounded; }
+      .prose pre { @apply bg-slate-800 text-slate-100 p-4 rounded-md overflow-x-auto my-4; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "react/": "https://esm.sh/react@^19.1.0/"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body class="bg-slate-100 group">
+    <div id="root"></div>
+    <!-- 
+      Note: For the application to fetch data:
+      1. `subjects.json` should be in `public/data/subjects.json`.
+      2. Chapter-specific data files (flashcards.json, mcqs.json, study-material.json) 
+         should be placed in directories under `public/data/` as specified by the paths 
+         in `subjects.json`. For example, if a chapter has 
+         `"flashcardsPath": "/data/mathematics/algebra-basics/flashcards.json"`, 
+         then the file should be at `public/data/mathematics/algebra-basics/flashcards.json`.
+      Ensure your development or production server serves the 'public' directory at the root.
+    -->
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>

@@ -1,0 +1,183 @@
+
+[
+  {
+    "id": "rmse-c1-mcq-1",
+    "question": "Which of the following best describes 'research'?",
+    "options": [
+      "Simply gathering information from books.",
+      "A systematic process of inquiry to discover or interpret facts.",
+      "Transporting facts from one source to another.",
+      "Learning about a new topic casually."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Research is a systematic process of inquiry. Options A, C, and D describe activities that are not research in themselves."
+  },
+  {
+    "id": "rmse-c1-mcq-2",
+    "question": "The 'Re' in 'Research' primarily implies:",
+    "options": [
+      "Reading",
+      "Repeating",
+      "Again, a new, over again",
+      "Reviewing"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Slide 3 defines 'Re' as 'Again, a new, over again', emphasizing the iterative and novel aspects of research."
+  },
+  {
+    "id": "rmse-c1-mcq-3",
+    "question": "Which of these is NOT listed as a primary goal of research in the slides?",
+    "options": [
+      "To solve a problem",
+      "To get intellectual joy",
+      "To achieve financial profit directly",
+      "To serve society"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Slide 8 lists goals like solving problems, intellectual joy, and serving society. Direct financial profit is not listed as a primary academic research goal."
+  },
+  {
+    "id": "rmse-c1-mcq-4",
+    "question": "A research quality ensuring that the process is recorded so findings can be tested again is known as:",
+    "options": [
+      "Systematic",
+      "Logical",
+      "Empirical",
+      "Replicable"
+    ],
+    "correctAnswerIndex": 3,
+    "explanation": "Replicable research allows its procedures and findings to be tested again (Slide 10)."
+  },
+  {
+    "id": "rmse-c1-mcq-5",
+    "question": "Which stage of the research process involves 'reviewing existing studies to understand context and background'?",
+    "options": [
+      "Identifying the Research Problem",
+      "Literature Review",
+      "Formulating Hypotheses",
+      "Research Design"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "The Literature Review stage is for understanding existing studies (Slide 11)."
+  },
+  {
+    "id": "rmse-c1-mcq-6",
+    "question": "Research classified by 'Application' can be:",
+    "options": [
+      "Quantitative or Qualitative",
+      "Descriptive or Explanatory",
+      "Pure or Applied",
+      "Experimental or Survey"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Slide 13 shows that from the viewpoint of 'Application', research can be Pure or Applied."
+  },
+  {
+    "id": "rmse-c1-mcq-7",
+    "question": "Comparing runtime performance of two sorting algorithms is an example of what type of research?",
+    "options": [
+      "Qualitative Research",
+      "Quantitative Research",
+      "Basic Research",
+      "Applied Research"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Slide 14 gives this as an example of Quantitative research because it involves numerical data and measurement."
+  },
+  {
+    "id": "rmse-c1-mcq-8",
+    "question": "According to Dubin (1978), which is NOT one of the three main elements of a theory?",
+    "options": [
+      "A set of well-defined concepts",
+      "Laws of interaction between concepts",
+      "A specific methodology for testing",
+      "Boundary defining the scope of application"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Slide 16 lists concepts, laws of interaction, and boundary as the three main elements. A specific methodology is part of research design, not the theory itself."
+  },
+  {
+    "id": "rmse-c1-mcq-9",
+    "question": "Reasoning that starts from specific observations to develop a general conclusion is called:",
+    "options": [
+      "Deductive reasoning",
+      "Inductive reasoning",
+      "Abductive reasoning",
+      "Theoretical reasoning"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Inductive reasoning moves from specific observations to broader generalizations (Slide 21)."
+  },
+  {
+    "id": "rmse-c1-mcq-10",
+    "question": "A research outcome that demonstrates 'novelty in ideas, methods, or perspectives that advance the field' is primarily an example of:",
+    "options": [
+      "Research Contribution",
+      "Research Originality",
+      "Research Validation",
+      "Research Application"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Slide 22 defines Research Originality as novelty in ideas, methods, or perspectives (What's new?)."
+  },
+  {
+    "id": "rmse-c1-mcq-11",
+    "question": "Disclosing data usage in user studies, like collecting GitHub commit histories, primarily relates to which ethical principle?",
+    "options": [
+      "Privacy",
+      "Bias Mitigation",
+      "Informed Consent",
+      "Data Accuracy"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Slide 24 lists 'Informed Consent: Disclosing data usage in user studies' as a key ethical aspect."
+  },
+  {
+    "id": "rmse-c1-mcq-12",
+    "question": "What is a 'Hypothesis' in research?",
+    "options": [
+      "A final, proven fact.",
+      "A measurement of records under specific conditions.",
+      "A tentative assumption or expected result of a study.",
+      "A critical evaluation of research on a topic."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Slide 25 defines Hypothesis as a 'tentative assumption of the study or expected results of the study'."
+  },
+  {
+    "id": "rmse-c1-mcq-13",
+    "question": "Which of the following is listed as a 'Core SE Research Area'?",
+    "options": [
+      "Quantum Software Engineering",
+      "AI Ethics in SE",
+      "Quality Assurance (Testing automation, defect prediction)",
+      "Green SE (Energy-efficient algorithms)"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Slide 26 lists Quality Assurance as a Core SE Research Area. The others are listed as Emerging Hot Topics."
+  },
+  {
+    "id": "rmse-c1-mcq-14",
+    "question": "The question 'Would you use qualitative or quantitative methods to study developer productivity?' from Slide 14 aims to test understanding of:",
+    "options": [
+      "Research ethics",
+      "Choosing appropriate research methods",
+      "Formulating a hypothesis",
+      "The definition of a theory"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "This question directly asks about the choice between qualitative and quantitative methods for a specific research problem, thus testing understanding of choosing appropriate methods."
+  },
+  {
+    "id": "rmse-c1-mcq-15",
+    "question": "Studying 'user satisfaction with a new UI design' is an example of:",
+    "options": [
+      "Quantitative research",
+      "Experimental research",
+      "Qualitative research",
+      "Basic research"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Slide 14 provides this as an example of Qualitative research, as it involves descriptive data about user experiences and perceptions."
+  }
+]

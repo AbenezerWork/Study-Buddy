@@ -1,0 +1,127 @@
+[
+  {
+    "id": "ml-c2-mcq-1",
+    "question": "Which type of machine learning algorithm requires labeled training data?",
+    "options": ["Supervised Learning", "Unsupervised Learning", "Reinforcement Learning", "Semi-Supervised Learning"],
+    "correctAnswerIndex": 0,
+    "explanation": "Supervised learning algorithms are trained on datasets where each input is paired with a correct output label."
+  },
+  {
+    "id": "ml-c2-mcq-2",
+    "question": "Predicting a continuous value, like the price of a house, is an example of which type of supervised learning problem?",
+    "options": ["Classification", "Regression", "Clustering", "Dimensionality Reduction"],
+    "correctAnswerIndex": 1,
+    "explanation": "Regression tasks involve predicting a continuous output variable."
+  },
+  {
+    "id": "ml-c2-mcq-3",
+    "question": "Which of these is an example of an Unsupervised Learning task?",
+    "options": ["Email spam filtering", "Image recognition (e.g., identifying cats in photos)", "Customer segmentation based on purchasing habits", "Predicting stock market prices"],
+    "correctAnswerIndex": 2,
+    "explanation": "Customer segmentation is a clustering task, which is a type of unsupervised learning where the algorithm groups data without predefined labels."
+  },
+  {
+    "id": "ml-c2-mcq-4",
+    "question": "In Reinforcement Learning, what does an agent receive from the environment to evaluate its actions?",
+    "options": ["Labels", "Features", "Rewards or Penalties", "Hyperparameters"],
+    "correctAnswerIndex": 2,
+    "explanation": "Reinforcement learning agents learn by receiving rewards or penalties based on the actions they take in an environment."
+  },
+  {
+    "id": "ml-c2-mcq-5",
+    "question": "Which algorithm is most suitable for predicting if a customer will click on an ad (Yes/No)?",
+    "options": ["Linear Regression", "K-Means Clustering", "Logistic Regression", "Principal Component Analysis"],
+    "correctAnswerIndex": 2,
+    "explanation": "Logistic Regression is used for binary classification problems, like predicting a Yes/No outcome."
+  },
+  {
+    "id": "ml-c2-mcq-6",
+    "question": "What is the primary purpose of the 'Kernel' in SVM?",
+    "options": [
+      "To reduce the number of features in the dataset.",
+      "To map lower-dimensional data into higher-dimensional data to make it linearly separable.",
+      "To assign weights to different features.",
+      "To define the reward function in reinforcement learning."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "The kernel function in SVM is used to map data into a higher-dimensional space where a linear separator might be found, especially for non-linearly separable data."
+  },
+  {
+    "id": "ml-c2-mcq-7",
+    "question": "Overfitting occurs when a model:",
+    "options": [
+      "Is too simple to capture the data's patterns.",
+      "Performs well on training data but poorly on unseen test data.",
+      "Performs poorly on both training and test data.",
+      "Requires too much computational power to train."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Overfitting means the model has learned the training data too well, including its noise, and fails to generalize to new data."
+  },
+  {
+    "id": "ml-c2-mcq-8",
+    "question": "Ridge Regression (L2 regularization) primarily helps to:",
+    "options": [
+      "Select a subset of important features.",
+      "Handle non-linear relationships effectively.",
+      "Reduce model complexity and prevent overfitting by penalizing large coefficients.",
+      "Increase model complexity to better fit the training data."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "L2 regularization (Ridge) adds a penalty for large coefficient values, which helps to reduce model complexity and prevent overfitting."
+  },
+  {
+    "id": "ml-c2-mcq-9",
+    "question": "A model with high bias typically leads to:",
+    "options": ["Overfitting", "Underfitting", "High variance", "Perfect generalization"],
+    "correctAnswerIndex": 1,
+    "explanation": "High bias means the model is too simple and makes strong assumptions, leading to underfitting the data."
+  },
+  {
+    "id": "ml-c2-mcq-10",
+    "question": "What does a Cost Function in machine learning quantify?",
+    "options": [
+      "The computational resources required to train the model.",
+      "The number of features used by the model.",
+      "The difference between the model's predicted values and the actual values.",
+      "The time taken to deploy the model."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "The cost function measures the error or discrepancy between the model's predictions and the true target values."
+  },
+  {
+    "id": "ml-c2-mcq-11",
+    "question": "Which type of Logistic Regression is used when the dependent variable has 3 or more possible unordered types, like 'cat', 'dog', or 'sheep'?",
+    "options": ["Binomial Logistic Regression", "Ordinal Logistic Regression", "Multinomial Logistic Regression", "Linear Logistic Regression"],
+    "correctAnswerIndex": 2,
+    "explanation": "Multinomial Logistic Regression is used when the categorical dependent variable has three or more unordered categories."
+  },
+  {
+    "id": "ml-c2-mcq-12",
+    "question": "The Sigmoid function in Logistic Regression transforms its input into a value between:",
+    "options": ["-1 and 1", "0 and 100", "0 and 1", "Negative infinity and Positive infinity"],
+    "correctAnswerIndex": 2,
+    "explanation": "The Sigmoid function outputs a probabilistic value between 0 and 1, which is interpreted as the probability of belonging to a particular class."
+  },
+  {
+    "id": "ml-c2-mcq-13",
+    "question": "What is an ensemble learning method that combines multiple decision trees to improve prediction accuracy and control overfitting?",
+    "options": ["Support Vector Machine", "K-Means Clustering", "Linear Regression", "Random Forest"],
+    "correctAnswerIndex": 3,
+    "explanation": "Random Forest is an ensemble method that builds multiple decision trees and merges their outputs to get a more accurate and stable prediction."
+  },
+  {
+    "id": "ml-c2-mcq-14",
+    "question": "What is the term for an observation that contains either a very low or very high value in comparison to other observed values and should often be avoided or handled carefully?",
+    "options": ["Predictor", "Target Variable", "Outlier", "Coefficient"],
+    "correctAnswerIndex": 2,
+    "explanation": "An outlier is an observation that lies an abnormal distance from other values in a random sample from a population."
+  },
+  {
+    "id": "ml-c2-mcq-15",
+    "question": "If independent variables in a regression model are highly correlated with each other, this condition is called:",
+    "options": ["Heteroscedasticity", "Autocorrelation", "Multicollinearity", "Homoscedasticity"],
+    "correctAnswerIndex": 2,
+    "explanation": "Multicollinearity refers to a situation where two or more independent variables in a multiple regression model are highly linearly related."
+  }
+]

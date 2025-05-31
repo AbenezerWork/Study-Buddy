@@ -1,0 +1,182 @@
+[
+  {
+    "id": "rmse-c3-mcq-1",
+    "question": "What is a primary characteristic of an 'Academic Thesis Proposal' compared to an 'Industry Grant Proposal'?",
+    "options": [
+      "Focuses mainly on immediate return on investment.",
+      "Is generally more concise and less detailed.",
+      "Is detailed and theory-driven.",
+      "Primarily targets conference submission."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Slide 5 describes Academic Thesis Proposals as 'Detailed, theory-driven', while Industry Grant Proposals focus on practical impact and ROI."
+  },
+  {
+    "id": "rmse-c3-mcq-2",
+    "question": "Which of the following is NOT listed as a common source for identifying a research problem in Software Engineering?",
+    "options": [
+      "Emerging Technologies (AI, ML, Cloud)",
+      "Practitioner Feedback (Surveys, interviews)",
+      "Strict adherence to outdated methodologies",
+      "Theoretical Gaps in existing literature"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Slide 6 lists sources like emerging tech, practitioner feedback, and theoretical gaps. Adhering to outdated methods isn't a source for new research problems but potentially a problem itself."
+  },
+  {
+    "id": "rmse-c3-mcq-3",
+    "question": "The process of clearly defining the specific issue your research will address is known as:",
+    "options": [
+      "Methodology Design",
+      "Problem Formulation",
+      "Literature Review",
+      "Budgeting"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Slide 7 defines 'Problem formulation' as the process of clearly defining the specific issue your research will address."
+  },
+  {
+    "id": "rmse-c3-mcq-4",
+    "question": "Which of these is NOT a standard component of a research proposal listed on Slide 9?",
+    "options": [
+      "Title",
+      "Research Objectives",
+      "Source Code of a Prototype",
+      "Methodology"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Slide 9 lists components like Title, Objectives, and Methodology. While a prototype might be an outcome, its source code isn't a standard *proposal* component."
+  },
+  {
+    "id": "rmse-c3-mcq-5",
+    "question": "A research title like \"User Satisfaction in Software Applications\" is critiqued on Slide 12 as being:",
+    "options": [
+      "Specific and focused",
+      "Too broad and lacking context",
+      "Ideal for an industry grant",
+      "Perfectly concise"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Slide 12 critiques the title \"User Satisfaction in Software Applications\" as being 'Too broad, lacks context'."
+  },
+  {
+    "id": "rmse-c3-mcq-6",
+    "question": "Research questions that aim to understand 'what factors contribute to the success or failure' of something are typically categorized as:",
+    "options": [
+      "Exploratory Questions",
+      "Descriptive Questions",
+      "Explanatory Questions",
+      "Evaluative Questions"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Slide 15 gives an example of an Explanatory Question as 'What factors contribute to the success or failure...?'"
+  },
+  {
+    "id": "rmse-c3-mcq-7",
+    "question": "What does the 'M' in SMART objectives stand for?",
+    "options": [
+      "Methodical",
+      "Meaningful",
+      "Measurable",
+      "Motivational"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Slide 16 states SMART objectives are Specific, Measurable, Attainable, Relevant, Time-bound."
+  },
+  {
+    "id": "rmse-c3-mcq-8",
+    "question": "If a hypothesis states 'Pair programming has no effect on code quality,' this is an example of a:",
+    "options": [
+      "Alternative Hypothesis (H1)",
+      "Research Question",
+      "Null Hypothesis (H0)",
+      "Research Objective"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Slide 18 provides 'Pair programming has no effect on code quality.' as an example of a Null Hypothesis (H0)."
+  },
+  {
+    "id": "rmse-c3-mcq-9",
+    "question": "Which research aspect is typically 'fixed once formulated to ensure focused testing'?",
+    "options": [
+      "Exploratory Research Questions",
+      "Qualitative Data Collection Methods",
+      "Hypotheses",
+      "Literature Review Scope"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Slide 22, in the 'Research Questions vs Hypotheses' table, notes that Hypotheses are 'Typically fixed once formulated to ensure focused testing'."
+  },
+  {
+    "id": "rmse-c3-mcq-10",
+    "question": "Which is a common pitfall in research proposals, as mentioned on Slide 31?",
+    "options": [
+      "Overly detailed methodology",
+      "Citing too much literature",
+      "Vague Objectives",
+      "Too narrow a scope"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Slide 31 lists 'Vague Objectives', 'Overambitious Scope', and 'Ignoring Literature' as common pitfalls."
+  },
+  {
+    "id": "rmse-c3-mcq-11",
+    "question": "According to Slide 32, why is seeking feedback from peers or mentors important before submitting a proposal?",
+    "options": [
+      "To ensure the budget is approved quickly.",
+      "To help refine arguments and presentation.",
+      "To make the proposal longer.",
+      "To find collaborators for coding."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Slide 32 advises seeking feedback to 'refine your arguments and presentation'. This is a key benefit of peer/mentor review."
+  },
+  {
+    "id": "rmse-c3-mcq-12",
+    "question": "When investigating the impact of a new AI code generation tool on junior developer productivity in Ethiopia, a suitable research question could be:",
+    "options": [
+      "What is GitHub Copilot?",
+      "How does the use of AI code generation tools (e.g., GitHub Copilot) affect the task completion time and code quality of junior software developers in Ethiopia?",
+      "Should Ethiopian companies use AI tools?",
+      "AI tools are good for productivity."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "This question is specific, measurable, and directly addresses the scenario described in Class Quiz Q4 (Slide 33). Option A is too basic, C is an opinion, and D is a statement, not a question."
+  },
+  {
+    "id": "rmse-c3-mcq-13",
+    "question": "A research objective: 'To assess the impact of AI code review tools on defect detection rates in enterprise Java projects within 6 months, aiming for a 15% improvement' is an example of:",
+    "options": [
+      "A vague objective",
+      "A research question",
+      "A SMART objective",
+      "A null hypothesis"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "This objective is Specific (AI code review tools, defect rates, Java projects), Measurable (15% improvement), Attainable (implied), Relevant, and Time-bound (6 months), fitting the SMART criteria (Slide 16-17, 36)."
+  },
+  {
+    "id": "rmse-c3-mcq-14",
+    "question": "The research question 'What are the current challenges faced by software teams in adopting agile methodologies?' is best classified as:",
+    "options": [
+      "Evaluative",
+      "Comparative",
+      "Explanatory",
+      "Exploratory"
+    ],
+    "correctAnswerIndex": 3,
+    "explanation": "Slide 15 and Slide 34 classify this type of question, which seeks to understand current unknown challenges, as 'Exploratory'."
+  },
+  {
+    "id": "rmse-c3-mcq-15",
+    "question": "For a study on high turnover rates among junior developers suspected to be due to lack of effective mentoring, which methodology would be LEAST suitable for initial investigation?",
+    "options": [
+      "Surveys with current and former junior developers.",
+      "Interviews with senior developers and managers about mentoring practices.",
+      "A controlled experiment where one group gets mentoring and another doesn't, measuring turnover after 2 years.",
+      "Analysis of HR records on turnover and exit interview data."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "While an experiment could yield results, it's ethically problematic and very time-consuming for an initial investigation into an existing problem. Surveys, interviews, and record analysis are more suitable initial steps (Slide 35)."
+  }
+]

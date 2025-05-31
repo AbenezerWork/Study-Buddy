@@ -1,0 +1,1007 @@
+
+[
+  {
+    "id": "ml-c1-sm-topic-overview",
+    "title": "Overview of Machine Learning",
+    "introduction": [
+      { "text": "This chapter provides a comprehensive overview of Machine Learning (ML), including its definition, historical context, classifications, working principles, applications, and its relationship with Artificial Intelligence and Data Science." }
+    ],
+    "contentBlocks": [
+      {
+        "id": "ml-c1-sm-block-s2-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "What is Machine Learning?" }]
+      },
+      {
+        "id": "ml-c1-sm-block-s2-p1",
+        "type": "paragraph",
+        "content": [
+          { "text": "Machine learning is a ", "bold": true },
+          { "text": "growing technology", "bold": true },
+          { "text": " which enables computers to learn automatically from past data." }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s2-img",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap1-overview/images/slide2_human_vs_machine.png",
+        "alt": "Diagram comparing human learning from experiences and machine learning from past data with the help of ML.",
+        "caption": [{ "text": "Human vs. Machine Learning." }]
+      },
+      {
+        "id": "ml-c1-sm-block-s2-p2",
+        "type": "paragraph",
+        "content": [
+          { "text": "We have computers or machines which work on our instructions. But can a machine also learn from experiences or past data like a human does?" }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s3-p1",
+        "type": "paragraph",
+        "content": [
+          { "text": "The term machine learning was first introduced by ", "bold": true },
+          { "text": "Arthur Samuel in 1959", "bold": true },
+          { "text": ". He defined machine learning as \"the field of study that gives computers the ability to learn without being explicitly programmed.\"" }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s3-p2",
+        "type": "paragraph",
+        "content": [
+          { "text": "However, there is no universally accepted definition. Different authors define the term differently." }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s3-p3",
+        "type": "paragraph",
+        "content": [
+          { "text": "Tom Mitchell (1998):", "bold": true },
+          { "text": " a computer program is said to learn from experience E with respect to some class of tasks T and performance measure P, if its performance at tasks in T, as measured by P, ", "bold": true },
+          { "text": "improves with experience E.", "bold": true }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s4-h3",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Breaking Down E, T, P" }]
+      },
+      {
+        "id": "ml-c1-sm-block-s4-list1",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c1-sm-li-s4-1", "content": [{ "text": "Experience (E): ", "bold": true }, { "text": "This refers to the data or examples the system is exposed to." }] },
+          { "id": "ml-c1-sm-li-s4-2", "content": [{ "text": "Tasks (T): ", "bold": true }, { "text": "These are the specific activities or problems that the machine is learning to perform or solve." }] },
+          { "id": "ml-c1-sm-li-s4-3", "content": [{ "text": "Performance Measure (P): ", "bold": true }, { "text": "This is the metric used to evaluate how well the machine is doing in performing tasks from T (e.g., accuracy, error rate)." }] }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s4-p1-example",
+        "type": "paragraph",
+        "content": [
+          { "text": "Example: Handwriting recognition learning problem", "bold": true }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s4-list2",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c1-sm-li-s4-4", "content": [{ "text": "Task T: Recognizing and classifying handwritten words within images." }] },
+          { "id": "ml-c1-sm-li-s4-5", "content": [{ "text": "Performance P: Percent of words correctly classified." }] },
+          { "id": "ml-c1-sm-li-s4-6", "content": [{ "text": "Experience E: A dataset of handwritten words." }] }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s5-p1-example",
+        "type": "paragraph",
+        "content": [
+          { "text": "Example: Email Spam Detection Problem", "bold": true }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s5-list1",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c1-sm-li-s5-1", "content": [{ "text": "Task T: classify email as spam or not-spam." }] },
+          { "id": "ml-c1-sm-li-s5-2", "content": [{ "text": "Performance P: number of correctly predicted spams." }] },
+          { "id": "ml-c1-sm-li-s5-3", "content": [{ "text": "Experience E: A dataset of labelled emails." }] }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s5-h3-otherdef",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Other Definitions" }]
+      },
+      {
+        "id": "ml-c1-sm-block-s5-list2",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c1-sm-li-s5-4", "content": [{ "text": "Machine learning is programming computers to optimize a performance criterion using example data or past experience." }] },
+          { "id": "ml-c1-sm-li-s5-5", "content": [{ "text": "It is a branch of Artificial Intelligence and computer science that helps build a model based on training data and make predictions and decisions without being constantly programmed." }] }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s6-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "How ML Helps Us" }]
+      },
+      {
+        "id": "ml-c1-sm-block-s6-p1",
+        "type": "paragraph",
+        "content": [
+          { "text": "It is very ", "bold": true },
+          { "text": "hard to write programs", "bold": true },
+          { "text": " that solve problems like recognizing a face." }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s6-list1",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c1-sm-li-s6-1", "content": [{ "text": "We don't know what program to write because we don't know how our brain does it." }] },
+          { "id": "ml-c1-sm-li-s6-2", "content": [{ "text": "Even if we had a good idea about how to do it, the program might be horrendously complicated." }] }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s6-list2",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c1-sm-li-s6-3", "content": [{ "text": "A. Instead of writing a program by hand, we collect lots of examples that specify the correct output for a given input." }] },
+          { "id": "ml-c1-sm-li-s6-4", "content": [{ "text": "B. A machine learning algorithm then takes these examples and produces a program that does the job." }] }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s7-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "How ML Works" }]
+      },
+      {
+        "id": "ml-c1-sm-block-s7-p1",
+        "type": "paragraph",
+        "content": [
+          { "text": "A Machine Learning system learns from historical data, builds the prediction models (Using Algorithms), and whenever it receives new data, predicts the output for it." }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s7-p2",
+        "type": "paragraph",
+        "content": [
+          { "text": "The accuracy of predicted output depends upon the amount of data, as the huge amount of data helps to build a better model." }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s7-img",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap1-overview/images/slide7_ml_works_diagram.png",
+        "alt": "Diagram showing ML process: Training Input past data -> Machine learning Algorithm (Learn from data) -> Building Logical Models -> (New data input) -> Output.",
+        "caption": [{ "text": "General workflow of a Machine Learning system." }]
+      },
+      {
+        "id": "ml-c1-sm-block-s8-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Features of ML" }]
+      },
+      {
+        "id": "ml-c1-sm-block-s8-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c1-sm-li-s8-1", "content": [{ "text": "Uses data to detect various patterns in a given dataset." }] },
+          { "id": "ml-c1-sm-li-s8-2", "content": [{ "text": "It can learn from past data and improve automatically." }] },
+          { "id": "ml-c1-sm-li-s8-3", "content": [{ "text": "It is a data-driven technology." }] },
+          { "id": "ml-c1-sm-li-s8-4", "content": [{ "text": "Is much similar to data mining as it also deals with the huge amount of the data." }] }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s9-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Need of ML" }]
+      },
+      {
+        "id": "ml-c1-sm-block-s9-p1",
+        "type": "paragraph",
+        "content": [
+          { "text": "The need for machine learning is ", "bold": true },
+          { "text": "increasing day by day.", "bold": true },
+          { "text": " The reason behind the need for machine learning is that it is ", "bold": true },
+          { "text": "capable of doing tasks that are too complex", "bold": true },
+          { "text": " for a person to implement directly." }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s9-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c1-sm-li-s9-1", "content": [{ "text": "Rapid increment in the ", "bold": true }, { "text": "production of data", "bold": true }] },
+          { "id": "ml-c1-sm-li-s9-2", "content": [{ "text": "Solving ", "bold": true }, { "text": "complex problems,", "bold": true }, { "text": " which are difficult for a human" }] },
+          { "id": "ml-c1-sm-li-s9-3", "content": [{ "text": "Decision making", "bold": true }, { "text": " needs in various sector including finance" }] },
+          { "id": "ml-c1-sm-li-s9-4", "content": [{ "text": "Finding ", "bold": true }, { "text": "hidden patterns", "bold": true }, { "text": " and extracting useful information from data." }] }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s10-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "History of ML" }]
+      },
+      {
+        "id": "ml-c1-sm-block-s10-p1",
+        "type": "paragraph",
+        "content": [
+          { "text": "Before some years, machine learning was science fiction, but today it is the part of our daily life. It has an old history." }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s10-img",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap1-overview/images/slide10_ai_ml_dl_timeline.png",
+        "alt": "Timeline showing Artificial Intelligence (1940s-1960s), Machine Learning (1970s-1990s), and Deep Learning (2000s-2010s).",
+        "caption": [{ "text": "Historical progression: AI to ML to Deep Learning." }]
+      },
+      {
+        "id": "ml-c1-sm-block-s11-h3-early",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "The early history of Machine Learning (Pre-1940):" }]
+      },
+      {
+        "id": "ml-c1-sm-block-s11-list1",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c1-sm-li-s11-1", "content": [{ "text": "1834: Charles Babbage, the father of the computer, conceived a device that could be programmed with punch cards." }] },
+          { "id": "ml-c1-sm-li-s11-2", "content": [{ "text": "1936: Alan Turing gave a theory that how a machine can determine and execute a set of instructions." }] }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s11-h3-stored",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "The era of stored program computers:" }]
+      },
+      {
+        "id": "ml-c1-sm-block-s11-list2",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c1-sm-li-s11-3", "content": [{ "text": "1940: The first manually operated computer, \"ENIAC\" was invented." }] },
+          { "id": "ml-c1-sm-li-s11-4", "content": [{ "text": "1950: Scientists started applying their idea to work and analyzed how human neurons might work." }] }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s11-h3-compmach",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Computer Machinery and Intelligence:" }]
+      },
+      {
+        "id": "ml-c1-sm-block-s11-p1-compmach",
+        "type": "paragraph",
+        "content": [
+          { "text": "1950: Alan Turing published a seminal paper, \"Computer Machinery and Intelligence,\" on artificial intelligence, asking, \"Can machines think?\"" }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s11-h3-games",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Machine intelligence in Games:" }]
+      },
+      {
+        "id": "ml-c1-sm-block-s11-p1-games",
+        "type": "paragraph",
+        "content": [
+          { "text": "1952: Arthur Samuel created a program that helped an IBM computer to play a checkers game." }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s12-h3-winter",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "The first \"AI\" winter:" }]
+      },
+      {
+        "id": "ml-c1-sm-block-s12-p1-winter",
+        "type": "paragraph",
+        "content": [
+          { "text": "The duration of 1974 to 1980 was a tough time for AI and ML researchers, and this duration was called the AI winter." }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s12-h3-reality",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Machine Learning from theory to reality" }]
+      },
+      {
+        "id": "ml-c1-sm-block-s12-list1",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c1-sm-li-s12-1", "content": [{ "text": "1959: The first neural network was applied to a real-world problem to remove echoes over phone lines." }] },
+          { "id": "ml-c1-sm-li-s12-2", "content": [{ "text": "1985: Terry Sejnowski and Charles Rosenberg invented a neural network NETtalk, which could teach itself to pronounce 20,000 words in one week." }] },
+          { "id": "ml-c1-sm-li-s12-3", "content": [{ "text": "1997: IBM's Deep Blue intelligent computer won a chess game against Garry Kasparov, becoming the first computer to beat a human chess expert." }] }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s13-h3-21st",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Machine Learning at 21st century" }]
+      },
+      {
+        "id": "ml-c1-sm-block-s13-list1",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c1-sm-li-s13-1", "content": [{ "text": "Deep learning" }] },
+          { "id": "ml-c1-sm-li-s13-2", "content": [{ "text": "Deep Face" }] },
+          { "id": "ml-c1-sm-li-s13-3", "content": [{ "text": "Chatbot technologies and others invented" }] }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s13-h3-present",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Machine Learning at Present" }]
+      },
+      {
+        "id": "ml-c1-sm-block-s13-p1-present",
+        "type": "paragraph",
+        "content": [
+          { "text": "Now machine learning has got a great advancement in its research, and it is present everywhere around us, such as self-driving cars, Catboats (likely chatbots), recommender systems, Various AI technologies, and many more." }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s14-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Classification of ML" }]
+      },
+      {
+        "id": "ml-c1-sm-block-s14-p1",
+        "type": "paragraph",
+        "content": [
+          { "text": "In general, machine learning algorithms can be classified into three types:" }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s14-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c1-sm-li-s14-1", "content": [{ "text": "Supervised learning" }] },
+          { "id": "ml-c1-sm-li-s14-2", "content": [{ "text": "Unsupervised learning" }] },
+          { "id": "ml-c1-sm-li-s14-3", "content": [{ "text": "Reinforcement learning" }] }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s15-h2-supervised",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Supervised Learning" }]
+      },
+      {
+        "id": "ml-c1-sm-block-s15-p1",
+        "type": "paragraph",
+        "content": [
+          { "text": "Supervised learning involves training an algorithm on a labeled dataset, where input data is paired with corresponding output labels." }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s15-p2",
+        "type": "paragraph",
+        "content": [
+          { "text": "The goal is to learn a mapping from input to output based on provided labelled examples." }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s15-p3",
+        "type": "paragraph",
+        "content": [
+          { "text": "A “supervised learning” is so called because the process of an algorithm learning from the training dataset can be thought of as a teacher supervising the learning process." }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s16-img",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap1-overview/images/slide16_supervised_learning_diagram.png",
+        "alt": "Diagram illustrating supervised learning: Labeled Data (shapes) and Labels (hexagon, square, triangle) feed into Model Training, which makes Predictions (square, triangle) based on Test Data. Also shows a table with gender, age, and health labels (sick/healthy).",
+        "caption": [{ "text": "Supervised Learning Process." }]
+      },
+      {
+        "id": "ml-c1-sm-block-s17-h3-types",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Types of Problem To Solve in Supervised Learning" }]
+      },
+      {
+        "id": "ml-c1-sm-block-s17-h4-class",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Classification:" }]
+      },
+      {
+        "id": "ml-c1-sm-block-s17-p1-class",
+        "type": "paragraph",
+        "content": [
+          { "text": "Predicting whether an email is spam or not based on features like subject, sender, and content." }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s17-h4-reg",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Regression:" }]
+      },
+      {
+        "id": "ml-c1-sm-block-s17-p1-reg",
+        "type": "paragraph",
+        "content": [
+          { "text": "Predicting the price of a house based on features like square footage, location, and the number of bedrooms." }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s17-p2-other",
+        "type": "paragraph",
+        "content": [
+          { "text": "Other applications include health care, financial analysis, sentiment analysis, etc." }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s18-h2-unsupervised",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Unsupervised Learning" }]
+      },
+      {
+        "id": "ml-c1-sm-block-s18-p1",
+        "type": "paragraph",
+        "content": [
+          { "text": "Unsupervised learning involves training a model on data that is ", "bold": true },
+          { "text": "not labeled, classified, or categorized.", "bold": true },
+          { "text": " The algorithm needs to act on that data without any supervision." }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s18-p2",
+        "type": "paragraph",
+        "content": [
+          { "text": "The algorithm aims to explore the inherent structure in the data." }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s18-p3",
+        "type": "paragraph",
+        "content": [
+          { "text": "Models themselves find the hidden patterns and insights from the given data." }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s18-p4",
+        "type": "paragraph",
+        "content": [
+          { "text": "The goal is to restructure the input data into new features or a group of objects with similar patterns." }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s18-p5",
+        "type": "paragraph",
+        "content": [
+          { "text": "It can be compared to learning which takes place in the human brain while learning new things." }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s19-img",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap1-overview/images/slide19_unsupervised_learning_diagram.png",
+        "alt": "Diagram illustrating unsupervised learning: Input Raw Data (unlabeled vegetables) -> Interpretation -> Algorithms -> Processing -> Outputs (grouped vegetables).",
+        "caption": [{ "text": "Unsupervised Learning Process." }]
+      },
+      {
+        "id": "ml-c1-sm-block-s20-h3-types",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Unsupervised ML Problem Types" }]
+      },
+      {
+        "id": "ml-c1-sm-block-s20-h4-cluster",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "A. Clustering:" }]
+      },
+      {
+        "id": "ml-c1-sm-block-s20-p1-cluster",
+        "type": "paragraph",
+        "content": [
+          { "text": "Grouping similar customers based on purchasing behaviour without predefined categories." }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s20-list-cluster",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c1-sm-li-s20-1", "content": [{ "text": "Market Segmentation: ", "bold": true }, { "text": "Identifying distinct customer segments for targeted marketing campaigns." }] },
+          { "id": "ml-c1-sm-li-s20-2", "content": [{ "text": "Anomaly Detection: ", "bold": true }, { "text": "Detecting unusual patterns in network traffic for cybersecurity." }] }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s20-h4-assoc",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "B. Association:" }]
+      },
+      {
+        "id": "ml-c1-sm-block-s20-p1-assoc",
+        "type": "paragraph",
+        "content": [
+          { "text": "Find associations and patterns in the data (e.g., dimensionality reduction)." }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s21-h2-reinforcement",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Re-Inforcement Learning" }]
+      },
+      {
+        "id": "ml-c1-sm-block-s21-p1",
+        "type": "paragraph",
+        "content": [
+          { "text": "Reinforcement learning involves an ", "bold": true },
+          { "text": "agent learning", "bold": true },
+          { "text": " to make decisions by interacting with an environment." }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s21-p2",
+        "type": "paragraph",
+        "content": [
+          { "text": "The agent receives feedback in the form of ", "bold": true },
+          { "text": "rewards or penalties", "bold": true },
+          { "text": " based on the actions it takes." }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s21-p3",
+        "type": "paragraph",
+        "content": [
+          { "text": "The agent learns automatically with these feedbacks and improves its performance." }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s21-p4",
+        "type": "paragraph",
+        "content": [
+          { "text": "Reinforcement learning is applicable when an agent needs to learn a sequence of actions to achieve a goal in a dynamic environment, receiving feedback to guide its learning process." }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s22-img",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap1-overview/images/slide22_reinforcement_learning_diagram.png",
+        "alt": "Diagram of Reinforcement Learning: Input Raw Data -> Agent (State, Reward) -> Environment (Best Action, Selection of Algorithm) -> Output.",
+        "caption": [{ "text": "Reinforcement Learning Process." }]
+      },
+      {
+        "id": "ml-c1-sm-block-s23-h3-ex",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Re-Inforcement Learning Example: Controlling A Walking Robot" }]
+      },
+      {
+        "id": "ml-c1-sm-block-s23-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c1-sm-li-s23-1", "content": [{ "text": "Agent: ", "bold": true }, { "text": "The program controlling a walking robot." }] },
+          { "id": "ml-c1-sm-li-s23-2", "content": [{ "text": "Environment: ", "bold": true }, { "text": "The real world." }] },
+          { "id": "ml-c1-sm-li-s23-3", "content": [{ "text": "Action: ", "bold": true }, { "text": "One out of four moves (1) forward; (2) backward; (3) left; and (4) right." }] },
+          { "id": "ml-c1-sm-li-s23-4", "content": [{ "text": "Reward: ", "bold": true }, { "text": "Positive when it approaches the target destination; negative when it wastes time, goes in the wrong direction or falls down." }] }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s24-h2-challenges",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Challenges In Machine Learning" }]
+      },
+      {
+        "id": "ml-c1-sm-block-s24-p1",
+        "type": "paragraph",
+        "content": [
+          { "text": "Machine learning projects encounter challenges such as:" }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s24-list1",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c1-sm-li-s24-1", "content": [{ "text": "data quality issues," }] },
+          { "id": "ml-c1-sm-li-s24-2", "content": [{ "text": "insufficient data" }] },
+          { "id": "ml-c1-sm-li-s24-3", "content": [{ "text": "the need for robust model evaluation." }] }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s24-h3-limit",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Limitations of current machine learning approaches:" }]
+      },
+      {
+        "id": "ml-c1-sm-block-s24-p2",
+        "type": "paragraph",
+        "content": [
+          { "text": "While powerful, current ML approaches have limitations, including interpretability issues, susceptibility to bias, and challenges in handling complex, unstructured data." }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s24-p3",
+        "type": "paragraph",
+        "content": [
+          { "text": "Understanding these limitations is crucial for responsible and effective deployment." }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s25-h2-apps",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Application Areas of ML" }]
+      },
+      {
+        "id": "ml-c1-sm-block-s25-img",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap1-overview/images/slide25_ml_applications_wheel.png",
+        "alt": "Wheel diagram showing various application areas of Machine Learning: Image Recognition, Automatic Language Translation, Medical Diagnosis, Speech Recognition, Traffic Prediction, Product recommendations, Self-driving cars, Email Spam and Malware Filtering, Virtual Personal Assistant, Online Fraud Detection, Stock Market trading, Natural Language Processing.",
+        "caption": [{ "text": "Application Areas of Machine Learning." }]
+      },
+      {
+        "id": "ml-c1-sm-block-s26-h3-imgrec",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "A. Image Recognition" }]
+      },
+      {
+        "id": "ml-c1-sm-block-s26-list-imgrec",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c1-sm-li-s26-1", "content": [{ "text": "It is used to identify objects, persons, places, digital images." }] },
+          { "id": "ml-c1-sm-li-s26-2", "content": [{ "text": "Facebook Deepface - Automatic friend tagging suggestion." }] }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s26-h3-speechrec",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "B. Speech Recognition" }]
+      },
+      {
+        "id": "ml-c1-sm-block-s26-list-speechrec",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c1-sm-li-s26-3", "content": [{ "text": "Process of converting voice instructions into text, also known as \"Speech to text\" or \"Computer speech recognition.\"" }] },
+          { "id": "ml-c1-sm-li-s26-4", "content": [{ "text": "Google Search by voice. Example: Google Assistant, Siri, Cortana (Microsoft), and Alexa (Amazon)." }] }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s26-h3-traffic",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "C. Traffic prediction: google map" }]
+      },
+      {
+        "id": "ml-c1-sm-block-s26-h3-prodrec",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "D. Product recommendations:" }]
+      },
+      {
+        "id": "ml-c1-sm-block-s26-p1-prodrec",
+        "type": "paragraph",
+        "content": [
+          { "text": "e-commerce and entertainment companies such as Amazon, Netflix." }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s27-h3-selfdrive",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "E. Self-driving cars" }]
+      },
+      {
+        "id": "ml-c1-sm-block-s27-p1-selfdrive",
+        "type": "paragraph",
+        "content": [
+          { "text": "Tesla, the most popular car manufacturing company is working on self-driving cars." }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s27-h3-spam",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "F. Email Spam and Malware Filtering" }]
+      },
+      {
+        "id": "ml-c1-sm-block-s27-p1-spam",
+        "type": "paragraph",
+        "content": [
+          { "text": "When we receive new email, it is filtered automatically as important, normal, and spam." }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s27-h3-vpa",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "G. Virtual Personal Assistant" }]
+      },
+      {
+        "id": "ml-c1-sm-block-s27-list-vpa",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c1-sm-li-s27-1", "content": [{ "text": "Help us using voice instructions such as Play music, call someone, Open an email, Scheduling an appointment." }] },
+          { "id": "ml-c1-sm-li-s27-2", "content": [{ "text": "Various virtual personal assistants such as Google assistant, Alexa, Cortana, Siri." }] }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s28-h2-lifecycle",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Machine learning Life cycle" }]
+      },
+      {
+        "id": "ml-c1-sm-block-s28-p1",
+        "type": "paragraph",
+        "content": [
+          { "text": "Machine learning life cycle is a cyclic process to build an efficient machine learning project." }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s28-img",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap1-overview/images/slide28_ml_lifecycle_cyclic.png",
+        "alt": "Cyclic diagram of Machine Learning Life-cycle: 1. Gathering Data, 2. Data preparation, 3. Data Wrangling, 4. Analyse Data, 5. Train Model, 6. Test Model, 7. Deployment.",
+        "caption": [{ "text": "Machine Learning Life Cycle." }]
+      },
+      {
+        "id": "ml-c1-sm-block-s28-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c1-sm-li-s28-1", "content": [{ "text": "Gathering Data" }] },
+          { "id": "ml-c1-sm-li-s28-2", "content": [{ "text": "Data preparation" }] },
+          { "id": "ml-c1-sm-li-s28-3", "content": [{ "text": "Data Wrangling" }] },
+          { "id": "ml-c1-sm-li-s28-4", "content": [{ "text": "Analyse Data" }] },
+          { "id": "ml-c1-sm-li-s28-5", "content": [{ "text": "Train the model" }] },
+          { "id": "ml-c1-sm-li-s28-6", "content": [{ "text": "Test the model" }] },
+          { "id": "ml-c1-sm-li-s28-7", "content": [{ "text": "Deployment" }] }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s29-h2-steps",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Steps of ML" }]
+      },
+      {
+        "id": "ml-c1-sm-block-s29-h3-step1",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "1. Gathering Data" }]
+      },
+      {
+        "id": "ml-c1-sm-block-s29-list1",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c1-sm-li-s29-1", "content": [{ "text": "Identify various data sources, Collect data and Integrate the data obtained from different sources -> datasets." }] },
+          { "id": "ml-c1-sm-li-s29-2", "content": [{ "text": "Open data sources: UCI ML repository, Kaggle, OpenML, Google and Microsoft Research Open Data." }] }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s29-h3-step2",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "2. Data Preparation" }]
+      },
+      {
+        "id": "ml-c1-sm-block-s29-p1-step2",
+        "type": "paragraph",
+        "content": [
+          { "text": "A step where we put our data into a suitable place and prepare it to use in our machine learning training. Ex: Data exploration, EDA." }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s29-h3-step3",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "3. Data Wrangling" }]
+      },
+      {
+        "id": "ml-c1-sm-block-s29-p1-step3",
+        "type": "paragraph",
+        "content": [
+          { "text": "Is the process of cleaning and converting raw data into a useable format. Involves: Missing Values, Duplicate data, Invalid data, Noise removal." }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s30-h3-step4",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "4. Data Analysis" }]
+      },
+      {
+        "id": "ml-c1-sm-block-s30-p1-step4",
+        "type": "paragraph",
+        "content": [
+          { "text": "Now the cleaned and prepared data is passed on to the analysis step. This step involves: Selection of analytical techniques, Building models, Review the result." }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s30-h3-step5",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "5. Train Model" }]
+      },
+      {
+        "id": "ml-c1-sm-block-s30-p1-step5",
+        "type": "paragraph",
+        "content": [
+          { "text": "In this step we train our model to improve its performance for better outcome of the problem." }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s30-h3-step6",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "6. Test Model" }]
+      },
+      {
+        "id": "ml-c1-sm-block-s30-p1-step6",
+        "type": "paragraph",
+        "content": [
+          { "text": "Once trained we check for the accuracy of our model by providing a test dataset to it." }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s30-h3-step7",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "7. Deployment" }]
+      },
+      {
+        "id": "ml-c1-sm-block-s30-p1-step7",
+        "type": "paragraph",
+        "content": [
+          { "text": "We deploy the model in the real-world system." }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s31-h2-ds",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Data Science" }]
+      },
+      {
+        "id": "ml-c1-sm-block-s31-h3-whatis",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "What is Data Science?" }]
+      },
+      {
+        "id": "ml-c1-sm-block-s31-p1",
+        "type": "paragraph",
+        "content": [
+          { "text": "\"A field of deep study of data that includes extracting useful insights from the data, and processing that information using different tools, statistical models, and Machine learning algorithms.\"" }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s31-p2",
+        "type": "paragraph",
+        "content": [
+          { "text": "Concept that is used to handle big data that includes data cleaning, data preparation, data analysis, and data visualization." }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s32-h2-skills",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Skills needed to be a Data Scientist" }]
+      },
+      {
+        "id": "ml-c1-sm-block-s32-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c1-sm-li-s32-1", "content": [{ "text": "An excellent programming knowledge of Python, R, SAS, or Scala." }] },
+          { "id": "ml-c1-sm-li-s32-2", "content": [{ "text": "Experience in SQL database Coding." }] },
+          { "id": "ml-c1-sm-li-s32-3", "content": [{ "text": "Knowledge of Machine Learning Algorithms." }] },
+          { "id": "ml-c1-sm-li-s32-4", "content": [{ "text": "Deep Knowledge of Statistics concepts." }] },
+          { "id": "ml-c1-sm-li-s32-5", "content": [{ "text": "Data Mining, cleaning, and visualizing skills." }] },
+          { "id": "ml-c1-sm-li-s32-6", "content": [{ "text": "Skills to use Big data tools such as Hadoop." }] }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s33-h2-dsvsml",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Data Science VS ML" }]
+      },
+      {
+        "id": "ml-c1-sm-block-s33-p1",
+        "type": "paragraph",
+        "content": [
+          { "text": "Data Science:", "bold": true },
+          { "text": " Deals with understanding and finding hidden patterns or useful insights from data, which helps to take smarter business decisions. It is used for discovering insights from the data. It is a broad term including various steps to create and deploy a model." }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s33-p2",
+        "type": "paragraph",
+        "content": [
+          { "text": "Machine Learning:", "bold": true },
+          { "text": " Is a subfield of data science that enables the machine to learn from past data and experiences automatically. It is used for making predictions and classifying results for new data points. It is used in the data modeling step of data science." }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s34-h2-aimldl",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "AI vs ML vs DL" }]
+      },
+      {
+        "id": "ml-c1-sm-block-s34-img",
+        "type": "image",
+        "src": "/data/machine-learning/ml-chap1-overview/images/slide34_ai_ml_dl_venn.png",
+        "alt": "Venn diagram showing Deep Learning as a subset of Machine Learning, which is a subset of Artificial Intelligence.",
+        "caption": [{ "text": "Relationship between AI, ML, and DL." }]
+      },
+      {
+        "id": "ml-c1-sm-block-s34-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c1-sm-li-s34-1", "content": [{ "text": "AI (Artificial Intelligence): ", "bold": true }, { "text": "Broader concept (science + Engineering) to create intelligent machines that can simulate human thinking capability." }] },
+          { "id": "ml-c1-sm-li-s34-2", "content": [{ "text": "ML (Machine Learning): ", "bold": true }, { "text": "Subset of AI that allows machines to learn from data without being programmed explicitly." }] },
+          { "id": "ml-c1-sm-li-s34-3", "content": [{ "text": "DL (Deep Learning): ", "bold": true }, { "text": "Subset of ML that uses neural networks to analyze different factors with a structure similar to the human neural system." }] }
+        ]
+      },
+      {
+        "id": "ml-c1-sm-block-s35-h2-summary",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "AI, ML and DL Summary" }]
+      },
+      {
+        "id": "ml-c1-sm-block-s35-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "ml-c1-sm-li-s35-1", "content": [{ "text": "Artificial intelligence is the overarching field focused on creating intelligent systems." }] },
+          { "id": "ml-c1-sm-li-s35-2", "content": [{ "text": "Machine learning is a subset of artificial intelligence that emphasizes learning from data to make predictions or decisions." }] },
+          { "id": "ml-c1-sm-li-s35-3", "content": [{ "text": "Deep learning is a subfield of machine learning that uses neural networks with multiple layers to learn hierarchical representations of data." }] }
+        ]
+      }
+    ],
+    "summary": [
+      { "text": "This chapter provided an introduction to Machine Learning, covering its core definitions, historical milestones, classifications (Supervised, Unsupervised, Reinforcement), how it works, its applications, the ML lifecycle, and its relationship with Data Science and AI." }
+    ]
+  }
+]

@@ -1,0 +1,802 @@
+
+[
+  {
+    "id": "rmse-chap1-topic-main",
+    "title": "Introduction to Research Basics",
+    "introduction": [
+      { "text": "This chapter provides an introduction to the fundamental concepts of research, particularly within the context of software engineering." }
+    ],
+    "contentBlocks": [
+      {
+        "id": "rmse-c1-sm-block-slide2-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Lesson Outline" }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide2-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c1-sm-li-s2-1", "content": [{ "text": "What is research" }] },
+          { "id": "rmse-c1-sm-li-s2-2", "content": [{ "text": "Why research" }] },
+          { "id": "rmse-c1-sm-li-s2-3", "content": [{ "text": "What is NOT Research" }] },
+          { "id": "rmse-c1-sm-li-s2-4", "content": [{ "text": "Research process" }] },
+          { "id": "rmse-c1-sm-li-s2-5", "content": [{ "text": "Research Classification and Design" }] },
+          { "id": "rmse-c1-sm-li-s2-6", "content": [{ "text": "Theory" }] },
+          { "id": "rmse-c1-sm-li-s2-7", "content": [{ "text": "Role of Theory in Research" }] },
+          { "id": "rmse-c1-sm-li-s2-8", "content": [{ "text": "Types of Reasoning" }] },
+          { "id": "rmse-c1-sm-li-s2-9", "content": [{ "text": "Research Contribution and Originality" }] },
+          { "id": "rmse-c1-sm-li-s2-10", "content": [{ "text": "Research topics in SE" }] }
+        ]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide3-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "What is Research?" }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide3-p1",
+        "type": "paragraph",
+        "content": [{ "text": "Research = Re + Search", "bold": true }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide3-list1",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c1-sm-li-s3-1", "content": [{ "text": "Re: ", "bold": true }, { "text": "Again, a new, over again" }] },
+          { "id": "rmse-c1-sm-li-s3-2", "content": [{ "text": "Search: ", "bold": true }, { "text": "To examine closely and carefully, to test and try or to probe" }] }
+        ]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide3-img",
+        "type": "image",
+        "src": "/data/research-methods-se/rmse-chap1-intro-research-basics/images/slide3_magnifying_glass.png",
+        "alt": "Stylized human figure holding a large magnifying glass over a blue question mark, illustrating the concept of search and inquiry in research.",
+        "caption": [{ "text": "Visual representation of 'Search' in research." }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide4-h3",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Definitions of Research" }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide4-p1",
+        "type": "paragraph",
+        "content": [
+          { "text": "\"A careful inquiry specially through search for new facts in any branch of knowledge\" ", "italic": true },
+          { "text": "(Oxford Dictionary)" }
+        ]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide4-p2",
+        "type": "paragraph",
+        "content": [
+          { "text": "\"Research comprises defining and redefining problems, formulating hypothesis or suggested solution; collecting, organizing and evaluating data; making deductions and reaching conclusion; and at last carefully testing the conclusions to determine whether they fit the formulating hypothesis.\" ", "italic": true },
+          { "text": "(Clifford Woody)" }
+        ]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide4-img",
+        "type": "image",
+        "src": "/data/research-methods-se/rmse-chap1-intro-research-basics/images/slide4_research_newspaper.png",
+        "alt": "Magnifying glass over a newspaper headline that says 'Research', symbolizing the investigation of facts.",
+        "caption": [{ "text": "Research as an investigative process." }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide5-h3",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Further Perspectives on Research" }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide5-p1",
+        "type": "paragraph",
+        "content": [
+          { "text": "Research is a ", "bold": true }, { "text": "systematic process of inquiry", "bold": true },
+          { "text": " to discover, interpret, or revise facts, theories, or applications (Walliman, 2011)." }
+        ]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide5-p2",
+        "type": "paragraph",
+        "content": [
+          { "text": "The basic nature of research is to ", "bold": true }, { "text": "advance knowledge and seek solutions to problems.", "bold": true }
+        ]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide5-p3",
+        "type": "paragraph",
+        "content": [
+          { "text": "In software engineering (SE), research addresses problems like improving code quality, optimizing algorithms, or enhancing user experience." }
+        ]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide6-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Why Study Research?" }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide6-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c1-sm-li-s6-1", "content": [{ "text": "To Explore: ", "bold": true }, { "text": "Investigate unknown phenomena or areas of interest." }] },
+          { "id": "rmse-c1-sm-li-s6-2", "content": [{ "text": "To Describe: ", "bold": true }, { "text": "Provide detailed accounts of specific situations or populations." }] },
+          { "id": "rmse-c1-sm-li-s6-3", "content": [{ "text": "To Explain: ", "bold": true }, { "text": "Understand relationships between variables and causation." }] },
+          { "id": "rmse-c1-sm-li-s6-4", "content": [{ "text": "To Predict: ", "bold": true }, { "text": "Forecast future occurrences based on data analysis." }] },
+          { "id": "rmse-c1-sm-li-s6-5", "content": [{ "text": "To Influence: ", "bold": true }, { "text": "Inform decisions and policy-making through evidence-based findings." }] }
+        ]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide7-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "What is NOT Research?" }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide7-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c1-sm-li-s7-1", "content": [{ "text": "Gathering information from resources such as books or magazines is not a research." }] },
+          { "id": "rmse-c1-sm-li-s7-2", "content": [{ "text": "Merely transporting facts from one source to another doesn't constitute a research." }] },
+          { "id": "rmse-c1-sm-li-s7-3", "content": [{ "text": "Research is not simply learning about something." }] },
+          { "id": "rmse-c1-sm-li-s7-4", "content": [{ "text": "Research problems do not simply result in “Yes” or a “No” answer." }] }
+        ]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide8-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Goal of the Research" }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide8-list1",
+        "type": "list",
+        "ordered": true,
+        "items": [
+          { "id": "rmse-c1-sm-li-s8-1", "content": [{ "text": "To get a degree" }] },
+          { "id": "rmse-c1-sm-li-s8-2", "content": [{ "text": "To get respectability" }] },
+          { "id": "rmse-c1-sm-li-s8-3", "content": [{ "text": "To face a challenge" }] },
+          { "id": "rmse-c1-sm-li-s8-4", "content": [{ "text": "To solve a problem" }] },
+          { "id": "rmse-c1-sm-li-s8-5", "content": [{ "text": "To get intellectual joy" }] },
+          { "id": "rmse-c1-sm-li-s8-6", "content": [{ "text": "To serve society" }] }
+        ]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide8-list2",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c1-sm-li-s8-7", "content": [{ "text": "by increasing standard of living in case of Science and Tech. and" }] },
+          { "id": "rmse-c1-sm-li-s8-8", "content": [{ "text": "by showing right path to society in case of Social and Behavioural Sciences" }] }
+        ]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide9-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Nature of Research" }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide9-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c1-sm-li-s9-1", "content": [{ "text": "Originate with a question or problem" }] },
+          { "id": "rmse-c1-sm-li-s9-2", "content": [{ "text": "Requires a clear articulation of a goal or objective" }] },
+          { "id": "rmse-c1-sm-li-s9-3", "content": [{ "text": "Requires a specific plan or procedure" }] },
+          { "id": "rmse-c1-sm-li-s9-4", "content": [{ "text": "Often divide main problem into sub-problems" }] },
+          { "id": "rmse-c1-sm-li-s9-5", "content": [{ "text": "Guided by specific problem, question, proposition or hypothesis" }] },
+          { "id": "rmse-c1-sm-li-s9-6", "content": [{ "text": "Accepts certain critical assumptions" }] },
+          { "id": "rmse-c1-sm-li-s9-7", "content": [{ "text": "Requires collection and interpretation of data" }] },
+          { "id": "rmse-c1-sm-li-s9-8", "content": [{ "text": "Cyclical (Helical) in nature" }] }
+        ]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide9-img",
+        "type": "image",
+        "src": "/data/research-methods-se/rmse-chap1-intro-research-basics/images/slide9_research_wordcloud.png",
+        "alt": "A person writing on a transparent board with a word cloud related to research terms like 'statistic', 'data', 'result', 'report', 'project', 'survey', 'review', 'analysis', 'method', 'solution', 'explore', 'examine', 'development', 'fact'.",
+        "caption": [{ "text": "Key aspects of the nature of research." }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide10-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Qualities of Research - Features" }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide10-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c1-sm-li-s10-1", "content": [{ "text": "Systematic ", "bold": true }, { "text": "– ordered structure of inquiry" }] },
+          { "id": "rmse-c1-sm-li-s10-2", "content": [{ "text": "Logical ", "bold": true }, { "text": "– process to evaluate conclusions drawn" }] },
+          { "id": "rmse-c1-sm-li-s10-3", "content": [{ "text": "Empirical ", "bold": true }, { "text": "– collection of data (facts, experience, etc.) on which to base decisions" }] },
+          { "id": "rmse-c1-sm-li-s10-4", "content": [{ "text": "Reductive ", "bold": true }, { "text": "– individual events (data) are used to establish general relationships" }] },
+          { "id": "rmse-c1-sm-li-s10-5", "content": [{ "text": "Replicable ", "bold": true }, { "text": "– process is recorded so findings and procedures can be tested again" }] }
+        ]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide10-img",
+        "type": "image",
+        "src": "/data/research-methods-se/rmse-chap1-intro-research-basics/images/slide10_research_wordcloud.png",
+        "alt": "A person writing on a transparent board with a word cloud related to research terms (same as slide 9 image).",
+        "caption": [{ "text": "Qualities defining robust research." }]
+      },
+       {
+        "id": "rmse-c1-sm-block-slide11-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "The Research Process" }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide11-h3",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Stages of the research:" }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide11-list",
+        "type": "list",
+        "ordered": true,
+        "items": [
+          { "id": "rmse-c1-sm-li-s11-1", "content": [{ "text": "Identifying the Research Problem: ", "bold": true }, { "text": "Formulating questions based on gaps in knowledge." }] },
+          { "id": "rmse-c1-sm-li-s11-2", "content": [{ "text": "Literature Review: ", "bold": true }, { "text": "Reviewing existing studies to understand the context and background." }] },
+          { "id": "rmse-c1-sm-li-s11-3", "content": [{ "text": "Formulating Hypotheses: ", "bold": true }, { "text": "Developing testable predictions based on theoretical frameworks." }] },
+          { "id": "rmse-c1-sm-li-s11-4", "content": [{ "text": "Research Design: ", "bold": true }, { "text": "Planning how to conduct the research, including methodology and tools." }] },
+          { "id": "rmse-c1-sm-li-s11-5", "content": [{ "text": "Data Collection: ", "bold": true }, { "text": "Gathering data through surveys, experiments, interviews, etc." }] },
+          { "id": "rmse-c1-sm-li-s11-6", "content": [{ "text": "Data Analysis: ", "bold": true }, { "text": "Interpreting the data using statistical or qualitative methods." }] },
+          { "id": "rmse-c1-sm-li-s11-7", "content": [{ "text": "Drawing Conclusions: ", "bold": true }, { "text": "Summarizing findings and determining their implications." }] },
+          { "id": "rmse-c1-sm-li-s11-8", "content": [{ "text": "Reporting and Dissemination: ", "bold": true }, { "text": "Sharing results through publications, presentations, or reports." }] }
+        ]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide12-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "The Research Process: Components" }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide12-imgA",
+        "type": "image",
+        "src": "/data/research-methods-se/rmse-chap1-intro-research-basics/images/slide12_figureA.png",
+        "alt": "Figure A: A circular diagram showing the research process with 8 steps: 1. Identifying The Problem, 2. Reviewing Literature, 3. Setting Research Questions, Objectives, And Hypotheses, 4. Choosing The Study Design, 5. Deciding on the sample design, 6. Collecting Data, 7. Processing And Analyzing Data, 8. Writing The Report.",
+        "caption": [{ "text": "Figure A: Research Process Components." }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide12-imgB",
+        "type": "image",
+        "src": "/data/research-methods-se/rmse-chap1-intro-research-basics/images/slide12_figureB.png",
+        "alt": "Figure B: Another circular diagram of the research process focusing on system development: 1. Identify The Problem, 2. Literature Review, 3. Set Research Questions and Objectives, 4. System Design, 5. System Implementation, 6. System Testing, 7. Testing Result Analysis, 8. Report Writing.",
+        "caption": [{ "text": "Figure B: Research Process Components (System-focused)." }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide12-q",
+        "type": "alert",
+        "style": "info",
+        "title": [{ "text": "Question for Thought" }],
+        "content": [{ "text": "What's difference between Figure A and Figure B? Which one is better?" }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide13-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Research Classification" }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide13-p1",
+        "type": "paragraph",
+        "content": [{ "text": "Types - 3 perspectives" }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide13-img",
+        "type": "image",
+        "src": "/data/research-methods-se/rmse-chap1-intro-research-basics/images/slide13_research_classification.png",
+        "alt": "Diagram showing types of research from three viewpoints: Application (Pure, Applied), Objectives (Descriptive, Correlational, Explanatory, Exploratory), and Enquiry mode (Quantitative, Qualitative).",
+        "caption": [{ "text": "Classification of Research Types." }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide14-h3",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Types of Research (Definitions and Examples)" }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide14-list1",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c1-sm-li-s14-1", "content": [{ "text": "Quantitative: ", "bold": true }, { "text": "Numerical data (e.g., measuring code efficiency using cyclomatic complexity)." }] },
+          { "id": "rmse-c1-sm-li-s14-2", "content": [{ "text": "Qualitative: ", "bold": true }, { "text": "Descriptive data (e.g., interviews on developer burnout)." }] },
+          { "id": "rmse-c1-sm-li-s14-3", "content": [{ "text": "Applied: ", "bold": true }, { "text": "Solving practical problems (e.g., optimizing CI/CD pipelines)." }] },
+          { "id": "rmse-c1-sm-li-s14-4", "content": [{ "text": "Basic: ", "bold": true }, { "text": "Theoretical exploration (e.g., new models for software reliability)." }] }
+        ]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide14-h4-ex",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Example:" }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide14-list2",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c1-sm-li-s14-5", "content": [{ "text": "Quantitative: ", "bold": true }, { "text": "Comparing runtime performance of two sorting algorithms." }] },
+          { "id": "rmse-c1-sm-li-s14-6", "content": [{ "text": "Qualitative: ", "bold": true }, { "text": "Studying user satisfaction with a new UI design." }] }
+        ]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide14-q",
+        "type": "alert",
+        "style": "info",
+        "title": [{ "text": "Question:" }],
+        "content": [{ "text": "\"Would you use qualitative or quantitative methods to study developer productivity? Justify your choice.\"" }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide15-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Research Design: Common Designs" }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide15-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c1-sm-li-s15-1", "content": [{ "text": "Experimental: ", "bold": true }, { "text": "Controlled testing (e.g., A/B testing a new feature rollout)." }] },
+          { "id": "rmse-c1-sm-li-s15-2", "content": [{ "text": "Case Study: ", "bold": true }, { "text": "In-depth analysis of a project (e.g., post-mortem of a failed software deployment)." }] },
+          { "id": "rmse-c1-sm-li-s15-3", "content": [{ "text": "Survey: ", "bold": true }, { "text": "Collecting user feedback (e.g., usability surveys for a mobile app)." }] }
+        ]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide15-q",
+        "type": "alert",
+        "style": "info",
+        "title": [{ "text": "Question:" }],
+        "content": [{ "text": "\"Design a simple study to test a new feature in a weather app. Which research design would you use?\"" }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide15-citation",
+        "type": "paragraph",
+        "content": [
+            { "text": "Citation: ", "bold": true },
+            { "text": "Cooper & Schindler (2009): \"Design determines the validity and reliability of findings.\"", "italic": true }
+        ]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide16-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Theory" }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide16-p1",
+        "type": "paragraph",
+        "content": [{ "text": "Dubin (1978) notes theory contains three main elements:" }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide16-list1",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c1-sm-li-s16-1", "content": [{ "text": "A set of well-defined concepts (or units);" }] },
+          { "id": "rmse-c1-sm-li-s16-2", "content": [{ "text": "Laws of interaction: rules governing (or interrelationships between the units/concepts);" }] },
+          { "id": "rmse-c1-sm-li-s16-3", "content": [{ "text": "Boundary: Scope where the theory applies." }] }
+        ]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide16-h3-ex",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Example:" }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide16-list2",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c1-sm-li-s16-4", "content": [{ "text": "Design theory" }] },
+          { "id": "rmse-c1-sm-li-s16-5", "content": [{ "text": "Communication theory" }] },
+          { "id": "rmse-c1-sm-li-s16-6", "content": [{ "text": "Human Computer Interaction theory (HCI), etc." }] }
+        ]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide17-h3-coupling",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Example: Theory of Coupling and Cohesion" }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide17-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c1-sm-li-s17-1", "content": [{ "text": "Concepts: ", "bold": true }, { "text": "High cohesion (modules focused on one task), low coupling (minimal interdependencies)." }] },
+          { "id": "rmse-c1-sm-li-s17-2", "content": [{ "text": "Laws: ", "bold": true }, { "text": "High cohesion + low coupling → maintainable, reusable code." }] },
+          { "id": "rmse-c1-sm-li-s17-3", "content": [{ "text": "Boundary: ", "bold": true }, { "text": "Relevant for OOP and modular design; less critical in small scripts or prototypes." }] }
+        ]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide18-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Role of Theory in Research" }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide18-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c1-sm-li-s18-1", "content": [{ "text": "Theory can be a goal or guide to research." }] },
+          { "id": "rmse-c1-sm-li-s18-2", "content": [{ "text": "The role of theory in research is to provide a frame of reference." }] },
+          { "id": "rmse-c1-sm-li-s18-3", "content": [{ "text": "Answers that result from research are formulated into theory." }] },
+          { "id": "rmse-c1-sm-li-s18-4", "content": [{ "text": "Theory is a tentative explanation for the facts and findings that evolve from the research process." }] },
+          { "id": "rmse-c1-sm-li-s18-5", "content": [{ "text": "Theory is used to guide and direct future research." }] },
+          { "id": "rmse-c1-sm-li-s18-6", "content": [{ "text": "Theories are developed based on what is observed or experienced, often times in the real world." }] },
+          { "id": "rmse-c1-sm-li-s18-7", "content": [{ "text": "Changed as we gather new facts and observe new relationship." }] }
+        ]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide19-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Concepts in Research" }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide19-p1",
+        "type": "paragraph",
+        "content": [{ "text": "Variables - any characteristic that varies (i.e., more than one value). Can be: Categorical or numerical, Discrete or continuous." }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide19-h3",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Types of Variables in Research" }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide19-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c1-sm-li-s19-1", "content": [{ "text": "Independent (IV)" }] },
+          { "id": "rmse-c1-sm-li-s19-2", "content": [{ "text": "Dependent (DV)" }] }
+        ]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide20-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Types of Reasoning" }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide20-p1",
+        "type": "paragraph",
+        "content": [{ "text": "Integration of Deduction and Induction forms the scientific method.", "bold": true }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide20-h3-ded",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Deductive Reasoning" }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide20-p2",
+        "type": "paragraph",
+        "content": [{ "text": "Deductive reasoning begins with general statements (premises) and, through logical argument, comes to a specific conclusion." }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide20-p3",
+        "type": "paragraph",
+        "content": [{ "text": "Often used for generating our hypotheses in research." }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide20-p4",
+        "type": "paragraph",
+        "content": [{ "text": "When we are using deductive reasoning, your conclusion will be correct if all the statements you say is correct." }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide20-h4-ex",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Example:" }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide20-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c1-sm-li-s20-1", "content": [{ "text": "All students in this class play guitar" }] },
+          { "id": "rmse-c1-sm-li-s20-2", "content": [{ "text": "Selam is the student of this class" }] },
+          { "id": "rmse-c1-sm-li-s20-3", "content": [{ "text": "Therefore, Selam plays guitar" }] }
+        ]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide21-h3-ind",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Inductive Reasoning" }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide21-p1",
+        "type": "paragraph",
+        "content": [{ "text": "Inductive reasoning starts from specific observations then develops a general conclusion from them." }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide21-p2",
+        "type": "paragraph",
+        "content": [{ "text": "General conclusions based on many specific observations." }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide21-p3",
+        "type": "paragraph",
+        "content": [{ "text": "When using inductive reasoning, correct observations won't necessarily lead you to a correct general conclusion." }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide21-h4-ex",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Example:" }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide21-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c1-sm-li-s21-1", "content": [{ "text": "Every quiz has been easy, therefore the test will be easy." }] },
+          { "id": "rmse-c1-sm-li-s21-2", "content": [{ "text": "The teacher used PPT in the last few classes, therefore the teacher will use PPT tomorrow." }] }
+        ]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide22-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Contribution and Originality" }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide22-p1",
+        "type": "paragraph",
+        "content": [
+          { "text": "1. Research Originality: ", "bold": true },
+          { "text": "Novelty in ideas, methods, or perspectives that advance the field i.e. "},
+          { "text": "What's new?", "italic": true },
+          { "text": " (e.g., a first-of-its-kind approach)." }
+        ]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide22-p2-ex1",
+        "type": "paragraph",
+        "content": [
+          { "text": "Example: ", "bold": true },
+          { "text": "First hybrid testing framework combining AI-based fuzzing with symbolic execution to uncover edge-case vulnerabilities." }
+        ]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide22-p3",
+        "type": "paragraph",
+        "content": [
+          { "text": "2. Research Contribution: ", "bold": true },
+          { "text": "Tangible impact on theory, practice, or tools in the field i.e. "},
+          { "text": "Why does it matter?", "italic": true },
+          { "text": " (e.g., measurable improvements, adoption, or paradigm shifts)." }
+        ]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide22-p4-ex2",
+        "type": "paragraph",
+        "content": [
+          { "text": "Example: ", "bold": true },
+          { "text": "Empirical validation showing a new DevOps pipeline optimization reduces deployment failures by 35% in industry case studies." }
+        ]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide23-h3",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Identify Contribution or Originality" }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide23-q",
+        "type": "alert",
+        "style": "info",
+        "title": [{ "text": "Activity: Justify your choice" }],
+        "content": [
+            { "text": "Identify which one is Contribution or Originality for the following points and justify your choice:" }
+        ]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide23-list",
+        "type": "list",
+        "ordered": true,
+        "items": [
+          { "id": "rmse-c1-sm-li-s23-1", "content": [{ "text": "Proposing a new algorithm for real-time data processing." }] },
+          { "id": "rmse-c1-sm-li-s23-2", "content": [{ "text": "Enhancing an existing tool (e.g., adding AI-based code suggestions to IDEs)." }] },
+          { "id": "rmse-c1-sm-li-s23-3", "content": [{ "text": "Validating prior studies in new contexts (e.g., testing DevOps practices in African startups)." }] }
+        ]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide24-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Ethics in SE Research" }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide24-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c1-sm-li-s24-1", "content": [{ "text": "Ethics ", "bold": true }, { "text": "is the study of moral principles that govern behavior, guiding what is considered \"right\" or \"wrong\" in a given context." }] },
+          { "id": "rmse-c1-sm-li-s24-2", "content": [{ "text": "It involves critical reflection on values, responsibilities, and the consequences of actions, ensuring fairness, respect, and accountability." }] },
+          { "id": "rmse-c1-sm-li-s24-3", "content": [{ "text": "Informed Consent: ", "bold": true }, { "text": "Disclosing data usage in user studies (e.g., collecting GitHub commit histories)." }] },
+          { "id": "rmse-c1-sm-li-s24-4", "content": [{ "text": "Privacy: ", "bold": true }, { "text": "Anonymizing sensitive data (e.g., developer interviews)." }] },
+          { "id": "rmse-c1-sm-li-s24-5", "content": [{ "text": "Bias Mitigation: ", "bold": true }, { "text": "Avoiding skewed results in industry-sponsored studies." }] }
+        ]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide24-h3-act",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Activities:" }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide24-q",
+        "type": "alert",
+        "style": "info",
+        "content": [{ "text": "\"What ethical issues might arise when collecting data from open-source GitHub repositories?\"" }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide24-citation",
+        "type": "paragraph",
+        "content": [
+            { "text": "Citation: ", "bold": true },
+            { "text": "Mauthner (2002): \"Ethical research respects participant autonomy and confidentiality.\"", "italic": true }
+        ]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide25-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Some Terminologies in Research" }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide25-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c1-sm-li-s25-1", "content": [{ "text": "Data: ", "bold": true }, { "text": "Measurement of records of facts made under specific conditions." }] },
+          { "id": "rmse-c1-sm-li-s25-2", "content": [{ "text": "Hypothesis: ", "bold": true }, { "text": "Tentative assumption of the study or expected results of the study." }] },
+          { "id": "rmse-c1-sm-li-s25-3", "content": [{ "text": "Independent variable: ", "bold": true }, { "text": "The part of the experiment that the researcher is manipulating; also called experimental or treatment variable." }] },
+          { "id": "rmse-c1-sm-li-s25-4", "content": [{ "text": "Dependent variable: ", "bold": true }, { "text": "The effect of the Independent variable." }] },
+          { "id": "rmse-c1-sm-li-s25-5", "content": [{ "text": "Population: ", "bold": true }, { "text": "A total number of subjects which they abide the inclusion and exclusion criteria." }] },
+          { "id": "rmse-c1-sm-li-s25-6", "content": [{ "text": "Review: ", "bold": true }, { "text": "A research paper that is a critical evaluation of research on a particular topic." }] },
+          { "id": "rmse-c1-sm-li-s25-7", "content": [{ "text": "Research proposal / Synopsis: ", "bold": true }, { "text": "A formal preparation that includes introduction, review of literature and proposed method of conducting study." }] }
+        ]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide26-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Software Engineering Research Areas" }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide26-h3-core",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "1. Core SE Research Areas" }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide26-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c1-sm-li-s26-1", "content": [{ "text": "Software Development Processes ", "bold": true }, { "text": "(Agile/DevOps optimization, CI/CD pipeline automation, AI-driven project management)." }] },
+          { "id": "rmse-c1-sm-li-s26-2", "content": [{ "text": "Quality Assurance ", "bold": true }, { "text": "(Testing automation, defect prediction, AI/ML-based code analysis (e.g., ChatGPT for test generation))." }] },
+          { "id": "rmse-c1-sm-li-s26-3", "content": [{ "text": "Maintenance & Evolution ", "bold": true }, { "text": "(Technical debt quantification, legacy system modernization, refactoring tools.)" }] }
+        ]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide27-h3-emerging",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "2. Emerging Hot Topics" }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide27-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c1-sm-li-s27-1", "content": [{ "text": "AI in SE ", "bold": true }, { "text": "(LLMs for code generation (e.g., GitHub Copilot), AI ethics in SE, bias in code recommender systems.)" }] },
+          { "id": "rmse-c1-sm-li-s27-2", "content": [{ "text": "Security & Privacy ", "bold": true }, { "text": "(Vulnerability detection via ML, secure DevOps (DevSecOps), privacy-preserving code analysis.)" }] },
+          { "id": "rmse-c1-sm-li-s27-3", "content": [{ "text": "Quantum Software Engineering ", "bold": true }, { "text": "(Quantum algorithm design, testing quantum programs, hybrid classical-quantum systems.)" }] },
+          { "id": "rmse-c1-sm-li-s27-4", "content": [{ "text": "Green SE ", "bold": true }, { "text": "(Energy-efficient algorithms, carbon-aware software development, sustainability metrics.)" }] }
+        ]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide28-h3-human",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "3. Human-Centric SE" }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide28-list1",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c1-sm-li-s28-1", "content": [{ "text": "Developer Productivity ", "bold": true }, { "text": "(Remote collaboration tools, cognitive load measurement, burnout detection.)" }] },
+          { "id": "rmse-c1-sm-li-s28-2", "content": [{ "text": "Ethical & Social Impact ", "bold": true }, { "text": "(Bias mitigation in AI tools, ethical open-source practices, inclusivity in developer communities.)" }] }
+        ]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide28-h3-cross",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "4. Cross-Disciplinary Areas" }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide28-list2",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c1-sm-li-s28-3", "content": [{ "text": "SE for AI Systems ", "bold": true }, { "text": "(Testing ML models, debugging AI pipelines, versioning datasets.)" }] },
+          { "id": "rmse-c1-sm-li-s28-4", "content": [{ "text": "SE in Emerging Domains ", "bold": true }, { "text": "(IoT/edge computing, blockchain-based systems, healthcare/fintech software reliability.)" }] }
+        ]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide29-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Summary" }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide29-list",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "rmse-c1-sm-li-s29-1", "content": [{ "text": "Research in SE solves real-world problems through systematic inquiry." }] },
+          { "id": "rmse-c1-sm-li-s29-2", "content": [{ "text": "Balance theoretical rigor with practical relevance." }] }
+        ]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide29-h3-hw",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Homework Activity:" }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide29-hw-p",
+        "type": "alert",
+        "style": "info",
+        "content": [{ "text": "\"Identify a SE problem, draft a research question, and classify it as quantitative/qualitative.\"" }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide30-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Credits" }]
+      },
+      {
+        "id": "rmse-c1-sm-block-slide30-list",
+        "type": "list",
+        "ordered": true,
+        "items": [
+          { "id": "rmse-c1-sm-li-s30-1", "content": [{ "text": "Walliman, N. (2011). Research Methods: The Basics." }] },
+          { "id": "rmse-c1-sm-li-s30-2", "content": [{ "text": "Leedy, P. D., & Ormrod, J. (2009). Practical Research: Planning and Design." }] },
+          { "id": "rmse-c1-sm-li-s30-3", "content": [{ "text": "Cooper, D. R., & Schindler, P. S. (2009). Business Research Methods." }] },
+          { "id": "rmse-c1-sm-li-s30-4", "content": [{ "text": "Mauthner, M. (2002). Ethics in Qualitative Research." }] },
+          { "id": "rmse-c1-sm-li-s30-5", "content": [{ "text": "DeepSeek R1" }] }
+        ]
+      }
+    ],
+    "summary": [
+      { "text": "This chapter covered the basics of research, including its definition, purpose, types, process, and ethical considerations, with a focus on software engineering." }
+    ]
+  }
+]

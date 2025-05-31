@@ -1,0 +1,102 @@
+[
+  {
+    "id": "rmse-c3-fc-1",
+    "front": "What is a Research Proposal?",
+    "back": "A document presenting a plan for a research study, including the research question, objectives, methodology, and anticipated outcomes. It's a blueprint for research."
+  },
+  {
+    "id": "rmse-c3-fc-2",
+    "front": "What is the primary purpose of a Research Proposal?",
+    "back": "To convince stakeholders (professors, funding agencies, supervisors) that your research is worthwhile, feasible, and well-planned."
+  },
+  {
+    "id": "rmse-c3-fc-3",
+    "front": "Name three types of Research Proposals mentioned.",
+    "back": "Academic Thesis Proposal (detailed, theory-driven), Industry Grant Proposal (practical impact, ROI), Conference/Journal Submission (concise, scope-aligned)."
+  },
+  {
+    "id": "rmse-c3-fc-4",
+    "front": "List three common sources for identifying a research problem in SE.",
+    "back": "Practical Challenges (maintenance, debugging), Emerging Technologies (AI, ML), User Needs, Theoretical Gaps, Industry Trends, Practitioner Feedback."
+  },
+  {
+    "id": "rmse-c3-fc-5",
+    "front": "What is Problem Formulation in research?",
+    "back": "The process of clearly defining the specific issue your research will address, turning a general interest into a focused, researchable problem. Research questions stem directly from it."
+  },
+  {
+    "id": "rmse-c3-fc-6",
+    "front": "List 5 essential components of a Research Proposal.",
+    "back": "Title, Introduction, Problem Statement, Research Objectives, Research Questions, Literature Review, Methodology, Expected Outcomes, Timeline, Budget (if applicable), References."
+  },
+  {
+    "id": "rmse-c3-fc-7",
+    "front": "What does SMART stand for in SMART Objectives?",
+    "back": "Specific, Measurable, Attainable, Relevant, Time-bound."
+  },
+  {
+    "id": "rmse-c3-fc-8",
+    "front": "What is a Research Hypothesis?",
+    "back": "A testable prediction about the relationship between variables. It should be clear, allow for empirical validation, and avoid ambiguity."
+  },
+  {
+    "id": "rmse-c3-fc-9",
+    "front": "Differentiate between a Null Hypothesis (H0) and an Alternative Hypothesis (H1).",
+    "back": "Null Hypothesis (H0) states there is no effect or no relationship (e.g., 'Pair programming has no effect on code quality'). Alternative Hypothesis (H1) states there is an effect or relationship (e.g., 'Pair programming reduces defect density')."
+  },
+  {
+    "id": "rmse-c3-fc-10",
+    "front": "When might you choose to use research questions instead of hypotheses?",
+    "back": "When exploring new areas, generating insights, or when the research is qualitative, exploratory, or descriptive in nature. Hypotheses are more for testing specific predictions."
+  },
+  {
+    "id": "rmse-c3-fc-11",
+    "front": "Name three common research methods in SE.",
+    "back": "Experimental (controlled testing, A/B testing), Case Study (analyzing a project), Survey (collecting developer feedback)."
+  },
+  {
+    "id": "rmse-c3-fc-12",
+    "front": "What is 'thematic analysis' in qualitative research?",
+    "back": "A method for identifying, analyzing, and reporting patterns (themes) within qualitative data, such as interview transcripts. Involves coding for recurring themes."
+  },
+  {
+    "id": "rmse-c3-fc-13",
+    "front": "List three common pitfalls in research proposals.",
+    "back": "Vague Objectives, Overambitious Scope, Ignoring Literature, Weak title."
+  },
+  {
+    "id": "rmse-c3-fc-14",
+    "front": "Provide two tips for writing a strong research proposal.",
+    "back": "Be Clear and Concise (avoid jargon), Stay Focused, Use Credible Sources, Follow Formatting Guidelines, Seek Feedback, Revise multiple times."
+  },
+  {
+    "id": "rmse-c3-fc-15",
+    "front": "What is the difference between Exploratory and Explanatory research questions?",
+    "back": "Exploratory questions investigate a topic with little existing research to gain initial understanding (e.g., 'What are the current challenges...?'). Explanatory questions seek to understand the causes or relationships between variables (e.g., 'What factors contribute to...?')."
+  },
+  {
+    "id": "rmse-c3-fc-16",
+    "front": "What is the importance of a well-defined research problem?",
+    "back": "It forms the foundation for research, provides focus, guides methodology, and enhances relevance by ensuring important questions are addressed."
+  },
+  {
+    "id": "rmse-c3-fc-17",
+    "front": "Why is a literature review important before finalizing a problem statement?",
+    "back": "It helps understand existing research, identify gaps, gather insights, and ensures the proposed problem is relevant and hasn't already been solved or thoroughly investigated."
+  },
+  {
+    "id": "rmse-c3-fc-18",
+    "front": "What are 'actionable verbs' in the context of research objectives?",
+    "back": "Verbs that describe a measurable action, such as 'analyze', 'evaluate', 'compare', 'assess', 'develop'. They make objectives clear and testable."
+  },
+  {
+    "id": "rmse-c3-fc-19",
+    "front": "What is 'purposive sampling'?",
+    "back": "A non-probability sampling method where researchers select participants based on specific characteristics or knowledge they possess, relevant to the study's objectives."
+  },
+  {
+    "id": "rmse-c3-fc-20",
+    "front": "How can one avoid an 'overambitious scope' in a research proposal?",
+    "back": "Clearly define boundaries, focus on a specific aspect of a larger problem, break down the research into manageable phases, and ensure resources (time, budget, skills) align with the proposed work."
+  }
+]

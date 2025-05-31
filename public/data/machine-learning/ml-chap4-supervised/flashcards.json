@@ -1,0 +1,183 @@
+
+[
+  {
+    "id": "ml-c4-fc-1",
+    "front": "What are the 7 basic steps in Machine Learning?",
+    "back": "1. Data collection, 2. Data preprocessing, 3. Feature engineering, 4. Modeling, 5. Estimation/Selection, 6. Validation, 7. Operation."
+  },
+  {
+    "id": "ml-c4-fc-2",
+    "front": "Define 'Features' in ML.",
+    "back": "Input variables or characteristics that the machine learning algorithm uses to make predictions. Their quality significantly impacts model performance."
+  },
+  {
+    "id": "ml-c4-fc-3",
+    "front": "Define 'Labels' in ML.",
+    "back": "The target variable or output variable; the desired outcome or prediction that the model aims to achieve."
+  },
+  {
+    "id": "ml-c4-fc-4",
+    "front": "What is 'Training Data'?",
+    "back": "A subset of the available dataset used to train the machine learning model. The model adjusts its parameters based on this data."
+  },
+  {
+    "id": "ml-c4-fc-5",
+    "front": "What is 'Testing Data'?",
+    "back": "A separate subset of data, not used during training, to evaluate how well the model generalizes to new, unseen data."
+  },
+  {
+    "id": "ml-c4-fc-6",
+    "front": "What is 'Overfitting'?",
+    "back": "When a model performs very well on training data but fails to generalize to new, unseen data. It learns noise rather than true predictive patterns."
+  },
+  {
+    "id": "ml-c4-fc-7",
+    "front": "What is 'Underfitting'?",
+    "back": "When a model has poor performance even on the training data, often because it's too simple for the problem."
+  },
+  {
+    "id": "ml-c4-fc-8",
+    "front": "What is a common strategy for dataset preparation to avoid overfitting/underfitting?",
+    "back": "Splitting the dataset into training and testing sets, often with a two-thirds for training and one-third for testing split."
+  },
+  {
+    "id": "ml-c4-fc-9",
+    "front": "Define Supervised ML.",
+    "back": "Training an algorithm on a labeled dataset, where input data is paired with corresponding output labels. The goal is to learn a mapping from input to output."
+  },
+  {
+    "id": "ml-c4-fc-10",
+    "front": "What are the two main types of Supervised ML algorithms?",
+    "back": "Regression (predicting continuous values) and Classification (predicting categorical labels)."
+  },
+  {
+    "id": "ml-c4-fc-11",
+    "front": "What is Linear Regression used for?",
+    "back": "Predicting continuous variables where there's a linear relationship between the input and output variables (e.g., predicting salary based on experience)."
+  },
+  {
+    "id": "ml-c4-fc-12",
+    "front": "What is `random_state` in `train_test_split` used for?",
+    "back": "It's a pseudo-random number parameter that allows you to reproduce the same train-test split each time you run the code, ensuring consistency."
+  },
+  {
+    "id": "ml-c4-fc-13",
+    "front": "When are Classification algorithms used?",
+    "back": "When the output variable is categorical (e.g., Yes/No, Spam/Not Spam, cat/dog/car)."
+  },
+  {
+    "id": "ml-c4-fc-14",
+    "front": "Differentiate Binary Classifier and Multi-class Classifier.",
+    "back": "Binary Classifier: Only two possible outcomes (e.g., Spam/Not Spam). Multi-class Classifier: More than two possible outcomes (e.g., types of crops)."
+  },
+  {
+    "id": "ml-c4-fc-15",
+    "front": "What is Log Loss (Cross-Entropy Loss) used for?",
+    "back": "Evaluating the performance of a classifier whose output is a probability value between 0 and 1. Lower log loss indicates higher accuracy."
+  },
+  {
+    "id": "ml-c4-fc-16",
+    "front": "What does a Confusion Matrix describe?",
+    "back": "The performance of a classification model by summarizing correct and incorrect predictions (True Positives, True Negatives, False Positives, False Negatives)."
+  },
+  {
+    "id": "ml-c4-fc-17",
+    "front": "What is the AUC-ROC curve?",
+    "back": "Receiver Operating Characteristics Curve (ROC) with Area Under the Curve (AUC). It shows classification model performance at different thresholds, plotting True Positive Rate (TPR) vs. False Positive Rate (FPR)."
+  },
+  {
+    "id": "ml-c4-fc-18",
+    "front": "Define Precision and Recall in classification.",
+    "back": "Precision: Ratio of correctly predicted positive observations to total predicted positives. Recall: Ratio of correctly predicted positive observations to all actual positives."
+  },
+  {
+    "id": "ml-c4-fc-19",
+    "front": "What is F1-Score?",
+    "back": "The harmonic mean of Precision and Recall, providing a single metric to balance both."
+  },
+  {
+    "id": "ml-c4-fc-20",
+    "front": "Name three regression metrics for performance evaluation.",
+    "back": "Mean Absolute Error (MAE), Mean Squared Error (MSE), Root Mean Squared Error (RMSE)."
+  },
+  {
+    "id": "ml-c4-fc-21",
+    "front": "What is Logistic Regression?",
+    "back": "A supervised algorithm for categorical/discrete outcomes, using an S-shaped logistic (sigmoid) function to predict probabilities between 0 and 1."
+  },
+  {
+    "id": "ml-c4-fc-22",
+    "front": "What is K-Nearest Neighbors (KNN)?",
+    "back": "A simple supervised algorithm for classification/regression that predicts a data point's label based on its 'k' nearest neighbors in the feature space, typically using Euclidean distance."
+  },
+  {
+    "id": "ml-c4-fc-23",
+    "front": "Describe a Decision Tree.",
+    "back": "A supervised learning algorithm that builds a tree-like structure. Internal nodes test attributes, branches are outcomes, and leaf nodes are class labels or values."
+  },
+  {
+    "id": "ml-c4-fc-24",
+    "front": "What is Naïve Bayes?",
+    "back": "A simple, effective classification algorithm based on Bayes' Theorem, assuming feature independence. Often used for text classification like spam filtration."
+  },
+  {
+    "id": "ml-c4-fc-25",
+    "front": "What is Support Vector Machine (SVM)?",
+    "back": "A supervised algorithm for classification/regression that finds an optimal hyperplane maximizing the margin between classes. Uses support vectors and kernel functions for non-linear data."
+  },
+  {
+    "id": "ml-c4-unsup-fc-1",
+    "front": "What is the primary aim of Unsupervised Learning?",
+    "back": "To find the underlying structure or distribution of data, exploring it to find intrinsic structures without pre-existing labels."
+  },
+  {
+    "id": "ml-c4-unsup-fc-2",
+    "front": "How does Unsupervised Learning differ from Supervised Learning regarding training data?",
+    "back": "Unsupervised learning uses unlabeled training data, meaning models are not supervised. Supervised learning uses labeled data."
+  },
+  {
+    "id": "ml-c4-unsup-fc-3",
+    "front": "What kind of patterns does Unsupervised Learning try to find in data?",
+    "back": "It tries to find hidden patterns and insights from the given data by itself."
+  },
+  {
+    "id": "ml-c4-unsup-fc-4",
+    "front": "Can Unsupervised Learning be directly applied to a regression or classification problem?",
+    "back": "No, because it lacks corresponding output data (labels) for training on such tasks directly."
+  },
+  {
+    "id": "ml-c4-unsup-fc-5",
+    "front": "What are the two main types of Unsupervised Learning problems?",
+    "back": "Clustering and Association."
+  },
+  {
+    "id": "ml-c4-unsup-fc-6",
+    "front": "Define 'Clustering' in Unsupervised Learning.",
+    "back": "A method of grouping objects into clusters such that objects with most similarities remain in a group."
+  },
+  {
+    "id": "ml-c4-unsup-fc-7",
+    "front": "Define 'Association' in Unsupervised Learning.",
+    "back": "An unsupervised learning method used for finding relationships between variables in a large database. It determines the set of items that occur together in the dataset."
+  },
+  {
+    "id": "ml-c4-unsup-fc-8",
+    "front": "What is K-Means Clustering?",
+    "back": "A partitioning clustering algorithm that separates a dataset into K distinct, non-overlapping subsets (clusters)."
+  },
+  {
+    "id": "ml-c4-unsup-fc-9",
+    "front": "What is the 'Initialization' step in K-Means clustering?",
+    "back": "Randomly select K data points as initial cluster centers."
+  },
+  {
+    "id": "ml-c4-unsup-fc-10",
+    "front": "What is the 'Assignment' step in K-Means clustering?",
+    "back": "Assign each data point to the cluster whose center is nearest."
+  },
+  {
+    "id": "ml-c4-unsup-fc-11",
+    "front": "What is the 'Update Centers' step in K-Means clustering?",
+    "back": "Recalculate the cluster centers as the mean of the data points in each cluster."
+  }
+]
