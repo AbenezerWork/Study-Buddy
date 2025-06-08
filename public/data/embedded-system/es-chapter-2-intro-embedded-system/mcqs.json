@@ -1,0 +1,148 @@
+
+[
+  {
+    "id": "es-ch2-mcq-1",
+    "question": "What best defines an embedded system?",
+    "options": [
+      "A general-purpose computer with advanced software.",
+      "A computing device designed for a specific focused job.",
+      "A system primarily used for internet browsing and office tasks.",
+      "A large-scale server for data processing."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "An embedded system is a dedicated computing device that performs a specific, focused task."
+  },
+  {
+    "id": "es-ch2-mcq-2",
+    "question": "Which of the following is a 'special feature' of embedded systems?",
+    "options": [
+      "They can be easily reprogrammed for different tasks.",
+      "They usually have extensive secondary storage like hard drives.",
+      "They often operate under strict deadlines and power constraints.",
+      "They always require a full-fledged operating system like Windows."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Embedded systems are often characterized by real-time deadlines, low power consumption requirements, and limited resources."
+  },
+  {
+    "id": "es-ch2-mcq-3",
+    "question": "The software residing on memory chips in an embedded system is often called:",
+    "options": ["Malware", "Shareware", "Firmware", "Adware"],
+    "correctAnswerIndex": 2,
+    "explanation": "Firmware is the embedded software programmed into the memory of an embedded system's hardware."
+  },
+  {
+    "id": "es-ch2-mcq-4",
+    "question": "Which component of an embedded system is responsible for managing time-critical operations?",
+    "options": ["Power Supply", "Input/Output Interfaces", "Real-Time Operating System (RTOS)", "Memory"],
+    "correctAnswerIndex": 2,
+    "explanation": "A Real-Time Operating System (RTOS) is specifically designed to manage tasks with strict timing requirements in embedded systems."
+  },
+  {
+    "id": "es-ch2-mcq-5",
+    "question": "How do microcomputers generally differ from embedded systems in terms of user interaction?",
+    "options": [
+      "Microcomputers never have graphical interfaces.",
+      "Embedded systems always have complex graphical interfaces.",
+      "Microcomputers interact via GUIs; embedded systems often work silently or with simple interfaces.",
+      "There is no difference in user interaction."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Microcomputers are user-centric with GUIs, while many embedded systems operate in the background with minimal or no direct user interaction."
+  },
+  {
+    "id": "es-ch2-mcq-6",
+    "question": "A digital watch that performs timekeeping, alarms, and stopwatch functions independently is an example of which category of embedded system?",
+    "options": ["Real-time system", "Networked information appliance", "Stand-alone embedded system", "Mobile device"],
+    "correctAnswerIndex": 2,
+    "explanation": "A digital watch operates independently without needing a host system, making it a stand-alone embedded system."
+  },
+  {
+    "id": "es-ch2-mcq-7",
+    "question": "A flight control system, where missing a deadline can be catastrophic, is an example of a:",
+    "options": ["Soft real-time system", "Hard real-time system", "Stand-alone system", "Networked appliance"],
+    "correctAnswerIndex": 1,
+    "explanation": "Hard real-time systems have stringent deadlines where failure to meet them leads to severe consequences."
+  },
+  {
+    "id": "es-ch2-mcq-8",
+    "question": "What is a primary characteristic of ARM architecture used in embedded systems?",
+    "options": [
+      "Complex Instruction Set Computing (CISC)",
+      "High power consumption for maximum performance",
+      "Reduced Instruction Set Computing (RISC) leading to power efficiency",
+      "Primarily used in high-end servers"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "ARM architecture is based on RISC principles, making it power-efficient and suitable for battery-operated embedded devices."
+  },
+  {
+    "id": "es-ch2-mcq-9",
+    "question": "What is a key feature of microcontrollers like PIC or STM32?",
+    "options": [
+      "They require many external components to function.",
+      "They integrate a processor, memory, and I/O peripherals on a single chip.",
+      "They are primarily designed for general-purpose desktop computing.",
+      "They always run complex operating systems like Linux."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Microcontrollers are integrated circuits that combine a CPU, memory, and I/O peripherals on a single chip, making them ideal for embedded applications."
+  },
+  {
+    "id": "es-ch2-mcq-10",
+    "question": "In the layered architecture of an embedded system, where is firmware typically stored?",
+    "options": ["Application Software layer", "Operating System layer", "Hardware layer (specifically in ROM)", "External storage devices"],
+    "correctAnswerIndex": 2,
+    "explanation": "Firmware, the embedded software, is stored in Read-Only Memory (ROM) within the hardware layer."
+  },
+  {
+    "id": "es-ch2-mcq-11",
+    "question": "What is the primary purpose of an interrupt in an embedded system?",
+    "options": [
+      "To halt the system in case of an error.",
+      "To allow the processor to respond quickly to external events without constant polling.",
+      "To increase the processing speed of the CPU.",
+      "To manage power consumption exclusively."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Interrupts enable the processor to efficiently handle asynchronous events by signaling when a device or condition needs attention."
+  },
+  {
+    "id": "es-ch2-mcq-12",
+    "question": "An interrupt triggered by a button press or a sensor signal is typically classified as:",
+    "options": ["Software Interrupt", "Timer Interrupt", "External Hardware Interrupt", "DMA Interrupt"],
+    "correctAnswerIndex": 2,
+    "explanation": "External hardware interrupts are generated by devices or peripherals outside the CPU, such as buttons or sensors."
+  },
+  {
+    "id": "es-ch2-mcq-13",
+    "question": "Which processor architecture is an open-source RISC architecture gaining popularity for its flexibility?",
+    "options": ["ARM", "x86", "MIPS", "RISC-V"],
+    "correctAnswerIndex": 3,
+    "explanation": "RISC-V is an open-source RISC architecture known for its flexibility and openness, allowing for customization."
+  },
+  {
+    "id": "es-ch2-mcq-14",
+    "question": "Which of these is a common application area for embedded systems in industrial automation?",
+    "options": [
+      "Social media platforms",
+      "Process control and monitoring (e.g., temperature, pressure)",
+      "Desktop publishing software",
+      "Large-scale database management"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "In industrial automation, embedded systems are widely used for process control, monitoring various parameters like temperature and pressure, and controlling machinery."
+  },
+  {
+    "id": "es-ch2-mcq-15",
+    "question": "What is a primary difference between ROM and RAM in an embedded system?",
+    "options": [
+      "ROM is volatile, RAM is non-volatile.",
+      "ROM stores firmware and is non-volatile; RAM stores temporary data and is volatile.",
+      "ROM is faster than RAM.",
+      "RAM is used for permanent storage, ROM for temporary."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "ROM (Read-Only Memory) is non-volatile and stores the system's firmware. RAM (Random Access Memory) is volatile and used for temporary data storage during operation."
+  }
+]

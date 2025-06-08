@@ -1,0 +1,128 @@
+
+[
+  {
+    "id": "es-ch4-fc-1",
+    "front": "What are microcomputer interfaces?",
+    "back": "Essential components enabling communication between a microcontroller/microprocessor and external devices or peripherals like sensors, actuators, and communication modules."
+  },
+  {
+    "id": "es-ch4-fc-2",
+    "front": "What is Digital Input/Output (I/O)?",
+    "back": "A fundamental concept where microcomputers interact with external devices using binary signals (high/low, 1/0)."
+  },
+  {
+    "id": "es-ch4-fc-3",
+    "front": "What are GPIO pins used for?",
+    "back": "General-Purpose Input/Output pins are used by microcomputers to interact with external devices for digital input and output operations."
+  },
+  {
+    "id": "es-ch4-fc-4",
+    "front": "What is 'debouncing' in the context of digital inputs?",
+    "back": "A technique necessary for mechanical switches or buttons to eliminate false triggers caused by mechanical noise or contact bouncing."
+  },
+  {
+    "id": "es-ch4-fc-5",
+    "front": "What is Serial I/O?",
+    "back": "Data transmission methods where information is sent one bit at a time, sequentially, over a communication channel."
+  },
+  {
+    "id": "es-ch4-fc-6",
+    "front": "Name two advantages of Serial I/O over Parallel I/O.",
+    "back": "1. Requires fewer physical connections (wires). 2. Allows for longer communication distances."
+  },
+  {
+    "id": "es-ch4-fc-7",
+    "front": "What does UART stand for and what is its key characteristic?",
+    "back": "Universal Asynchronous Receiver-Transmitter. It uses asynchronous data transmission (no shared clock signal), relying on start and stop bits."
+  },
+  {
+    "id": "es-ch4-fc-8",
+    "front": "What is SPI (Serial Peripheral Interface)?",
+    "back": "A synchronous serial protocol using a master-slave configuration and a clock signal, commonly used for high-speed communication with peripherals like displays and memory chips."
+  },
+  {
+    "id": "es-ch4-fc-9",
+    "front": "What is I2C (Inter-Integrated Circuit)?",
+    "back": "A synchronous serial protocol supporting multi-master/multi-slave configurations using a shared clock and data line, suitable for systems with many devices like sensors and EEPROMs."
+  },
+  {
+    "id": "es-ch4-fc-10",
+    "front": "What is CAN (Controller Area Network) primarily used for?",
+    "back": "Robust serial communication in automotive and industrial applications where reliability and noise immunity are critical."
+  },
+  {
+    "id": "es-ch4-fc-11",
+    "front": "What is a Timer in an embedded system?",
+    "back": "An integral component providing precise timing and counting functionalities, used for delays, periodic tasks, and measuring intervals."
+  },
+  {
+    "id": "es-ch4-fc-12",
+    "front": "What is a Watchdog Timer?",
+    "back": "A timer designed to detect and recover from system malfunctions or software faults by resetting the microcomputer if not periodically refreshed."
+  },
+  {
+    "id": "es-ch4-fc-13",
+    "front": "What is a Real-Time Clock (RTC)?",
+    "back": "A timer module that provides accurate timekeeping (date and time) and can maintain time even when the main system is off, often using a backup battery."
+  },
+  {
+    "id": "es-ch4-fc-14",
+    "front": "How are timers used for PWM generation?",
+    "back": "Timers can be configured to generate Pulse Width Modulation (PWM) signals, which are used for tasks like motor control and LED dimming."
+  },
+  {
+    "id": "es-ch4-fc-15",
+    "front": "What is Analog-to-Digital Conversion (ADC)?",
+    "back": "The process by which continuous analog signals (like sensor readings) are converted into discrete digital signals that a microcomputer can process."
+  },
+  {
+    "id": "es-ch4-fc-16",
+    "front": "What are the two key operations in ADC?",
+    "back": "1. Sampling: Capturing the analog signal's value at regular time intervals. 2. Quantization: Mapping the continuous analog values to a finite set of discrete digital levels."
+  },
+  {
+    "id": "es-ch4-fc-17",
+    "front": "Define 'Resolution' in ADC.",
+    "back": "The number of bits used to represent the digital output. Higher resolution allows for finer precision (e.g., an 8-bit ADC has 256 levels)."
+  },
+  {
+    "id": "es-ch4-fc-18",
+    "front": "Define 'Sampling Rate' in ADC.",
+    "back": "The rate at which the analog signal is sampled, typically measured in Samples Per Second (SPS) or Hertz (Hz)."
+  },
+  {
+    "id": "es-ch4-fc-19",
+    "front": "What is Pulse Width Modulation (PWM)?",
+    "back": "A technique to generate variable analog-like signals using digital means by varying the duty cycle of a digital signal at a specific frequency."
+  },
+  {
+    "id": "es-ch4-fc-20",
+    "front": "What is 'Duty Cycle' in PWM?",
+    "back": "The percentage of time a digital signal is in the 'high' state during one complete cycle. It determines the average power delivered."
+  },
+  {
+    "id": "es-ch4-fc-21",
+    "front": "List two applications of PWM.",
+    "back": "1. Motor Control (speed of DC motors, position of servo motors). 2. LED Dimming (controlling brightness)."
+  },
+  {
+    "id": "es-ch4-fc-22",
+    "front": "What is the difference between hardware and software PWM implementation?",
+    "back": "Hardware PWM uses dedicated microcontroller peripherals (timers/PWM controllers) for efficient generation. Software PWM uses software-based timers and is less precise/more resource-intensive."
+  },
+  {
+    "id": "es-ch4-fc-23",
+    "front": "What is 'Signal Conditioning' in the context of ADC?",
+    "back": "Processing analog signals before conversion to reduce noise, scale voltages, or filter unwanted frequencies to improve ADC accuracy."
+  },
+  {
+    "id": "es-ch4-fc-24",
+    "front": "What does USB stand for and what is it used for?",
+    "back": "Universal Serial Bus. A widely used serial communication standard for connecting peripherals (keyboards, mice, storage) to computers and microcomputers."
+  },
+  {
+    "id": "es-ch4-fc-25",
+    "front": "What is a 'prescaler' in the context of timers?",
+    "back": "A circuit that divides the timer's input clock frequency to achieve lower frequencies, allowing for longer time intervals and greater timing flexibility."
+  }
+]

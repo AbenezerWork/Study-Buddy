@@ -1,0 +1,128 @@
+
+[
+  {
+    "id": "es-ch2-fc-1",
+    "front": "What is an Embedded System?",
+    "back": "A computing device designed to perform a specific focused job, often part of a larger system. Examples: ATM, printer, air conditioner."
+  },
+  {
+    "id": "es-ch2-fc-2",
+    "front": "What is 'firmware' in an embedded system?",
+    "back": "The embedded software that is executed by the processor to meet the specific requirements of the application."
+  },
+  {
+    "id": "es-ch2-fc-3",
+    "front": "List three special features of embedded systems.",
+    "back": "1. Perform a specific task. 2. Have limited resources (e.g., memory). 3. Must meet deadlines (real-time constraints)."
+  },
+  {
+    "id": "es-ch2-fc-4",
+    "front": "Name four key hardware components of an embedded system.",
+    "back": "Microcontroller/Microprocessor, Memory (ROM, RAM), Input/Output Interfaces, Power Supply. (Also: Communication Interfaces, Application Specific Circuitry)"
+  },
+  {
+    "id": "es-ch2-fc-5",
+    "front": "How do embedded systems differ from microcomputers in terms of purpose?",
+    "back": "Microcomputers are for general-purpose computing, while embedded systems perform specific functions within a larger system."
+  },
+  {
+    "id": "es-ch2-fc-6",
+    "front": "What are the four main categories of embedded systems?",
+    "back": "1. Stand-alone embedded systems. 2. Real-time systems. 3. Networked information appliances. 4. Mobile devices."
+  },
+  {
+    "id": "es-ch2-fc-7",
+    "front": "What is a stand-alone embedded system? Give an example.",
+    "back": "Functions independently without relying on a host system. Example: Digital watch, MP3 player, Washing Machine."
+  },
+  {
+    "id": "es-ch2-fc-8",
+    "front": "What is a real-time embedded system? Differentiate hard vs. soft.",
+    "back": "Processes data and responds within strict time constraints. Hard real-time: missing a deadline is catastrophic (e.g., flight control). Soft real-time: missing a deadline degrades performance but isn't critical (e.g., video streaming)."
+  },
+  {
+    "id": "es-ch2-fc-9",
+    "front": "What are Networked Information Appliances?",
+    "back": "Embedded systems with network interfaces (LAN/Internet), often running TCP/IP. Example: Smart home devices, networked security cameras."
+  },
+  {
+    "id": "es-ch2-fc-10",
+    "front": "Why are mobile devices like smartphones considered a special category of embedded systems?",
+    "back": "Though they perform many general-purpose tasks, they are designed with embedded system constraints like limited memory, small size, and specific hardware."
+  },
+  {
+    "id": "es-ch2-fc-11",
+    "front": "What is ARM architecture known for in embedded systems?",
+    "back": "Its Reduced Instruction Set Computing (RISC) design, making it power-efficient and suitable for battery-powered devices."
+  },
+  {
+    "id": "es-ch2-fc-12",
+    "front": "What is a microcontroller?",
+    "back": "An integrated circuit containing a processor core, memory (RAM, ROM), and programmable input/output peripherals on a single chip."
+  },
+  {
+    "id": "es-ch2-fc-13",
+    "front": "Describe the typical layered architecture of an embedded system.",
+    "back": "Hardware (base layer), Operating System (optional middle layer), and Application Software (top layer)."
+  },
+  {
+    "id": "es-ch2-fc-14",
+    "front": "What is the role of ROM in an embedded system?",
+    "back": "Read-Only Memory (ROM) stores the firmware (program instructions) and retains its contents even when power is off."
+  },
+  {
+    "id": "es-ch2-fc-15",
+    "front": "What is an interrupt in an embedded system?",
+    "back": "A signal to the processor from hardware or software indicating an event that needs immediate attention, allowing quick response to external events."
+  },
+  {
+    "id": "es-ch2-fc-16",
+    "front": "Name two types of hardware interrupts.",
+    "back": "1. External Interrupts (from peripherals like sensors). 2. Timer Interrupts (from internal timers). (Also: DMA Interrupts)."
+  },
+  {
+    "id": "es-ch2-fc-17",
+    "front": "What is an Interrupt Service Routine (ISR)?",
+    "back": "A specialized function or routine that the processor executes in response to an interrupt to handle the specific event."
+  },
+  {
+    "id": "es-ch2-fc-18",
+    "front": "List two advantages of using interrupts.",
+    "back": "1. Efficiency (reduces polling). 2. Responsiveness (quick reaction to events). (Also: Prioritization, Concurrency)."
+  },
+  {
+    "id": "es-ch2-fc-19",
+    "front": "What is a common characteristic of input devices in embedded systems?",
+    "back": "They usually have very limited capability, such as a small keypad or sensors, rather than full keyboards or mice."
+  },
+  {
+    "id": "es-ch2-fc-20",
+    "front": "Give an example of an application specific circuitry in an embedded system.",
+    "back": "Specialized hardware designed for a particular task, such as a dedicated graphics processing unit (GPU) in a gaming console or a DSP for audio processing."
+  },
+  {
+    "id": "es-ch2-fc-21",
+    "front": "What is x86 architecture known for?",
+    "back": "It's a Complex Instruction Set Computing (CISC) architecture, commonly found in PCs and servers, offering high performance but typically consuming more power than RISC."
+  },
+  {
+    "id": "es-ch2-fc-22",
+    "front": "What is RISC-V architecture?",
+    "back": "An open-source Reduced Instruction Set Computing (RISC) architecture known for its flexibility, openness, and growing use in research and commercial applications."
+  },
+  {
+    "id": "es-ch2-fc-23",
+    "front": "What is an example of an output device in a simple embedded system?",
+    "back": "Light Emitting Diodes (LEDs) to indicate status, or a small Liquid Crystal Display (LCD) to display parameters."
+  },
+  {
+    "id": "es-ch2-fc-24",
+    "front": "How do communication interfaces like RS232 or Ethernet benefit embedded systems?",
+    "back": "They allow embedded systems to interact with other embedded systems or transmit data to a desktop or network."
+  },
+  {
+    "id": "es-ch2-fc-25",
+    "front": "What is the difference between a microprocessor and a microcontroller regarding external components?",
+    "back": "Microcontrollers integrate many components (memory, I/O) on-chip, requiring fewer external components. Microprocessors are more powerful CPUs but typically need many external components to function as a system."
+  }
+]

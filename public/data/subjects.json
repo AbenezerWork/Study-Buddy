@@ -1,6 +1,40 @@
 
 [
   {
+    "id": "subj-es",
+    "name": "Embedded System",
+    "chapters": [
+      {
+        "id": "es-chap1-digital-logic",
+        "name": "Chapter 1: Introduction to digital logic",
+        "flashcardsPath": "/data/embedded-system/es-chapter-1-digital-logic/flashcards.json",
+        "mcqsPath": "/data/embedded-system/es-chapter-1-digital-logic/mcqs.json",
+        "studyMaterialPath": "/data/embedded-system/es-chapter-1-digital-logic/study-material.json"
+      },
+      {
+        "id": "es-chap2-intro-embedded",
+        "name": "Chapter 2: Introduction to Embedded System",
+        "flashcardsPath": "/data/embedded-system/es-chapter-2-intro-embedded-system/flashcards.json",
+        "mcqsPath": "/data/embedded-system/es-chapter-2-intro-embedded-system/mcqs.json",
+        "studyMaterialPath": "/data/embedded-system/es-chapter-2-intro-embedded-system/study-material.json"
+      },
+      {
+        "id": "es-chap3-hw-level-prog",
+        "name": "Chapter 3: Hardware level programming of embedded systems",
+        "flashcardsPath": "/data/embedded-system/es-chapter-3-hw-level-prog/flashcards.json",
+        "mcqsPath": "/data/embedded-system/es-chapter-3-hw-level-prog/mcqs.json",
+        "studyMaterialPath": "/data/embedded-system/es-chapter-3-hw-level-prog/study-material.json"
+      },
+      {
+        "id": "es-chap4-microcomputer-interfaces",
+        "name": "Chapter 4: Introduction to microcomputer interfaces",
+        "flashcardsPath": "/data/embedded-system/es-chapter-4-microcomputer-interfaces/flashcards.json",
+        "mcqsPath": "/data/embedded-system/es-chapter-4-microcomputer-interfaces/mcqs.json",
+        "studyMaterialPath": "/data/embedded-system/es-chapter-4-microcomputer-interfaces/study-material.json"
+      }
+    ]
+  },
+  {
     "id": "subj-ml",
     "name": "Machine Learning",
     "chapters": [
@@ -38,6 +72,13 @@
         "flashcardsPath": "/data/machine-learning/ml-chap5-advanced-deep-learning/flashcards.json",
         "mcqsPath": "/data/machine-learning/ml-chap5-advanced-deep-learning/mcqs.json",
         "studyMaterialPath": "/data/machine-learning/ml-chap5-advanced-deep-learning/study-material.json"
+      },
+      {
+        "id": "ml-chap5-unsupervised",
+        "name": "Chapter 5: Unsupervised Learning",
+        "flashcardsPath": "/data/machine-learning/ml-chap5-unsupervised/flashcards.json",
+        "mcqsPath": "/data/machine-learning/ml-chap5-unsupervised/mcqs.json",
+        "studyMaterialPath": "/data/machine-learning/ml-chap5-unsupervised/study-material.json"
       }
     ]
   },

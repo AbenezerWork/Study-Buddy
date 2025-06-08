@@ -1,0 +1,152 @@
+[
+  {
+    "id": "es-ch1-mcq-1",
+    "question": "Which of the following best describes logic algebra (Boolean algebra)?",
+    "options": [
+      "A system for counting in binary.",
+      "A mathematical structure dealing with binary variables and logic operations.",
+      "A method for designing physical electronic components.",
+      "A programming language for embedded systems."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Logic algebra, or Boolean algebra, is a mathematical system based on binary variables and logical operations like AND, OR, and NOT."
+  },
+  {
+    "id": "es-ch1-mcq-2",
+    "question": "In Boolean algebra, what is the result of A + 1?",
+    "options": ["0", "1", "A", "A'"],
+    "correctAnswerIndex": 1,
+    "explanation": "This is an application of the Domination Law (or Annulment Law for OR): A + 1 = 1."
+  },
+  {
+    "id": "es-ch1-mcq-3",
+    "question": "Which logic gate produces an output of 1 only when all its inputs are 1?",
+    "options": ["OR gate", "NOT gate", "AND gate", "XOR gate"],
+    "correctAnswerIndex": 2,
+    "explanation": "The AND gate outputs 1 if and only if all of its inputs are 1."
+  },
+  {
+    "id": "es-ch1-mcq-4",
+    "question": "What is the primary function of a flip-flop in a digital circuit?",
+    "options": [
+      "To perform arithmetic calculations.",
+      "To amplify digital signals.",
+      "To store a single bit of binary information.",
+      "To select one of multiple input signals."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Flip-flops are memory elements that store binary information (a single bit)."
+  },
+  {
+    "id": "es-ch1-mcq-5",
+    "question": "A logic circuit whose output depends only on the current input values is called a:",
+    "options": [
+      "Sequential logic circuit",
+      "Memory circuit",
+      "Combinational logic circuit",
+      "Clocked circuit"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Combinational logic circuits produce an output based solely on the current input values, without memory of past states."
+  },
+  {
+    "id": "es-ch1-mcq-6",
+    "question": "Which type of counter updates the state of each flip-flop sequentially, rather than simultaneously?",
+    "options": ["Synchronous Counter", "Decade Counter", "Asynchronous Counter", "Up Counter"],
+    "correctAnswerIndex": 2,
+    "explanation": "In an Asynchronous Counter (or ripple counter), the flip-flops are not clocked simultaneously; the output of one triggers the next."
+  },
+  {
+    "id": "es-ch1-mcq-7",
+    "question": "A Finite State Machine (FSM) where the output depends on both the current state and the current inputs is known as a:",
+    "options": ["Moore Machine", "Mealy Machine", "Combinational FSM", "Sequential FSM"],
+    "correctAnswerIndex": 1,
+    "explanation": "In a Mealy Machine, the output is a function of both the current state and the current inputs."
+  },
+  {
+    "id": "es-ch1-mcq-8",
+    "question": "What is the Boolean expression for De Morgan's Law applied to (A·B)'?",
+    "options": ["A'·B'", "A'+B'", "A+B", "A·B"],
+    "correctAnswerIndex": 1,
+    "explanation": "According to De Morgan's Laws, (A·B)' = A' + B'."
+  },
+  {
+    "id": "es-ch1-mcq-9",
+    "question": "Which logic device is used to select one of several input data lines and direct it to a single output line?",
+    "options": ["Decoder", "Encoder", "Multiplexer (MUX)", "Demultiplexer (DEMUX)"],
+    "correctAnswerIndex": 2,
+    "explanation": "A Multiplexer (MUX) selects one input from several and routes it to a single output."
+  },
+  {
+    "id": "es-ch1-mcq-10",
+    "question": "An Arithmetic Logic Unit (ALU) is primarily responsible for:",
+    "options": [
+      "Storing data temporarily.",
+      "Controlling the sequence of operations.",
+      "Performing arithmetic and logical operations.",
+      "Generating clock signals."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "ALUs are integral components of processors that handle arithmetic (like addition, subtraction) and logical (AND, OR) operations."
+  },
+  {
+    "id": "es-ch1-mcq-11",
+    "question": "Which of these is an application of counters in digital systems?",
+    "options": [
+      "Performing data compression.",
+      "Storing large amounts of data.",
+      "Keeping track of time in digital clocks.",
+      "Converting analog signals to digital."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Counters are commonly used in digital clocks to keep track of time."
+  },
+  {
+    "id": "es-ch1-mcq-12",
+    "question": "A monostable multivibrator is a type of timer whose output:",
+    "options": [
+      "Produces a continuous square wave.",
+      "Stays high for a fixed duration after triggering.",
+      "Counts binary sequences.",
+      "Depends only on the current input."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "A monostable multivibrator produces an output pulse of a fixed duration in response to a trigger."
+  },
+  {
+    "id": "es-ch1-mcq-13",
+    "question": "What is the key characteristic of sequential logic circuits that distinguishes them from combinational circuits?",
+    "options": [
+      "They use only AND and OR gates.",
+      "They have memory elements and their output depends on past states.",
+      "They are simpler to design.",
+      "They do not require a clock signal."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Sequential logic circuits include memory elements (like flip-flops), and their output depends on both current inputs and the circuit's previous state."
+  },
+  {
+    "id": "es-ch1-mcq-14",
+    "front": "Binary variables in logic algebra can take which values?",
+    "options": [
+      "True or False only",
+      "0 or 1 only",
+      "Any integer",
+      "Any character"
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Binary variables in logic algebra are restricted to two values: 0 (representing false or off) and 1 (representing true or on)."
+  },
+  {
+    "id": "es-ch1-mcq-15",
+    "front": "Which law states that A + A = A and A · A = A?",
+    "options": [
+      "Commutative Law",
+      "Associative Law",
+      "Distributive Law",
+      "Idempotent Law"
+    ],
+    "correctAnswerIndex": 3,
+    "explanation": "The Idempotent Law states that combining a variable with itself using OR or AND results in the original variable (A+A=A; A·A=A)."
+  }
+]

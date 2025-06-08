@@ -1,0 +1,607 @@
+
+[
+  {
+    "id": "es-ch2-sm-topic-intro",
+    "title": "Introduction to Embedded Systems",
+    "introduction": [
+      { "text": "This section defines embedded systems, provides examples, and outlines their special features compared to general-purpose computers." }
+    ],
+    "contentBlocks": [
+      {
+        "id": "es-ch2-sm-def",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Definition and Examples" }]
+      },
+      {
+        "id": "es-ch2-sm-p1",
+        "type": "paragraph",
+        "content": [{ "text": "An embedded system can be defined as a computing device that does a specific focused job." }]
+      },
+      {
+        "id": "es-ch2-sm-p2",
+        "type": "paragraph",
+        "content": [{ "text": "Examples include: Air conditioner, VCD player, DVD player, Printer, Fax machine, Mobile phone, ATM." }]
+      },
+      {
+        "id": "es-ch2-sm-p3",
+        "type": "paragraph",
+        "content": [{ "text": "Each of these appliances will have a processor and special hardware to meet the specific requirement of the application, along with embedded software (also called firmware) that is executed by the processor for meeting the specific requirement." }]
+      },
+      {
+        "id": "es-ch2-sm-p4",
+        "type": "paragraph",
+        "content": [{ "text": "A desktop/laptop is a general-purpose computer, used for various applications like games, word processing, etc. In contrast, the software in embedded systems is always fixed." }]
+      },
+      {
+        "id": "es-ch2-sm-special-features",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Special Features of Embedded Systems" }]
+      },
+      {
+        "id": "es-ch2-sm-list-features",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "es-ch2-feat1", "content": [{ "text": "Specific Task: They perform a very specific task and cannot be programmed to do different things." }] },
+          { "id": "es-ch2-feat2", "content": [{ "text": "Limited Resources: Particularly memory." }] },
+          { "id": "es-ch2-feat3", "content": [{ "text": "No Secondary Storage: They don't typically have secondary storage devices like CDROM or floppy disk." }] },
+          { "id": "es-ch2-feat4", "content": [{ "text": "Deadlines: They have to work against deadlines; specific jobs must be completed within specific times. Real-time systems have stringent deadlines, where missing one could cause catastrophe (loss of life or property damage)." }] },
+          { "id": "es-ch2-feat5", "content": [{ "text": "Power Constrained: Many operate on batteries, so power consumption must be very low." }] },
+          { "id": "es-ch2-feat6", "content": [{ "text": "Highly Reliable: Resetting is often very difficult." }] },
+          { "id": "es-ch2-feat7", "content": [{ "text": "Extreme Environmental Conditions: Some must operate in very high temperatures and humidity." }] }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "es-ch2-sm-topic-components",
+    "title": "Components of Embedded System",
+    "contentBlocks": [
+      {
+        "id": "es-ch2-sm-key-components",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Key Components of an Embedded System" }]
+      },
+      {
+        "id": "es-ch2-sm-list-components",
+        "type": "list",
+        "ordered": true,
+        "items": [
+          { "id": "es-ch2-comp1", "content": [{ "text": "Microcontroller or Microprocessor:", "bold": true }, { "text": " The processing unit tailored for the specific application." }] },
+          { "id": "es-ch2-comp2", "content": [{ "text": "Memory:", "bold": true }, { "text": " Stores the program and data required for the system's operation." }] },
+          { "id": "es-ch2-comp3", "content": [{ "text": "Input/Output Interfaces:", "bold": true }, { "text": " Connect the system to sensors, actuators, and external devices." }] },
+          { "id": "es-ch2-comp4", "content": [{ "text": "Real-time Operating System (RTOS):", "bold": true }, { "text": " Manages time-critical operations in real-time embedded systems." }] },
+          { "id": "es-ch2-comp5", "content": [{ "text": "Power Supply:", "bold": true }, { "text": " Designed to operate within specific power constraints." }] },
+          { "id": "es-ch2-comp6", "content": [{ "text": "Communication Interfaces:", "bold": true }, { "text": " For interaction with other devices or systems." }] }
+        ]
+      },
+      {
+        "id": "es-ch2-sm-comp-diagram-desc",
+        "type": "paragraph",
+        "content": [
+          { "text": "A typical embedded system diagram shows a ", "bold": true }, { "text": "User Interface" }, { "text": " connected to ", "bold": true }, { "text": "Hardware Interconnections" }, { "text": ". The core components include a ", "bold": true }, { "text": "CPU" }, { "text": " and ", "bold": true }, { "text": "Memory" }, { "text": ", linked via these interconnections. ", "bold": true }, { "text": "Communication Ports & Devices" }, { "text": " are also part of this core. For interfacing with the ", "bold": true }, { "text": "External Analog World" }, { "text": ", there are ", "bold": true }, { "text": "ADCs (Analog-to-Digital Converters)" }, { "text": " for input from ", "bold": true }, { "text": "Sensors & Signal Conditioning" }, { "text": ", and ", "bold": true }, { "text": "DACs (Digital-to-Analog Converters)" }, { "text": " for output to ", "bold": true }, { "text": "Actuators & Drivers" }, { "text": ". Dedicated ", "bold": true }, { "text": "Subsystems (ASICs/FPGAs)" }, { "text": " and ", "bold": true }, { "text": "System Support" }, { "text": " (Power, Clock, Timers, Interrupts, DMA) along with ", "bold": true }, { "text": "System Testing and Diagnostic" }, { "text": " capabilities complete the architecture." }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "es-ch2-sm-topic-micro-vs-embed",
+    "title": "Microcomputer vs. Embedded System",
+    "contentBlocks": [
+      {
+        "id": "es-ch2-sm-compare-intro",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Comparison: Microcomputer vs. Embedded System" }]
+      },
+      {
+        "id": "es-ch2-sm-p-compare1",
+        "type": "paragraph",
+        "content": [{ "text": "Purpose:", "bold": true }, { "text": " Microcomputers are for general-purpose computing for individual users. Embedded systems perform specific functions within a larger system." }]
+      },
+      {
+        "id": "es-ch2-sm-p-compare2",
+        "type": "paragraph",
+        "content": [{ "text": "Flexibility:", "bold": true }, { "text": " Microcomputers interact with users through graphical interfaces. Embedded systems often work silently in the background without direct user interaction." }]
+      },
+      {
+        "id": "es-ch2-sm-p-compare3",
+        "type": "paragraph",
+        "content": [{ "text": "Examples:", "bold": true }, { "text": " Microcomputers include personal computers, laptops, workstations. Embedded systems include automotive control systems, medical devices, smart appliances." }]
+      },
+      {
+        "id": "es-ch2-sm-p-compare-summary",
+        "type": "paragraph",
+        "content": [{ "text": "Microcomputers and embedded systems serve different purposes. Microcomputers are versatile and user-centric, while embedded systems are dedicated to specific functions within larger systems, providing intelligence and control in various industries." }]
+      }
+    ]
+  },
+  {
+    "id": "es-ch2-sm-topic-categories",
+    "title": "Categories of Embedded Systems",
+    "introduction": [
+      { "text": "Based on functionality and performance requirements, embedded systems can be categorized as follows:" }
+    ],
+    "contentBlocks": [
+      {
+        "id": "es-ch2-sm-list-categories",
+        "type": "list",
+        "ordered": true,
+        "items": [
+          { "id": "es-ch2-cat1", "content": [{ "text": "Stand-alone embedded system" }] },
+          { "id": "es-ch2-cat2", "content": [{ "text": "Real-time systems" }] },
+          { "id": "es-ch2-cat3", "content": [{ "text": "Networked information appliances" }] },
+          { "id": "es-ch2-cat4", "content": [{ "text": "Mobile devices" }] }
+        ]
+      },
+      {
+        "id": "es-ch2-sm-standalone-def",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "1. Stand-alone Embedded Systems" }]
+      },
+      {
+        "id": "es-ch2-sm-p-standalone1",
+        "type": "paragraph",
+        "content": [{ "text": "Works in stand-alone mode. A standalone embedded system functions independently without relying on a host system (like a computer or network). It performs a dedicated task or set of tasks on its own, with minimal or no human intervention. It takes inputs, processes them, and produces the desired output. Input can be an electrical signal from transducers or commands from a human (e.g., pressing a button)." }]
+      },
+      {
+        "id": "es-ch2-sm-p-standalone-ex",
+        "type": "paragraph",
+        "content": [{ "text": "Examples: Digital Watches, MP3 Players, Digital Cameras, Washing Machines, Automatic Temperature Controllers. Images of devices like a Nikon digital camera, microwave oven, DVD player, and air conditioner illustrate these systems." }]
+      },
+      {
+        "id": "es-ch2-sm-realtime-def",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "2. Real-Time Systems" }]
+      },
+      {
+        "id": "es-ch2-sm-p-realtime1",
+        "type": "paragraph",
+        "content": [{ "text": "Embedded systems where specific work must be done in a specific time period. Systems with strict deadlines are called hard real-time systems. In some embedded systems, deadlines are imposed but not adhering to them is not catastrophic (soft real-time systems). A real-time embedded system processes data and responds within a strict time constraint. Critical for applications like industrial automation, medical devices, and automotive control systems. Examples include missile tracking systems." }]
+      },
+      {
+        "id": "es-ch2-sm-p-realtime-types",
+        "type": "paragraph",
+        "content": [
+          { "text": "Hard Real-Time Systems:", "bold": true }, { "text": " Missing a deadline results in catastrophic failure (e.g., Flight Control Systems)." },
+          { "text": "\nSoft Real-Time Systems:", "bold": true }, { "text": " Missing a deadline degrades performance but is not critical (e.g., Video Streaming, Online Gaming, Voice Assistants)." }
+        ]
+      },
+      {
+        "id": "es-ch2-sm-networked-def",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "3. Networked Information Appliances" }]
+      },
+      {
+        "id": "es-ch2-sm-p-networked1",
+        "type": "paragraph",
+        "content": [{ "text": "Embedded systems with network interfaces, accessed via LAN or Internet. They connect to a network, typically running TCP/IP, like the Internet or a company Intranet. They run the TCP/IP stack and connect via PPP or Ethernet to communicate with other nodes. Examples: networked process control systems sending real-time data to a central location monitored by a web browser; a web camera connected to the Internet sending real-time pictures (runs HTTP server software and TCP/IP); a smart door lock with TCP/IP and HTTP server. A weather monitoring system connected to the internet is another example." }]
+      },
+      {
+        "id": "es-ch2-sm-mobile-def",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "4. Mobile Devices" }]
+      },
+      {
+        "id": "es-ch2-sm-p-mobile1",
+        "type": "paragraph",
+        "content": [{ "text": "Mobile phones, Personal Digital Assistants (PDAs), smartphones, etc., are a special category. Though PDAs do many general-purpose tasks, they are designed like conventional embedded systems. Limitations include memory constraints, small size, and lack of full-fledged keyboard/display, similar to other embedded systems. However, modern PDAs can support general-purpose application software like word processors and games." }]
+      }
+    ]
+  },
+  {
+    "id": "es-ch2-sm-topic-processors",
+    "title": "Processor Architectures and Microcontrollers",
+    "introduction": [
+      { "text": "Processor architecture refers to the design and structure of a CPU. Its choice is crucial in embedded systems, impacting performance, power consumption, and overall capabilities." }
+    ],
+    "contentBlocks": [
+      {
+        "id": "es-ch2-sm-proc-arch-arm",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "1. ARM Architecture (Acorn RISC Machine)" }]
+      },
+      {
+        "id": "es-ch2-sm-p-arm",
+        "type": "paragraph",
+        "content": [{ "text": "Widely used, known for its Reduced Instruction Set Computing (RISC) design. Characteristics: Power-efficient, suitable for battery-powered devices; found in mobile devices to IoT devices; scalable with different performance levels (e.g., Cortex-M, Cortex-A)." }]
+      },
+      {
+        "id": "es-ch2-sm-proc-arch-x86",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "2. x86 Architecture" }]
+      },
+      {
+        "id": "es-ch2-sm-p-x86",
+        "type": "paragraph",
+        "content": [{ "text": "Originally developed by Intel, a Complex Instruction Set Computing (CISC) architecture. Characteristics: Commonly found in PCs and servers; high performance but may consume more power than RISC; supports a wide range of software." }]
+      },
+      {
+        "id": "es-ch2-sm-proc-arch-mips",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "3. MIPS Architecture (Microprocessor without Interlocked Pipeline Stages)" }]
+      },
+      {
+        "id": "es-ch2-sm-p-mips",
+        "type": "paragraph",
+        "content": [{ "text": "Another RISC architecture widely used in embedded systems. Characteristics: Often used in networking equipment, routers, communication devices; known for simplicity and efficiency in certain applications." }]
+      },
+      {
+        "id": "es-ch2-sm-proc-arch-power",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "4. Power Architecture" }]
+      },
+      {
+        "id": "es-ch2-sm-p-power",
+        "type": "paragraph",
+        "content": [{ "text": "Initially developed by IBM, used in various embedded systems, particularly automotive and industrial. Characteristics: Known for high performance and power efficiency; widely used in automotive ECUs and industrial controllers." }]
+      },
+      {
+        "id": "es-ch2-sm-proc-arch-riscv",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "5. RISC-V Architecture" }]
+      },
+      {
+        "id": "es-ch2-sm-p-riscv",
+        "type": "paragraph",
+        "content": [{ "text": "An open-source RISC architecture popular for its flexibility and openness. Characteristics: Open standard, allowing customization and innovation; increasingly used in research, education, and some commercial applications." }]
+      },
+      {
+        "id": "es-ch2-sm-microcontrollers-intro",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Microcontrollers" }]
+      },
+      {
+        "id": "es-ch2-sm-p-microcontrollers",
+        "type": "paragraph",
+        "content": [{ "text": "Integrated circuits including a processor, memory, and I/O peripherals on a single chip. Specifically designed for embedded systems requiring dedicated, low-power, cost-effective solutions." }]
+      },
+      {
+        "id": "es-ch2-sm-mcu-arduino",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "1. Arduino" }]
+      },
+      {
+        "id": "es-ch2-sm-p-arduino",
+        "type": "paragraph",
+        "content": [{ "text": "Boards use various microcontrollers (e.g., ATmega series from Microchip). Characteristics: Easy to use, suitable for beginners and rapid prototyping; well-supported community and libraries." }]
+      },
+      {
+        "id": "es-ch2-sm-mcu-pic",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "2. PIC Microcontrollers (Peripheral Interface Controller)" }]
+      },
+      {
+        "id": "es-ch2-sm-p-pic",
+        "type": "paragraph",
+        "content": [{ "text": "Manufactured by Microchip. Characteristics: Widely used in industrial control, automotive, consumer electronics; known for versatility and cost-effectiveness." }]
+      },
+      {
+        "id": "es-ch2-sm-mcu-stm32",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "3. STM32 (ARM Cortex-M)" }]
+      },
+      {
+        "id": "es-ch2-sm-p-stm32",
+        "type": "paragraph",
+        "content": [{ "text": "Based on ARM Cortex-M architecture, popular in embedded community. Characteristics: High-performance ARM Cortex-M cores; extensive support from STMicroelectronics." }]
+      },
+      {
+        "id": "es-ch2-sm-mcu-esp",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "4. ESP8266/ESP32" }]
+      },
+      {
+        "id": "es-ch2-sm-p-esp",
+        "type": "paragraph",
+        "content": [{ "text": "Developed by Espressif, designed for IoT applications. Characteristics: Integrated Wi-Fi capabilities; commonly used in IoT devices and home automation." }]
+      },
+      {
+        "id": "es-ch2-sm-mcu-rpi",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "5. Raspberry Pi (BCM283x)" }]
+      },
+      {
+        "id": "es-ch2-sm-p-rpi",
+        "type": "paragraph",
+        "content": [{ "text": "Often considered a single-board computer, it includes a microcontroller (BCM283x) for GPIO and control. Characteristics: Combines microcontroller capabilities with those of a small computer; used in educational and DIY projects." }]
+      }
+    ]
+  },
+  {
+    "id": "es-ch2-sm-topic-architecture",
+    "title": "Overview of Embedded System Architecture",
+    "contentBlocks": [
+      {
+        "id": "es-ch2-sm-arch-intro",
+        "type": "paragraph",
+        "content": [{ "text": "Every embedded system consists of custom-built hardware around a CPU. This hardware also contains memory chips for software (firmware). The architecture can be represented as layered: Hardware at the base, Operating System (OS) above it, and Application Software on top of the OS. This is similar to desktop computers, but an OS is not compulsory in every embedded system." }]
+      },
+      {
+        "id": "es-ch2-sm-arch-layers-diagram-desc",
+        "type": "paragraph",
+        "content": [{ "text": "Diagrammatically, the layered architecture shows 'Hardware' as the innermost circle, surrounded by 'Operating System', and then 'Application Software' as the outermost circle." }]
+      },
+      {
+        "id": "es-ch2-sm-arch-blocks",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Building Blocks of Hardware" }]
+      },
+      {
+        "id": "es-ch2-sm-list-blocks",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "es-ch2-block1", "content": [{ "text": "Central Processing Unit (CPU)" }] },
+          { "id": "es-ch2-block2", "content": [{ "text": "Memory (Read Only Memory - ROM, Random Access Memory - RAM)" }] },
+          { "id": "es-ch2-block3", "content": [{ "text": "Input Devices" }] },
+          { "id": "es-ch2-block4", "content": [{ "text": "Output Devices" }] },
+          { "id": "es-ch2-block5", "content": [{ "text": "Communication interfaces" }] },
+          { "id": "es-ch2-block6", "content": [{ "text": "Application specific circuitry" }] }
+        ]
+      },
+      {
+        "id": "es-ch2-sm-arch-hw-diagram-desc",
+        "type": "paragraph",
+        "content": [{ "text": "A simplified hardware architecture diagram shows a central CPU connected to ROM and RAM. Input Devices provide input to the CPU, and the CPU sends output to Output Devices. The CPU also connects to Application Specific Circuitry and Communication Interfaces." }]
+      },
+      {
+        "id": "es-ch2-sm-cpu-types",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Central Processing Unit (CPU)" }]
+      },
+      {
+        "id": "es-ch2-sm-p-cpu",
+        "type": "paragraph",
+        "content": [{ "text": "Can be a microprocessor, microcontroller, or Digital Signal Processor (DSP). Microcontrollers are low-cost, with many components (memory, serial interface, ADC) on-chip, best for small applications due to fewer external components. Microprocessors are powerful but need many external components. DSPs are for signal processing (audio/video)." }]
+      },
+      {
+        "id": "es-ch2-sm-memory-types",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Memory" }]
+      },
+      {
+        "id": "es-ch2-sm-p-memory",
+        "type": "paragraph",
+        "content": [{ "text": "RAM contents are erased on power off. ROM retains contents even when power is off; firmware is stored in ROM. On power-on, the processor reads ROM, transfers the program to RAM, and executes it." }]
+      },
+      {
+        "id": "es-ch2-sm-input-devices",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Input Devices" }]
+      },
+      {
+        "id": "es-ch2-sm-p-input",
+        "type": "paragraph",
+        "content": [{ "text": "Very limited capability. No keyboard/mouse typically. May have a small keypad. Process control systems might take inputs from sensors/transducers producing electrical signals." }]
+      },
+      {
+        "id": "es-ch2-sm-output-devices",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Output Devices" }]
+      },
+      {
+        "id": "es-ch2-sm-p-output",
+        "type": "paragraph",
+        "content": [{ "text": "Very limited capability. May have LEDs for status/alarms or a small LCD for parameters." }]
+      },
+      {
+        "id": "es-ch2-sm-comm-interfaces",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Communication Interfaces" }]
+      },
+      {
+        "id": "es-ch2-sm-p-comm",
+        "type": "paragraph",
+        "content": [{ "text": "For interaction with other embedded systems or transmitting data to a desktop. Examples: RS232, RS422, RS485, USB, IEEE 1394, Ethernet." }]
+      }
+    ]
+  },
+  {
+    "id": "es-ch2-sm-topic-interrupts",
+    "title": "Interrupts",
+    "contentBlocks": [
+      {
+        "id": "es-ch2-sm-interrupts-intro",
+        "type": "paragraph",
+        "content": [{ "text": "Interrupts are essential mechanisms in embedded systems that allow the processor to respond quickly to external events or conditions without constantly polling for them. They enable the system to handle asynchronous events and improve overall responsiveness." }]
+      },
+      {
+        "id": "es-ch2-sm-interrupts-def",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "1. Definition" }]
+      },
+      {
+        "id": "es-ch2-sm-p-interrupts-def",
+        "type": "paragraph",
+        "content": [{ "text": "An interrupt is a signal sent to the processor, typically by an external device or a special internal condition, to request the processor's attention and immediate handling of a specific event or task." }]
+      },
+      {
+        "id": "es-ch2-sm-interrupts-types",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "2. Types of Interrupts" }]
+      },
+      {
+        "id": "es-ch2-sm-p-hw-interrupts",
+        "type": "paragraph",
+        "content": [{ "text": "a. Hardware Interrupts:", "bold": true }]
+      },
+      {
+        "id": "es-ch2-sm-list-hw-interrupts",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "es-ch2-hwint1", "content": [{ "text": "External Interrupts:", "bold": true }, { "text": " Triggered by external devices or peripherals (e.g., button press, sensor signal, communication request)." }] },
+          { "id": "es-ch2-hwint2", "content": [{ "text": "Timer Interrupts:", "bold": true }, { "text": " Generated by an internal timer or counter (used for scheduling tasks, measuring time intervals, periodic events)." }] },
+          { "id": "es-ch2-hwint3", "content": [{ "text": "DMA (Direct Memory Access) Interrupts:", "bold": true }, { "text": " Raised by DMA controllers after data transfer completion, allowing CPU to perform other tasks independently." }] }
+        ]
+      },
+      {
+        "id": "es-ch2-sm-p-sw-interrupts",
+        "type": "paragraph",
+        "content": [{ "text": "b. Software Interrupts (Traps):", "bold": true }, { "text": " Triggered by software instructions. Allows software to request specific services from the OS or kernel." }]
+      },
+      {
+        "id": "es-ch2-sm-interrupts-handling",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "3. Interrupt Handling Process" }]
+      },
+      {
+        "id": "es-ch2-sm-list-handling",
+        "type": "list",
+        "ordered": true,
+        "items": [
+          { "id": "es-ch2-handle1", "content": [{ "text": "Interrupt Request (IRQ):", "bold": true }, { "text": " An external event occurs, generating an interrupt request sent to the processor." }] },
+          { "id": "es-ch2-handle2", "content": [{ "text": "Interrupt Controller:", "bold": true }, { "text": " Manages and prioritizes interrupt requests, routing the interrupt to the appropriate Interrupt Service Routine (ISR)." }] },
+          { "id": "es-ch2-handle3", "content": [{ "text": "Context Switching:", "bold": true }, { "text": " Processor saves current program state and switches to the ISR." }] },
+          { "id": "es-ch2-handle4", "content": [{ "text": "Interrupt Service Routine (ISR):", "bold": true }, { "text": " A specialized function that handles the interrupt and performs related tasks." }] },
+          { "id": "es-ch2-handle5", "content": [{ "text": "Return from Interrupt (RTI):", "bold": true }, { "text": " Restores saved context and resumes the interrupted program." }] }
+        ]
+      },
+      {
+        "id": "es-ch2-sm-interrupts-adv",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "4. Advantages of Interrupts" }]
+      },
+      {
+        "id": "es-ch2-sm-list-adv",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "es-ch2-adv1", "content": [{ "text": "Efficiency:", "bold": true }, { "text": " Reduces need for constant polling, saving resources." }] },
+          { "id": "es-ch2-adv2", "content": [{ "text": "Responsiveness:", "bold": true }, { "text": " Enables quick response to time-sensitive events." }] },
+          { "id": "es-ch2-adv3", "content": [{ "text": "Prioritization:", "bold": true }, { "text": " Allows system to prioritize and handle critical events first." }] },
+          { "id": "es-ch2-adv4", "content": [{ "text": "Concurrency:", "bold": true }, { "text": " Permits processor to perform multiple tasks simultaneously." }] }
+        ]
+      },
+      {
+        "id": "es-ch2-sm-interrupts-uses",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "5. Common Uses of Interrupts" }]
+      },
+      {
+        "id": "es-ch2-sm-list-uses",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "es-ch2-use1", "content": [{ "text": "Input Handling (button presses, sensor readings)." }] },
+          { "id": "es-ch2-use2", "content": [{ "text": "Communication (data arrival/transmission)." }] },
+          { "id": "es-ch2-use3", "content": [{ "text": "Timer-based Tasks (scheduling periodic tasks)." }] },
+          { "id": "es-ch2-use4", "content": [{ "text": "Error Handling (responding to exceptional events)." }] }
+        ]
+      },
+      {
+        "id": "es-ch2-sm-interrupts-rtos",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "7. Interrupts and Real-Time Systems" }]
+      },
+      {
+        "id": "es-ch2-sm-p-interrupts-rtos",
+        "type": "paragraph",
+        "content": [{ "text": "In real-time systems where precise timing is crucial, careful consideration of interrupt latency, priorities, and the overall interrupt handling mechanism is paramount. Proper implementation is crucial for designing embedded systems that meet specific performance and timing requirements." }]
+      }
+    ]
+  },
+  {
+    "id": "es-ch2-sm-topic-apps",
+    "title": "Application Areas",
+    "contentBlocks": [
+      {
+        "id": "es-ch2-sm-app-office",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "2. Office automation" }]
+      },
+      {
+        "id": "es-ch2-sm-p-app-office",
+        "type": "paragraph",
+        "content": [{ "text": "Copying machine, Fax machine, key telephone, modem, printer, scanner, etc." }]
+      },
+      {
+        "id": "es-ch2-sm-app-industrial",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "3. Industrial automation" }]
+      },
+      {
+        "id": "es-ch2-sm-p-app-industrial",
+        "type": "paragraph",
+        "content": [{ "text": "Many industries use embedded systems for process control (pharmaceutical, cement, sugar, oil exploration, nuclear energy, electricity generation). They monitor temperature, pressure, humidity, voltage, current, and take appropriate action or send info to a centralized station. Robots are used in hazardous environments for specific jobs like hardware assembly." }]
+      },
+      {
+        "id": "es-ch2-sm-app-medical",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "4. Medical electronics" }]
+      },
+      {
+        "id": "es-ch2-sm-p-app-medical",
+        "type": "paragraph",
+        "content": [{ "text": "Almost every medical equipment in hospitals is an embedded system (ECG, EEG, blood pressure instruments, X-ray scanners, blood analysis equipment, radiation, colonoscopy, endoscopy). Developments pave the way for more accurate disease diagnosis." }]
+      },
+      {
+        "id": "es-ch2-sm-app-wireless",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "7. Wireless Technologies" }]
+      },
+      {
+        "id": "es-ch2-sm-p-app-wireless",
+        "type": "paragraph",
+        "content": [{ "text": "Advances in mobile communications lead to many interesting applications. Mobile phones are powerful embedded systems. PDAs and Palmtops access multimedia over the Internet. Mobile communication infrastructure (base station controllers, mobile switching centers) are also powerful embedded systems." }]
+      },
+      {
+        "id": "es-ch2-sm-app-security",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "9. Security" }]
+      },
+      {
+        "id": "es-ch2-sm-p-app-security",
+        "type": "paragraph",
+        "content": [{ "text": "Security of persons and information is a major issue. Security devices at homes, offices, airports for authentication/verification are embedded systems. Encryption devices protect data/voice on communication links. Biometric systems (fingerprints, face recognition) are used for user authentication in banking and access control." }]
+      },
+      {
+        "id": "es-ch2-sm-app-finance",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "10. Finance" }]
+      },
+      {
+        "id": "es-ch2-sm-p-app-finance",
+        "type": "paragraph",
+        "content": [{ "text": "Cash/cheque dealings are paving way for smart cards and ATM machines. Smart cards (credit card size) have a microcontroller and memory, interacting with readers/ATMs as electronic wallets, enabling a cashless society." }]
+      }
+    ]
+  }
+]

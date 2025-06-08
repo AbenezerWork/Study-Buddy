@@ -1,0 +1,158 @@
+
+[
+  {
+    "id": "es-ch3-mcq-1",
+    "question": "Which language is considered closest to the hardware and provides direct control over processor registers in embedded systems?",
+    "options": ["Python", "Java", "Assembly Language", "C++"],
+    "correctAnswerIndex": 2,
+    "explanation": "Assembly language provides the most direct control over hardware resources and processor registers."
+  },
+  {
+    "id": "es-ch3-mcq-2",
+    "question": "What is the primary purpose of an Interrupt Service Routine (ISR) in an embedded system?",
+    "options": [
+      "To initialize hardware components at startup.",
+      "To handle specific events or conditions that require immediate processor attention.",
+      "To manage memory allocation for peripherals.",
+      "To compile C code into machine language."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "ISRs are executed in response to interrupts to handle the specific event that triggered the interrupt, allowing for timely responses."
+  },
+  {
+    "id": "es-ch3-mcq-3",
+    "question": "Which of the following is a characteristic of RISC (Reduced Instruction Set Computer) architecture?",
+    "options": [
+      "Large number of complex instructions.",
+      "Instructions may take multiple clock cycles to execute.",
+      "Small set of simple, fixed-length instructions, often executing in one clock cycle.",
+      "Primarily used for complex mathematical computations in a single instruction."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "RISC architectures feature a small set of simple, fixed-length instructions, typically optimized for fast, single-cycle execution and pipelining."
+  },
+  {
+    "id": "es-ch3-mcq-4",
+    "question": "In C programming for embedded systems, what does the `volatile` keyword signify?",
+    "options": [
+      "The variable cannot be changed after initialization.",
+      "The variable is stored in read-only memory.",
+      "The variable's value may change unexpectedly due to external factors, so the compiler should not optimize away accesses to it.",
+      "The variable is accessible by multiple threads simultaneously."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "The `volatile` keyword informs the compiler that a variable's value can be changed by something outside the normal program flow (e.g., hardware, ISR), preventing certain optimizations."
+  },
+  {
+    "id": "es-ch3-mcq-5",
+    "question": "Which development platform is known for its open-source hardware and software, beginner-friendliness, and use of 'sketches' written in a simplified C++?",
+    "options": ["Keil µVision", "STM32CubeIDE", "Arduino", "PlatformIO"],
+    "correctAnswerIndex": 2,
+    "explanation": "Arduino is renowned for its ease of use, open-source nature, and a simplified C++ based programming environment using 'sketches'."
+  },
+  {
+    "id": "es-ch3-mcq-6",
+    "question": "The `setup()` function in an Arduino program is typically used for:",
+    "options": [
+      "The main repetitive logic of the program.",
+      "Defining global variables only.",
+      "Performing one-time initialization tasks like setting pin modes.",
+      "Handling interrupt requests."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "The `setup()` function in Arduino runs once at the beginning and is used for initialization tasks such as setting pin modes and starting serial communication."
+  },
+  {
+    "id": "es-ch3-mcq-7",
+    "question": "Which microcontroller architecture is commonly found in Arduino Uno boards?",
+    "options": ["ARM Cortex-M3", "8051 (CISC)", "AVR ATmega328P (8-bit RISC)", "ESP32 (Tensilica Xtensa)"],
+    "correctAnswerIndex": 2,
+    "explanation": "The Arduino Uno typically uses the AVR ATmega328P, an 8-bit RISC microcontroller."
+  },
+  {
+    "id": "es-ch3-mcq-8",
+    "question": "What is the primary advantage of using a High-Level Language (HLP) like C over Assembly for embedded systems?",
+    "options": [
+      "HLPs always produce smaller code size.",
+      "HLPs offer direct access to all hardware features without any abstraction.",
+      "HLPs simplify code development, improve readability, and portability for larger projects.",
+      "HLPs execute faster than Assembly language."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "C simplifies development, enhances readability, and improves code portability, especially for complex projects, compared to Assembly language."
+  },
+  {
+    "id": "es-ch3-mcq-9",
+    "question": "Setting a specific bit in a hardware register is an example of:",
+    "options": ["Memory management", "Interrupt handling", "Bit manipulation", "Toolchain setup"],
+    "correctAnswerIndex": 2,
+    "explanation": "Directly modifying individual bits in hardware registers is a common task in embedded programming, known as bit manipulation."
+  },
+  {
+    "id": "es-ch3-mcq-10",
+    "question": "What is the role of an assembler in the firmware development process?",
+    "options": [
+      "To write source code in a high-level language.",
+      "To translate Assembly language code into machine code.",
+      "To debug errors in C code.",
+      "To simulate the target hardware."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "An assembler translates assembly language mnemonics and directives into executable machine code for the target processor."
+  },
+  {
+    "id": "es-ch3-mcq-11",
+    "question": "What is a key difference between accessing memory-mapped I/O and port-mapped I/O?",
+    "options": [
+      "Memory-mapped I/O uses special I/O instructions, while port-mapped I/O uses regular memory access instructions.",
+      "Memory-mapped I/O treats I/O registers as memory locations, accessible via standard memory instructions. Port-mapped I/O uses dedicated I/O instructions and a separate I/O address space.",
+      "Port-mapped I/O is faster than memory-mapped I/O.",
+      "Memory-mapped I/O is only used for RISC architectures."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Memory-mapped I/O allows I/O device registers to be accessed as if they were memory locations, using standard memory read/write instructions. Port-mapped I/O uses special instructions and a separate address space for I/O."
+  },
+  {
+    "id": "es-ch3-mcq-12",
+    "question": "Which of the following is a common characteristic of an 8051 microcontroller?",
+    "options": [
+      "32-bit RISC architecture",
+      "Integrated Wi-Fi and Bluetooth",
+      "CISC architecture, single accumulator-based CPU",
+      "Runs a full Linux OS"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "The 8051 is known for its CISC architecture and accumulator-based CPU design."
+  },
+  {
+    "id": "es-ch3-mcq-13",
+    "question": "The ESP32 microcontroller is particularly popular for which type of applications?",
+    "options": [
+      "High-performance desktop computing",
+      "Legacy industrial control systems",
+      "Internet of Things (IoT) applications due to integrated Wi-Fi/Bluetooth",
+      "Ultra-low power sensor nodes with minimal connectivity"
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "The ESP32, with its integrated Wi-Fi and Bluetooth capabilities, is widely used in IoT applications."
+  },
+  {
+    "id": "es-ch3-mcq-14",
+    "question": "What does the C preprocessor directive `#include <filename.h>` do?",
+    "options": [
+      "Defines a constant named `filename`.",
+      "Compiles the file `filename.h`.",
+      "Inserts the entire content of `filename.h` into the current source file before compilation.",
+      "Links the object code of `filename.h` with the current program."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "The `#include` directive tells the C preprocessor to fetch the content of the specified header file and insert it into the current source file."
+  },
+  {
+    "id": "es-ch3-mcq-15",
+    "question": "Which of these development platforms is known for its cross-platform IDE integrations (like VS Code) and extensive library management for various microcontrollers?",
+    "options": ["Arduino IDE", "Keil µVision", "PlatformIO", "NI LabVIEW"],
+    "correctAnswerIndex": 2,
+    "explanation": "PlatformIO is an open-source ecosystem that integrates with popular IDEs and provides robust library management for a wide range of embedded development platforms."
+  }
+]

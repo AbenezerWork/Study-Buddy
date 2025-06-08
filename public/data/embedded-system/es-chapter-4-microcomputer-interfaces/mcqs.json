@@ -1,0 +1,148 @@
+
+[
+  {
+    "id": "es-ch4-mcq-1",
+    "question": "What is the primary function of digital I/O in microcomputers?",
+    "options": [
+      "To process complex mathematical equations.",
+      "To allow interaction with external devices using binary signals.",
+      "To store large amounts of data permanently.",
+      "To convert analog signals to digital."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Digital I/O enables microcomputers to send and receive binary signals (high/low) to interact with external devices and peripherals."
+  },
+  {
+    "id": "es-ch4-mcq-2",
+    "question": "Which serial communication protocol is asynchronous and uses start/stop bits for data framing?",
+    "options": ["SPI", "I2C", "UART", "CAN"],
+    "correctAnswerIndex": 2,
+    "explanation": "UART (Universal Asynchronous Receiver-Transmitter) is an asynchronous protocol that uses start and stop bits to define data frames."
+  },
+  {
+    "id": "es-ch4-mcq-3",
+    "question": "What type of timer is designed to detect and recover from system malfunctions by resetting the microcomputer if not periodically refreshed?",
+    "options": ["Interval Timer", "Real-Time Clock (RTC)", "Watchdog Timer", "PWM Timer"],
+    "correctAnswerIndex": 2,
+    "explanation": "Watchdog timers are used to ensure system stability by triggering a reset if the system becomes unresponsive and fails to refresh the timer."
+  },
+  {
+    "id": "es-ch4-mcq-4",
+    "question": "In Analog-to-Digital Conversion (ADC), what does 'resolution' refer to?",
+    "options": [
+      "The speed at which samples are taken.",
+      "The number of bits used to represent the digital output.",
+      "The maximum analog voltage the ADC can handle.",
+      "The amount of noise in the converted signal."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "The resolution of an ADC is the number of bits it uses to represent the digital output, determining the fineness of quantization."
+  },
+  {
+    "id": "es-ch4-mcq-5",
+    "question": "Pulse Width Modulation (PWM) is a technique used to:",
+    "options": [
+      "Measure the frequency of an analog signal.",
+      "Store digital data in memory.",
+      "Generate variable analog-like signals using digital means.",
+      "Convert digital signals to serial data."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "PWM generates an analog-like output by varying the duty cycle of a digital signal, commonly used for controlling power to devices."
+  },
+  {
+    "id": "es-ch4-mcq-6",
+    "question": "Which of these is an application of Digital Output?",
+    "options": [
+      "Reading the state of a switch.",
+      "Measuring temperature with a sensor.",
+      "Controlling an LED (turning it on/off).",
+      "Receiving data via a serial port."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "Controlling an LED (turning it on or off, or dimming it via PWM) is a common application of digital output."
+  },
+  {
+    "id": "es-ch4-mcq-7",
+    "question": "SPI (Serial Peripheral Interface) is characterized by being:",
+    "options": [
+      "Asynchronous and using two wires (SDA, SCL).",
+      "Synchronous, using a master-slave configuration and a clock signal.",
+      "A robust protocol for automotive networks with error detection.",
+      "Primarily for long-distance, low-speed communication."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "SPI is a synchronous serial protocol that uses a master-slave architecture and relies on a clock signal for data synchronization."
+  },
+  {
+    "id": "es-ch4-mcq-8",
+    "question": "What is the main purpose of a prescaler in a timer configuration?",
+    "options": [
+      "To increase the timer's clock frequency for faster counting.",
+      "To divide the timer's clock source frequency to achieve lower frequencies and longer time intervals.",
+      "To directly measure the voltage of an analog signal.",
+      "To store the initial count value of the timer."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Prescalers divide the timer's input clock frequency, allowing the timer to count slower and measure longer durations."
+  },
+  {
+    "id": "es-ch4-mcq-9",
+    "question": "The process of mapping a continuous range of analog values into a finite number of discrete levels during ADC is called:",
+    "options": ["Sampling", "Resolution", "Quantization", "Linearization"],
+    "correctAnswerIndex": 2,
+    "explanation": "Quantization is the step in ADC where the sampled analog values are mapped to discrete digital levels."
+  },
+  {
+    "id": "es-ch4-mcq-10",
+    "question": "What does the 'duty cycle' of a PWM signal represent?",
+    "options": [
+      "The number of pulses per second.",
+      "The maximum voltage of the signal.",
+      "The percentage of time the signal is in the 'high' state during one cycle.",
+      "The stability of the signal frequency."
+    ],
+    "correctAnswerIndex": 2,
+    "explanation": "The duty cycle in PWM refers to the proportion of one period in which the signal is active (high)."
+  },
+  {
+    "id": "es-ch4-mcq-11",
+    "question": "Which of these is a key consideration when interfacing mechanical switches to a microcomputer's digital input?",
+    "options": [
+      "Ensuring high current output capability.",
+      "Implementing debouncing logic.",
+      "Using analog-to-digital conversion.",
+      "Maximizing the polling frequency."
+    ],
+    "correctAnswerIndex": 1,
+    "explanation": "Mechanical switches often exhibit contact bounce, which can cause multiple false triggers. Debouncing logic (hardware or software) is needed to get a clean signal."
+  },
+  {
+    "id": "es-ch4-mcq-12",
+    "question": "I2C communication protocol uses how many main signal wires (excluding power and ground)?",
+    "options": ["1 (data only)", "2 (SDA - data, SCL - clock)", "3 (MOSI, MISO, SCK)", "4 (TX, RX, CTS, RTS)"],
+    "correctAnswerIndex": 1,
+    "explanation": "I2C uses two main signal wires: SDA (Serial Data Line) and SCL (Serial Clock Line)."
+  },
+  {
+    "id": "es-ch4-mcq-13",
+    "question": "Which type of timer is often used to maintain the date and time even when the main system power is off?",
+    "options": ["Interval Timer", "Watchdog Timer", "Real-Time Clock (RTC)", "PWM Output Compare Timer"],
+    "correctAnswerIndex": 2,
+    "explanation": "A Real-Time Clock (RTC) is designed for accurate timekeeping and often has a backup battery to maintain time when the main system is unpowered."
+  },
+  {
+    "id": "es-ch4-mcq-14",
+    "question": "An 8-bit ADC can represent how many discrete digital levels?",
+    "options": ["8", "16", "256", "1024"],
+    "correctAnswerIndex": 2,
+    "explanation": "An n-bit ADC can represent 2^n discrete levels. So, an 8-bit ADC can represent 2^8 = 256 levels."
+  },
+  {
+    "id": "es-ch4-mcq-15",
+    "question": "If a PWM signal has a frequency of 1 kHz and a duty cycle of 25%, how long is the signal 'high' in each cycle?",
+    "options": ["0.25 milliseconds", "1 millisecond", "2.5 milliseconds", "4 milliseconds"],
+    "correctAnswerIndex": 0,
+    "explanation": "Frequency = 1 kHz means Period = 1/1000 s = 1 millisecond. A 25% duty cycle means the signal is high for 25% of the period: 0.25 * 1 ms = 0.25 milliseconds."
+  }
+]

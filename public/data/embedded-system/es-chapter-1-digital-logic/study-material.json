@@ -1,0 +1,462 @@
+[
+  {
+    "id": "es-ch1-topic-main",
+    "title": "Chapter 1: Introduction to digital logic",
+    "introduction": [
+      { "text": "Course Title: Embedded System. Course Code: (SWEG4102). This chapter introduces the fundamental concepts of digital logic, crucial for understanding embedded systems." }
+    ],
+    "contentBlocks": [
+      {
+        "id": "es-ch1-sm-block-1",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Outline" }]
+      },
+      {
+        "id": "es-ch1-sm-block-2",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "es-ch1-sm-li-outline-1", "content": [{ "text": "1.1 Logic algebra" }] },
+          { "id": "es-ch1-sm-li-outline-2", "content": [{ "text": "1.2 Logic circuits" }] },
+          { "id": "es-ch1-sm-li-outline-3", "content": [{ "text": "1.3 Logic devices such as counters, timers and finite state machines" }] }
+        ]
+      },
+      {
+        "id": "es-ch1-sm-block-3",
+        "type": "heading",
+        "level": 1,
+        "content": [{ "text": "Chapter 1: Introduction to digital logic" }]
+      },
+      {
+        "id": "es-ch1-sm-block-4",
+        "type": "paragraph",
+        "content": [{ "text": "Digital logic forms the fundamental building blocks of embedded systems, providing the basis for the design and implementation of intelligent and controlled functionalities." }]
+      },
+      {
+        "id": "es-ch1-sm-block-5",
+        "type": "paragraph",
+        "content": [{ "text": "Understanding digital logic is crucial for software engineers working on embedded systems, as it lays the foundation for efficient information processing, decision-making, and interfacing with the physical world." }]
+      },
+      {
+        "id": "es-ch1-sm-block-6",
+        "type": "paragraph",
+        "content": [{ "text": "Digital logic is the language through which embedded systems communicate and process information." }]
+      },
+      {
+        "id": "es-ch1-sm-block-7",
+        "type": "paragraph",
+        "content": [{ "text": "Its principles are integral to both hardware and software aspects of embedded system design, making it a fundamental area of study for software engineers working in this field." }]
+      },
+      {
+        "id": "es-ch1-sm-block-8",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "1.1 Logic algebra" }]
+      },
+      {
+        "id": "es-ch1-sm-block-9",
+        "type": "paragraph",
+        "content": [{ "text": "Logic algebra, also known as Boolean algebra, is a mathematical structure and set of operations that deals with binary variables and logic operations." }]
+      },
+      {
+        "id": "es-ch1-sm-block-10",
+        "type": "paragraph",
+        "content": [{ "text": "It plays a fundamental role in the design and analysis of digital circuits, computer systems, and electronic devices." }]
+      },
+      {
+        "id": "es-ch1-sm-block-11",
+        "type": "paragraph",
+        "content": [{ "text": "The algebraic rules of logic algebra are based on the work of mathematician and logician George Boole." }]
+      },
+      {
+        "id": "es-ch1-sm-block-12",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Key Concepts:" }]
+      },
+      {
+        "id": "es-ch1-sm-block-13",
+        "type": "paragraph",
+        "content": [{ "text": "1. Binary Variables: In logic algebra, variables can only take on one of two values: 0 or 1. These values represent the absence (0) or presence (1) of a logical condition." }]
+      },
+      {
+        "id": "es-ch1-sm-block-14",
+        "type": "paragraph",
+        "content": [{ "text": "2. Logical Operations: Logic algebra includes several fundamental logical operations, each with specific rules and symbols:" }]
+      },
+      {
+        "id": "es-ch1-sm-block-15",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "es-ch1-sm-li-logop-1", "content": [{ "text": "AND (Conjunction): denoted by ∧ or ·", "bold": true }, { "text": " Represents the logical product. The result is 1 only if both operands are 1." }] },
+          { "id": "es-ch1-sm-li-logop-2", "content": [{ "text": "OR (Disjunction): denoted by + or ∨", "bold": true }, { "text": " Represents the logical sum. The result is 1 if at least one operand is 1." }] },
+          { "id": "es-ch1-sm-li-logop-3", "content": [{ "text": "NOT (Negation): denoted by ¬ or '", "bold": true }, { "text": " Represents the logical complement. Flips the value of the operand (1 becomes 0, and 0 becomes 1)." }] }
+        ]
+      },
+      {
+        "id": "es-ch1-sm-block-16",
+        "type": "paragraph",
+        "content": [{ "text": "3. Boolean Expressions: Boolean expressions are combinations of binary variables and logical operations. They can be used to represent and analyse the behaviour of digital circuits and systems." }]
+      },
+      {
+        "id": "es-ch1-sm-block-17",
+        "type": "paragraph",
+        "content": [{ "text": "4. Truth Tables: Truth tables are used to represent the output of a Boolean expression for all possible combinations of input values. They provide a systematic way to analyse and understand the behaviour of logical operations." }]
+      },
+      {
+        "id": "es-ch1-sm-block-18",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Basic Laws of Logic Algebra:" }]
+      },
+      {
+        "id": "es-ch1-sm-block-19",
+        "type": "list",
+        "ordered": true,
+        "items": [
+          { "id": "es-ch1-sm-li-law-1", "content": [{ "text": "Identity Laws:", "bold": true }, { "text": " A+0=A; A·1=A" }] },
+          { "id": "es-ch1-sm-li-law-2", "content": [{ "text": "Domination Laws:", "bold": true }, { "text": " 1A+A'=1 (likely A+A'=1 or 1+A=1); OA·A'=0 (likely 0·A=0 or A·A'=0, please verify correct law, using A+A'=1 and A·A'=0 interpretation)" }] },
+          { "id": "es-ch1-sm-li-law-2b", "content": [{ "text": "Note on Domination Laws from OCR: '1A+A'=1' usually is 'A+A'=1'. 'OA·A'=0' usually is 'A·A'=0'. For clarity, using common forms: A+A'=1; A·A'=0." }]},
+          { "id": "es-ch1-sm-li-law-3", "content": [{ "text": "Idempotent Laws:", "bold": true }, { "text": " A+A=A; A·A=A" }] },
+          { "id": "es-ch1-sm-li-law-4", "content": [{ "text": "Commutative Laws:", "bold": true }, { "text": " A+B=B+A; A·B=B·A" }] },
+          { "id": "es-ch1-sm-li-law-5", "content": [{ "text": "Associative Laws:", "bold": true }, { "text": " (A+B)+C=A+(B+C); (A·B)·C=A·(B·C)" }] },
+          { "id": "es-ch1-sm-li-law-6", "content": [{ "text": "Distributive Laws:", "bold": true }, { "text": " A·(B+C)=(A·B)+(A·C); A+(B·C)=(A+B)·(A+C)" }] },
+          { "id": "es-ch1-sm-li-law-7", "content": [{ "text": "De Morgan's Laws:", "bold": true }, { "text": " (A+B)'=A'·B'; (A·B)'=A'+B'" }] }
+        ]
+      },
+      {
+        "id": "es-ch1-sm-block-20",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Applications of Logic Algebra:" }]
+      },
+      {
+        "id": "es-ch1-sm-block-21",
+        "type": "list",
+        "ordered": true,
+        "items": [
+          { "id": "es-ch1-sm-li-appla-1", "content": [{ "text": "Digital Circuit Design: Logic algebra is extensively used in designing and analysing digital circuits, including combinational and sequential circuits." }] },
+          { "id": "es-ch1-sm-li-appla-2", "content": [{ "text": "Computer Systems: The principles of logic algebra are fundamental to computer architecture, where they govern the operations of logic gates, arithmetic units, and memory units." }] },
+          { "id": "es-ch1-sm-li-appla-3", "content": [{ "text": "Boolean Functions: Logic algebra is employed to represent and manipulate Boolean functions, which are essential in software design, control systems, and decision-making processes." }] },
+          { "id": "es-ch1-sm-li-appla-4", "content": [{ "text": "Coding and Error Detection: Error detection and correction codes, such as parity bits, rely on logic algebra to ensure data integrity in communication systems." }] },
+          { "id": "es-ch1-sm-li-appla-5", "content": [{ "text": "Automated Systems: Logic algebra is applied in designing automated systems, including robotics and industrial control systems, to model and control system behaviour." }] }
+        ]
+      },
+      {
+        "id": "es-ch1-sm-block-22",
+        "type": "paragraph",
+        "content": [{ "text": "Logic algebra provides a systematic and mathematical foundation for understanding and manipulating binary variables and logical operations, forming a cornerstone in the fields of digital design, computer science, and automation." }]
+      },
+      {
+        "id": "es-ch1-sm-block-23",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "1.2 Logic circuits" }]
+      },
+      {
+        "id": "es-ch1-sm-block-24",
+        "type": "paragraph",
+        "content": [{ "text": "Logic circuits are electronic circuits that perform logical operations based on Boolean algebra." }]
+      },
+      {
+        "id": "es-ch1-sm-block-25",
+        "type": "paragraph",
+        "content": [{ "text": "These circuits use digital signals (binary, consisting of 0s and 1s) to process and manipulate information." }]
+      },
+      {
+        "id": "es-ch1-sm-block-26",
+        "type": "paragraph",
+        "content": [{ "text": "Logic circuits are the building blocks of digital systems, such as computers, microcontrollers, and other electronic devices, enabling them to perform complex tasks through the combination of simple logic gates." }]
+      },
+      {
+        "id": "es-ch1-sm-block-27",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Key Components of Logic Circuits:" }]
+      },
+      {
+        "id": "es-ch1-sm-block-28",
+        "type": "paragraph",
+        "content": [{ "text": "1. Logic Gates: Logic gates are the fundamental building blocks of logic circuits. They perform basic logical operations (AND, OR, NOT) on binary inputs to produce a binary output." }]
+      },
+      {
+        "id": "es-ch1-sm-block-29",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Common types of logic gates include:" }]
+      },
+      {
+        "id": "es-ch1-sm-block-30",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "es-ch1-sm-li-gate-1", "content": [{ "text": "AND Gate: ", "bold": true }, { "text": "Output is 1 only if both inputs are 1. Symbol: A·B or AB" }] },
+          { "id": "es-ch1-sm-li-gate-2", "content": [{ "text": "OR Gate: ", "bold": true }, { "text": "Output is 1 if at least one input is 1. Symbol: A+B or A∪B" }] },
+          { "id": "es-ch1-sm-li-gate-3", "content": [{ "text": "NOT Gate: ", "bold": true }, { "text": "Output is the inverse of the input. Symbol: A̅ or 'A'" }] },
+          { "id": "es-ch1-sm-li-gate-4", "content": [{ "text": "Other gates, such as NAND, NOR, and XOR, are derived from combinations of these basic gates." }] }
+        ]
+      },
+      {
+        "id": "es-ch1-sm-block-31",
+        "type": "paragraph",
+        "content": [{ "text": "2. Flip-Flops: Flip-flops are memory elements that store binary information. They are crucial for sequential logic circuits, allowing the storage of data and the creation of memory elements in electronic systems." }]
+      },
+      {
+        "id": "es-ch1-sm-block-32",
+        "type": "paragraph",
+        "content": [{ "text": "3. Registers: Registers are collections of flip-flops used for temporary data storage. They are vital for tasks like data transfer, arithmetic operations, and control in digital systems." }]
+      },
+      {
+        "id": "es-ch1-sm-block-33",
+        "type": "paragraph",
+        "content": [{ "text": "4. Multiplexers and Demultiplexers: Multiplexers select one of several input data lines and direct it to a single output line. Demultiplexers perform the reverse operation, directing one input to several output lines." }]
+      },
+      {
+        "id": "es-ch1-sm-block-34",
+        "type": "paragraph",
+        "content": [{ "text": "5. Arithmetic Logic Units (ALUs): ALUs perform arithmetic and logic operations on binary numbers. They are integral components of processors and microcontrollers, handling tasks like addition, subtraction, AND, OR, and other operations." }]
+      },
+      {
+        "id": "es-ch1-sm-block-35",
+        "type": "paragraph",
+        "content": [{ "text": "6. Decoder and Encoder: Decoders convert binary information from one code to another, while encoders perform the opposite task. They are essential for tasks such as data compression and decompression." }]
+      },
+      {
+        "id": "es-ch1-sm-block-36",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Types of Logic Circuits:" }]
+      },
+      {
+        "id": "es-ch1-sm-block-37",
+        "type": "paragraph",
+        "content": [{ "text": "1. Combinational Logic Circuits: These circuits produce an output based solely on the current input values. The output is determined by the combination of logic gates and does not depend on the circuit's previous state." }]
+      },
+      {
+        "id": "es-ch1-sm-block-38",
+        "type": "paragraph",
+        "content": [{ "text": "2. Sequential Logic Circuits: Sequential logic circuits include memory elements, such as flip-flops, and the output depends on both the current input values and the circuit's previous state. These circuits have a notion of time and memory." }]
+      },
+      {
+        "id": "es-ch1-sm-block-39",
+        "type": "paragraph",
+        "content": [{ "text": "3. Digital Signal Processors (DSPs): DSPs are specialized processors designed for digital signal processing tasks, such as audio and image processing. They often incorporate specialized logic circuits for efficient computation." }]
+      },
+      {
+        "id": "es-ch1-sm-block-40",
+        "type": "paragraph",
+        "content": [{ "text": "4. Microprocessors and Microcontrollers: These are central processing units (CPUs) that form the core of computers and embedded systems. They include extensive logic circuitry to execute instructions, manage memory, and control peripherals." }]
+      },
+      {
+        "id": "es-ch1-sm-block-41",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Applications of Logic Circuits:" }]
+      },
+      {
+        "id": "es-ch1-sm-block-42",
+        "type": "list",
+        "ordered": true,
+        "items": [
+          { "id": "es-ch1-sm-li-applc-1", "content": [{ "text": "Computer Processors: Logic circuits are the foundation of central processing units (CPUs) in computers, executing instructions and performing arithmetic and logic operations." }] },
+          { "id": "es-ch1-sm-li-applc-2", "content": [{ "text": "Memory Systems: Flip-flops and registers in logic circuits form the basis of memory systems in computers and other digital devices." }] },
+          { "id": "es-ch1-sm-li-applc-3", "content": [{ "text": "Control Systems: Logic circuits are used in control systems to manage and coordinate the operation of various components in industrial, automotive, and robotic applications." }] },
+          { "id": "es-ch1-sm-li-applc-4", "content": [{ "text": "Communication Systems: Logic circuits are employed in communication systems for tasks such as signal modulation, demodulation, and error detection and correction." }] },
+          { "id": "es-ch1-sm-li-applc-5", "content": [{ "text": "Consumer Electronics: Devices like smartphones, TVs, and digital cameras utilize logic circuits for processing and controlling various functions." }] },
+          { "id": "es-ch1-sm-li-applc-6", "content": [{ "text": "Automotive Electronics: Logic circuits play a crucial role in automotive control systems, managing functions like engine control, airbag deployment, and entertainment systems." }] },
+          { "id": "es-ch1-sm-li-applc-7", "content": [{ "text": "Embedded Systems: In embedded systems, logic circuits control and coordinate various functions, making them integral to devices such as IoT devices, medical instruments, and industrial controllers." }] }
+        ]
+      },
+      {
+        "id": "es-ch1-sm-block-43",
+        "type": "paragraph",
+        "content": [{ "text": "Logic circuits are essential components in the world of digital electronics, enabling the creation of sophisticated and intelligent systems by combining simple logical operations. They form the backbone of digital technology, contributing to the functionality and efficiency of a wide range of electronic devices." }]
+      },
+      {
+        "id": "es-ch1-sm-block-44",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "1.3 Logic devices such as counters, timers and finite state machines" }]
+      },
+      {
+        "id": "es-ch1-sm-block-45",
+        "type": "paragraph",
+        "content": [{ "text": "They are crucial components in digital systems and electronic circuits. They serve specific functions and play essential roles in controlling and sequencing operations. Let's explore each of these logic devices:" }]
+      },
+      {
+        "id": "es-ch1-sm-block-46",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "1. Counters" }]
+      },
+      {
+        "id": "es-ch1-sm-block-47",
+        "type": "paragraph",
+        "content": [{ "text": "Counters are sequential logic circuits that count in a prescribed sequence. They can count up, down, or in a more complex pattern based on the application requirements." }]
+      },
+      {
+        "id": "es-ch1-sm-block-48",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Types of Counters:" }]
+      },
+      {
+        "id": "es-ch1-sm-block-49",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "es-ch1-sm-li-countertype-1", "content": [{ "text": "Binary Counters: Count in binary sequence (000, 001, 010, ...)." }] },
+          { "id": "es-ch1-sm-li-countertype-2", "content": [{ "text": "Decade Counters: Count in decimal sequence (0, 1, 2, ..., 9)." }] },
+          { "id": "es-ch1-sm-li-countertype-3", "content": [{ "text": "Up Counters: Count upwards." }] },
+          { "id": "es-ch1-sm-li-countertype-4", "content": [{ "text": "Down Counters: Count downwards." }] },
+          { "id": "es-ch1-sm-li-countertype-5", "content": [{ "text": "Synchronous Counters: The state of each flip-flop is updated simultaneously." }] },
+          { "id": "es-ch1-sm-li-countertype-6", "content": [{ "text": "Asynchronous Counters: The state of each flip-flop is updated sequentially." }] }
+        ]
+      },
+      {
+        "id": "es-ch1-sm-block-50",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Applications of Counters:" }]
+      },
+      {
+        "id": "es-ch1-sm-block-51",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "es-ch1-sm-li-counterapp-1", "content": [{ "text": "Digital Clocks: Counters are used to keep track of time in digital clocks." }] },
+          { "id": "es-ch1-sm-li-counterapp-2", "content": [{ "text": "Frequency Dividers: Dividing the frequency of a signal." }] },
+          { "id": "es-ch1-sm-li-counterapp-3", "content": [{ "text": "Event Counters: Counting occurrences of events in industrial automation." }] }
+        ]
+      },
+      {
+        "id": "es-ch1-sm-block-52",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "2. Timers" }]
+      },
+      {
+        "id": "es-ch1-sm-block-53",
+        "type": "paragraph",
+        "content": [{ "text": "Timers are devices that measure the duration of time intervals. They can be used for precise time control and scheduling of events." }]
+      },
+      {
+        "id": "es-ch1-sm-block-54",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Types of Timers:" }]
+      },
+      {
+        "id": "es-ch1-sm-block-55",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "es-ch1-sm-li-timertype-1", "content": [{ "text": "Monostable Multivibrators: Output stays high for a fixed duration after triggering." }] },
+          { "id": "es-ch1-sm-li-timertype-2", "content": [{ "text": "Astable Multivibrators: Produce a continuous square wave output." }] },
+          { "id": "es-ch1-sm-li-timertype-3", "content": [{ "text": "Digital Timers: Implemented using digital logic circuits for more accurate timing." }] }
+        ]
+      },
+      {
+        "id": "es-ch1-sm-block-56",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Applications of timers:" }]
+      },
+      {
+        "id": "es-ch1-sm-block-57",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "es-ch1-sm-li-timerapp-1", "content": [{ "text": "Industrial Automation: Timers control processes and events in manufacturing." }] },
+          { "id": "es-ch1-sm-li-timerapp-2", "content": [{ "text": "Microcontroller-based Systems: Timers are often integrated into microcontrollers for various timing functions." }] },
+          { "id": "es-ch1-sm-li-timerapp-3", "content": [{ "text": "Automotive Systems: Used in vehicle control systems for functions like fuel injection timing." }] }
+        ]
+      },
+      {
+        "id": "es-ch1-sm-block-58",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "3. Finite State Machines (FSMs)" }]
+      },
+      {
+        "id": "es-ch1-sm-block-59",
+        "type": "paragraph",
+        "content": [{ "text": "Finite State Machines model the behaviour of systems that can exist in a finite number of states. They transition between states based on inputs and current states." }]
+      },
+      {
+        "id": "es-ch1-sm-block-60",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Types of FSMs:" }]
+      },
+      {
+        "id": "es-ch1-sm-block-61",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "es-ch1-sm-li-fsmtype-1", "content": [{ "text": "Moore Machines: The output depends only on the current state." }] },
+          { "id": "es-ch1-sm-li-fsmtype-2", "content": [{ "text": "Mealy Machines: The output depends on both the current state and inputs." }] }
+        ]
+      },
+      {
+        "id": "es-ch1-sm-block-62",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Applications of FSMs:" }]
+      },
+      {
+        "id": "es-ch1-sm-block-63",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "es-ch1-sm-li-fsmapp-1", "content": [{ "text": "Digital Circuit Design: FSMs are used to design control units for processors." }] },
+          { "id": "es-ch1-sm-li-fsmapp-2", "content": [{ "text": "Communication Protocols: FSMs model the behaviour of communication protocols." }] },
+          { "id": "es-ch1-sm-li-fsmapp-3", "content": [{ "text": "Traffic Light Controllers: FSMs control the sequence of traffic lights in an intersection." }] }
+        ]
+      },
+      {
+        "id": "es-ch1-sm-block-64",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Key Components of FSMs:" }]
+      },
+      {
+        "id": "es-ch1-sm-block-65",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "es-ch1-sm-li-fsmcomp-1", "content": [{ "text": "States: Represent different modes or conditions." }] },
+          { "id": "es-ch1-sm-li-fsmcomp-2", "content": [{ "text": "Transitions: Define conditions triggering state changes." }] },
+          { "id": "es-ch1-sm-li-fsmcomp-3", "content": [{ "text": "Inputs: External signals influencing state transitions." }] },
+          { "id": "es-ch1-sm-li-fsmcomp-4", "content": [{ "text": "Outputs: Actions or signals produced by the FSM in different states." }] }
+        ]
+      },
+      {
+        "id": "es-ch1-sm-block-66",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Common Characteristics of These Devices (Counters, Timers, FSMs):" }]
+      },
+      {
+        "id": "es-ch1-sm-block-67",
+        "type": "list",
+        "ordered": false,
+        "items": [
+          { "id": "es-ch1-sm-li-commchar-1", "content": [{ "text": "Sequential Logic: They rely on sequential logic circuits, typically flip-flops, to store and update information." }] },
+          { "id": "es-ch1-sm-li-commchar-2", "content": [{ "text": "Digital Control: All these devices are designed to operate in a digital environment using binary signals (0s and 1s)." }] },
+          { "id": "es-ch1-sm-li-commchar-3", "content": [{ "text": "Timing and Sequencing: They involve precise timing and sequencing of events, making them crucial in digital systems." }] }
+        ]
+      },
+      {
+        "id": "es-ch1-sm-block-68",
+        "type": "paragraph",
+        "content": [{ "text": "Counters, timers, and finite state machines are integral components in digital systems, providing essential control and sequencing functions. They find applications in diverse areas, from simple digital clocks to complex control systems in industrial automation." }]
+      }
+    ],
+    "summary": [
+      { "text": "This chapter introduced digital logic as a fundamental concept for embedded systems. It covered logic algebra (Boolean algebra, key concepts, laws, applications), logic circuits (components like gates, flip-flops, types of circuits, applications), and logic devices like counters, timers, and finite state machines (their types, components, characteristics, and applications)." }
+    ]
+  }
+]

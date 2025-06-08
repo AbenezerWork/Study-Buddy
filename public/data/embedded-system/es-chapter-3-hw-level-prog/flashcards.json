@@ -1,0 +1,128 @@
+
+[
+  {
+    "id": "es-ch3-fc-1",
+    "front": "What is hardware-level programming for embedded systems?",
+    "back": "Writing software that directly interacts with hardware components (registers, peripherals) without OS abstraction, often in C or Assembly."
+  },
+  {
+    "id": "es-ch3-fc-2",
+    "front": "List three key aspects of hardware-level programming.",
+    "back": "1. Understanding hardware architecture. 2. Choosing the right language (C/Assembly). 3. Directly accessing memory and registers. (Also: Peripheral programming, Interrupt handling, Memory management, Real-time constraints)."
+  },
+  {
+    "id": "es-ch3-fc-3",
+    "front": "What does GPIO stand for and what is it used for?",
+    "back": "General Purpose Input/Output. Used for digital input and output signals to control or read from external devices like LEDs, buttons, sensors."
+  },
+  {
+    "id": "es-ch3-fc-4",
+    "front": "What is an Interrupt Service Routine (ISR)?",
+    "back": "A special function executed by the processor in response to an interrupt signal, handling the event that caused the interrupt."
+  },
+  {
+    "id": "es-ch3-fc-5",
+    "front": "What are the main steps in embedded system design?",
+    "back": "1. Specifying hardware. 2. Specifying sensors/actuators. 3. System integration and code writing. 4. Testing system performance."
+  },
+  {
+    "id": "es-ch3-fc-6",
+    "front": "What are the four columns in an Assembly program line structure?",
+    "back": "Label (optional name for line), Mnemonic (instruction code), Operand (data for instruction), Comment (clarification)."
+  },
+  {
+    "id": "es-ch3-fc-7",
+    "front": "Name two common assembler directives.",
+    "back": "ORG (set origin/start address), EQU (equate symbol to a value), END (end of program), LIST (specify processor), #include (include file)."
+  },
+  {
+    "id": "es-ch3-fc-8",
+    "front": "Why is C language popular for embedded systems?",
+    "back": "It's close to assembly (bit manipulation, pointers), most microcontrollers have C compilers, and it simplifies code development for larger projects."
+  },
+  {
+    "id": "es-ch3-fc-9",
+    "front": "What is 'bit manipulation' in C for embedded systems?",
+    "back": "Directly setting, clearing, or toggling individual bits within hardware registers to control peripherals. Example: `PORTB |= (1 << PB0);` sets bit 0 of PORTB."
+  },
+  {
+    "id": "es-ch3-fc-10",
+    "front": "What is a 'volatile' qualifier in C used for in embedded programming?",
+    "back": "It tells the compiler that a variable's value may change at any time by external factors (e.g., hardware register, ISR), preventing optimizations that might assume otherwise."
+  },
+  {
+    "id": "es-ch3-fc-11",
+    "front": "Compare RISC and CISC architectures.",
+    "back": "RISC (Reduced Instruction Set Computer): Simple, fixed-length instructions, fast execution, more instructions per task. CISC (Complex Instruction Set Computer): Complex, variable-length instructions, fewer instructions per task, complex decoding."
+  },
+  {
+    "id": "es-ch3-fc-12",
+    "front": "Give an example of a RISC microcontroller architecture.",
+    "back": "AVR (e.g., ATmega328P), ARM Cortex (e.g., STM32, NXP LPC), MIPS, RISC-V."
+  },
+  {
+    "id": "es-ch3-fc-13",
+    "front": "Give an example of a CISC microcontroller architecture.",
+    "back": "8051 microcontroller (also x86 processors for general computing)."
+  },
+  {
+    "id": "es-ch3-fc-14",
+    "front": "What is an IDE in embedded software development?",
+    "back": "Integrated Development Environment: Software providing comprehensive facilities for software development, typically including an editor, compiler, and debugger (e.g., STM32CubeIDE, Keil µVision, Arduino IDE)."
+  },
+  {
+    "id": "es-ch3-fc-15",
+    "front": "What is Arduino?",
+    "back": "An open-source hardware and software platform designed for creating interactive electronic projects, popular with hobbyists, makers, and for prototyping."
+  },
+  {
+    "id": "es-ch3-fc-16",
+    "front": "What are the two main functions in an Arduino sketch?",
+    "back": "`setup()`: Runs once at the start for initialization. `loop()`: Runs repeatedly after setup, containing the main program logic."
+  },
+  {
+    "id": "es-ch3-fc-17",
+    "front": "What is the role of an emulator in embedded system development?",
+    "back": "An emulator simulates the behavior of the target hardware, allowing developers to test and debug their code without needing the actual physical device."
+  },
+  {
+    "id": "es-ch3-fc-18",
+    "front": "What is a 'toolchain' in embedded C programming?",
+    "back": "A set of programming tools used to create an executable program from source code. Typically includes a compiler, assembler, linker, and debugger, often specific to a target microcontroller architecture."
+  },
+  {
+    "id": "es-ch3-fc-19",
+    "front": "Why might standard C libraries be avoided in embedded systems?",
+    "back": "To reduce code size and memory footprint in resource-constrained environments. Only necessary functionalities are implemented or lightweight alternatives are used."
+  },
+  {
+    "id": "es-ch3-fc-20",
+    "front": "What is the purpose of the `sbit` data type in some embedded C compilers (e.g., for 8051)?",
+    "back": "It declares a single-bit variable, allowing direct manipulation of individual bits in Special Function Registers (SFRs) or general-purpose I/O ports."
+  },
+  {
+    "id": "es-ch3-fc-21",
+    "front": "What does ESP-IDF stand for and what is it used for?",
+    "back": "Espressif IoT Development Framework. It's the official development framework for ESP32 and ESP8266 microcontrollers, often used for IoT applications."
+  },
+  {
+    "id": "es-ch3-fc-22",
+    "front": "What is a key feature of the Raspberry Pi when used in embedded contexts?",
+    "back": "It's a single-board computer that can run a full Linux OS, offering more processing power and capabilities than traditional microcontrollers for complex embedded applications like multimedia or AI."
+  },
+  {
+    "id": "es-ch3-fc-23",
+    "front": "What is a preprocessor directive in C? Give an example.",
+    "back": "An instruction to the C preprocessor (which runs before the compiler) to modify the source code. Examples: `#include <stdio.h>` (includes a header file), `#define PI 3.14159` (defines a constant)."
+  },
+  {
+    "id": "es-ch3-fc-24",
+    "front": "What is the difference between a `while` loop and a `do...while` loop in C?",
+    "back": "A `while` loop checks the condition *before* executing the loop body (may not execute at all). A `do...while` loop executes the body *once* and then checks the condition (always executes at least once)."
+  },
+  {
+    "id": "es-ch3-fc-25",
+    "front": "What is the significance of Harvard Architecture in microcontrollers like AVR and PIC?",
+    "back": "Harvard Architecture uses separate memory spaces and buses for instructions and data, allowing simultaneous fetching of both, which can improve performance."
+  }
+]

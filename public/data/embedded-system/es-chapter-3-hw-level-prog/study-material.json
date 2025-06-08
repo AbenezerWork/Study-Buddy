@@ -1,0 +1,389 @@
+
+[
+  {
+    "id": "es-ch3-topic-intro-hw-level",
+    "title": "Introduction to Hardware-Level Programming for Embedded Systems",
+    "introduction": [
+      { "text": "Programming embedded systems at the hardware level involves writing software that directly interacts with the underlying hardware components without the abstraction provided by operating systems. This type of programming is often done in languages like Assembly or low-level C to access specific registers and control hardware peripherals." }
+    ],
+    "contentBlocks": [
+      {
+        "id": "es-ch3-sm-s2-h2-keyaspects",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Key Aspects of Hardware-Level Programming" }]
+      },
+      {
+        "id": "es-ch3-sm-s2-1", "type": "paragraph", "content": [{ "text": "1. Understanding the Hardware:", "bold": true }, { "text": " Crucial to have a deep understanding of the embedded system's hardware architecture, including the microcontroller/microprocessor, memory organization, I/O ports, and other peripherals." }]
+      },
+      {
+        "id": "es-ch3-sm-s3-2", "type": "paragraph", "content": [{ "text": "2. Choosing the Right Language:", "bold": true }, { "text": " Assembly is direct but complex and platform-specific. Low-level languages like C offer more abstraction while still providing control over hardware components." }]
+      },
+      {
+        "id": "es-ch3-sm-s3-3", "type": "paragraph", "content": [{ "text": "3. Accessing Memory and Registers:", "bold": true }, { "text": " Embedded systems have specific memory addresses and registers. Hardware-level programming involves direct manipulation of these to control peripherals." }]
+      },
+      {
+        "id": "es-ch3-sm-s4-4", "type": "paragraph", "content": [{ "text": "4. Peripheral Programming:", "bold": true }, { "text": " Involves configuring and controlling peripherals like timers, GPIO, UART, SPI, I2C, ADC. Example (C for GPIO):" }]
+      },
+      {
+        "id": "es-ch3-sm-s4-code-gpio",
+        "type": "code",
+        "language": "c",
+        "code": "// Configuring GPIO pins as output\n#define GPIO_PORTA_DIR_REG *((volatile uint32_t*) 0x40004000)\nGPIO_PORTA_DIR_REG |= 0x01; // Set pin 0 as output\n\n// Writing to GPIO pins\n#define GPIO_PORTA_DATA_REG *((volatile uint32_t*) 0x400043FC)\nGPIO_PORTA_DATA_REG |= 0x01; // Set pin 0 high"
+      },
+      {
+        "id": "es-ch3-sm-s5-5", "type": "paragraph", "content": [{ "text": "5. Interrupt Handling:", "bold": true }, { "text": " Managing interrupts directly, including configuring interrupt registers, writing Interrupt Service Routines (ISRs), and handling requests. Example (C for Timer Interrupt):" }]
+      },
+      {
+        "id": "es-ch3-sm-s5-code-interrupt",
+        "type": "code",
+        "language": "c",
+        "code": "// Configuring and enabling interrupts for a timer\n#define TIMER0_CTL_REG *((volatile uint32_t*) 0x4003000C)\n#define NVIC_EN0_REG *((volatile uint32_t*) 0xE000E100)\n\nTIMER0_CTL_REG |= 0x01; // Enable timer\nNVIC_EN0_REG |= 1 << 19; // Enable interrupt for Timer 0"
+      },
+      {
+        "id": "es-ch3-sm-s6-6", "type": "paragraph", "content": [{ "text": "6. Memory Management:", "bold": true }, { "text": " Managing RAM and ROM effectively, considering data storage, program execution, and optimization." }]
+      },
+      {
+        "id": "es-ch3-sm-s6-7", "type": "paragraph", "content": [{ "text": "7. Real-time Constraints:", "bold": true }, { "text": " Many embedded systems have real-time constraints requiring careful consideration of timing and responsiveness. Hardware-level programming allows precise control over timing-critical operations." }]
+      },
+      {
+        "id": "es-ch3-sm-s7-8", "type": "paragraph", "content": [{ "text": "8. Testing and Debugging:", "bold": true }, { "text": " Can be challenging. Techniques include using debugging tools, logic analyzers, and in-circuit emulators." }]
+      },
+      {
+        "id": "es-ch3-sm-s7-9", "type": "paragraph", "content": [{ "text": "9. Energy Efficiency:", "bold": true }, { "text": " Optimizing code for energy efficiency is crucial, allowing fine-tuning to minimize power consumption." }]
+      },
+      {
+        "id": "es-ch3-sm-s8-10", "type": "paragraph", "content": [{ "text": "10. Documentation and Standards:", "bold": true }, { "text": " Maintain clear documentation of memory addresses, register configurations. Adhere to hardware-specific standards for portability and maintainability." }]
+      },
+      {
+        "id": "es-ch3-sm-s8-challenges",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Challenges:" }]
+      },
+      {
+        "id": "es-ch3-sm-s8-list-challenges",
+        "type": "list", "ordered": false, "items": [
+          { "id": "es-ch3-li-chall1", "content": [{ "text": "Lack of portability due to hardware-specific code." }] },
+          { "id": "es-ch3-li-chall2", "content": [{ "text": "Steeper learning curve, especially with Assembly." }] },
+          { "id": "es-ch3-li-chall3", "content": [{ "text": "Limited tool support compared to higher-level languages." }] }
+        ]
+      },
+      {
+        "id": "es-ch3-sm-s8-advantages",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Advantages:" }]
+      },
+      {
+        "id": "es-ch3-sm-s8-list-advantages",
+        "type": "list", "ordered": false, "items": [
+          { "id": "es-ch3-li-adv1", "content": [{ "text": "Fine-grained control over hardware resources." }] },
+          { "id": "es-ch3-li-adv2", "content": [{ "text": "Efficient code execution, crucial for resource-constrained devices." }] },
+          { "id": "es-ch3-li-adv3", "content": [{ "text": "Well-suited for systems with real-time constraints." }] }
+        ]
+      },
+      {
+        "id": "es-ch3-sm-designsteps-h2",
+        "type": "heading",
+        "level": 2,
+        "content": [{ "text": "Embedded System Design Steps" }]
+      },
+      {
+        "id": "es-ch3-sm-designsteps-p1",
+        "type": "paragraph",
+        "content": [{ "text": "An embedded system contains hardware and software. Design involves:" }]
+      },
+      {
+        "id": "es-ch3-sm-designsteps-list",
+        "type": "list", "ordered": false, "items": [
+          { "id": "es-ch3-ds-1", "content": [{ "text": "Specifying hardware required:", "bold": true }, { "text": " Understand objectives. Hardware includes processor, interfaces (memory, I/O), power supply, clock, reset circuits. Optimize cost/performance." }] },
+          { "id": "es-ch3-ds-2", "content": [{ "text": "Specifying sensors and actuators:", "bold": true }, { "text": " Identify control needs, sense external environment, determine output signals. This determines sensors (digital/analog output) and actuators (driven by analog/digital signal), and interfaces like ADC/DAC." }] },
+          { "id": "es-ch3-ds-3", "content": [{ "text": "System integration and Code writing:", "bold": true }, { "text": " Integration involves assembling hardware parts (connecting microcontroller, ports, memory, sensors, actuators). Code can be Assembly or High-Level Language (HLP). HLP with emulators is best practice. Tools include Code Composer Studio (CSS), Keil uVision, Xilinx tools, EDSIM51, Proteus." }] },
+          { "id": "es-ch3-ds-4", "content": [{ "text": "Testing system performance." }] }
+        ]
+      },
+      {
+        "id": "es-ch3-sm-firmwaredev-h3",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Code Writing / Firmware Development Process" }]
+      },
+      {
+        "id": "es-ch3-sm-firmwaredev-list",
+        "type": "list", "ordered": false, "items": [
+          { "id": "es-ch3-fd-1", "content": [{ "text": "Writing source code using an editor." }] },
+          { "id": "es-ch3-fd-2", "content": [{ "text": "Translating code using assembler or compiler." }] },
+          { "id": "es-ch3-fd-3", "content": [{ "text": "Debugging for errors." }] },
+          { "id": "es-ch3-fd-4", "content": [{ "text": "Simulating the system (microcontroller with peripherals, emulator, starter kits, motherboard, daughter cards)." }] },
+          { "id": "es-ch3-fd-5", "content": [{ "text": "Downloading code to target device or burning the EEPROM." }] }
+        ]
+      }
+    ]
+  },
+  {
+    "id": "es-ch3-topic-assembly",
+    "title": "Assembly Programming Basics",
+    "contentBlocks": [
+      {
+        "id": "es-ch3-asm-intro-p1",
+        "type": "paragraph",
+        "content": [{ "text": "A program is a list of instructions combined to do a specific task. Assembly programming uses mnemonics." }]
+      },
+      {
+        "id": "es-ch3-asm-structure-h3",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Assembly Program Structure (Four Columns)" }]
+      },
+      {
+        "id": "es-ch3-asm-structure-list",
+        "type": "list", "ordered": false, "items": [
+          { "id": "es-ch3-asm-s1", "content": [{ "text": "Label:", "bold": true }, { "text": " Name given to a program line." }] },
+          { "id": "es-ch3-asm-s2", "content": [{ "text": "Mnemonic:", "bold": true }, { "text": " Specific code for the task to be performed." }] },
+          { "id": "es-ch3-asm-s3", "content": [{ "text": "Operand:", "bold": true }, { "text": " Data needed to complete the instruction." }] },
+          { "id": "es-ch3-asm-s4", "content": [{ "text": "Comment:", "bold": true }, { "text": " Clarification." }] }
+        ]
+      },
+      {
+        "id": "es-ch3-asm-directives-h3",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Assembler Directives" }]
+      },
+      {
+        "id": "es-ch3-asm-directives-p1",
+        "type": "paragraph",
+        "content": [{ "text": "Instructions for the assembler to process the assembly language program." }]
+      },
+      {
+        "id": "es-ch3-asm-directives-list",
+        "type": "list", "ordered": false, "items": [
+          { "id": "es-ch3-asm-d1", "content": [{ "text": "Org:", "bold": true }, { "text": " Start address of a program." }] },
+          { "id": "es-ch3-asm-d2", "content": [{ "text": "Equ:", "bold": true }, { "text": " Define a constant." }] },
+          { "id": "es-ch3-asm-d3", "content": [{ "text": "End:", "bold": true }, { "text": " End program." }] },
+          { "id": "es-ch3-asm-d4", "content": [{ "text": "List:", "bold": true }, { "text": " Specify processor type." }] },
+          { "id": "es-ch3-asm-d5", "content": [{ "text": "#include:", "bold": true }, { "text": " Include additional files." }] }
+        ]
+      },
+      {
+        "id": "es-ch3-asm-flowcontrol-h3",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Flow Control" }]
+      },
+      {
+        "id": "es-ch3-asm-flowcontrol-p1",
+        "type": "paragraph",
+        "content": [{ "text": "Done using subroutines and branching instructions." }]
+      },
+      {
+        "id": "es-ch3-asm-branching-h4",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Branching Instructions:" }]
+      },
+      {
+        "id": "es-ch3-asm-branching-list",
+        "type": "list", "ordered": false, "items": [
+          { "id": "es-ch3-asm-b1", "content": [{ "text": "Conditional or unconditional (e.g., JMP, JC, JNZ)." }] },
+          { "id": "es-ch3-asm-b2", "content": [{ "text": "Used to implement looping or branching." }] }
+        ]
+      },
+      {
+        "id": "es-ch3-asm-subroutine-h4",
+        "type": "heading",
+        "level": 4,
+        "content": [{ "text": "Subroutine:" }]
+      },
+      {
+        "id": "es-ch3-asm-subroutine-list",
+        "type": "list", "ordered": false, "items": [
+          { "id": "es-ch3-asm-sub1", "content": [{ "text": "A small program repeatedly used in a larger program (e.g., delay or special function code)." }] }
+        ]
+      },
+      {
+        "id": "es-ch3-asm-delays-h3",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Writing Delays" }]
+      },
+      {
+        "id": "es-ch3-asm-delays-list",
+        "type": "list", "ordered": false, "items": [
+          { "id": "es-ch3-asm-del1", "content": [{ "text": "Load a register by a data value that can give a specified time delay." }] },
+          { "id": "es-ch3-asm-del2", "content": [{ "text": "Decrement the data." }] },
+          { "id": "es-ch3-asm-del3", "content": [{ "text": "Loop back." }] }
+        ]
+      },
+      {
+        "id": "es-ch3-asm-tablelookup-h3",
+        "type": "heading",
+        "level": 3,
+        "content": [{ "text": "Table Look Up" }]
+      },
+      {
+        "id": "es-ch3-asm-tablelookup-p1",
+        "type": "paragraph",
+        "content": [{ "text": "Accessing a list of data stored in a separate memory location. Used when displaying or manipulating a list of data values." }]
+      }
+    ]
+  },
+  {
+    "id": "es-ch3-topic-cprogramming",
+    "title": "C Programming for Embedded Systems",
+    "contentBlocks": [
+      { "id": "es-ch3-c-intro-p1", "type": "paragraph", "content": [{ "text": "Developed in Bell laboratories in 1970s. Of higher level languages, C is the closest to assembly languages due to features like bit manipulation instructions and pointers (indirect addressing). Most microcontrollers have available C compilers. Writing in C simplifies code development for large projects." }] },
+      { "id": "es-ch3-c-structure-h3", "type": "heading", "level": 3, "content": [{ "text": "Structure of a C Program" }] },
+      { "id": "es-ch3-c-structure-list", "type": "list", "ordered": false, "items": [
+          { "id": "es-ch3-cs1", "content": [{ "text": "Comment" }] },
+          { "id": "es-ch3-cs2", "content": [{ "text": "Declaration" }] },
+          { "id": "es-ch3-cs3", "content": [{ "text": "Main directive" }] },
+          { "id": "es-ch3-cs4", "content": [{ "text": "Program statements" }] }
+      ]},
+      { "id": "es-ch3-c-modular-p1", "type": "paragraph", "content": [{ "text": "C is a modular programming language (but NOT object-oriented). Each task can be encapsulated as a function. The entire program is encapsulated in the `main` function." }] },
+      { "id": "es-ch3-c-example-h3", "type": "heading", "level": 3, "content": [{ "text": "Simple C Program Example" }] },
+      { "id": "es-ch3-c-example-code", "type": "code", "language": "c", "code": "/* simple program */\n#include <c8051F020.h> /* define SFR */\nUnsigned char counter;\nVoid main (void)\n{\nP1=0;\nCounter=1;\nP1=counter;\n}" },
+      { "id": "es-ch3-c-keywords-h3", "type": "heading", "level": 3, "content": [{ "text": "Keywords" }] },
+      { "id": "es-ch3-c-keywords-list", "type": "list", "ordered": false, "items": [
+          { "id": "es-ch3-ck1", "content": [{ "text": "Reserved words recognized by the compiler." }] },
+          { "id": "es-ch3-ck2", "content": [{ "text": "Should not be used for other variables or functions." }] },
+          { "id": "es-ch3-ck3", "content": [{ "text": "Used for: Data types, Flow control, Other uses." }] }
+      ]},
+      { "id": "es-ch3-c-variables-h3", "type": "heading", "level": 3, "content": [{ "text": "Variables in C" }] },
+      { "id": "es-ch3-c-variables-p1", "type": "paragraph", "content": [{ "text": "All variables must be declared at the top of the program, before the first statement. Declaration includes type and list of variables. Example: `void main (void) { int var, tmp; }`" }] },
+      { "id": "es-ch3-c-vartypes-h4", "type": "heading", "level": 4, "content": [{ "text": "Common Data Types (Compiler Dependent Sizes):" }] },
+      { "id": "es-ch3-c-vartypes-list", "type": "list", "ordered": false, "items": [
+          { "id": "es-ch3-cvt1", "content": [{ "text": "int (e.g., 16-bits)" }] },
+          { "id": "es-ch3-cvt2", "content": [{ "text": "char (e.g., 8-bits)" }] },
+          { "id": "es-ch3-cvt3", "content": [{ "text": "short (e.g., 16-bits)" }] },
+          { "id": "es-ch3-cvt4", "content": [{ "text": "long (e.g., 32-bits)" }] },
+          { "id": "es-ch3-cvt5", "content": [{ "text": "sbit (1-bit, specific to some embedded C compilers)" }] }
+      ]},
+      { "id": "es-ch3-c-datatables-h3", "type": "heading", "level": 3, "content": [{ "text": "Data Types and Keywords (from tables)" }] },
+      { "id": "es-ch3-c-datatypes-p1", "type": "paragraph", "content": [{ "text": "C Keywords for Data Types & Structure: `char` (single character, 8-bit), `const` (data not modified), `double` (double-precision float), `enum` (defines variables with specific integer values), `float` (single-precision float), `int` (integer), `long` (extended integer), `short` (short integer), `signed` (qualifier for char/int), `sizeof` (returns size in bytes), `struct` (defines data structure), `typedef` (creates new name for existing type), `union` (memory block shared by multiple variables), `unsigned` (qualifier for char/int), `void` (no value/type), `volatile` (variable changeable by external factors)." }] },
+      { "id": "es-ch3-c-statements-h3", "type": "heading", "level": 3, "content": [{ "text": "Statements in C" }] },
+      { "id": "es-ch3-c-statements-p1", "type": "paragraph", "content": [{ "text": "Statements accomplish tasks. Most important is assignment: `variable = constant or expression or variable`. Examples: `upper = 60;`, `I = I + 5;`, `J = I;`" }] },
+      { "id": "es-ch3-c-statements-p2", "type": "paragraph", "content": [{ "text": "Other statements are arithmetic or logic operations. Operations and symbols: Arithmetic (`+, -, *, /`), Relational comparisons (`>, >=, <, <=`), Equality (`==, !=`), Logical operators (`&&` (and), `||` (or)), Increment/decrement (`++, --`). Example: `if (x != y) && (c == b)) { a=c + d*b; a++; }`" }] },
+      { "id": "es-ch3-c-assemblycomp-h3", "type": "heading", "level": 3, "content": [{ "text": "Comparison of Assembly and C" }] },
+      { "id": "es-ch3-c-assemblycomp-p1", "type": "paragraph", "content": [{ "text": "Example program for adding two 16-bit numbers:" }] },
+      { "id": "es-ch3-c-assemblycomp-code1", "type": "code", "language": "assembly", "code": "$INCLUDE (C8051F020.inc)\nXL equ 0x78\nXH equ 0x79\nYL equ 0x7A\nYH equ 0x7B\n    ljmp Main\n; Disable watchdog timer\nMain: mov 0xFF, #0DEh\n    mov 0xFF, #0ADh\n    mov a, XL\n    add a, YL\n    mov XL, a\n    mov a, XH\n    addc a, YH\n    mov XH, a\n    nop\nend" },
+      { "id": "es-ch3-c-assemblycomp-code2", "type": "code", "language": "c", "code": "#include <c8051f020.h>\nvoid main (void) {\n    int x, y, z; //16-bit variables\n    z = x + y;\n}" },
+      { "id": "es-ch3-c-flowkeywords-h3", "type": "heading", "level": 3, "content": [{ "text": "Reserved Words for Program Flow" }] },
+      { "id": "es-ch3-c-flowkeywords-p1", "type": "paragraph", "content": [{ "text": "`break` (exits loop), `case` (option in switch), `continue` (skips to end of loop iteration), `default` (option in switch if no match), `do` (used with while for loop), `else` (alternative if condition is false), `for` (defines repeated loop), `goto` (moves execution to label), `if` (starts conditional statement), `return` (returns from function), `switch` (selects among alternatives), `while` (defines repeated loop)." }] },
+      { "id": "es-ch3-c-storageclass-h3", "type": "heading", "level": 3, "content": [{ "text": "Data Storage Class" }] },
+      { "id": "es-ch3-c-storageclass-p1", "type": "paragraph", "content": [{ "text": "`auto` (variable exists only within block, default), `extern` (declares data defined elsewhere), `register` (variable to be stored in CPU register), `static` (variable exists throughout program execution, location affects visibility)." }] },
+      { "id": "es-ch3-c-preprocessor-h3", "type": "heading", "level": 3, "content": [{ "text": "Preprocessor Directives" }] },
+      { "id": "es-ch3-c-preprocessor-p1", "type": "paragraph", "content": [{ "text": "`#if` (conditional compilation), `#ifdef` (tests if symbol defined), `#ifndef` (tests if symbol not defined), `#else` (alternative for #if), `#elif` (else if), `#endif` (terminates #if), `#define` (defines string constants), `#error` (generates user-defined error), `#include` (includes full text from file), `#line` (specify line number), `#pragma` (compiler-specific directive), `#undef` (reverses #define)." }] },
+      { "id": "es-ch3-c-loopstatements-h3", "type": "heading", "level": 3, "content": [{ "text": "Loop Statements" }] },
+      { "id": "es-ch3-c-loopstatements-p1", "type": "paragraph", "content": [{ "text": "Loops execute a block of code multiple times. General form involves a condition; if true, conditional code executes, then condition is re-checked. Types: `while` (tests condition before body), `for` (initialization, condition, increment), `do...while` (tests condition after body), `nested loops`." }] },
+      { "id": "es-ch3-c-whiledesc-p1", "type": "paragraph", "content": [{ "text": "While loop: `while (condition) { statements }`. Example: `while (1); // loop forever`." }] },
+      { "id": "es-ch3-c-fordesc-p1", "type": "paragraph", "content": [{ "text": "For loop: `for (initialization; condition; increment) {statements}`. Initialization first, then condition test, execute statements, increment, re-test condition." }] },
+      { "id": "es-ch3-c-decisionstatements-h3", "type": "heading", "level": 3, "content": [{ "text": "Decision Statements" }] },
+      {
+        "id": "es-ch3-c-decisionstatements-p1",
+        "type": "paragraph",
+        "content": [{ "text": "Allow different execution paths based on conditions. Types: `if` (executes if condition true), `if...else` (executes `else` if condition false), `nested if`, `switch` (tests variable against list of values), `nested switch`." }]
+      },
+      { "id": "es-ch3-c-specifics-h3", "type": "heading", "level": 3, "content": [{ "text": "C Programming Specifics for Embedded (from 2nd deck)" }] },
+      { "id": "es-ch3-c-toolchain-p1", "type": "paragraph", "content": [{ "text": "Toolchain Setup: Compiler (e.g., GCC for cross-compiling), linker, debugger. IDEs like Eclipse or VS Code with plugins." }] },
+      { "id": "es-ch3-c-memmgmt-p1", "type": "paragraph", "content": [{ "text": "Memory Management: Be mindful of stack/heap usage. Utilize static memory allocation (e.g., `int buffer[100];`) to avoid dynamic overhead." }] },
+      { "id": "es-ch3-c-datatypes-p2", "type": "paragraph", "content": [{ "text": "Data Types: Understand C data types and memory representation. Choose appropriate types to conserve memory (e.g., `struct SensorData { int sensorId; float value; };`)." }] },
+      { "id": "es-ch3-c-bitmanip-p1", "type": "paragraph", "content": [{ "text": "Bit Manipulation: Common for configuring registers. Example: `#define REG_ADDR 0x40004000; *((volatile uint32_t*) REG_ADDR) |= (1 << 5); // Set bit 5`." }] },
+      { "id": "es-ch3-c-ioops-p1", "type": "paragraph", "content": [{ "text": "I/O Operations: Directly access/manipulate I/O ports (see GPIO example under Key Aspects)." }] },
+      { "id": "es-ch3-c-interrupthandle-p1", "type": "paragraph", "content": [{ "text": "Interrupt Handling: Write ISRs. Example: `void Timer0_ISR(void) { /* Handle timer interrupt */ }` (see Timer Interrupt example under Key Aspects)." }] },
+      { "id": "es-ch3-c-avoidlibs-p1", "type": "paragraph", "content": [{ "text": "Avoiding Standard Libraries: Common in resource-constrained environments to reduce code size. Implement only necessary functionalities." }] },
+      { "id": "es-ch3-c-realtime-p1", "type": "paragraph", "content": [{ "text": "Real-time Considerations: Ensure critical operations meet timing constraints. Minimize interrupt latency." }] },
+      { "id": "es-ch3-c-debugging-p1", "type": "paragraph", "content": [{ "text": "Debugging Techniques: Use printf debugging, LEDs, or serial communication if sophisticated tools are unavailable." }] },
+      { "id": "es-ch3-c-documentation-p1", "type": "paragraph", "content": [{ "text": "Documentation and Comments: Thoroughly document code, memory addresses, register configurations. Use comments." }] },
+      { "id": "es-ch3-c-testing-p1", "type": "paragraph", "content": [{ "text": "Testing on Target Hardware: Frequently test on target hardware for compatibility and early issue identification." }] }
+    ]
+  },
+  {
+    "id": "es-ch3-topic-mcu-arch",
+    "title": "Overview of Microcontroller Architectures",
+    "contentBlocks": [
+      { "id": "es-ch3-mcu-avr-h4", "type": "heading", "level": 4, "content": [{ "text": "AVR ATMEGA328P" }] },
+      { "id": "es-ch3-mcu-avr-p1", "type": "paragraph", "content": [{ "text": "Architecture: 8-bit RISC. Uses Harvard Architecture (separate instruction/data memory). Efficient instruction execution, good for timing-sensitive applications. Widely used in Arduino Uno and hobbyist platforms." }] },
+      { "id": "es-ch3-mcu-armcortex-h4", "type": "heading", "level": 4, "content": [{ "text": "ARM CORTEX-M4 and STM32F4 SERIES" }] },
+      { "id": "es-ch3-mcu-armcortex-p1", "type": "paragraph", "content": [{ "text": "Architecture: 32-bit RISC (ARM Cortex-M4F core with FPU). Harvard Architecture with pipelining and Thumb-2 instruction set. Used in real-time control systems, industrial applications. STM32F4 offers high performance and low power consumption." }] },
+      { "id": "es-ch3-mcu-8051-h4", "type": "heading", "level": 4, "content": [{ "text": "8051 MICROCONTROLLER" }] },
+      { "id": "es-ch3-mcu-8051-p1", "type": "paragraph", "content": [{ "text": "Architecture: CISC. Single accumulator-based CPU, limited registers. Originally developed by Intel; many derivatives exist. Popular in education, legacy systems, simple control tasks." }] },
+      { "id": "es-ch3-mcu-msp430pic-h4", "type": "heading", "level": 4, "content": [{ "text": "MSP430 AND PIC16F877A" }] },
+      { "id": "es-ch3-mcu-msp430pic-p1", "type": "paragraph", "content": [{ "text": "MSP430: 16-bit RISC architecture, ultra-low power design, modified Harvard Architecture. PIC16F877A: 8-bit microcontroller with Harvard Architecture. Both popular for low-cost and energy-sensitive applications." }] },
+      { "id": "es-ch3-mcu-esp32-h4", "type": "heading", "level": 4, "content": [{ "text": "ESP32" }] },
+      { "id": "es-ch3-mcu-esp32-p1", "type": "paragraph", "content": [{ "text": "Architecture: Tensilica Xtensa LX6 Dual-Core, custom RISC. Integrated Wi-Fi and Bluetooth with hardware acceleration. Popular in IoT applications due to rich feature set. Programmable via C, C++, MicroPython, Arduino IDE." }] },
+      { "id": "es-ch3-mcu-rpi4-h4", "type": "heading", "level": 4, "content": [{ "text": "RASPBERRY PI 4" }] },
+      { "id": "es-ch3-mcu-rpi4-p1", "type": "paragraph", "content": [{ "text": "Architecture: 64-bit ARM Cortex-A72, high-performance application processor. Runs full Linux OS (Raspberry Pi OS, Ubuntu, etc.). Used in multimedia, AI applications, edge computing. Not a traditional microcontroller but used in embedded systems." }] },
+      { "id": "es-ch3-mcu-nxparduino-h4", "type": "heading", "level": 4, "content": [{ "text": "NXP LPC1768 AND ARDUINO DUE" }] },
+      { "id": "es-ch3-mcu-nxparduino-p1", "type": "paragraph", "content": [{ "text": "Both use ARM Cortex-M3, 32-bit RISC architecture. NXP LPC1768 suitable for industrial applications (mbed platform). Arduino Due offers accessibility with powerful MCU. Cortex-M3 provides excellent interrupt handling and low power." }] },
+      { "id": "es-ch3-mcu-cisc-h3", "type": "heading", "level": 3, "content": [{ "text": "CISC (Complex Instruction Set Computer)" }] },
+      { "id": "es-ch3-mcu-cisc-p1", "type": "paragraph", "content": [{ "text": "Characteristics: Large number of instructions, some very specific and powerful. Designed to complete tasks with fewer lines of assembly code. Slower clock speeds and more complex decoding logic. Examples: x86 processors, 8051 microcontroller." }] },
+      { "id": "es-ch3-mcu-risc-h3", "type": "heading", "level": 3, "content": [{ "text": "RISC (Reduced Instruction Set Computer)" }] },
+      { "id": "es-ch3-mcu-risc-p1", "type": "paragraph", "content": [{ "text": "Characteristics: Small set of simple instructions, each executes in one clock cycle. Optimized for pipelining and high-speed operation. Requires more instructions for complex tasks, but simpler hardware. Examples: ARM Cortex cores, AVR, MIPS, RISC-V." }] }
+    ]
+  },
+  {
+    "id": "es-ch3-topic-devplatforms",
+    "title": "Development Platforms for Embedded Software",
+    "introduction": [
+      { "text": "Development platforms provide tools, libraries, and frameworks to facilitate firmware and application development for embedded systems. They typically include IDEs, compilers, debuggers, and libraries tailored for embedded development." }
+    ],
+    "contentBlocks": [
+      { "id": "es-ch3-dp-arduino-h3", "type": "heading", "level": 3, "content": [{ "text": "1. Arduino" }] },
+      { "id": "es-ch3-dp-arduino-p1", "type": "paragraph", "content": [{ "text": "Description: Open-source hardware/software platform for prototyping and development. Features: Arduino IDE (simple, powerful), extensive library support, beginner-friendly." }] },
+      { "id": "es-ch3-dp-rpi-h3", "type": "heading", "level": 3, "content": [{ "text": "2. Raspberry Pi" }] },
+      { "id": "es-ch3-dp-rpi-p1", "type": "paragraph", "content": [{ "text": "Description: Series of single-board computers for embedded projects, IoT, education. Features: Raspberry Pi OS (Linux-based), GPIO pins, diverse applications (home automation, robotics)." }] },
+      { "id": "es-ch3-dp-platformio-h3", "type": "heading", "level": 3, "content": [{ "text": "3. PlatformIO" }] },
+      { "id": "es-ch3-dp-platformio-p1", "type": "paragraph", "content": [{ "text": "Description: Open-source ecosystem for IoT development, compatible with Arduino, ESP8266/32, Raspberry Pi. Features: Cross-platform IDE (VS Code, Atom, Eclipse), library manager, debugging/testing support." }] },
+      { "id": "es-ch3-dp-stm32cube-h3", "type": "heading", "level": 3, "content": [{ "text": "4. STM32CubeIDE" }] },
+      { "id": "es-ch3-dp-stm32cube-p1", "type": "paragraph", "content": [{ "text": "Description: IDE from STMicroelectronics for STM32 microcontrollers. Features: Eclipse-based, integrated with STM32CubeMX (graphical configuration/code generation), hardware debugging (ST-LINK)." }] },
+      { "id": "es-ch3-dp-keil-h3", "type": "heading", "level": 3, "content": [{ "text": "5. Keil µVision" }] },
+      { "id": "es-ch3-dp-keil-p1", "type": "paragraph", "content": [{ "text": "Description: Popular IDE for microcontrollers, especially ARM Cortex-M. Features: ARM compiler (optimized), simulation/debugging, RTOS support (FreeRTOS, CMSIS-RTOS)." }] },
+      { "id": "es-ch3-dp-espidf-h3", "type": "heading", "level": 3, "content": [{ "text": "6. Espressif IoT Development Framework (ESP-IDF)" }] },
+      { "id": "es-ch3-dp-espidf-p1", "type": "paragraph", "content": [{ "text": "Description: Official framework for ESP32/ESP8266. Features: FreeRTOS-based (multitasking, real-time), command-line tools, rich peripheral support (GPIO, UART, SPI, I2C, Wi-Fi, Bluetooth)." }] },
+      { "id": "es-ch3-dp-labview-h3", "type": "heading", "level": 3, "content": [{ "text": "7. NI LabVIEW" }] },
+      { "id": "es-ch3-dp-labview-p1", "type": "paragraph", "content": [{ "text": "Description: Graphical programming environment from National Instruments for test, measurement, control, including embedded. Features: Dataflow programming, real-time/FPGA modules, hardware integration (CompactRIO, Single-Board RIO)." }] },
+      { "id": "es-ch3-dp-choosing-p1", "type": "paragraph", "content": [{ "text": "The choice of platform depends on project requirements, familiarity, hardware compatibility, and ecosystem support." }] }
+    ]
+  },
+  {
+    "id": "es-ch3-topic-introarduino",
+    "title": "Introduction to Arduino",
+    "contentBlocks": [
+      { "id": "es-ch3-arduino-whatis-p1", "type": "paragraph", "content": [{ "text": "Arduino is an open-source hardware and software platform designed for hobbyists, makers, students, and professionals to create interactive electronic projects. It consists of physical programmable circuit boards (microcontroller boards) and a software development environment (IDE) to write and upload code." }] },
+      { "id": "es-ch3-arduino-hardware-h3", "type": "heading", "level": 3, "content": [{ "text": "Arduino Hardware Components" }] },
+      { "id": "es-ch3-arduino-hardware-list", "type": "list", "ordered": false, "items": [
+          { "id": "es-ch3-ah1", "content": [{ "text": "Microcontroller: Heart of the board (e.g., ATmega328 for Uno, ARM Cortex-M for Zero)." }] },
+          { "id": "es-ch3-ah2", "content": [{ "text": "Input/Output (I/O) Pins: Interface with external devices (sensors, LEDs). Digital and analog pins." }] },
+          { "id": "es-ch3-ah3", "content": [{ "text": "Power Supply: Via USB, battery, or external supply. Often includes voltage regulators." }] },
+          { "id": "es-ch3-ah4", "content": [{ "text": "USB Interface: Communication with computer for programming and serial communication." }] }
+      ]},
+      { "id": "es-ch3-arduino-ide-h3", "type": "heading", "level": 3, "content": [{ "text": "Arduino Software Development Environment (IDE)" }] },
+      { "id": "es-ch3-arduino-ide-p1", "type": "paragraph", "content": [{ "text": "User-friendly platform for writing, compiling, and uploading code (sketches)." }] },
+      { "id": "es-ch3-arduino-ide-list", "type": "list", "ordered": false, "items": [
+          { "id": "es-ch3-aide1", "content": [{ "text": "Code Editor: For writing sketches in a simplified C++." }] },
+          { "id": "es-ch3-aide2", "content": [{ "text": "Compiler: Translates sketches into machine code." }] },
+          { "id": "es-ch3-aide3", "content": [{ "text": "Library Support: Vast collection for interfacing with sensors, actuators, etc." }] },
+          { "id": "es-ch3-aide4", "content": [{ "text": "Serial Monitor: For debugging and serial communication." }] }
+      ]},
+      { "id": "es-ch3-arduino-prog-h3", "type": "heading", "level": 3, "content": [{ "text": "Programming with Arduino" }] },
+      { "id": "es-ch3-arduino-prog-p1", "type": "paragraph", "content": [{ "text": "Involves writing sketches (small programs in C/C++ syntax). Each sketch typically consists of two main functions:" }] },
+      { "id": "es-ch3-arduino-prog-list", "type": "list", "ordered": false, "items": [
+          { "id": "es-ch3-aprog1", "content": [{ "text": "setup(): Called once when board powers on or resets (initialize variables, configure pins)." }] },
+          { "id": "es-ch3-aprog2", "content": [{ "text": "loop(): Runs continuously after setup() (contains main logic)." }] }
+      ]},
+      { "id": "es-ch3-arduino-blinkex-h4", "type": "heading", "level": 4, "content": [{ "text": "Blink Example Sketch:" }] },
+      { "id": "es-ch3-arduino-blinkex-code", "type": "code", "language": "c++", "code": "void setup() {\n  pinMode(13, OUTPUT); // Set pin 13 as output\n}\n\nvoid loop() {\n  digitalWrite(13, HIGH); // Turn on the LED\n  delay(1000);            // Wait for 1 second\n  digitalWrite(13, LOW);  // Turn off the LED\n  delay(1000);            // Wait for 1 second\n}" },
+      { "id": "es-ch3-arduino-community-h3", "type": "heading", "level": 3, "content": [{ "text": "Community and Ecosystem" }] },
+      { "id": "es-ch3-arduino-community-p1", "type": "paragraph", "content": [{ "text": "Large, active community sharing projects, tutorials, resources. Widely available Arduino-compatible boards and components." }] },
+      { "id": "es-ch3-arduino-apps-h3", "type": "heading", "level": 3, "content": [{ "text": "Applications of Arduino" }] },
+      { "id": "es-ch3-arduino-apps-list", "type": "list", "ordered": false, "items": [
+          { "id": "es-ch3-aapp1", "content": [{ "text": "DIY Electronics Projects (robots, home automation, weather stations)." }] },
+          { "id": "es-ch3-aapp2", "content": [{ "text": "Educational Purposes (teaching electronics, programming, robotics)." }] },
+          { "id": "es-ch3-aapp3", "content": [{ "text": "Prototyping and Product Development (rapid prototyping, proof-of-concept)." }] }
+      ]},
+      { "id": "es-ch3-arduino-summary-p1", "type": "paragraph", "content": [{ "text": "Arduino provides a versatile platform for electronics enthusiasts and professionals. Its easy-to-use hardware and software ecosystem enables users to create innovative projects and explore electronics, programming, and physical computing." }] }
+    ]
+  }
+]

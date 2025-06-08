@@ -1,0 +1,127 @@
+[
+  {
+    "id": "es-ch1-fc-1",
+    "front": "What is Digital Logic?",
+    "back": "The fundamental building blocks of embedded systems, providing the basis for intelligent and controlled functionalities. It's the language embedded systems use to communicate and process information."
+  },
+  {
+    "id": "es-ch1-fc-2",
+    "front": "What is Logic Algebra (Boolean Algebra)?",
+    "back": "A mathematical structure dealing with binary variables (0 or 1) and logic operations (AND, OR, NOT). Fundamental for digital circuit design."
+  },
+  {
+    "id": "es-ch1-fc-3",
+    "front": "What are the three basic Logical Operations?",
+    "back": "AND (conjunction, result is 1 if all inputs are 1), OR (disjunction, result is 1 if any input is 1), NOT (negation, flips the input value)."
+  },
+  {
+    "id": "es-ch1-fc-4",
+    "front": "What is a Truth Table?",
+    "back": "A table representing the output of a Boolean expression for all possible combinations of input values."
+  },
+  {
+    "id": "es-ch1-fc-5",
+    "front": "State De Morgan's Laws.",
+    "back": "(A+B)' = A'·B'  and  (A·B)' = A'+B'"
+  },
+  {
+    "id": "es-ch1-fc-6",
+    "front": "What are Logic Circuits?",
+    "back": "Electronic circuits that perform logical operations based on Boolean algebra, using digital signals (0s and 1s)."
+  },
+  {
+    "id": "es-ch1-fc-7",
+    "front": "What are Logic Gates?",
+    "back": "Fundamental building blocks of logic circuits that perform basic logical operations (AND, OR, NOT) on binary inputs."
+  },
+  {
+    "id": "es-ch1-fc-8",
+    "front": "What is a Flip-Flop?",
+    "back": "A memory element in digital circuits that stores binary information, crucial for sequential logic."
+  },
+  {
+    "id": "es-ch1-fc-9",
+    "front": "What is an ALU?",
+    "back": "Arithmetic Logic Unit: A component in processors that performs arithmetic (add, subtract) and logic (AND, OR) operations on binary numbers."
+  },
+  {
+    "id": "es-ch1-fc-10",
+    "front": "Differentiate Combinational and Sequential Logic Circuits.",
+    "back": "Combinational: Output depends solely on current inputs. Sequential: Output depends on current inputs AND previous state (has memory)."
+  },
+  {
+    "id": "es-ch1-fc-11",
+    "front": "What are Counters in digital logic?",
+    "back": "Sequential logic circuits that count in a prescribed sequence (up, down, binary, decade)."
+  },
+  {
+    "id": "es-ch1-fc-12",
+    "front": "What are Timers in digital logic?",
+    "back": "Devices that measure the duration of time intervals, used for precise time control and scheduling."
+  },
+  {
+    "id": "es-ch1-fc-13",
+    "front": "What is a Finite State Machine (FSM)?",
+    "back": "A model for systems that can exist in a finite number of states, transitioning between them based on inputs and current state."
+  },
+  {
+    "id": "es-ch1-fc-14",
+    "front": "Differentiate Moore and Mealy FSMs.",
+    "back": "Moore Machine: Output depends only on the current state. Mealy Machine: Output depends on both the current state and current inputs."
+  },
+  {
+    "id": "es-ch1-fc-15",
+    "front": "Application of Logic Algebra: Computer Systems",
+    "back": "Governs operations of logic gates, arithmetic units, and memory units in computer architecture."
+  },
+  {
+    "id": "es-ch1-fc-16",
+    "front": "Identity Laws in Boolean Algebra",
+    "back": "A + 0 = A; A · 1 = A"
+  },
+  {
+    "id": "es-ch1-fc-17",
+    "front": "Domination Laws in Boolean Algebra (Common Form)",
+    "back": "A + 1 = 1 (often stated for OR); A · 0 = 0. Also A + A' = 1; A · A' = 0."
+  },
+  {
+    "id": "es-ch1-fc-18",
+    "front": "Idempotent Laws in Boolean Algebra",
+    "back": "A + A = A; A · A = A"
+  },
+  {
+    "id": "es-ch1-fc-19",
+    "front": "What is a Multiplexer (MUX)?",
+    "back": "A logic circuit that selects one of several input data lines and directs it to a single output line."
+  },
+  {
+    "id": "es-ch1-fc-20",
+    "front": "What is a Decoder?",
+    "back": "A logic circuit that converts binary information from one code to another (e.g., binary to decimal)."
+  },
+  {
+    "id": "es-ch1-fc-21",
+    "front": "What is a Digital Signal Processor (DSP)?",
+    "back": "A specialized processor designed for digital signal processing tasks, like audio and image processing, often using specialized logic circuits."
+  },
+  {
+    "id": "es-ch1-fc-22",
+    "front": "What type of counter updates all its flip-flops simultaneously?",
+    "back": "Synchronous Counter."
+  },
+  {
+    "id": "es-ch1-fc-23",
+    "front": "What type of timer produces a continuous square wave output?",
+    "back": "Astable Multivibrator."
+  },
+  {
+    "id": "es-ch1-fc-24",
+    "front": "What are the key components of an FSM?",
+    "back": "States, Transitions, Inputs, and Outputs."
+  },
+  {
+    "id": "es-ch1-fc-25",
+    "front": "Main characteristic of devices like counters, timers, and FSMs related to memory.",
+    "back": "They rely on Sequential Logic, typically using flip-flops to store and update information."
+  }
+]
