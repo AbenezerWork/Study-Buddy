@@ -35,6 +35,9 @@ const App: React.FC = () => {
   const [currentMcqIndex, setCurrentMcqIndex] = useState(0);
   const [userAnswers, setUserAnswers] = useState<Record<string, number | null>>({});
   const [showFeedback, setShowFeedback] = useState<Record<string, boolean>>({});
+
+  const [quizCompleted, setQuizCompleted] = useState<boolean>(false);
+  const [quizScore, setQuizScore] = useState<number>(0);
   
   useEffect(() => {
     document.title = currentChapter ? `${currentChapter.name} | ${metadata.name}` : metadata.name;
@@ -49,7 +52,6 @@ const App: React.FC = () => {
         if (!response.ok) throw new Error(`Failed to load subjects list. Status: ${response.status} ${response.statusText}`);
         const data = await response.json();
         setSubjects(data);
-        // Auto-select first chapter of first subject if available
         if (data.length > 0 && data[0].chapters.length > 0) {
           handleSelectChapter(data[0].chapters[0].id, data[0].id);
         }
@@ -71,6 +73,8 @@ const App: React.FC = () => {
       setChapterFlashcards([]);
       setChapterMcqs([]);
       setChapterStudyMaterialTopics([]);
+      setQuizCompleted(false);
+      setQuizScore(0);
       return;
     }
 
@@ -80,6 +84,8 @@ const App: React.FC = () => {
 
     if (!chapter) {
       setErrorChapterData(`Chapter (ID: ${selectedChapterId}) not found in subject (ID: ${selectedSubjectId}).`);
+      setQuizCompleted(false);
+      setQuizScore(0);
       return;
     }
     
@@ -93,6 +99,8 @@ const App: React.FC = () => {
       setCurrentMcqIndex(0);
       setUserAnswers({});
       setShowFeedback({});
+      setQuizCompleted(false);
+      setQuizScore(0);
 
       try {
         const fetchData = async (path: string | undefined, type: string) => {
@@ -100,7 +108,7 @@ const App: React.FC = () => {
           const response = await fetch(path);
           if (!response.ok) {
             console.warn(`Failed to fetch ${type} from ${path}: ${response.statusText}`);
-            return []; // Return empty array on fetch error to allow other data to load
+            return []; 
           }
           try {
             return await response.json();
@@ -137,10 +145,23 @@ const App: React.FC = () => {
     setSelectedSubjectId(subjectId);
     setSelectedChapterId(chapterId);
     setMode(StudyMode.FLASHCARD); 
+    setCurrentMcqIndex(0);
+    setUserAnswers({});
+    setShowFeedback({});
+    setQuizCompleted(false);
+    setQuizScore(0);
+    setCurrentFlashcardIndex(0);
   };
 
   const handleModeChange = (newMode: StudyMode) => {
     setMode(newMode);
+    // Reset progress specific to quiz or flashcards when mode changes
+    setCurrentFlashcardIndex(0);
+    setCurrentMcqIndex(0);
+    setUserAnswers({});
+    setShowFeedback({});
+    setQuizCompleted(false);
+    setQuizScore(0);
   };
 
   const handleNext = () => {
@@ -148,9 +169,31 @@ const App: React.FC = () => {
       if (currentFlashcardIndex < chapterFlashcards.length - 1) {
         setCurrentFlashcardIndex(prev => prev + 1);
       }
-    } else if (mode === StudyMode.QUIZ) {
-      if (currentMcqIndex < chapterMcqs.length - 1) {
-        setCurrentMcqIndex(prev => prev + 1);
+    } else if (mode === StudyMode.QUIZ && chapterMcqs.length > 0) {
+      const currentMcqForNav = chapterMcqs[currentMcqIndex];
+      if (currentMcqForNav) {
+        if (!quizCompleted) { 
+          const currentQuestionAnswered = showFeedback[currentMcqForNav.id];
+          if (!currentQuestionAnswered) return; 
+
+          if (currentMcqIndex === chapterMcqs.length - 1) { 
+            let score = 0;
+            chapterMcqs.forEach(mcqItem => {
+              if (userAnswers[mcqItem.id] === mcqItem.correctAnswerIndex) {
+                score++;
+              }
+            });
+            setQuizScore(score);
+            setQuizCompleted(true);
+            // Stays on the last question for review start
+          } else { 
+            setCurrentMcqIndex(prev => prev + 1);
+          }
+        } else { // Quiz completed, in review mode
+          if (currentMcqIndex < chapterMcqs.length - 1) {
+            setCurrentMcqIndex(prev => prev + 1);
+          }
+        }
       }
     }
   };
@@ -161,16 +204,25 @@ const App: React.FC = () => {
         setCurrentFlashcardIndex(prev => prev - 1);
       }
     } else if (mode === StudyMode.QUIZ) {
-      if (currentMcqIndex > 0) {
+      if (currentMcqIndex > 0) { 
         setCurrentMcqIndex(prev => prev - 1);
       }
     }
   };
   
   const handleAnswerSelect = useCallback((mcqId: string, optionIndex: number) => {
+    if (quizCompleted) return; // Do not allow answer changes after quiz is completed
     setUserAnswers(prev => ({ ...prev, [mcqId]: optionIndex }));
     setShowFeedback(prev => ({ ...prev, [mcqId]: true }));
-  }, []);
+  }, [quizCompleted]);
+
+  const restartQuiz = () => {
+    setCurrentMcqIndex(0);
+    setUserAnswers({});
+    setShowFeedback({});
+    setQuizScore(0);
+    setQuizCompleted(false);
+  };
 
   const currentFlashcard = chapterFlashcards[currentFlashcardIndex];
   const currentMcq = chapterMcqs[currentMcqIndex];
@@ -190,14 +242,34 @@ const App: React.FC = () => {
     
     if (mode === StudyMode.QUIZ) {
       if (!chapterMcqs.length) return <p className="text-center text-slate-500 py-10">No quiz questions available for this chapter.</p>;
-      if (!currentMcq) return <p className="text-center text-slate-500 py-10">Question not found.</p>;
+      
+      const currentQuestionToDisplay = chapterMcqs[currentMcqIndex];
+      if (!currentQuestionToDisplay) return <p className="text-center text-slate-500 py-10">Question not found.</p>;
+
       return (
-        <QuizView 
-          mcq={currentMcq}
-          onAnswerSelect={(optionIdx) => handleAnswerSelect(currentMcq.id, optionIdx)}
-          selectedAnswer={userAnswers[currentMcq.id] === undefined ? null : userAnswers[currentMcq.id]}
-          showFeedback={showFeedback[currentMcq.id] || false}
-        />
+        <div> {/* Wrapper div for score and QuizView */}
+          {quizCompleted && (
+            <div className="text-center mb-4 sm:mb-6 pb-4 border-b border-slate-300">
+              <h2 className="text-2xl sm:text-3xl font-bold text-indigo-700 mb-2">Quiz Completed!</h2>
+              <p className="text-xl sm:text-2xl text-slate-700 mb-3">
+                Your score: <span className="font-bold text-indigo-600">{quizScore}</span> / {chapterMcqs.length}
+              </p>
+              <button
+                onClick={restartQuiz}
+                className="px-6 py-2 sm:py-3 bg-indigo-600 text-white rounded-md hover:bg-indigo-700 transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500 text-sm sm:text-base"
+              >
+                Restart Quiz for this Chapter
+              </button>
+              <p className="mt-3 text-sm text-slate-600">You can now review your answers using the Previous/Next buttons.</p>
+            </div>
+          )}
+          <QuizView 
+            mcq={currentQuestionToDisplay}
+            onAnswerSelect={(optionIdx) => handleAnswerSelect(currentQuestionToDisplay.id, optionIdx)}
+            selectedAnswer={userAnswers[currentQuestionToDisplay.id] === undefined ? null : userAnswers[currentQuestionToDisplay.id]}
+            showFeedback={quizCompleted || (showFeedback[currentQuestionToDisplay.id] || false)}
+          />
+        </div>
       );
     }
 
@@ -211,28 +283,39 @@ const App: React.FC = () => {
   let totalItems = 0;
   let currentIndex = 0;
   let itemTypeLabel = "";
-  let showNavigationControls = false;
+  let showNavigation = false;
+  let isNextEffectivelyDisabled = true;
+  let isPrevEffectivelyDisabled = true;
+  let nextButtonText = "Next";
 
-  if (mode === StudyMode.FLASHCARD) {
+  if (mode === StudyMode.FLASHCARD && chapterFlashcards.length > 0) {
     totalItems = chapterFlashcards.length;
     currentIndex = currentFlashcardIndex;
     itemTypeLabel = "Card";
-    showNavigationControls = totalItems > 0;
-  } else if (mode === StudyMode.QUIZ) {
+    showNavigation = true;
+    isNextEffectivelyDisabled = currentFlashcardIndex >= chapterFlashcards.length - 1;
+    isPrevEffectivelyDisabled = currentFlashcardIndex <= 0;
+  } else if (mode === StudyMode.QUIZ && chapterMcqs.length > 0) {
     totalItems = chapterMcqs.length;
     currentIndex = currentMcqIndex;
     itemTypeLabel = "Question";
-    showNavigationControls = totalItems > 0;
+    showNavigation = true; 
+    
+    isPrevEffectivelyDisabled = currentMcqIndex <= 0;
+
+    if (!quizCompleted) {
+      const currentQuestionAnswered = currentMcq && showFeedback[currentMcq.id];
+      isNextEffectivelyDisabled = !currentQuestionAnswered;
+      if (currentMcqIndex === chapterMcqs.length - 1) {
+        nextButtonText = "Finish Quiz";
+      }
+    } else { // Quiz completed (review mode)
+      isNextEffectivelyDisabled = currentMcqIndex >= chapterMcqs.length - 1;
+      nextButtonText = "Next"; // Reset from "Finish Quiz" if it was set
+    }
   }
   
-  const isNextEffectivelyDisabled = 
-    currentIndex >= totalItems - 1 ||
-    (mode === StudyMode.QUIZ && currentMcq && !showFeedback[currentMcq.id] && currentMcqIndex < chapterMcqs.length -1);
-  
-  const isPrevEffectivelyDisabled = currentIndex <= 0;
-
-  const isModeSelectorDisabled = !selectedChapterId || isLoadingChapterData || !!errorChapterData || 
-    (mode === StudyMode.QUIZ && currentMcq && !showFeedback[currentMcq.id] && Object.keys(userAnswers).includes(currentMcq.id) === false);
+  const isModeSelectorDisabled = !selectedChapterId || isLoadingChapterData || !!errorChapterData;
 
   return (
     <div className="min-h-screen flex flex-col lg:flex-row bg-slate-100">
@@ -264,21 +347,22 @@ const App: React.FC = () => {
             />
           )}
           
-          <div className="bg-slate-50 p-3 sm:p-4 md:p-6 rounded-lg shadow-lg flex-grow flex flex-col justify-center mb-6 min-h-[calc(100vh-22rem)] sm:min-h-[calc(100vh-20rem)] md:min-h-[30rem] overflow-y-auto"> {/* Dynamic min-height */}
+          <div className="bg-slate-50 p-3 sm:p-4 md:p-6 rounded-lg shadow-lg flex-grow flex flex-col justify-center mb-6 min-h-[calc(100vh-22rem)] sm:min-h-[calc(100vh-20rem)] md:min-h-[30rem] overflow-y-auto">
             {isLoadingSubjects && !selectedChapterId && <p className="text-center text-slate-500 py-10 text-lg">Loading subject list...</p>}
             {errorSubjects && !selectedChapterId && <div className="text-center text-red-700 bg-red-100 border border-red-300 p-4 rounded-md py-10"><p className="font-semibold">Failed to Load Subjects</p><p className="text-sm mt-1">{errorSubjects}</p></div>}
             {renderContent()}
           </div>
 
-          {!isLoadingChapterData && !errorChapterData && showNavigationControls && (
+          {!isLoadingChapterData && !errorChapterData && showNavigation && (
             <NavigationControls
               onPrevious={handlePrevious}
               onNext={handleNext}
-              isPreviousDisabled={isPrevEffectivelyDisabled || (mode === StudyMode.QUIZ && currentMcq && !showFeedback[currentMcq.id])}
-              isNextDisabled={isNextEffectivelyDisabled || (mode === StudyMode.QUIZ && currentMcq && !showFeedback[currentMcq.id] && currentMcqIndex < chapterMcqs.length - 1)}
+              isPreviousDisabled={isPrevEffectivelyDisabled}
+              isNextDisabled={isNextEffectivelyDisabled}
               currentIndex={currentIndex}
               totalItems={totalItems}
               itemTypeLabel={itemTypeLabel}
+              nextButtonText={nextButtonText}
             />
           )}
         </main>

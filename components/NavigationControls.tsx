@@ -10,6 +10,7 @@ interface NavigationControlsProps {
   currentIndex: number;
   totalItems: number;
   itemTypeLabel: string; // e.g., "Card" or "Question"
+  nextButtonText?: string; // Optional prop for Next button text
 }
 
 const NavigationControls: React.FC<NavigationControlsProps> = ({
@@ -20,6 +21,7 @@ const NavigationControls: React.FC<NavigationControlsProps> = ({
   currentIndex,
   totalItems,
   itemTypeLabel,
+  nextButtonText,
 }) => {
   if (totalItems === 0) return null;
 
@@ -41,9 +43,9 @@ const NavigationControls: React.FC<NavigationControlsProps> = ({
         onClick={onNext}
         disabled={isNextDisabled}
         className="flex items-center gap-1 px-3 py-1.5 sm:px-4 sm:py-2 bg-slate-700 text-white rounded-md hover:bg-slate-800 disabled:bg-slate-400 disabled:cursor-not-allowed transition-colors focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-slate-500 text-sm sm:text-base"
-        aria-label="Next item"
+        aria-label={nextButtonText || "Next item"}
       >
-        Next
+        {nextButtonText || "Next"}
         <ChevronRightIcon className="w-4 h-4 sm:w-5 sm:h-5" />
       </button>
     </div>

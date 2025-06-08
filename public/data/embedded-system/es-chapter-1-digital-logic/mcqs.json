@@ -127,7 +127,7 @@
   },
   {
     "id": "es-ch1-mcq-14",
-    "front": "Binary variables in logic algebra can take which values?",
+    "question": "Binary variables in logic algebra can take which values?",
     "options": [
       "True or False only",
       "0 or 1 only",
@@ -139,7 +139,7 @@
   },
   {
     "id": "es-ch1-mcq-15",
-    "front": "Which law states that A + A = A and A · A = A?",
+    "question": "Which law states that A + A = A and A · A = A?",
     "options": [
       "Commutative Law",
       "Associative Law",
